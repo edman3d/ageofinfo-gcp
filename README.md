@@ -1,5 +1,8 @@
 made with the only tutorial that actually worked even though it still was dog shit https://dev.to/johannesvitt/deploy-a-react-app-on-gcp-with-google-cloud-run-il3
 
+- use gcloud builds submit --tag gcr.io/ageofinfo-gcp/react-with-cloudrun for updating image
+- then edit/deploy new revision and select it from gcp dashboard
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
