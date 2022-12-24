@@ -1,3 +1,5 @@
+made with the only tutorial that actually worked even though it still was dog shit https://dev.to/johannesvitt/deploy-a-react-app-on-gcp-with-google-cloud-run-il3
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
