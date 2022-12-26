@@ -24,8 +24,8 @@ import Orders from "./Orders";
 
 import type { Civilization, Technology, Unit } from "../types";
 
-let civs: Civilization[] = require("./../data/civs.json");
-console.log(`Found ${civs.length} civs`);
+// let civs: Civilization[] = require("./../data/civs.json");
+// console.log(`Found ${civs.length} civs`);
 let techs: Technology[] = require("./../data/techs.json");
 console.log(`Found ${techs.length} techs`);
 let units: Unit[] = require("./../data/units.json");
