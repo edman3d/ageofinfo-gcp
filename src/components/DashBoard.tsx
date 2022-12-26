@@ -22,11 +22,13 @@ import Chart from "./Chart";
 import Deposits from "./Deposits";
 import Orders from "./Orders";
 
-let civs = require("./../data/civs.json");
+import type { Civilization, Technology, Unit } from "../types";
+
+let civs: Civilization[] = require("./../data/civs.json");
 console.log(`Found ${civs.length} civs`);
-let techs = require("./../data/techs.json");
+let techs: Technology[] = require("./../data/techs.json");
 console.log(`Found ${techs.length} techs`);
-let units = require("./../data/units.json");
+let units: Unit[] = require("./../data/units.json");
 console.log(`Found ${units.length} units`);
 
 function Copyright(props: any) {
