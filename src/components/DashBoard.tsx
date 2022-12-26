@@ -22,6 +22,13 @@ import Chart from "./Chart";
 import Deposits from "./Deposits";
 import Orders from "./Orders";
 
+let civs = require("./../data/civs.json");
+console.log(`Found ${civs.length} civs`);
+let techs = require("./../data/techs.json");
+console.log(`Found ${techs.length} techs`);
+let units = require("./../data/units.json");
+console.log(`Found ${units.length} units`);
+
 function Copyright(props: any) {
   return (
     <Typography variant="body2" color="text.secondary" align="center" {...props}>
