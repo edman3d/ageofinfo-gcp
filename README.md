@@ -3,6 +3,10 @@ made with the only tutorial that actually worked even though it still was dog sh
 - use gcloud builds submit --tag gcr.io/ageofinfo-gcp/react-with-cloudrun for updating image
 - then edit/deploy new revision and select it from gcp dashboard
 
+## Bootstrapped with
+
+https://github.com/mui/material-ui/tree/v5.11.2/docs/data/material/getting-started/templates/dashboard
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
