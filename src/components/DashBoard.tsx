@@ -22,6 +22,7 @@ import Chart from "./Chart";
 import Deposits from "./Deposits";
 import Orders from "./Orders";
 import DataGridCivs from "./DataGridCivs";
+import CivCompare from "./CivCompare";
 
 import type { Technology, Unit } from "../types";
 
@@ -192,10 +193,15 @@ function DashboardContent() {
                   <Deposits />
                 </Paper>
               </Grid>
-              {/* Recent Orders */}
+              {/* Civilization Compare Section */}
               <Grid item xs={12}>
                 <Paper sx={{ p: 2, display: "flex", flexDirection: "column" }}>
-                  {/* <Orders /> */}
+                  <CivCompare />
+                </Paper>
+              </Grid>
+              {/* Civilization Data Grid */}
+              <Grid item xs={12}>
+                <Paper sx={{ p: 2, display: "flex", flexDirection: "column" }}>
                   <DataGridCivs />
                 </Paper>
               </Grid>
