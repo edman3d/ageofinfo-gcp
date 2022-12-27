@@ -1,0 +1,76 @@
+/* 
+  MaterialUI Overrides 
+*/
+.MuiButton-root {
+  max-height: 56px !important;
+  margin-top: 7px !important;
+  margin-left: 10px !important;
+  background-color: #4c6673 !important;
+}
+.MuiExpansionPanel-root {
+  background-color: rgb(8, 58, 58) !important;
+  margin-left: 20px;
+  margin-right: 20px;
+}
+.MuiCollapse-container {
+  background-color: #0c5f5f !important;
+}
+.MuiExpansionPanelSummary-root {
+  color: black !important;
+}
+.MuiExpansionPanelSummary-content {
+  align-items: center !important;
+  margin: 0px !important;
+}
+.Mui-expanded {
+  /* margin-left: 20px !important;
+  margin-right: 20px !important; */
+}
+.MuiExpansionPanelDetails-root {
+  padding-top: 0px !important;
+}
+
+.MuiExpansionPanelDetails-root ul {
+  margin: 0px !important;
+}
+
+.MuiCollapse-container {
+  background: transparent !important;
+}
+
+.MuiCheckbox-root {
+  color: white !important;
+  padding-left: 4px !important;
+}
+.MuiPaper-root {
+  background: url(../images/ui/ingame_diplomacy-menu_bg_full.png) no-repeat !important;
+  background-position: center !important;
+  background-size: auto !important;
+}
+/* 
+  Mobile CSS
+*/
+@media screen and (max-width: 600px) {
+  .MuiButton-root {
+    font-size: 10px !important;
+    max-width: 86px !important;
+  }
+  .MuiExpansionPanel-root {
+    margin-left: 4px !important;
+    margin-right: 4px !important;
+  }
+  /* div containing the content of the dropdown */
+  .MuiExpansionPanelDetails-root {
+    padding: 2px !important;
+    font-size: 14px;
+  }
+  .Mui-expanded {
+    margin-left: 4px !important;
+    margin-right: 4px !important;
+  }
+
+  .MuiCheckbox-root {
+    padding-left: 2px !important;
+    transform: scale(0.75) !important;
+  }
+}

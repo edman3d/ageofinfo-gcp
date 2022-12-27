@@ -1,0 +1,71 @@
+.stat_icon {
+  --icon-size: 14px;
+  background-position: center !important; /* Center the image */
+  background-repeat: no-repeat !important; /* Do not repeat the image */
+  background-size: contain !important; /* Resize the background image to cover the entire container */
+  min-width: var(--icon-size);
+  min-height: var(--icon-size);
+  /* float: left; */
+  margin-right: 2px;
+}
+
+.cost_icon {
+  --icon-size: 18px;
+  background-position: center !important; /* Center the image */
+  background-repeat: no-repeat !important; /* Do not repeat the image */
+  background-size: contain !important; /* Resize the background image to cover the entire container */
+  min-width: var(--icon-size);
+  min-height: var(--icon-size);
+  /* float: left; */
+  /* float: right; */
+  /* padding-right: 10px; */
+}
+
+.armor {
+  background: url(../images/staticons/armor.png);
+}
+
+.convert {
+  background: url(../images/staticons/convert.png);
+}
+
+.damage {
+  background: url(../images/staticons/damage.png);
+}
+
+.food {
+  background: url(../images/staticons/food.png);
+}
+
+.garrison {
+  background: url(../images/staticons/garrison.png);
+}
+
+.gold {
+  background: url(../images/staticons/gold.png);
+}
+
+.hp {
+  background: url(../images/staticons/hp.png);
+}
+
+.range {
+  background: url(../images/staticons/range.png);
+}
+
+.range-armor {
+  background: url(../images/staticons/range-armor.png);
+}
+
+.stone {
+  background: url(../images/staticons/stone.png);
+}
+
+.transport {
+  background: url(../images/staticons/transport.png);
+}
+
+.wood {
+  background: url(../images/staticons/wood.png);
+  /* float: right; */
+}

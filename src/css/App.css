@@ -1,0 +1,51 @@
+* {
+  box-sizing: border-box;
+  font-family: 'Roboto', sans-serif;
+  margin: 0;
+  padding: 0;
+}
+.App {
+  /* background-image: linear-gradient(
+    to bottom right,
+    rgba(39, 41, 16, 0.8),
+    rgba(0, 0, 0, 0.8)
+  ); */
+  /* transition: height 0.4s linear; */
+  /* height: 100% !important; */
+  /* min-height: 980px; */
+  /* background-color: black; */
+
+  background-image: linear-gradient(to bottom right, #7c5a3c, #ba8e67);
+}
+
+/* Header/logo Title */
+.header {
+  padding: 30px;
+  text-align: center;
+  background: #1abc9c;
+  color: white;
+  background: url(../images/aoe2-de-hi-res-banner.png);
+  background-position: center; /* Center the image */
+  background-repeat: no-repeat; /* Do not repeat the image */
+  background-size: auto; /* Resize the background image to cover the entire container */
+  min-height: 100px;
+}
+
+.main {
+  display: flex;
+  flex-wrap: wrap;
+  margin-left: 20px;
+  margin-right: 20px;
+}
+
+/* react-virtualized-select override */
+.Select {
+  display: flex !important;
+  flex-basis: 25% !important;
+  margin-top: 4px !important;
+  margin-bottom: 4px !important;
+  margin-left: 10px !important;
+  min-width: 164px;
+  max-width: 215px;
+  align-self: center !important;
+}
