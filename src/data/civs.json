@@ -1,6 +1,7 @@
 [
  {
    "name": "Aztecs",
+   "id": 1,
    "expansion": "The Conquerors",
    "army_type": "Infantry and Monk",
    "unique_unit": "Jaguar Warrior",
@@ -12,6 +13,7 @@
  },
  {
    "name": "Bengalis",
+   "id": 2,
    "expansion": "Dynasties of India",
    "army_type": "Elephants and Ships",
    "unique_unit": "Ratha",
@@ -23,6 +25,7 @@
  },
  {
    "name": "Berbers",
+   "id": 3,
    "expansion": "The African Kingdoms",
    "army_type": "Cavalry and Naval",
    "unique_unit": "Camel Archer",
@@ -34,6 +37,7 @@
  },
  {
    "name": "Bohemians",
+   "id": 4,
    "expansion": "Dawn of the Dukes",
    "army_type": "Gunpowder Units and Monks",
    "unique_unit": "Hussite Wagon;Houfnice",
@@ -45,6 +49,7 @@
  },
  {
    "name": "Britons",
+   "id": 5,
    "expansion": "Age of Kings",
    "army_type": "Foot Archer",
    "unique_unit": "Longbowman",
@@ -56,6 +61,7 @@
  },
  {
    "name": "Bulgarians",
+   "id": 6,
    "expansion": "Definitive Edition",
    "army_type": "Infantry and Cavalry",
    "unique_unit": "Konnik",
@@ -67,6 +73,7 @@
  },
  {
    "name": "Burgundians",
+   "id": 7,
    "expansion": "Lords of the West",
    "army_type": "Cavalry",
    "unique_unit": "Coustillier;Flemish Militia",
@@ -78,6 +85,7 @@
  },
  {
    "name": "Burmese",
+   "id": 8,
    "expansion": "Rise of the Rajas",
    "army_type": "Elephants and Monks",
    "unique_unit": "Arambai",
@@ -89,6 +97,7 @@
  },
  {
    "name": "Byzantines",
+   "id": 9,
    "expansion": "Age of Kings",
    "army_type": "Defensive",
    "unique_unit": "Cataphract",
@@ -100,6 +109,7 @@
  },
  {
    "name": "Celts",
+   "id": 10,
    "expansion": "Age of Kings",
    "army_type": "Infantry and Siege Weapons",
    "unique_unit": "Woad Raider",
@@ -111,6 +121,7 @@
  },
  {
    "name": "Chinese",
+   "id": 11,
    "expansion": "Age of Kings",
    "army_type": "Archer",
    "unique_unit": "Chu Ko Nu",
@@ -122,6 +133,7 @@
  },
  {
    "name": "Cumans",
+   "id": 12,
    "expansion": "Definitive Edition",
    "army_type": "Cavalry",
    "unique_unit": "Kipchak",
@@ -133,6 +145,7 @@
  },
  {
    "name": "Dravidians",
+   "id": 13,
    "expansion": "Dynasties of India",
    "army_type": "Infantry and Ships",
    "unique_unit": "Urumi Swordsman;Thirisadai",
@@ -144,6 +157,7 @@
  },
  {
    "name": "Ethiopians",
+   "id": 14,
    "expansion": "The African Kingdoms",
    "army_type": "Archers and Siege Weapons",
    "unique_unit": "Shotel Warrior",
@@ -155,6 +169,7 @@
  },
  {
    "name": "Franks",
+   "id": 15,
    "expansion": "Age of Kings",
    "army_type": "Cavalry",
    "unique_unit": "Throwing Axeman",
@@ -166,6 +181,7 @@
  },
  {
    "name": "Goths",
+   "id": 16,
    "expansion": "Age of Kings",
    "army_type": "Infantry",
    "unique_unit": "Huskarl",
@@ -177,6 +193,7 @@
  },
  {
    "name": "Gurjaras",
+   "id": 17,
    "expansion": "Dynasties of India",
    "army_type": "Cavalry",
    "unique_unit": "Chakram Thrower;Shrivamsha Rider;Camel Scout",
@@ -188,6 +205,7 @@
  },
  {
    "name": "Hindustanis",
+   "id": 18,
    "expansion": "Dynasties of India",
    "army_type": "Camel Riders and Gunpowder Units",
    "unique_unit": "Imperial Camel Rider; Ghulam",
@@ -199,6 +217,7 @@
  },
  {
    "name": "Huns",
+   "id": 19,
    "expansion": "The Conquerors",
    "army_type": "Cavalry",
    "unique_unit": "Tarkan",
@@ -210,6 +229,7 @@
  },
  {
    "name": "Incas",
+   "id": 20,
    "expansion": "The Forgotten",
    "army_type": "Infantry",
    "unique_unit": "Kamayuk;Slinger",
@@ -221,6 +241,7 @@
  },
  {
    "name": "Italians",
+   "id": 21,
    "expansion": "The Forgotten",
    "army_type": "Archers and Naval",
    "unique_unit": "Genoese Crossbowman;Condottiero",
@@ -232,6 +253,7 @@
  },
  {
    "name": "Japanese",
+   "id": 22,
    "expansion": "Age of Kings",
    "army_type": "Infantry",
    "unique_unit": "Samurai",
@@ -243,6 +265,7 @@
  },
  {
    "name": "Khmer",
+   "id": 23,
    "expansion": "Rise of the Rajas",
    "army_type": "Siege Weapons and Elephants",
    "unique_unit": "Ballista Elephant",
@@ -254,6 +277,7 @@
  },
  {
    "name": "Koreans",
+   "id": 24,
    "expansion": "The Conquerors",
    "army_type": "Tower and Naval",
    "unique_unit": "War Wagon;Turtle Ship",
@@ -265,6 +289,7 @@
  },
  {
    "name": "Lithuanians",
+   "id": 25,
    "expansion": "Definitive Edition",
    "army_type": "Cavalry and Monks",
    "unique_unit": "Leitis",
@@ -276,6 +301,7 @@
  },
  {
    "name": "Magyars",
+   "id": 26,
    "expansion": "The Forgotten",
    "army_type": "Cavalry",
    "unique_unit": "Magyar Huszar",
@@ -287,6 +313,7 @@
  },
  {
    "name": "Malay",
+   "id": 27,
    "expansion": "Rise of the Rajas",
    "army_type": "Infantry and Naval",
    "unique_unit": "Karambit Warrior",
@@ -298,6 +325,7 @@
  },
  {
    "name": "Malians",
+   "id": 28,
    "expansion": "The African Kingdoms",
    "army_type": "Infantry",
    "unique_unit": "Gbeto",
@@ -309,6 +337,7 @@
  },
  {
    "name": "Mayans",
+   "id": 29,
    "expansion": "The Conquerors",
    "army_type": "Archer",
    "unique_unit": "Plumed Archer",
@@ -320,6 +349,7 @@
  },
  {
    "name": "Mongols",
+   "id": 30,
    "expansion": "Age of Kings",
    "army_type": "Cavalry Archer",
    "unique_unit": "Mangudai",
@@ -331,6 +361,7 @@
  },
  {
    "name": "Persians",
+   "id": 31,
    "expansion": "Age of Kings",
    "army_type": "Cavalry",
    "unique_unit": "War Elephant",
@@ -342,6 +373,7 @@
  },
  {
    "name": "Poles",
+   "id": 32,
    "expansion": "Dawn of the Dukes",
    "army_type": "Cavalry",
    "unique_unit": "Obuch",
@@ -353,6 +385,7 @@
  },
  {
    "name": "Portuguese",
+   "id": 33,
    "expansion": "The African Kingdoms",
    "army_type": "Naval and Gunpowder Units",
    "unique_unit": "Organ Gun;Caravel",
@@ -364,6 +397,7 @@
  },
  {
    "name": "Saracens",
+   "id": 34,
    "expansion": "Age of Kings",
    "army_type": "Camel and naval",
    "unique_unit": "Mameluke",
@@ -375,6 +409,7 @@
  },
  {
    "name": "Sicilians",
+   "id": 35,
    "expansion": "Lords of the West",
    "army_type": "Infantry and Cavalry",
    "unique_unit": "Serjeant",
@@ -386,6 +421,7 @@
  },
  {
    "name": "Slavs",
+   "id": 36,
    "expansion": "The Forgotten",
    "army_type": "Infantry and Siege Weapons",
    "unique_unit": "Boyar",
@@ -397,6 +433,7 @@
  },
  {
    "name": "Spanish",
+   "id": 37,
    "expansion": "The Conquerors",
    "army_type": "Gunpowder and Monk",
    "unique_unit": "Conquistador;Missionary",
@@ -408,6 +445,7 @@
  },
  {
    "name": "Tatars",
+   "id": 38,
    "expansion": "Definitive Edition",
    "army_type": "Cavalry Archer",
    "unique_unit": "Keshik;Flaming Camel",
@@ -419,6 +457,7 @@
  },
  {
    "name": "Teutons",
+   "id": 39,
    "expansion": "Age of Kings",
    "army_type": "Infantry",
    "unique_unit": "Teutonic Knight",
@@ -430,6 +469,7 @@
  },
  {
    "name": "Turks",
+   "id": 40,
    "expansion": "Age of Kings",
    "army_type": "Gunpowder Units",
    "unique_unit": "Janissary",
@@ -441,6 +481,7 @@
  },
  {
    "name": "Vietnamese",
+   "id": 41,
    "expansion": "Rise of the Rajas",
    "army_type": "Archers",
    "unique_unit": "Rattan Archer;Imperial Skirmisher",
@@ -452,6 +493,7 @@
  },
  {
    "name": "Vikings",
+   "id": 42,
    "expansion": "Age of Kings",
    "army_type": "Infantry and naval",
    "unique_unit": "Berserk;Longboat",

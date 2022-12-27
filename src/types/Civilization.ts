@@ -1,4 +1,5 @@
 export type Civilization = {
+  id: number;
   name: string;
   expansion: string;
   army_type: string;

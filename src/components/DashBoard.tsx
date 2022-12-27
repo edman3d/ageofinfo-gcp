@@ -21,8 +21,9 @@ import { mainListItems, secondaryListItems } from "./listItems";
 import Chart from "./Chart";
 import Deposits from "./Deposits";
 import Orders from "./Orders";
+import DataGridCivs from "./DataGridCivs";
 
-import type { Civilization, Technology, Unit } from "../types";
+import type { Technology, Unit } from "../types";
 
 // let civs: Civilization[] = require("./../data/civs.json");
 // console.log(`Found ${civs.length} civs`);
@@ -194,7 +195,8 @@ function DashboardContent() {
               {/* Recent Orders */}
               <Grid item xs={12}>
                 <Paper sx={{ p: 2, display: "flex", flexDirection: "column" }}>
-                  <Orders />
+                  {/* <Orders /> */}
+                  <DataGridCivs />
                 </Paper>
               </Grid>
             </Grid>
