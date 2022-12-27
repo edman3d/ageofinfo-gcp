@@ -9,32 +9,32 @@ const columns: GridColDef[] = [
   {
     field: "name",
     headerName: "Name",
-    width: 90,
+    width: 130,
   },
   {
     field: "army_type",
     headerName: "Army Type",
-    width: 160,
+    width: 200,
   },
   {
     field: "unique_unit",
     headerName: "Unique Unit",
-    width: 160,
+    width: 200,
   },
   {
     field: "unique_tech",
     headerName: "Unique Tech",
-    width: 160,
+    width: 200,
   },
   {
     field: "team_bonus",
     headerName: "Team Bonus",
-    width: 160,
+    width: 200,
   },
   {
     field: "civilization_bonus",
     headerName: "Civ Bonus",
-    width: 300,
+    width: 400,
   },
 ];
 
