@@ -16,12 +16,12 @@ const Item = styled(Paper)(({ theme }) => ({
   padding: theme.spacing(1),
   textAlign: "center",
   color: theme.palette.text.secondary,
-  marginBottom: 6,
+  marginBottom: 10,
 }));
 
 export default function CivCompare() {
   return (
-    <Box sx={{ height: 500, width: "100%" }}>
+    <Box sx={{ height: 700, width: "100%" }}>
       <Title>Compare Civilizations</Title>
       <Grid container spacing={3}>
         <Grid item xs={6}>
