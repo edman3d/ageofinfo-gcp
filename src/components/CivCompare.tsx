@@ -21,8 +21,8 @@ let civs: Civilization[] = require("./../data/civs.json");
 export default function CivCompare() {
   // const [value, setValue] = React.useState<string | null>(options[0]);
   // const [inputValue, setInputValue] = React.useState("");
-  const [selectedCivOne, setSelectedCivOne] = React.useState<Civilization | undefined>(civs[0]);
-  const [selectedCivTwo, setSelectedCivTwo] = React.useState<Civilization | undefined>(civs[1]);
+  const [selectedCivOne, setSelectedCivOne] = React.useState<Civilization | undefined | null>(null);
+  const [selectedCivTwo, setSelectedCivTwo] = React.useState<Civilization | undefined | null>(null);
 
   return (
     <Box sx={{ height: 700, width: "100%" }}>

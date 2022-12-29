@@ -7,19 +7,19 @@ function preventDefault(event: React.MouseEvent) {
   event.preventDefault();
 }
 
-export default function Deposits() {
+export default function RecentUpdates() {
   return (
     <React.Fragment>
-      <Title>Recent Deposits</Title>
+      <Title>Recent Updates</Title>
       <Typography component="p" variant="h4">
-        $3,024.00
+        Working on it bitch
       </Typography>
       <Typography color="text.secondary" sx={{ flex: 1 }}>
-        on 15 March, 2019
+        Missing latest update
       </Typography>
       <div>
         <Link color="primary" href="#" onClick={preventDefault}>
-          View balance
+          Official AoE2 News
         </Link>
       </div>
     </React.Fragment>

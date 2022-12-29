@@ -1,17 +1,8 @@
 import * as React from "react";
-import Card from "@mui/material/Card";
-import CardContent from "@mui/material/CardContent";
-import CardMedia from "@mui/material/CardMedia";
-import Typography from "@mui/material/Typography";
-import Grid from "@mui/material/Grid";
-import { CardActionArea } from "@mui/material";
-
+import { Card, CardActionArea, CardContent, CardMedia, Typography } from "@mui/material";
 import type { Civilization } from "../types";
 
-import "../css/Civilizations.css";
-let civs: Civilization[] = require("./../data/civs.json");
-
-const marginBottom = "10px";
+const marginBottom = "10px"; // margin between stat rows
 
 type CivCompareDetailsProps = {
   civ?: Civilization | null;
@@ -24,8 +15,12 @@ export default function CivCompareDetails(props: CivCompareDetailsProps) {
         <CardMedia
           component="img"
           height="140"
-          image={require("../images/civilizations/bengalis.png")}
-          alt="green iguana"
+          image={
+            props.civ
+              ? require(`../images/civilizations/${props.civ?.image}.png`)
+              : require("../images/aoe2-de-hi-res-bg.jpg")
+          }
+          alt="civ banner"
         />
         <CardContent sx={{ height: 600 }}>
           {props.civ ? (

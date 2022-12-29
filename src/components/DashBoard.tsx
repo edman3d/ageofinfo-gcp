@@ -19,19 +19,17 @@ import ChevronLeftIcon from "@mui/icons-material/ChevronLeft";
 import NotificationsIcon from "@mui/icons-material/Notifications";
 import { mainListItems, secondaryListItems } from "./listItems";
 import Chart from "./Chart";
-import Deposits from "./Deposits";
+import RecentUpdates from "./RecentUpdates";
 import Orders from "./Orders";
 import DataGridCivs from "./DataGridCivs";
 import CivCompare from "./CivCompare";
 
-import type { Technology, Unit } from "../types";
+// import type { Technology, Unit } from "../types";
 
-// let civs: Civilization[] = require("./../data/civs.json");
-// console.log(`Found ${civs.length} civs`);
-let techs: Technology[] = require("./../data/techs.json");
-console.log(`Found ${techs.length} techs`);
-let units: Unit[] = require("./../data/units.json");
-console.log(`Found ${units.length} units`);
+// let techs: Technology[] = require("./../data/techs.json");
+// console.log(`Found ${techs.length} techs`);
+// let units: Unit[] = require("./../data/units.json");
+// console.log(`Found ${units.length} units`);
 
 function Copyright(props: any) {
   return (
@@ -190,7 +188,7 @@ function DashboardContent() {
                     height: 240,
                   }}
                 >
-                  <Deposits />
+                  <RecentUpdates />
                 </Paper>
               </Grid>
               {/* Civilization Compare Section */}
