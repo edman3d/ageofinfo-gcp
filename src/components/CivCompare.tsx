@@ -25,7 +25,7 @@ export default function CivCompare() {
   const [selectedCivTwo, setSelectedCivTwo] = React.useState<Civilization | undefined | null>(null);
 
   return (
-    <Box sx={{ height: 700, width: "100%" }}>
+    <Box sx={{ height: 855, width: "100%" }}>
       <Title>Compare Civilizations</Title>
       <Grid container spacing={3}>
         <Grid item xs={6}>
