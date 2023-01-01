@@ -25,18 +25,29 @@ export default function Chart() {
 
   return (
     <React.Fragment>
-      <Title>Today</Title>
+      <Title>Relationship of fucking around & finding out</Title>
       <ResponsiveContainer>
         <LineChart
           data={data}
           margin={{
             top: 16,
             right: 16,
-            bottom: 0,
+            bottom: 20,
             left: 24,
           }}
         >
-          <XAxis dataKey="time" stroke={theme.palette.text.secondary} style={theme.typography.body2} />
+          <XAxis dataKey="time" stroke={theme.palette.text.secondary} style={theme.typography.body2}>
+            <Label
+              position="bottom"
+              style={{
+                textAnchor: "middle",
+                fill: theme.palette.text.primary,
+                ...theme.typography.body1,
+              }}
+            >
+              Fuck Around
+            </Label>
+          </XAxis>
           <YAxis stroke={theme.palette.text.secondary} style={theme.typography.body2}>
             <Label
               angle={270}
@@ -47,7 +58,7 @@ export default function Chart() {
                 ...theme.typography.body1,
               }}
             >
-              Sales ($)
+              Find Out
             </Label>
           </YAxis>
           <Line
