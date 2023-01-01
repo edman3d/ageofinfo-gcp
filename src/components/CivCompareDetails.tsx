@@ -14,22 +14,25 @@ export default function CivCompareDetails(props: CivCompareDetailsProps) {
   return (
     <Card sx={{ height: 750 }}>
       <CardActionArea>
-        <CardMedia
-          component="img"
-          height="140"
-          image={
-            props.civ
-              ? require(`../images/civilizations/${props.civ?.image}.png`)
-              : require("../images/aoe2-de-hi-res-bg.jpg")
-          }
-          alt="civ banner"
-        />
+        <div style={{ display: "flex", alignItems: "center", paddingLeft: 4 }}>
+          <CardMedia
+            component="img"
+            height="140"
+            image={
+              props.civ
+                ? require(`../images/civilizations/${props.civ?.image}.png`)
+                : require("../images/aoe2-de-hi-res-bg.jpg")
+            }
+            alt="civ banner"
+            sx={{ height: "64px", width: "64px" }}
+          />
+          <Typography variant="h5" sx={{ marginLeft: 1 }}>
+            {props.civ ? props.civ.name : "Select a Civilization"}
+          </Typography>
+        </div>
         <CardContent sx={{ height: 750 }}>
           {props.civ ? (
             <>
-              <Typography gutterBottom variant="h5" component="div">
-                {props.civ.name}
-              </Typography>
               <Typography variant="body2" color="text.secondary">
                 Army Type
               </Typography>
@@ -101,11 +104,7 @@ export default function CivCompareDetails(props: CivCompareDetailsProps) {
                 )}
               </Typography>
             </>
-          ) : (
-            <Typography gutterBottom variant="h5" component="div">
-              Select a Civilization
-            </Typography>
-          )}
+          ) : null}
         </CardContent>
       </CardActionArea>
     </Card>

@@ -31,12 +31,14 @@ import CivCompare from "./CivCompare";
 // let units: Unit[] = require("./../data/units.json");
 // console.log(`Found ${units.length} units`);
 
+// react router tutorial to use https://www.youtube.com/watch?v=2aumoR0-jmQ
+
 function Copyright(props: any) {
   return (
     <Typography variant="body2" color="text.secondary" align="center" {...props}>
       {"Copyright © "}
       <Link color="inherit" href="https://mui.com/">
-        Your Website
+        edman3d
       </Link>{" "}
       {new Date().getFullYear()}
       {"."}
