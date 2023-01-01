@@ -9,19 +9,19 @@ const paddingLeft = "0px";
 type CivCompareDetailsProps = {
   civ?: Civilization | null;
 };
-
+// import QuestionMarkOutlinedIcon from '@mui/icons-material/QuestionMarkOutlined';
 export default function CivCompareDetails(props: CivCompareDetailsProps) {
   return (
     <Card sx={{ height: 750 }}>
       <CardActionArea>
-        <div style={{ display: "flex", alignItems: "center", paddingLeft: 4 }}>
+        <div style={{ display: "flex", alignItems: "center", paddingLeft: 4, paddingTop: 4 }}>
           <CardMedia
             component="img"
             height="140"
             image={
               props.civ
                 ? require(`../images/civilizations/${props.civ?.image}.png`)
-                : require("../images/aoe2-de-hi-res-bg.jpg")
+                : require("../images/staticons/convert.png")
             }
             alt="civ banner"
             sx={{ height: "64px", width: "64px" }}
@@ -64,7 +64,7 @@ export default function CivCompareDetails(props: CivCompareDetailsProps) {
                 <DetailsList delimitedString={props.civ.unique_unit} />
               </Typography>
               <Typography variant="body2" color="text.secondary">
-                Unique Techs
+                Unique Techs (could make these a dropdown with tech info)
               </Typography>
               <Typography
                 variant="subtitle2"
