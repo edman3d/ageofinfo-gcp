@@ -3,6 +3,11 @@ import { Card, CardActionArea, CardContent, CardMedia, Typography } from "@mui/m
 import type { Civilization } from "../types";
 import DetailsList from "./DetailsList";
 
+import { useContext, useState } from "react";
+import { UnitContext } from "../contexts/UnitContext";
+import { CivContext } from "../contexts/CivContext";
+import { TechContext } from "../contexts/TechContext";
+
 const marginBottom = "10px"; // margin between stat rows
 const paddingLeft = "0px";
 
@@ -11,6 +16,14 @@ type CivCompareDetailsProps = {
 };
 // import QuestionMarkOutlinedIcon from '@mui/icons-material/QuestionMarkOutlined';
 export default function CivCompareDetails(props: CivCompareDetailsProps) {
+  const units = useContext(UnitContext);
+  const civs = useContext(CivContext);
+  const techs = useContext(TechContext);
+
+  console.log(`unit context found ${units?.length} units`);
+  console.log(`civs context found ${civs?.length} civs`);
+  console.log(`techs context found ${techs?.length} techs`);
+
   return (
     <Card sx={{ height: 750 }}>
       <CardActionArea>

@@ -23,15 +23,16 @@ import RecentUpdates from "./RecentUpdates";
 import Orders from "./Orders";
 import DataGridCivs from "./DataGridCivs";
 import CivCompare from "./CivCompare";
-
-// import type { Technology, Unit } from "../types";
-
-// let techs: Technology[] = require("./../data/techs.json");
-// console.log(`Found ${techs.length} techs`);
-// let units: Unit[] = require("./../data/units.json");
-// console.log(`Found ${units.length} units`);
-
 // react router tutorial to use https://www.youtube.com/watch?v=2aumoR0-jmQ
+import type { Civilization, Technology, Unit } from "../types";
+import { useState } from "react";
+import { UnitContext } from "../contexts/UnitContext";
+import { CivContext } from "../contexts/CivContext";
+import { TechContext } from "../contexts/TechContext";
+
+let unitData: Unit[] = require("./../data/units.json");
+let techData: Technology[] = require("./../data/techs.json");
+let civData: Civilization[] = require("./../data/civs.json");
 
 function Copyright(props: any) {
   return (
@@ -98,119 +99,129 @@ const mdTheme = createTheme();
 
 function DashboardContent() {
   const [open, setOpen] = React.useState(false);
+  const [units, setUnits] = useState(unitData);
+  const [civs, setCivs] = useState(civData);
+  const [techs, setTechs] = useState(techData);
+
   const toggleDrawer = () => {
     setOpen(!open);
   };
 
   return (
-    <ThemeProvider theme={mdTheme}>
-      <Box sx={{ display: "flex" }}>
-        <CssBaseline />
-        <AppBar position="absolute" open={open}>
-          <Toolbar
-            sx={{
-              pr: "24px", // keep right padding when drawer closed
-            }}
-          >
-            <IconButton
-              edge="start"
-              color="inherit"
-              aria-label="open drawer"
-              onClick={toggleDrawer}
-              sx={{
-                marginRight: "36px",
-                ...(open && { display: "none" }),
-              }}
-            >
-              <MenuIcon />
-            </IconButton>
-            <Typography component="h1" variant="h6" color="inherit" noWrap sx={{ flexGrow: 1 }}>
-              Dashboard
-            </Typography>
-            <IconButton color="inherit">
-              <Badge badgeContent={4} color="secondary">
-                <NotificationsIcon />
-              </Badge>
-            </IconButton>
-          </Toolbar>
-        </AppBar>
-        <Drawer variant="permanent" open={open}>
-          <Toolbar
-            sx={{
-              display: "flex",
-              alignItems: "center",
-              justifyContent: "flex-end",
-              px: [1],
-            }}
-          >
-            <IconButton onClick={toggleDrawer}>
-              <ChevronLeftIcon />
-            </IconButton>
-          </Toolbar>
-          <Divider />
-          <List component="nav">
-            {mainListItems}
-            <Divider sx={{ my: 1 }} />
-            {secondaryListItems}
-          </List>
-        </Drawer>
-        <Box
-          component="main"
-          sx={{
-            backgroundColor: (theme) =>
-              theme.palette.mode === "light" ? theme.palette.grey[100] : theme.palette.grey[900],
-            flexGrow: 1,
-            height: "100vh",
-            overflow: "auto",
-          }}
-        >
-          <Toolbar />
-          <Container maxWidth="xl" sx={{ mt: 4, mb: 4 }}>
-            <Grid container spacing={3}>
-              {/* Chart */}
-              <Grid item xs={12} md={8} lg={9}>
-                <Paper
+    <TechContext.Provider value={techs}>
+      <CivContext.Provider value={civs}>
+        <UnitContext.Provider value={units}>
+          <ThemeProvider theme={mdTheme}>
+            <Box sx={{ display: "flex" }}>
+              <CssBaseline />
+              <AppBar position="absolute" open={open}>
+                <Toolbar
                   sx={{
-                    p: 2,
-                    display: "flex",
-                    flexDirection: "column",
-                    height: 240,
+                    pr: "24px", // keep right padding when drawer closed
                   }}
                 >
-                  <Chart />
-                </Paper>
-              </Grid>
-              {/* Recent Deposits */}
-              <Grid item xs={12} md={4} lg={3}>
-                <Paper
+                  <IconButton
+                    edge="start"
+                    color="inherit"
+                    aria-label="open drawer"
+                    onClick={toggleDrawer}
+                    sx={{
+                      marginRight: "36px",
+                      ...(open && { display: "none" }),
+                    }}
+                  >
+                    <MenuIcon />
+                  </IconButton>
+                  <Typography component="h1" variant="h6" color="inherit" noWrap sx={{ flexGrow: 1 }}>
+                    Dashboard
+                  </Typography>
+                  <IconButton color="inherit">
+                    <Badge badgeContent={4} color="secondary">
+                      <NotificationsIcon />
+                    </Badge>
+                  </IconButton>
+                </Toolbar>
+              </AppBar>
+              <Drawer variant="permanent" open={open}>
+                <Toolbar
                   sx={{
-                    p: 2,
                     display: "flex",
-                    flexDirection: "column",
-                    height: 240,
+                    alignItems: "center",
+                    justifyContent: "flex-end",
+                    px: [1],
                   }}
                 >
-                  <RecentUpdates />
-                </Paper>
-              </Grid>
-              {/* Civilization Compare Section */}
-              <Grid item xs={12}>
-                <Paper sx={{ p: 2, display: "flex", flexDirection: "column" }}>
-                  <CivCompare />
-                </Paper>
-              </Grid>
-              {/* Civilization Data Grid */}
-              <Grid item xs={12}>
-                <Paper sx={{ p: 2, display: "flex", flexDirection: "column" }}>
-                  <DataGridCivs />
-                </Paper>
-              </Grid>
-            </Grid>
-            <Copyright sx={{ pt: 4 }} />
-          </Container>
-        </Box>
-      </Box>
-    </ThemeProvider>
+                  <IconButton onClick={toggleDrawer}>
+                    <ChevronLeftIcon />
+                  </IconButton>
+                </Toolbar>
+                <Divider />
+                <List component="nav">
+                  {mainListItems}
+                  <Divider sx={{ my: 1 }} />
+                  {secondaryListItems}
+                </List>
+              </Drawer>
+              <Box
+                component="main"
+                sx={{
+                  backgroundColor: (theme) =>
+                    theme.palette.mode === "light" ? theme.palette.grey[100] : theme.palette.grey[900],
+                  flexGrow: 1,
+                  height: "100vh",
+                  overflow: "auto",
+                }}
+              >
+                <Toolbar />
+                <Container maxWidth="xl" sx={{ mt: 4, mb: 4 }}>
+                  <Grid container spacing={3}>
+                    {/* Chart */}
+                    <Grid item xs={12} md={8} lg={9}>
+                      <Paper
+                        sx={{
+                          p: 2,
+                          display: "flex",
+                          flexDirection: "column",
+                          height: 240,
+                        }}
+                      >
+                        <Chart />
+                      </Paper>
+                    </Grid>
+                    {/* Recent Deposits */}
+                    <Grid item xs={12} md={4} lg={3}>
+                      <Paper
+                        sx={{
+                          p: 2,
+                          display: "flex",
+                          flexDirection: "column",
+                          height: 240,
+                        }}
+                      >
+                        <RecentUpdates />
+                      </Paper>
+                    </Grid>
+                    {/* Civilization Compare Section */}
+                    <Grid item xs={12}>
+                      <Paper sx={{ p: 2, display: "flex", flexDirection: "column" }}>
+                        <CivCompare />
+                      </Paper>
+                    </Grid>
+                    {/* Civilization Data Grid */}
+                    <Grid item xs={12}>
+                      <Paper sx={{ p: 2, display: "flex", flexDirection: "column" }}>
+                        <DataGridCivs />
+                      </Paper>
+                    </Grid>
+                  </Grid>
+                  <Copyright sx={{ pt: 4 }} />
+                </Container>
+              </Box>
+            </Box>
+          </ThemeProvider>
+        </UnitContext.Provider>
+      </CivContext.Provider>
+    </TechContext.Provider>
   );
 }
 
