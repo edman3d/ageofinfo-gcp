@@ -30,6 +30,8 @@ import { UnitContext } from "../contexts/UnitContext";
 import { CivContext } from "../contexts/CivContext";
 import { TechContext } from "../contexts/TechContext";
 
+import { LIGHT_TAN_COLOR, MEDIUM_TAN_COLOR, DARK_TAN_COLOR } from "../constants/colors";
+
 let unitData: Unit[] = require("./../data/units.json");
 let techData: Technology[] = require("./../data/techs.json");
 let civData: Civilization[] = require("./../data/civs.json");
@@ -61,6 +63,7 @@ const AppBar = styled(MuiAppBar, {
     easing: theme.transitions.easing.sharp,
     duration: theme.transitions.duration.leavingScreen,
   }),
+  backgroundColor: MEDIUM_TAN_COLOR,
   ...(open && {
     marginLeft: drawerWidth,
     width: `calc(100% - ${drawerWidth}px)`,
@@ -120,7 +123,7 @@ function DashboardContent() {
                     pr: "24px", // keep right padding when drawer closed
                   }}
                 >
-                  <IconButton
+                  {/* <IconButton
                     edge="start"
                     color="inherit"
                     aria-label="open drawer"
@@ -131,9 +134,9 @@ function DashboardContent() {
                     }}
                   >
                     <MenuIcon />
-                  </IconButton>
-                  <Typography component="h1" variant="h6" color="inherit" noWrap sx={{ flexGrow: 1 }}>
-                    Dashboard
+                  </IconButton> */}
+                  <Typography component="h1" variant="h6" color="black" noWrap sx={{ flexGrow: 1 }}>
+                    AgeOfInfo Dashboard
                   </Typography>
                   <IconButton color="inherit">
                     <Badge badgeContent={4} color="secondary">
@@ -142,7 +145,7 @@ function DashboardContent() {
                   </IconButton>
                 </Toolbar>
               </AppBar>
-              <Drawer variant="permanent" open={open}>
+              {/* <Drawer variant="permanent" open={open}>
                 <Toolbar
                   sx={{
                     display: "flex",
@@ -161,49 +164,50 @@ function DashboardContent() {
                   <Divider sx={{ my: 1 }} />
                   {secondaryListItems}
                 </List>
-              </Drawer>
+              </Drawer> */}
               <Box
                 component="main"
                 sx={{
-                  backgroundColor: (theme) =>
-                    theme.palette.mode === "light" ? theme.palette.grey[100] : theme.palette.grey[900],
+                  backgroundColor: DARK_TAN_COLOR,
                   flexGrow: 1,
                   height: "100vh",
                   overflow: "auto",
                 }}
               >
                 <Toolbar />
-                <Container maxWidth="xl" sx={{ mt: 4, mb: 4 }}>
+                <Container maxWidth="xl" sx={{ mt: 4, mb: 4, backgroundColor: DARK_TAN_COLOR }}>
                   <Grid container spacing={3}>
                     {/* Chart */}
-                    <Grid item xs={12} md={8} lg={9}>
+                    {/* <Grid item xs={12} md={8} lg={9}>
                       <Paper
                         sx={{
                           p: 2,
                           display: "flex",
                           flexDirection: "column",
                           height: 240,
+                          backgroundColor: MEDIUM_TAN_COLOR,
                         }}
                       >
                         <Chart />
                       </Paper>
-                    </Grid>
+                    </Grid> */}
                     {/* Recent Deposits */}
-                    <Grid item xs={12} md={4} lg={3}>
+                    {/* <Grid item xs={12} md={4} lg={3}>
                       <Paper
                         sx={{
                           p: 2,
                           display: "flex",
                           flexDirection: "column",
                           height: 240,
+                          backgroundColor: MEDIUM_TAN_COLOR,
                         }}
                       >
                         <RecentUpdates />
                       </Paper>
-                    </Grid>
+                    </Grid> */}
                     {/* Civilization Compare Section */}
                     <Grid item xs={12}>
-                      <Paper sx={{ p: 2, display: "flex", flexDirection: "column" }}>
+                      <Paper sx={{ p: 2, display: "flex", flexDirection: "column", backgroundColor: MEDIUM_TAN_COLOR }}>
                         <CivCompare />
                       </Paper>
                     </Grid>

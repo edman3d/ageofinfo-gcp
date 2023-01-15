@@ -8,6 +8,8 @@ import { UnitContext } from "../contexts/UnitContext";
 import { CivContext } from "../contexts/CivContext";
 import { TechContext } from "../contexts/TechContext";
 
+import { LIGHT_TAN_COLOR, MEDIUM_TAN_COLOR, DARK_TAN_COLOR } from "../constants/colors";
+
 const marginBottom = "10px"; // margin between stat rows
 const paddingLeft = "0px";
 
@@ -25,7 +27,7 @@ export default function CivCompareDetails(props: CivCompareDetailsProps) {
   console.log(`techs context found ${techs?.length} techs`);
 
   return (
-    <Card sx={{ height: 750 }}>
+    <Card sx={{ height: 750, backgroundColor: LIGHT_TAN_COLOR }}>
       <CardActionArea>
         <div style={{ display: "flex", alignItems: "center", paddingLeft: 4, paddingTop: 4 }}>
           <CardMedia
