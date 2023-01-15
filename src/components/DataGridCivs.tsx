@@ -1,9 +1,8 @@
 import * as React from "react";
 import Box from "@mui/material/Box";
-import { DataGrid, GridColDef, GridValueGetterParams } from "@mui/x-data-grid";
-import type { Civilization } from "../types";
-
-let civs: Civilization[] = require("./../data/civs.json");
+import { DataGrid, GridColDef } from "@mui/x-data-grid";
+import { useContext } from "react";
+import { CivContext } from "../contexts/CivContext";
 
 const columns: GridColDef[] = [
   {
@@ -39,10 +38,11 @@ const columns: GridColDef[] = [
 ];
 
 export default function DataGridCivs() {
+  const civs = useContext(CivContext);
   return (
     <Box sx={{ height: 900, width: "100%" }}>
       <DataGrid
-        rows={civs}
+        rows={civs ?? ["None"]}
         columns={columns}
         pageSize={25}
         rowsPerPageOptions={[25]}
