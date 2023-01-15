@@ -77,7 +77,7 @@ export default function CivCompareDetails(props: CivCompareDetailsProps) {
               color="text.secondary"
               sx={{ marginBottom: marginBottom, paddingLeft: paddingLeft }}
             >
-              <DetailsList delimitedString={props.civ.unique_unit} />
+              {/* <DetailsList delimitedString={props.civ.unique_unit} /> */}
               <UnitAccordions unique_units={props.civ.unique_unit} />
             </Typography>
             <Typography variant="body2" color="text.secondary">
