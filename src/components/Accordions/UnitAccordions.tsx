@@ -6,16 +6,30 @@ import AccordionDetails from "@mui/material/AccordionDetails";
 import Typography from "@mui/material/Typography";
 import ExpandMoreIcon from "@mui/icons-material/ExpandMore";
 import { UnitContext } from "../../contexts/UnitContext";
-// should take in a string and return 1 or more accordions
+import type { Unit } from "../../types";
+// should take in a string and return 1 or more accordions (some civs have multiple unique units)
 
 type UnitAccordionsProps = {
   unique_units: string | null;
 };
 
+function getUnitObjects(unitNamesToFind: string[], allUnits: Unit[] | null) {
+  if (!allUnits) return;
+  let unitObjects: Unit[] = [];
+  unitNamesToFind.forEach((unitName) => {
+    const result = allUnits.find(({ name }) => name === unitName);
+    if (result) {
+      unitObjects.push(result);
+    }
+  });
+  return unitObjects;
+}
+
 export default function UnitAccordions(props: UnitAccordionsProps) {
   const allUnits = useContext(UnitContext);
-  const units = useState(props.unique_units ? props.unique_units.split(";") : []);
-  console.log(`units accordion found ${units.length} units`);
+  const unitNames: string[] = props.unique_units ? props.unique_units.split(";") : [];
+  const unitObjects = getUnitObjects(unitNames, allUnits);
+  console.log(unitObjects);
 
   return (
     <div>
@@ -40,11 +54,6 @@ export default function UnitAccordions(props: UnitAccordionsProps) {
             leo lobortis eget.
           </Typography>
         </AccordionDetails>
-      </Accordion>
-      <Accordion disabled>
-        <AccordionSummary expandIcon={<ExpandMoreIcon />} aria-controls="panel3a-content" id="panel3a-header">
-          <Typography>Disabled Accordion</Typography>
-        </AccordionSummary>
       </Accordion>
     </div>
   );
