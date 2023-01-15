@@ -1,11 +1,9 @@
 import * as React from "react";
-import { useContext, useState } from "react";
+import { useContext } from "react";
 import Accordion from "@mui/material/Accordion";
 import AccordionSummary from "@mui/material/AccordionSummary";
 import AccordionDetails from "@mui/material/AccordionDetails";
-import Box from "@mui/material/Box";
-import Paper from "@mui/material/Paper";
-import { Card, CardActionArea, CardContent, CardMedia, Typography } from "@mui/material";
+import { CardMedia, Typography } from "@mui/material";
 import ExpandMoreIcon from "@mui/icons-material/ExpandMore";
 import { UnitContext } from "../../contexts/UnitContext";
 import type { Unit } from "../../types";
@@ -34,11 +32,6 @@ export default function UnitAccordions(props: UnitAccordionsProps) {
   const allUnits = useContext(UnitContext);
   const unitNames: string[] = props.unique_units ? props.unique_units.split(";") : [];
   const unitObjects = getUnitObjects(unitNames, allUnits);
-  console.log(unitObjects);
-
-  // image = require(`../images/civilizations/${props.civ?.image}.png`)
-  //require(`../images/civilizations/bengalis.png`)
-  //backgroundImage: `url(${"../../images/civilizations/bengalis.png"})`
 
   return (
     <div>
@@ -50,7 +43,7 @@ export default function UnitAccordions(props: UnitAccordionsProps) {
                 component="img"
                 height="140"
                 image={require(`../../images/units/${unit.image}.png`)}
-                alt="civ banner"
+                alt="unitIcon"
                 sx={{ height: iconSize, width: iconSize, marginRight: "10px" }}
               />
               <Typography sx={{ alignSelf: "center" }}>{unit.name}</Typography>
