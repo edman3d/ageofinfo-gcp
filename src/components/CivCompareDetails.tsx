@@ -14,7 +14,7 @@ const paddingLeft = "0px";
 type CivCompareDetailsProps = {
   civ?: Civilization | null;
 };
-// import QuestionMarkOutlinedIcon from '@mui/icons-material/QuestionMarkOutlined';
+
 export default function CivCompareDetails(props: CivCompareDetailsProps) {
   const units = useContext(UnitContext);
   const civs = useContext(CivContext);

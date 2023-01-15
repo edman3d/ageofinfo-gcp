@@ -3,20 +3,29 @@ import TextField from "@mui/material/TextField";
 import Autocomplete from "@mui/material/Autocomplete";
 import type { Civilization } from "../types";
 
-let civs: Civilization[] = require("./../data/civs.json");
+import { useContext, useState } from "react";
+import { CivContext } from "../contexts/CivContext";
 
-let dropdownOptions: string[] = [];
-civs.map((civ) => {
-  dropdownOptions.push(civ.name);
-});
+// let civs: Civilization[] = require("./../data/civs.json");
 
 type AutoCompleteSelectProps = {
   setSelectedCiv: (civ?: Civilization) => void;
 };
 
+function getCivDropdownValues(civs: Civilization[] | null) {
+  let dropdownOptions: string[] = [];
+  civs?.map((civ) => {
+    dropdownOptions.push(civ.name);
+  });
+  return dropdownOptions;
+}
+
 export default function AutoCompleteSelect(props: AutoCompleteSelectProps) {
   const [value, setValue] = React.useState<string | null>();
   const [inputValue, setInputValue] = React.useState("");
+  const civs = useContext(CivContext);
+
+  const dropdownOptions = getCivDropdownValues(civs);
 
   return (
     <div>
@@ -24,7 +33,7 @@ export default function AutoCompleteSelect(props: AutoCompleteSelectProps) {
         value={value}
         onChange={(event: any, newValue: string | null) => {
           console.log(`newValue: ${newValue}`);
-          const chosenCiv = civs.find((c) => newValue == c.name);
+          const chosenCiv = civs?.find((c) => newValue === c.name);
           setValue(newValue);
           props.setSelectedCiv(chosenCiv);
         }}
