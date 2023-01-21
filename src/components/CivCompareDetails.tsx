@@ -92,7 +92,7 @@ export default function CivCompareDetails(props: CivCompareDetailsProps) {
               <TechAccordions unique_techs={props.civ.unique_tech} />
             </Typography>
             <Typography variant="body2" color="text.secondary">
-              Team Bonus (note: applies in 1v1 as well)
+              Team Bonus (note: applies in 1v1)
             </Typography>
             <Typography
               variant="subtitle2"
