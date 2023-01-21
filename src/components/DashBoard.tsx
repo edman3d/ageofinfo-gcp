@@ -212,11 +212,11 @@ function DashboardContent() {
                       </Paper>
                     </Grid>
                     {/* Civilization Data Grid */}
-                    <Grid item xs={12}>
+                    {/* <Grid item xs={12}>
                       <Paper sx={{ p: 2, display: "flex", flexDirection: "column" }}>
                         <DataGridCivs />
                       </Paper>
-                    </Grid>
+                    </Grid> */}
                   </Grid>
                   <Copyright sx={{ pt: 4 }} />
                 </Container>

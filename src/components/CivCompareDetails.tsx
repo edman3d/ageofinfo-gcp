@@ -11,6 +11,7 @@ import { TechContext } from "../contexts/TechContext";
 import { LIGHT_TAN_COLOR, MEDIUM_TAN_COLOR, DARK_TAN_COLOR } from "../constants/colors";
 
 import UnitAccordions from "./Accordions/UnitAccordions";
+import TechAccordions from "./Accordions/TechAddordions";
 
 const marginBottom = "10px"; // margin between stat rows
 const paddingLeft = "0px";
@@ -29,7 +30,7 @@ export default function CivCompareDetails(props: CivCompareDetailsProps) {
   console.log(`techs context found ${techs?.length} techs`);
 
   return (
-    <Card sx={{ height: 750, backgroundColor: LIGHT_TAN_COLOR }}>
+    <Card sx={{ height: 1175, backgroundColor: LIGHT_TAN_COLOR }}>
       <div style={{ display: "flex", alignItems: "center", paddingLeft: 4, paddingTop: 4 }}>
         <CardMedia
           component="img"
@@ -77,21 +78,21 @@ export default function CivCompareDetails(props: CivCompareDetailsProps) {
               color="text.secondary"
               sx={{ marginBottom: marginBottom, paddingLeft: paddingLeft }}
             >
-              {/* <DetailsList delimitedString={props.civ.unique_unit} /> */}
               <UnitAccordions unique_units={props.civ.unique_unit} />
             </Typography>
             <Typography variant="body2" color="text.secondary">
-              Unique Techs (could make these a dropdown with tech info)
+              Unique Techs
             </Typography>
             <Typography
               variant="subtitle2"
               color="text.secondary"
               sx={{ marginBottom: marginBottom, paddingLeft: paddingLeft }}
             >
-              <DetailsList delimitedString={props.civ.unique_tech} />
+              {/* <DetailsList delimitedString={props.civ.unique_tech} /> */}
+              <TechAccordions unique_techs={props.civ.unique_tech} />
             </Typography>
             <Typography variant="body2" color="text.secondary">
-              Team Bonus
+              Team Bonus (note: applies in 1v1 as well)
             </Typography>
             <Typography
               variant="subtitle2"
