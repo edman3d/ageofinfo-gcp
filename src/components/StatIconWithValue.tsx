@@ -10,9 +10,9 @@ interface StatIconWithValueProps {
 }
 
 export default function StatIconWithValue(props: StatIconWithValueProps) {
-  console.log(props.value);
+  //   console.log(props.value);
   const hasValue = props.value && props.value > 0;
-  console.log(hasValue);
+  //   console.log(hasValue);
   return (
     <div style={{ display: "inline-flex", alignItems: "center" }}>
       {hasValue ?? <StatIcon fileName={props.fileName} iconSize={props.iconSize} />}

@@ -32,14 +32,14 @@ export default function AutoCompleteSelect(props: AutoCompleteSelectProps) {
       <Autocomplete
         value={value}
         onChange={(event: any, newValue: string | null) => {
-          console.log(`newValue: ${newValue}`);
+          // console.log(`newValue: ${newValue}`);
           const chosenCiv = civs?.find((c) => newValue === c.name);
           setValue(newValue);
           props.setSelectedCiv(chosenCiv);
         }}
         inputValue={inputValue}
         onInputChange={(event, newInputValue) => {
-          console.log(`newInputValue: ${newInputValue}`);
+          // console.log(`newInputValue: ${newInputValue}`);
           setInputValue(newInputValue);
         }}
         id="controllable-states-demo"

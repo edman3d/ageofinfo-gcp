@@ -25,9 +25,9 @@ export default function CivCompareDetails(props: CivCompareDetailsProps) {
   const civs = useContext(CivContext);
   const techs = useContext(TechContext);
 
-  console.log(`unit context found ${units?.length} units`);
-  console.log(`civs context found ${civs?.length} civs`);
-  console.log(`techs context found ${techs?.length} techs`);
+  // console.log(`unit context found ${units?.length} units`);
+  // console.log(`civs context found ${civs?.length} civs`);
+  // console.log(`techs context found ${techs?.length} techs`);
 
   return (
     <Card sx={{ height: 1175, backgroundColor: LIGHT_TAN_COLOR }}>
