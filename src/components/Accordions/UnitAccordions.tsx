@@ -8,6 +8,8 @@ import { LIGHT_TAN_COLOR, MEDIUM_TAN_COLOR, DARK_TAN_COLOR } from "../../constan
 
 import getCostObject from "../../util/getCost";
 
+import StatIcon from "../StatIcon";
+
 // should take in a string and return 1 or more accordions (some civs have multiple unique units)
 type UnitAccordionsProps = {
   unique_units: string | null;
@@ -64,7 +66,8 @@ export default function UnitAccordions(props: UnitAccordionsProps) {
                     </Grid>
                     <Grid item xs={9} sx={{ border: "1px solid green" }}></Grid>
                     <Grid item xs={3} sx={{ border: "1px solid red" }}>
-                      <Typography>Wood: {getCostObject(unit.cost).Wood}</Typography>
+                      <StatIcon fileName="wood" iconSize={32} />
+                      <Typography>{getCostObject(unit.cost).Wood}</Typography>
                     </Grid>
                     <Grid item xs={3} sx={{ border: "1px solid red" }}>
                       <Typography>Food: {getCostObject(unit.cost).Food}</Typography>
