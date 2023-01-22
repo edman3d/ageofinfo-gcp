@@ -1,13 +1,13 @@
 import * as React from "react";
 import { useContext } from "react";
-import Accordion from "@mui/material/Accordion";
-import AccordionSummary from "@mui/material/AccordionSummary";
-import AccordionDetails from "@mui/material/AccordionDetails";
-import { CardMedia, Typography } from "@mui/material";
+import { Accordion, AccordionDetails, AccordionSummary, CardMedia, Grid, Typography } from "@mui/material";
 import ExpandMoreIcon from "@mui/icons-material/ExpandMore";
 import { TechContext } from "../../contexts/TechContext";
 import type { Technology } from "../../types";
 import { LIGHT_TAN_COLOR, MEDIUM_TAN_COLOR, DARK_TAN_COLOR } from "../../constants/colors";
+
+import CostDisplay from "../CostDisplay";
+import getCostObject from "../../util/getCost";
 // should take in a string and return 1 or more accordions (some civs have multiple unique units)
 
 type TechAccordionsProps = {
@@ -39,14 +39,30 @@ export default function TechAccordions(props: TechAccordionsProps) {
         techObjects.map((tech) => (
           <Accordion sx={{ backgroundColor: MEDIUM_TAN_COLOR }}>
             <AccordionSummary expandIcon={<ExpandMoreIcon />} aria-controls="panel1a-content" id="panel1a-header">
-              <CardMedia
-                component="img"
-                height="140"
-                image={require(`../../images/technologies/${tech.image}.png`)}
-                alt="unitIcon"
-                sx={{ height: iconSize, width: iconSize, marginRight: "10px" }}
-              />
-              <Typography sx={{ alignSelf: "center" }}>{tech.name}</Typography>
+              <Grid container>
+                <Grid item xs="auto">
+                  <CardMedia
+                    component="img"
+                    height="140"
+                    image={require(`../../images/technologies/${tech.image}.png`)}
+                    alt="unitIcon"
+                    sx={{ height: iconSize, width: iconSize, marginRight: "10px" }}
+                  />
+                </Grid>
+                <Grid item xs="auto">
+                  <Grid container>
+                    <Grid item xs={12}>
+                      {tech.name}
+                    </Grid>
+                    <Grid item xs={12}>
+                      <CostDisplay costObject={getCostObject(tech.cost)} />
+                    </Grid>
+                    {/* <Grid item xs={12}>
+                      Stat details
+                    </Grid> */}
+                  </Grid>
+                </Grid>
+              </Grid>
             </AccordionSummary>
             <AccordionDetails>
               <Typography>{tech.description}</Typography>

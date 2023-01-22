@@ -72,18 +72,6 @@ export default function UnitAccordions(props: UnitAccordionsProps) {
             {/* Dropdown contents */}
             <AccordionDetails>
               <Grid container>
-                {/* <Grid item xs={3}>
-                  <Typography>HP: </Typography>
-                </Grid>
-                <Grid item xs={3}>
-                  <Typography>Atk</Typography>
-                </Grid>
-                <Grid item xs={3}>
-                  <Typography>MDef</Typography>
-                </Grid>
-                <Grid item xs={3}>
-                  <Typography>PDef</Typography>
-                </Grid> */}
                 <Grid item xs={12}>
                   <Typography>{unit.description}</Typography>
                 </Grid>

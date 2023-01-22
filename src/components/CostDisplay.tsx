@@ -1,11 +1,15 @@
 import * as React from "react";
-// import { Accordion, AccordionDetails, AccordionSummary, CardMedia, Grid, Typography } from "@mui/material";
+import { Accordion, AccordionDetails, AccordionSummary, CardMedia, Grid, Typography } from "@mui/material";
 import { CostType } from "../util/getCost";
 import StatIcon from "./StatIcon";
 
 interface CostDisplayProps {
   costObject: CostType;
 }
+
+const costValueVariant = "body2";
+const marginBetweenCostSets = 12;
+const marginBetweenIconAndValue = 4;
 
 export default function CostDisplay(props: CostDisplayProps) {
   const hasWoodCost = props.costObject.Wood !== undefined && props.costObject.Wood > 0;
@@ -18,30 +22,38 @@ export default function CostDisplay(props: CostDisplayProps) {
       <div style={{ display: "inline-flex", alignItems: "center", marginTop: 6 }}>
         {/* Wood */}
         {hasWoodCost ? (
-          <div style={{ display: "inline-flex", alignItems: "center", marginRight: 12 }}>
+          <div style={{ display: "inline-flex", alignItems: "center", marginRight: marginBetweenCostSets }}>
             <StatIcon fileName="wood" iconSize={32} />
-            <div style={{ marginLeft: 2 }}>{props.costObject.Wood}</div>
+            <Typography variant={costValueVariant} style={{ marginLeft: marginBetweenIconAndValue }}>
+              {props.costObject.Wood}
+            </Typography>
           </div>
         ) : null}
         {/* Food */}
         {hasFoodCost ? (
-          <div style={{ display: "inline-flex", alignItems: "center", marginRight: 12 }}>
+          <div style={{ display: "inline-flex", alignItems: "center", marginRight: marginBetweenCostSets }}>
             <StatIcon fileName="food" iconSize={32} />
-            <div style={{ marginLeft: 2 }}>{props.costObject.Food}</div>
+            <Typography variant={costValueVariant} style={{ marginLeft: marginBetweenIconAndValue }}>
+              {props.costObject.Food}
+            </Typography>
           </div>
         ) : null}
         {/* Gold */}
         {hasGoldCost ? (
-          <div style={{ display: "inline-flex", alignItems: "center", marginRight: 12 }}>
+          <div style={{ display: "inline-flex", alignItems: "center", marginRight: marginBetweenCostSets }}>
             <StatIcon fileName="gold" iconSize={32} />
-            <div style={{ marginLeft: 2 }}>{props.costObject.Gold}</div>
+            <Typography variant={costValueVariant} style={{ marginLeft: marginBetweenIconAndValue }}>
+              {props.costObject.Gold}
+            </Typography>
           </div>
         ) : null}
         {/* Stone */}
         {hasStoneCost ? (
-          <div style={{ display: "inline-flex", alignItems: "center", marginRight: 12 }}>
+          <div style={{ display: "inline-flex", alignItems: "center", marginRight: marginBetweenCostSets }}>
             <StatIcon fileName="stone" iconSize={32} />
-            <div style={{ marginLeft: 2 }}>{props.costObject.Stone}</div>
+            <Typography variant={costValueVariant} style={{ marginLeft: marginBetweenIconAndValue }}>
+              {props.costObject.Stone}
+            </Typography>
           </div>
         ) : null}
       </div>
