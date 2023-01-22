@@ -9,6 +9,9 @@ import { LIGHT_TAN_COLOR, MEDIUM_TAN_COLOR, DARK_TAN_COLOR } from "../../constan
 import getCostObject from "../../util/getCost";
 
 import StatIcon from "../StatIcon";
+import StatIconWithValue from "../StatIconWithValue";
+
+import CostDisplay from "../CostDisplay";
 
 // should take in a string and return 1 or more accordions (some civs have multiple unique units)
 type UnitAccordionsProps = {
@@ -41,16 +44,8 @@ export default function UnitAccordions(props: UnitAccordionsProps) {
         unitObjects.map((unit) => (
           <Accordion sx={{ backgroundColor: MEDIUM_TAN_COLOR }}>
             <AccordionSummary expandIcon={<ExpandMoreIcon />} aria-controls="panel1a-content" id="panel1a-header">
-              {/* <CardMedia
-                component="img"
-                height="140"
-                image={require(`../../images/units/${unit.image}.png`)}
-                alt="unitIcon"
-                sx={{ height: iconSize, width: iconSize, marginRight: "10px" }}
-              />
-              <Typography sx={{ alignSelf: "center" }}>{unit.name}</Typography> */}
-              <Grid container sx={{ border: "1px solid black" }}>
-                <Grid item xs={1.5}>
+              <Grid container>
+                <Grid item xs="auto">
                   <CardMedia
                     component="img"
                     height="140"
@@ -59,43 +54,36 @@ export default function UnitAccordions(props: UnitAccordionsProps) {
                     sx={{ height: iconSize, width: iconSize, marginRight: "10px" }}
                   />
                 </Grid>
-                <Grid item xs={10.5}>
+                <Grid item xs="auto">
                   <Grid container>
-                    <Grid item xs={3} sx={{ border: "1px solid green" }}>
-                      <Typography sx={{ alignSelf: "center" }}>{unit.name}</Typography>
+                    <Grid item xs={12}>
+                      {unit.name}
                     </Grid>
-                    <Grid item xs={9} sx={{ border: "1px solid green" }}></Grid>
-                    <Grid item xs={3} sx={{ border: "1px solid red" }}>
-                      <StatIcon fileName="wood" iconSize={32} />
-                      <Typography>{getCostObject(unit.cost).Wood}</Typography>
+                    <Grid item xs={12}>
+                      <CostDisplay costObject={getCostObject(unit.cost)} />
                     </Grid>
-                    <Grid item xs={3} sx={{ border: "1px solid red" }}>
-                      <Typography>Food: {getCostObject(unit.cost).Food}</Typography>
-                    </Grid>
-                    <Grid item xs={3} sx={{ border: "1px solid red" }}>
-                      <Typography>Gold: {getCostObject(unit.cost).Gold}</Typography>
-                    </Grid>
-                    <Grid item xs={3} sx={{ border: "1px solid red" }}>
-                      <Typography>Stone: {getCostObject(unit.cost).Stone}</Typography>
-                    </Grid>
+                    {/* <Grid item xs={12}>
+                      Stat details
+                    </Grid> */}
                   </Grid>
                 </Grid>
               </Grid>
             </AccordionSummary>
+            {/* Dropdown contents */}
             <AccordionDetails>
               <Grid container>
-                <Grid item xs={3}>
-                  <Typography>Wood: </Typography>
+                {/* <Grid item xs={3}>
+                  <Typography>HP: </Typography>
                 </Grid>
                 <Grid item xs={3}>
-                  <Typography>Food</Typography>
+                  <Typography>Atk</Typography>
                 </Grid>
                 <Grid item xs={3}>
-                  <Typography>Gold</Typography>
+                  <Typography>MDef</Typography>
                 </Grid>
                 <Grid item xs={3}>
-                  <Typography>Stone</Typography>
-                </Grid>
+                  <Typography>PDef</Typography>
+                </Grid> */}
                 <Grid item xs={12}>
                   <Typography>{unit.description}</Typography>
                 </Grid>

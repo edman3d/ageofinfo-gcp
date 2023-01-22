@@ -1,7 +1,14 @@
-export default function getCostObject(delimitedString: string) {
+export type CostType = {
+  Wood?: number;
+  Food?: number;
+  Gold?: number;
+  Stone?: number;
+};
+
+export default function getCostObject(delimitedString: string): CostType {
   const costString = delimitedString.replace(";", ",");
   const costObj = JSON.parse(costString);
-  console.log(costObj);
+  // console.log(costObj);
   return costObj;
 }
 
