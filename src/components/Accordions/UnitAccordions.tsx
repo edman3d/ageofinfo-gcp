@@ -36,8 +36,11 @@ const iconSize = "64px";
 
 export default function UnitAccordions(props: UnitAccordionsProps) {
   const allUnits = useContext(UnitContext);
+  console.log("props", props);
   const unitNames: string[] = props.unique_units ? props.unique_units.split(";") : [];
+  console.log("unitNames", unitNames);
   const unitObjects = getUnitObjects(unitNames, allUnits);
+  console.log("unitObjects", unitObjects);
 
   return (
     <div>
