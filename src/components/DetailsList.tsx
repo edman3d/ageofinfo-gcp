@@ -10,7 +10,7 @@ export default function DetailsList(props: DetailsListProps) {
 
   return (
     <ul style={{ marginTop: "0px", paddingLeft: "20px", fontWeight: "normal" }}>
-      {hasABonus ? listItems.map((item) => <li>{item}</li>) : <li>None</li>}
+      {hasABonus ? listItems.map((item, index) => <li key={index}>{item}</li>) : <li>None</li>}
     </ul>
   );
 }

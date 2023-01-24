@@ -30,7 +30,7 @@ export default function AutoCompleteSelect(props: AutoCompleteSelectProps) {
   return (
     <div>
       <Autocomplete
-        value={value}
+        value={value || null}
         onChange={(event: any, newValue: string | null) => {
           // console.log(`newValue: ${newValue}`);
           const chosenCiv = civs?.find((c) => newValue === c.name);

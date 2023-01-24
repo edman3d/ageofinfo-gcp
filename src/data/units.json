@@ -2320,7 +2320,7 @@
     "search_radius": 3,
     "accuracy": 100,
     "blast_radius": 0,
-    "image": "tuetonic-knight",
+    "image": "teutonic-knight",
     "type": "military",
     "armor_class": "Infantry;Unique Unit"
   },
@@ -4870,7 +4870,7 @@
     "search_radius": 3,
     "accuracy": 100,
     "blast_radius": 0,
-    "image": "tuetonic-knight",
+    "image": "teutonic-knight",
     "type": "military",
     "armor_class": "Infantry;Unique Unit"
   },

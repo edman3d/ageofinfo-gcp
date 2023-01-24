@@ -6,6 +6,10 @@ export type CostType = {
 };
 
 export default function getCostObject(delimitedString: string): CostType {
+  console.log(delimitedString);
+  if (delimitedString.length < 4) {
+    return {};
+  }
   const costString = delimitedString.replace(";", ",");
   const costObj = JSON.parse(costString);
   // console.log(costObj);

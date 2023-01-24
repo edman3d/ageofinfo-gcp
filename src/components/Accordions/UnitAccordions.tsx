@@ -43,7 +43,7 @@ export default function UnitAccordions(props: UnitAccordionsProps) {
     <div>
       {unitObjects &&
         unitObjects.map((unit) => (
-          <Accordion sx={{ backgroundColor: MEDIUM_TAN_COLOR }}>
+          <Accordion key={unit.name} sx={{ backgroundColor: MEDIUM_TAN_COLOR }}>
             <AccordionSummary expandIcon={<ExpandMoreIcon />} aria-controls="panel1a-content" id="panel1a-header">
               <Grid container>
                 <Grid item xs="auto">

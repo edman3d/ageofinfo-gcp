@@ -37,7 +37,7 @@ export default function TechAccordions(props: TechAccordionsProps) {
     <div>
       {techObjects &&
         techObjects.map((tech) => (
-          <Accordion sx={{ backgroundColor: MEDIUM_TAN_COLOR }}>
+          <Accordion key={tech.name} sx={{ backgroundColor: MEDIUM_TAN_COLOR }}>
             <AccordionSummary expandIcon={<ExpandMoreIcon />} aria-controls="panel1a-content" id="panel1a-header">
               <Grid container>
                 <Grid item xs="auto">
