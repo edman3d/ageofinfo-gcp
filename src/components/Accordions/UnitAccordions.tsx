@@ -34,7 +34,7 @@ function getUnitObjects(unitNamesToFind: string[], allUnits: Unit[] | null) {
   return unitObjects;
 }
 
-const iconSize = "64px";
+const iconSize = "110px";
 
 export default function UnitAccordions(props: UnitAccordionsProps) {
   const allUnits = useContext(UnitContext);
@@ -63,7 +63,7 @@ export default function UnitAccordions(props: UnitAccordionsProps) {
                 <Grid item xs="auto">
                   <Grid container>
                     <Grid item xs={12}>
-                      {unit.name}
+                      <Typography variant="body1">{unit.name}</Typography>
                     </Grid>
                     <Grid item xs={12}>
                       <CostDisplay costObject={getCostObject(unit.cost)} />
@@ -108,6 +108,30 @@ export default function UnitAccordions(props: UnitAccordionsProps) {
                 <Grid item xs={6}>
                   <Typography variant="caption">Armor Class</Typography>
                   <DetailsList delimitedString={unit.armor_class} />
+                </Grid>
+                <Grid item xs={6}>
+                  <Typography variant="caption">Training Time</Typography>
+                  <Typography variant="subtitle1">{unit.build_time} seconds</Typography>
+                </Grid>
+                <Grid item xs={6}>
+                  <Typography variant="caption">Line of Sight</Typography>
+                  <Typography variant="subtitle1">{unit.line_of_sight}</Typography>
+                </Grid>
+                <Grid item xs={6}>
+                  <Typography variant="caption">Movement Speed</Typography>
+                  <Typography variant="subtitle1">{unit.movement_rate} tiles per second</Typography>
+                </Grid>
+                <Grid item xs={6}>
+                  <Typography variant="caption">Accuracy</Typography>
+                  <Typography variant="subtitle1">{unit.accuracy}</Typography>
+                </Grid>
+                <Grid item xs={6}>
+                  <Typography variant="caption">Reload Time</Typography>
+                  <Typography variant="subtitle1">{unit.reload_time}</Typography>
+                </Grid>
+                <Grid item xs={6}>
+                  <Typography variant="caption">Attack Delay</Typography>
+                  <Typography variant="subtitle1">{unit.attack_delay}</Typography>
                 </Grid>
               </Grid>
             </AccordionDetails>
