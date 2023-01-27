@@ -63,7 +63,7 @@ export default function UnitAccordions(props: UnitAccordionsProps) {
                 <Grid item xs={9.5}>
                   <Grid container>
                     <Grid item xs={12}>
-                      <Typography variant="button">{unit.name}</Typography>
+                      <Typography variant="body1">{unit.name}</Typography>
                     </Grid>
                     <Grid item xs={12}>
                       <CostDisplay costObject={getCostObject(unit.cost)} />
@@ -78,9 +78,6 @@ export default function UnitAccordions(props: UnitAccordionsProps) {
             {/* Dropdown contents */}
             <AccordionDetails>
               <Grid container>
-                {/* <Grid item xs={12}>
-                  <Typography>{unit.description}</Typography>
-                </Grid> */}
                 <Grid item xs={12}>
                   <Typography variant="caption">Description</Typography>
                   <Typography variant="subtitle1">{unit.description}</Typography>
