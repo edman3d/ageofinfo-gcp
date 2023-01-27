@@ -10,7 +10,15 @@ export default function DetailsList(props: DetailsListProps) {
 
   return (
     <ul style={{ marginTop: "0px", paddingLeft: "20px", fontWeight: "normal" }}>
-      {hasABonus ? listItems.map((item, index) => <li key={index}>{item}</li>) : <li>None</li>}
+      {hasABonus ? (
+        listItems.map((item, index) => (
+          <li key={index}>
+            <Typography variant="subtitle1"> {item} </Typography>{" "}
+          </li>
+        ))
+      ) : (
+        <li>None</li>
+      )}
     </ul>
   );
 }

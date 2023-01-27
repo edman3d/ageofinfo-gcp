@@ -1,5 +1,5 @@
 import * as React from "react";
-import { Card, CardActionArea, CardContent, CardMedia, Typography } from "@mui/material";
+import { Card, CardActionArea, CardContent, CardMedia, Divider, Grid, Typography } from "@mui/material";
 import type { Civilization } from "../types";
 import DetailsList from "./DetailsList";
 
@@ -50,26 +50,35 @@ export default function CivCompareDetails(props: CivCompareDetailsProps) {
       <CardContent sx={{ height: 750 }}>
         {props.civ ? (
           <>
-            <Typography variant="body2" color="text.secondary">
-              Army Type
-            </Typography>
+            <Divider textAlign="left">
+              <Typography variant="body2" color="text.secondary">
+                Civ Bonus
+              </Typography>
+            </Divider>
+            {/* <Typography variant="body2" color="text.secondary">
+              Civ Bonus
+            </Typography> */}
             <Typography
               variant="subtitle2"
               color="text.secondary"
               sx={{ marginBottom: marginBottom, paddingLeft: paddingLeft }}
             >
-              <DetailsList delimitedString={props.civ.army_type} />
+              <DetailsList delimitedString={props.civ.civilization_bonus} />
             </Typography>
-            <Typography variant="body2" color="text.secondary">
-              Expansion
-            </Typography>
+
+            <Divider textAlign="left">
+              <Typography variant="body2" color="text.secondary">
+                Team Bonus
+              </Typography>
+            </Divider>
             <Typography
               variant="subtitle2"
               color="text.secondary"
               sx={{ marginBottom: marginBottom, paddingLeft: paddingLeft }}
             >
-              <DetailsList delimitedString={props.civ.expansion} />
+              <DetailsList delimitedString={props.civ.team_bonus} />
             </Typography>
+
             <Typography variant="body2" color="text.secondary">
               Unique Unit/s
             </Typography>
@@ -88,29 +97,9 @@ export default function CivCompareDetails(props: CivCompareDetailsProps) {
               color="text.secondary"
               sx={{ marginBottom: marginBottom, paddingLeft: paddingLeft }}
             >
-              {/* <DetailsList delimitedString={props.civ.unique_tech} /> */}
               <TechAccordions unique_techs={props.civ.unique_tech} />
             </Typography>
-            <Typography variant="body2" color="text.secondary">
-              Team Bonus (note: applies in 1v1)
-            </Typography>
-            <Typography
-              variant="subtitle2"
-              color="text.secondary"
-              sx={{ marginBottom: marginBottom, paddingLeft: paddingLeft }}
-            >
-              <DetailsList delimitedString={props.civ.team_bonus} />
-            </Typography>
-            <Typography variant="body2" color="text.secondary">
-              Civ Bonus
-            </Typography>
-            <Typography
-              variant="subtitle2"
-              color="text.secondary"
-              sx={{ marginBottom: marginBottom, paddingLeft: paddingLeft }}
-            >
-              <DetailsList delimitedString={props.civ.civilization_bonus} />
-            </Typography>
+
             <Typography variant="body2" color="text.secondary">
               Unique Building/s
             </Typography>
@@ -121,6 +110,32 @@ export default function CivCompareDetails(props: CivCompareDetailsProps) {
                 <DetailsList delimitedString={"None"} />
               )}
             </Typography>
+            <Grid container>
+              <Grid item xs={6}>
+                <Typography variant="body2" color="text.secondary">
+                  Army Type
+                </Typography>
+                <Typography
+                  variant="subtitle2"
+                  color="text.secondary"
+                  sx={{ marginBottom: marginBottom, paddingLeft: paddingLeft }}
+                >
+                  <DetailsList delimitedString={props.civ.army_type} />
+                </Typography>
+              </Grid>
+              <Grid item xs={6}>
+                <Typography variant="body2" color="text.secondary">
+                  Expansion
+                </Typography>
+                <Typography
+                  variant="subtitle2"
+                  color="text.secondary"
+                  sx={{ marginBottom: marginBottom, paddingLeft: paddingLeft }}
+                >
+                  <DetailsList delimitedString={props.civ.expansion} />
+                </Typography>
+              </Grid>
+            </Grid>
           </>
         ) : null}
       </CardContent>
