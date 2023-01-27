@@ -30,7 +30,7 @@ export default function CivCompareDetails(props: CivCompareDetailsProps) {
   // console.log(`techs context found ${techs?.length} techs`);
 
   return (
-    <Card sx={{ height: 1175, backgroundColor: LIGHT_TAN_COLOR }}>
+    <Card sx={{ height: 1175, backgroundColor: LIGHT_TAN_COLOR, overflowY: "auto" }}>
       <div style={{ display: "flex", alignItems: "center", paddingLeft: 4, paddingTop: 4 }}>
         <CardMedia
           component="img"
