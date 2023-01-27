@@ -1,5 +1,5 @@
 import * as React from "react";
-import { Box, Grid } from "@mui/material";
+import { Box, Grid, Typography } from "@mui/material";
 import Title from "./Title";
 import type { Civilization } from "../types";
 import CivCompareDetails from "./CivCompareDetails";
@@ -11,7 +11,9 @@ export default function CivCompare() {
 
   return (
     <Box sx={{ width: "100%" }}>
-      <Title>Compare Civilizations</Title>
+      <Typography variant="h5" color="black" sx={{ marginBottom: 2 }}>
+        Compare Civilizations
+      </Typography>
       <Grid container spacing={3}>
         <Grid item xs={6}>
           <AutoCompleteSelect setSelectedCiv={setSelectedCivOne} />
