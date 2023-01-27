@@ -42,7 +42,7 @@ export default function UnitAccordions(props: UnitAccordionsProps) {
   const unitNames: string[] = props.unique_units ? props.unique_units.split(";") : [];
   // console.log("unitNames", unitNames);
   const unitObjects = getUnitObjects(unitNames, allUnits);
-  // console.log("unitObjects", unitObjects);
+  console.log("unitObjects", unitObjects);
 
   return (
     <div>
