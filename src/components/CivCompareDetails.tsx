@@ -30,7 +30,24 @@ export default function CivCompareDetails(props: CivCompareDetailsProps) {
   // console.log(`techs context found ${techs?.length} techs`);
 
   return (
-    <Card sx={{ height: 1175, backgroundColor: LIGHT_TAN_COLOR, overflowY: "auto" }}>
+    <Card
+      sx={{
+        height: 1175,
+        backgroundColor: LIGHT_TAN_COLOR,
+        overflowY: "auto",
+        "&::-webkit-scrollbar": {
+          width: 20,
+        },
+        "&::-webkit-scrollbar-track": {
+          backgroundColor: DARK_TAN_COLOR,
+        },
+        "&::-webkit-scrollbar-thumb": {
+          backgroundColor: "#e4bd9a",
+          border: "1px solid #966c46",
+          borderRadius: 1,
+        },
+      }}
+    >
       <div style={{ display: "flex", alignItems: "center", paddingLeft: 4, paddingTop: 4 }}>
         <CardMedia
           component="img"
@@ -47,7 +64,7 @@ export default function CivCompareDetails(props: CivCompareDetailsProps) {
           {props.civ ? props.civ.name : "Select a Civilization"}
         </Typography>
       </div>
-      <CardContent sx={{ height: 750 }}>
+      <CardContent sx={{ height: 750, paddingTop: "0" }}>
         {props.civ ? (
           <>
             <Divider textAlign="left">
