@@ -14,6 +14,8 @@ import StatIconWithValue from "../StatIconWithValue";
 import CostDisplay from "../CostDisplay";
 import DetailsList from "../DetailsList";
 
+import StatDisplay from "../StatDisplay";
+
 // should take in a string and return 1 or more accordions (some civs have multiple unique units)
 type UnitAccordionsProps = {
   unique_units: string | null;
@@ -66,9 +68,9 @@ export default function UnitAccordions(props: UnitAccordionsProps) {
                     <Grid item xs={12}>
                       <CostDisplay costObject={getCostObject(unit.cost)} />
                     </Grid>
-                    {/* <Grid item xs={12}>
-                      Stat details
-                    </Grid> */}
+                    <Grid item xs={12}>
+                      <StatDisplay unit={unit} />
+                    </Grid>
                   </Grid>
                 </Grid>
               </Grid>

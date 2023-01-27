@@ -6,7 +6,7 @@ export type CostType = {
 };
 
 export default function getCostObject(delimitedString: string): CostType {
-  console.log(delimitedString);
+  // console.log(delimitedString);
   if (delimitedString.length < 4) {
     return {};
   }
