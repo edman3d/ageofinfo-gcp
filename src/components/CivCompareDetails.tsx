@@ -96,9 +96,11 @@ export default function CivCompareDetails(props: CivCompareDetailsProps) {
               <DetailsList delimitedString={props.civ.team_bonus} />
             </Typography>
 
-            <Typography variant="body2" color="text.secondary">
-              Unique Unit/s
-            </Typography>
+            <Divider textAlign="left" sx={{ marginBottom: "6px" }}>
+              <Typography variant="body2" color="text.secondary">
+                Unique Units
+              </Typography>
+            </Divider>
             <Typography
               variant="subtitle2"
               color="text.secondary"
@@ -106,9 +108,11 @@ export default function CivCompareDetails(props: CivCompareDetailsProps) {
             >
               <UnitAccordions unique_units={props.civ.unique_unit} />
             </Typography>
-            <Typography variant="body2" color="text.secondary">
-              Unique Techs
-            </Typography>
+            <Divider textAlign="left" sx={{ marginBottom: "6px" }}>
+              <Typography variant="body2" color="text.secondary">
+                Unique Techs
+              </Typography>
+            </Divider>
             <Typography
               variant="subtitle2"
               color="text.secondary"
@@ -117,9 +121,11 @@ export default function CivCompareDetails(props: CivCompareDetailsProps) {
               <TechAccordions unique_techs={props.civ.unique_tech} />
             </Typography>
 
-            <Typography variant="body2" color="text.secondary">
-              Unique Building/s
-            </Typography>
+            <Divider textAlign="left" sx={{ marginBottom: "6px" }}>
+              <Typography variant="body2" color="text.secondary">
+                Unique Buildings
+              </Typography>
+            </Divider>
             <Typography variant="subtitle2" color="text.secondary">
               {props.civ.unique_buildings.length > 0 ? (
                 <DetailsList delimitedString={props.civ.unique_buildings} />
