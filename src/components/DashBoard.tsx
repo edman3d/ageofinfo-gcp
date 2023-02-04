@@ -1,19 +1,7 @@
 import * as React from "react";
 import { useState } from "react";
-import { styled, createTheme, ThemeProvider } from "@mui/material/styles";
-import {
-  Badge,
-  Box,
-  Container,
-  CssBaseline,
-  Divider,
-  Grid,
-  List,
-  IconButton,
-  Paper,
-  Toolbar,
-  Typography,
-} from "@mui/material";
+import { createTheme, ThemeProvider } from "@mui/material/styles";
+import { Badge, Box, Container, CssBaseline, Divider, List, IconButton, Toolbar, Typography } from "@mui/material";
 import {
   ChevronLeft as ChevronLeftIcon,
   Menu as MenuIcon,
@@ -23,12 +11,11 @@ import {
 import { Routes, Route } from "react-router-dom";
 import type { Building, Civilization, Technology, Unit } from "../types";
 import { BuildingContext, CivContext, TechContext, UnitContext } from "../contexts";
-import { LIGHT_TAN_COLOR, MEDIUM_TAN_COLOR, DARK_TAN_COLOR } from "../constants/colors";
+import { DARK_TAN_COLOR } from "../constants/colors";
 
 import { AppBar } from "./AppBar";
 import { Drawer } from "./Drawer";
 import Copyright from "./Copyright";
-import CivCompare from "./CivCompare";
 import { mainListItems, secondaryListItems } from "./listItems";
 
 import "@fontsource/roboto/300.css";
@@ -36,7 +23,11 @@ import "@fontsource/roboto/400.css";
 import "@fontsource/roboto/500.css";
 import "@fontsource/roboto/700.css";
 import CivComparePage from "../pages/CivComparePage";
+// Data Tables
 import CivDataPage from "../pages/CivDataPage";
+import TechDataPage from "../pages/TechDataPage";
+import BuildingDataPage from "../pages/BuildingDataPage";
+import UnitDataPage from "../pages/UnitDataPage";
 
 let unitData: Unit[] = require("./../data/units.json");
 let techData: Technology[] = require("./../data/techs.json");
@@ -65,6 +56,7 @@ function DashboardContent() {
             <ThemeProvider theme={mdTheme}>
               <Box sx={{ display: "flex" }}>
                 <CssBaseline />
+
                 <AppBar position="absolute" open={open}>
                   <Toolbar
                     sx={{
@@ -93,6 +85,7 @@ function DashboardContent() {
                     </IconButton>
                   </Toolbar>
                 </AppBar>
+
                 <Drawer variant="permanent" open={open}>
                   <Toolbar
                     sx={{
@@ -113,6 +106,7 @@ function DashboardContent() {
                     {secondaryListItems}
                   </List>
                 </Drawer>
+
                 <Box
                   component="main"
                   sx={{
@@ -127,6 +121,9 @@ function DashboardContent() {
                     <Routes>
                       <Route path="/" element={<CivComparePage />} />
                       <Route path="/civdata" element={<CivDataPage />} />
+                      <Route path="/unitdata" element={<UnitDataPage />} />
+                      <Route path="/techdata" element={<TechDataPage />} />
+                      <Route path="/buildingdata" element={<BuildingDataPage />} />
                     </Routes>
                     <Copyright sx={{ pt: 4 }} />
                   </Container>

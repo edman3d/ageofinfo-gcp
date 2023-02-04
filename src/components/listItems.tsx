@@ -28,16 +28,22 @@ export const mainListItems = (
       </ListItemButton>
     </Link>
 
-    <Link component={RouterLink} to="civdata" style={{ textDecoration: "none", color: TEXT_COLOR_MAIN }}>
+    {/* <Link component={RouterLink} to="civdata" style={{ textDecoration: "none", color: TEXT_COLOR_MAIN }}>
       <ListItemButton>
         <ListItemIcon>
           <BarChartIcon />
         </ListItemIcon>
         <ListItemText primary="Compare Units" />
       </ListItemButton>
-    </Link>
+    </Link> */}
   </React.Fragment>
 );
+
+// <Route path="/" element={<CivComparePage />} />
+// <Route path="/civdata" element={<CivDataPage />} />
+// <Route path="/unitdata" element={<UnitDataPage />} />
+// <Route path="/techdata" element={<TechDataPage />} />
+// <Route path="/buildingdata" element={<BuildingDataPage />} />
 
 export const secondaryListItems = (
   <React.Fragment>
@@ -45,30 +51,40 @@ export const secondaryListItems = (
       Data Tables
     </ListSubheader>
 
-    <ListItemButton>
-      <ListItemIcon>
-        <PeopleIcon />
-      </ListItemIcon>
-      <ListItemText primary="Units" />
-    </ListItemButton>
+    <Link component={RouterLink} to="unitdata" style={{ textDecoration: "none", color: TEXT_COLOR_MAIN }}>
+      <ListItemButton>
+        <ListItemIcon>
+          <AssignmentIcon />
+        </ListItemIcon>
+        <ListItemText primary="Units" />
+      </ListItemButton>
+    </Link>
 
-    <ListItemButton>
-      <ListItemIcon>
-        <ShoppingCartIcon />
-      </ListItemIcon>
-      <ListItemText primary="Civilizations" />
-    </ListItemButton>
-    <ListItemButton>
-      <ListItemIcon>
-        <AssignmentIcon />
-      </ListItemIcon>
-      <ListItemText primary="Technologies" />
-    </ListItemButton>
-    <ListItemButton>
-      <ListItemIcon>
-        <LayersIcon />
-      </ListItemIcon>
-      <ListItemText primary="Buildings" />
-    </ListItemButton>
+    <Link component={RouterLink} to="civdata" style={{ textDecoration: "none", color: TEXT_COLOR_MAIN }}>
+      <ListItemButton>
+        <ListItemIcon>
+          <ShoppingCartIcon />
+        </ListItemIcon>
+        <ListItemText primary="Civilizations" />
+      </ListItemButton>
+    </Link>
+
+    <Link component={RouterLink} to="techdata" style={{ textDecoration: "none", color: TEXT_COLOR_MAIN }}>
+      <ListItemButton>
+        <ListItemIcon>
+          <LayersIcon />
+        </ListItemIcon>
+        <ListItemText primary="Technologies" />
+      </ListItemButton>
+    </Link>
+
+    <Link component={RouterLink} to="buildingdata" style={{ textDecoration: "none", color: TEXT_COLOR_MAIN }}>
+      <ListItemButton>
+        <ListItemIcon>
+          <LayersIcon />
+        </ListItemIcon>
+        <ListItemText primary="Buildings" />
+      </ListItemButton>
+    </Link>
   </React.Fragment>
 );
