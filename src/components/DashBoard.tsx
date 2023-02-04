@@ -20,6 +20,7 @@ import {
   Notifications as NotificationsIcon,
 } from "@mui/icons-material";
 
+import { Routes, Route } from "react-router-dom";
 import type { Building, Civilization, Technology, Unit } from "../types";
 import { BuildingContext, CivContext, TechContext, UnitContext } from "../contexts";
 import { LIGHT_TAN_COLOR, MEDIUM_TAN_COLOR, DARK_TAN_COLOR } from "../constants/colors";
@@ -29,6 +30,13 @@ import { Drawer } from "./Drawer";
 import Copyright from "./Copyright";
 import CivCompare from "./CivCompare";
 import { mainListItems, secondaryListItems } from "./listItems";
+
+import "@fontsource/roboto/300.css";
+import "@fontsource/roboto/400.css";
+import "@fontsource/roboto/500.css";
+import "@fontsource/roboto/700.css";
+import CivComparePage from "../pages/CivComparePage";
+import CivDataPage from "../pages/CivDataPage";
 
 let unitData: Unit[] = require("./../data/units.json");
 let techData: Technology[] = require("./../data/techs.json");
@@ -116,16 +124,10 @@ function DashboardContent() {
                 >
                   <Toolbar />
                   <Container maxWidth="xl" sx={{ mt: 4, mb: 4, backgroundColor: DARK_TAN_COLOR }}>
-                    <Grid container spacing={3}>
-                      {/* Civilization Compare Section */}
-                      <Grid item xs={12}>
-                        <Paper
-                          sx={{ p: 2, display: "flex", flexDirection: "column", backgroundColor: MEDIUM_TAN_COLOR }}
-                        >
-                          <CivCompare />
-                        </Paper>
-                      </Grid>
-                    </Grid>
+                    <Routes>
+                      <Route path="/" element={<CivComparePage />} />
+                      <Route path="/civdata" element={<CivDataPage />} />
+                    </Routes>
                     <Copyright sx={{ pt: 4 }} />
                   </Container>
                 </Box>
