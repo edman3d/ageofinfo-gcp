@@ -7,7 +7,6 @@ import {
   Container,
   CssBaseline,
   Divider,
-  Drawer as MuiDrawer,
   Grid,
   List,
   IconButton,
@@ -15,7 +14,6 @@ import {
   Toolbar,
   Typography,
 } from "@mui/material";
-import MuiAppBar, { AppBarProps as MuiAppBarProps } from "@mui/material/AppBar";
 import {
   ChevronLeft as ChevronLeftIcon,
   Menu as MenuIcon,
@@ -26,6 +24,8 @@ import type { Building, Civilization, Technology, Unit } from "../types";
 import { BuildingContext, CivContext, TechContext, UnitContext } from "../contexts";
 import { LIGHT_TAN_COLOR, MEDIUM_TAN_COLOR, DARK_TAN_COLOR } from "../constants/colors";
 
+import { AppBar } from "./AppBar";
+import { Drawer } from "./Drawer";
 import Copyright from "./Copyright";
 import CivCompare from "./CivCompare";
 import { mainListItems, secondaryListItems } from "./listItems";
@@ -34,57 +34,6 @@ let unitData: Unit[] = require("./../data/units.json");
 let techData: Technology[] = require("./../data/techs.json");
 let civData: Civilization[] = require("./../data/civs.json");
 let buildingData: Building[] = require("./../data/buildings.json");
-
-const drawerWidth: number = 240;
-
-// react router tutorial to use https://www.youtube.com/watch?v=2aumoR0-jmQ
-
-interface AppBarProps extends MuiAppBarProps {
-  open?: boolean;
-}
-
-const AppBar = styled(MuiAppBar, {
-  shouldForwardProp: (prop) => prop !== "open",
-})<AppBarProps>(({ theme, open }) => ({
-  zIndex: theme.zIndex.drawer + 1,
-  transition: theme.transitions.create(["width", "margin"], {
-    easing: theme.transitions.easing.sharp,
-    duration: theme.transitions.duration.leavingScreen,
-  }),
-  backgroundColor: MEDIUM_TAN_COLOR,
-  ...(open && {
-    marginLeft: drawerWidth,
-    width: `calc(100% - ${drawerWidth}px)`,
-    transition: theme.transitions.create(["width", "margin"], {
-      easing: theme.transitions.easing.sharp,
-      duration: theme.transitions.duration.enteringScreen,
-    }),
-  }),
-}));
-
-const Drawer = styled(MuiDrawer, { shouldForwardProp: (prop) => prop !== "open" })(({ theme, open }) => ({
-  "& .MuiDrawer-paper": {
-    position: "relative",
-    whiteSpace: "nowrap",
-    width: drawerWidth,
-    transition: theme.transitions.create("width", {
-      easing: theme.transitions.easing.sharp,
-      duration: theme.transitions.duration.enteringScreen,
-    }),
-    boxSizing: "border-box",
-    ...(!open && {
-      overflowX: "hidden",
-      transition: theme.transitions.create("width", {
-        easing: theme.transitions.easing.sharp,
-        duration: theme.transitions.duration.leavingScreen,
-      }),
-      width: theme.spacing(7),
-      [theme.breakpoints.up("sm")]: {
-        width: theme.spacing(9),
-      },
-    }),
-  },
-}));
 
 const mdTheme = createTheme();
 
