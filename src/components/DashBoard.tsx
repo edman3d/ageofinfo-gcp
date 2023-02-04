@@ -24,17 +24,19 @@ import Orders from "./Orders";
 import DataGridCivs from "./DataGridCivs";
 import CivCompare from "./CivCompare";
 // react router tutorial to use https://www.youtube.com/watch?v=2aumoR0-jmQ
-import type { Civilization, Technology, Unit } from "../types";
+import type { Building, Civilization, Technology, Unit } from "../types";
 import { useState } from "react";
 import { UnitContext } from "../contexts/UnitContext";
 import { CivContext } from "../contexts/CivContext";
 import { TechContext } from "../contexts/TechContext";
+import { BuildingContext } from "../contexts/BuildingContext";
 
 import { LIGHT_TAN_COLOR, MEDIUM_TAN_COLOR, DARK_TAN_COLOR } from "../constants/colors";
 
 let unitData: Unit[] = require("./../data/units.json");
 let techData: Technology[] = require("./../data/techs.json");
 let civData: Civilization[] = require("./../data/civs.json");
+let buildingData: Building[] = require("./../data/buildings.json");
 
 function Copyright(props: any) {
   return (
@@ -101,65 +103,71 @@ const Drawer = styled(MuiDrawer, { shouldForwardProp: (prop) => prop !== "open" 
 const mdTheme = createTheme();
 
 function DashboardContent() {
-  const [open, setOpen] = React.useState(false);
+  const [open, setOpen] = useState(false);
   const [units, setUnits] = useState(unitData);
   const [civs, setCivs] = useState(civData);
   const [techs, setTechs] = useState(techData);
+  const [buildings, setBuildings] = useState(buildingData);
+  console.log(`found ${buildings.length} buildings`);
 
   const toggleDrawer = () => {
     setOpen(!open);
   };
 
   return (
-    <TechContext.Provider value={techs}>
-      <CivContext.Provider value={civs}>
-        <UnitContext.Provider value={units}>
-          <ThemeProvider theme={mdTheme}>
-            <Box sx={{ display: "flex" }}>
-              <CssBaseline />
-              <AppBar position="absolute" open={open}>
-                <Toolbar
+    <BuildingContext.Provider value={buildings}>
+      <TechContext.Provider value={techs}>
+        <CivContext.Provider value={civs}>
+          <UnitContext.Provider value={units}>
+            <ThemeProvider theme={mdTheme}>
+              <Box sx={{ display: "flex" }}>
+                <CssBaseline />
+                <AppBar position="absolute" open={open}>
+                  <Toolbar
+                    sx={{
+                      pr: "24px", // keep right padding when drawer closed
+                    }}
+                  >
+                    <Typography component="h1" variant="h6" color="black" noWrap sx={{ flexGrow: 1 }}>
+                      AgeOfInfo Dashboard
+                    </Typography>
+                    <IconButton color="inherit">
+                      <Badge badgeContent={4} color="secondary">
+                        <NotificationsIcon />
+                      </Badge>
+                    </IconButton>
+                  </Toolbar>
+                </AppBar>
+                <Box
+                  component="main"
                   sx={{
-                    pr: "24px", // keep right padding when drawer closed
+                    backgroundColor: DARK_TAN_COLOR,
+                    flexGrow: 1,
+                    height: "100vh",
+                    overflow: "auto",
                   }}
                 >
-                  <Typography component="h1" variant="h6" color="black" noWrap sx={{ flexGrow: 1 }}>
-                    AgeOfInfo Dashboard
-                  </Typography>
-                  <IconButton color="inherit">
-                    <Badge badgeContent={4} color="secondary">
-                      <NotificationsIcon />
-                    </Badge>
-                  </IconButton>
-                </Toolbar>
-              </AppBar>
-              <Box
-                component="main"
-                sx={{
-                  backgroundColor: DARK_TAN_COLOR,
-                  flexGrow: 1,
-                  height: "100vh",
-                  overflow: "auto",
-                }}
-              >
-                <Toolbar />
-                <Container maxWidth="xl" sx={{ mt: 4, mb: 4, backgroundColor: DARK_TAN_COLOR }}>
-                  <Grid container spacing={3}>
-                    {/* Civilization Compare Section */}
-                    <Grid item xs={12}>
-                      <Paper sx={{ p: 2, display: "flex", flexDirection: "column", backgroundColor: MEDIUM_TAN_COLOR }}>
-                        <CivCompare />
-                      </Paper>
+                  <Toolbar />
+                  <Container maxWidth="xl" sx={{ mt: 4, mb: 4, backgroundColor: DARK_TAN_COLOR }}>
+                    <Grid container spacing={3}>
+                      {/* Civilization Compare Section */}
+                      <Grid item xs={12}>
+                        <Paper
+                          sx={{ p: 2, display: "flex", flexDirection: "column", backgroundColor: MEDIUM_TAN_COLOR }}
+                        >
+                          <CivCompare />
+                        </Paper>
+                      </Grid>
                     </Grid>
-                  </Grid>
-                  <Copyright sx={{ pt: 4 }} />
-                </Container>
+                    <Copyright sx={{ pt: 4 }} />
+                  </Container>
+                </Box>
               </Box>
-            </Box>
-          </ThemeProvider>
-        </UnitContext.Provider>
-      </CivContext.Provider>
-    </TechContext.Provider>
+            </ThemeProvider>
+          </UnitContext.Provider>
+        </CivContext.Provider>
+      </TechContext.Provider>
+    </BuildingContext.Provider>
   );
 }
 

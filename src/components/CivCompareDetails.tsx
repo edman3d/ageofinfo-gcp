@@ -12,6 +12,7 @@ import { LIGHT_TAN_COLOR, MEDIUM_TAN_COLOR, DARK_TAN_COLOR } from "../constants/
 
 import UnitAccordions from "./Accordions/UnitAccordions";
 import TechAccordions from "./Accordions/TechAddordions";
+import BuildingAccordions from "./Accordions/BuildingAccordions";
 
 const marginBottom = "10px"; // margin between stat rows
 const paddingLeft = "0px";
@@ -126,13 +127,14 @@ export default function CivCompareDetails(props: CivCompareDetailsProps) {
                 Unique Buildings
               </Typography>
             </Divider>
-            <Typography variant="subtitle2" color="text.secondary">
-              {props.civ.unique_buildings.length > 0 ? (
-                <DetailsList delimitedString={props.civ.unique_buildings} />
-              ) : (
-                <DetailsList delimitedString={"None"} />
-              )}
+            <Typography
+              variant="subtitle2"
+              color="text.secondary"
+              sx={{ marginBottom: marginBottom, paddingLeft: paddingLeft }}
+            >
+              <BuildingAccordions unique_buildings={props.civ.unique_buildings} />
             </Typography>
+
             <Grid container>
               <Grid item xs={6}>
                 <Typography variant="body2" color="text.secondary">
