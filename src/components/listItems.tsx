@@ -72,7 +72,7 @@ export const secondaryListItems = (
     <Link component={RouterLink} to="techdata" style={{ textDecoration: "none", color: TEXT_COLOR_MAIN }}>
       <ListItemButton>
         <ListItemIcon>
-          <LayersIcon />
+          <BarChartIcon />
         </ListItemIcon>
         <ListItemText primary="Technologies" />
       </ListItemButton>
