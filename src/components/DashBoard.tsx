@@ -33,23 +33,12 @@ import { BuildingContext } from "../contexts/BuildingContext";
 
 import { LIGHT_TAN_COLOR, MEDIUM_TAN_COLOR, DARK_TAN_COLOR } from "../constants/colors";
 
+import Copyright from "./Copyright";
+
 let unitData: Unit[] = require("./../data/units.json");
 let techData: Technology[] = require("./../data/techs.json");
 let civData: Civilization[] = require("./../data/civs.json");
 let buildingData: Building[] = require("./../data/buildings.json");
-
-function Copyright(props: any) {
-  return (
-    <Typography variant="body2" color="text.secondary" align="center" {...props}>
-      {"Copyright © "}
-      <Link color="inherit" href="https://mui.com/">
-        edman3d
-      </Link>{" "}
-      {new Date().getFullYear()}
-      {"."}
-    </Typography>
-  );
-}
 
 const drawerWidth: number = 240;
 
@@ -103,7 +92,7 @@ const Drawer = styled(MuiDrawer, { shouldForwardProp: (prop) => prop !== "open" 
 const mdTheme = createTheme();
 
 function DashboardContent() {
-  const [open, setOpen] = useState(false);
+  const [open, setOpen] = useState(true);
   const [units, setUnits] = useState(unitData);
   const [civs, setCivs] = useState(civData);
   const [techs, setTechs] = useState(techData);
@@ -128,6 +117,18 @@ function DashboardContent() {
                       pr: "24px", // keep right padding when drawer closed
                     }}
                   >
+                    <IconButton
+                      edge="start"
+                      color="inherit"
+                      aria-label="open drawer"
+                      onClick={toggleDrawer}
+                      sx={{
+                        marginRight: "36px",
+                        ...(open && { display: "none" }),
+                      }}
+                    >
+                      <MenuIcon />
+                    </IconButton>
                     <Typography component="h1" variant="h6" color="black" noWrap sx={{ flexGrow: 1 }}>
                       AgeOfInfo Dashboard
                     </Typography>
@@ -138,6 +139,26 @@ function DashboardContent() {
                     </IconButton>
                   </Toolbar>
                 </AppBar>
+                <Drawer variant="permanent" open={open}>
+                  <Toolbar
+                    sx={{
+                      display: "flex",
+                      alignItems: "center",
+                      justifyContent: "flex-end",
+                      px: [1],
+                    }}
+                  >
+                    <IconButton onClick={toggleDrawer}>
+                      <ChevronLeftIcon />
+                    </IconButton>
+                  </Toolbar>
+                  <Divider />
+                  <List component="nav">
+                    {mainListItems}
+                    <Divider sx={{ my: 1 }} />
+                    {secondaryListItems}
+                  </List>
+                </Drawer>
                 <Box
                   component="main"
                   sx={{
