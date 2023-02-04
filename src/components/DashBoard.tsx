@@ -73,7 +73,7 @@ function DashboardContent() {
                         ...(open && { display: "none" }),
                       }}
                     >
-                      <MenuIcon />
+                      <MenuIcon sx={{ color: DARK_TAN_COLOR }} />
                     </IconButton>
                     <Typography component="h1" variant="h6" color="black" noWrap sx={{ flexGrow: 1 }}>
                       AgeOfInfo Dashboard

@@ -13,7 +13,7 @@ import { LIGHT_TAN_COLOR, MEDIUM_TAN_COLOR, DARK_TAN_COLOR } from "../constants/
 
 export const mainListItems = (
   <React.Fragment>
-    <ListSubheader component="div" inset sx={{ backgroundColor: MEDIUM_TAN_COLOR }}>
+    <ListSubheader component="div" inset sx={{ backgroundColor: LIGHT_TAN_COLOR }}>
       Tools
     </ListSubheader>
     <ListItemButton>
@@ -33,7 +33,7 @@ export const mainListItems = (
 
 export const secondaryListItems = (
   <React.Fragment>
-    <ListSubheader component="div" inset sx={{ backgroundColor: MEDIUM_TAN_COLOR }}>
+    <ListSubheader component="div" inset sx={{ backgroundColor: LIGHT_TAN_COLOR }}>
       Data Tables
     </ListSubheader>
     <ListItemButton>
