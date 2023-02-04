@@ -8,6 +8,7 @@ import { LIGHT_TAN_COLOR, MEDIUM_TAN_COLOR, DARK_TAN_COLOR } from "../../constan
 
 import CostDisplay from "../CostDisplay";
 import getCostObject from "../../util/getCost";
+import DetailsList from "../DetailsList";
 // should take in a string and return 1 or more accordions (some civs have multiple unique units)
 
 type BuildingAccordionsProps = {
@@ -35,7 +36,7 @@ export default function BuildingAccordions(props: BuildingAccordionsProps) {
 
   return (
     <div>
-      {buildingObjects &&
+      {buildingObjects && buildingObjects.length > 0 ? (
         buildingObjects.map((building) => (
           <Accordion key={building.name} sx={{ backgroundColor: MEDIUM_TAN_COLOR }}>
             <AccordionSummary expandIcon={<ExpandMoreIcon />} aria-controls="panel1a-content" id="panel1a-header">
@@ -45,7 +46,7 @@ export default function BuildingAccordions(props: BuildingAccordionsProps) {
                     component="img"
                     height="140"
                     image={require(`../../images/buildings/${building.image}.png`)}
-                    alt="unitIcon"
+                    alt="buildingIcon"
                     sx={{ height: iconSize, width: iconSize, marginRight: "10px" }}
                   />
                 </Grid>
@@ -95,7 +96,10 @@ export default function BuildingAccordions(props: BuildingAccordionsProps) {
               </Grid>
             </AccordionDetails>
           </Accordion>
-        ))}
+        ))
+      ) : (
+        <DetailsList delimitedString={"None"} />
+      )}
     </div>
   );
 }

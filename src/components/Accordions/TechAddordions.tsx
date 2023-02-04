@@ -8,6 +8,7 @@ import { LIGHT_TAN_COLOR, MEDIUM_TAN_COLOR, DARK_TAN_COLOR } from "../../constan
 
 import CostDisplay from "../CostDisplay";
 import getCostObject from "../../util/getCost";
+import DetailsList from "../DetailsList";
 // should take in a string and return 1 or more accordions (some civs have multiple unique units)
 
 type TechAccordionsProps = {
@@ -61,8 +62,42 @@ export default function TechAccordions(props: TechAccordionsProps) {
                 </Grid>
               </Grid>
             </AccordionSummary>
+            {/* Dropdown contents */}
             <AccordionDetails>
-              <Typography>{tech.description}</Typography>
+              <Grid container>
+                <Grid item xs={12}>
+                  <Typography variant="caption">Description</Typography>
+                  <Typography variant="subtitle1">{tech.description}</Typography>
+                </Grid>
+                <Grid item xs={6}>
+                  <Typography variant="caption">Applies To</Typography>
+                  <DetailsList delimitedString={tech.applies_to} />
+                </Grid>
+                <Grid item xs={6}>
+                  <Typography variant="caption">Research Time</Typography>
+                  <Typography variant="subtitle1">{tech.build_time} seconds</Typography>
+                </Grid>
+                <Grid item xs={6}>
+                  <Typography variant="caption">Civilization</Typography>
+                  <Typography variant="subtitle1">{tech.civ ? tech.civ : "All"}</Typography>
+                </Grid>
+                <Grid item xs={6}>
+                  <Typography variant="caption">Type</Typography>
+                  <Typography variant="subtitle1">{tech.type}</Typography>
+                </Grid>
+                <Grid item xs={6}>
+                  <Typography variant="caption">Develops In</Typography>
+                  <Typography variant="subtitle1">{tech.develops_in}</Typography>
+                </Grid>
+                <Grid item xs={6}>
+                  <Typography variant="caption">Age Required</Typography>
+                  <Typography variant="subtitle1">{tech.age}</Typography>
+                </Grid>
+                <Grid item xs={12}>
+                  <Typography variant="caption">Expansion</Typography>
+                  <Typography variant="subtitle1">{tech.expansion}</Typography>
+                </Grid>
+              </Grid>
             </AccordionDetails>
           </Accordion>
         ))}
