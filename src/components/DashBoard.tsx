@@ -1,39 +1,34 @@
 import * as React from "react";
-import { styled, createTheme, ThemeProvider } from "@mui/material/styles";
-import CssBaseline from "@mui/material/CssBaseline";
-import MuiDrawer from "@mui/material/Drawer";
-import Box from "@mui/material/Box";
-import MuiAppBar, { AppBarProps as MuiAppBarProps } from "@mui/material/AppBar";
-import Toolbar from "@mui/material/Toolbar";
-import List from "@mui/material/List";
-import Typography from "@mui/material/Typography";
-import Divider from "@mui/material/Divider";
-import IconButton from "@mui/material/IconButton";
-import Badge from "@mui/material/Badge";
-import Container from "@mui/material/Container";
-import Grid from "@mui/material/Grid";
-import Paper from "@mui/material/Paper";
-import Link from "@mui/material/Link";
-import MenuIcon from "@mui/icons-material/Menu";
-import ChevronLeftIcon from "@mui/icons-material/ChevronLeft";
-import NotificationsIcon from "@mui/icons-material/Notifications";
-import { mainListItems, secondaryListItems } from "./listItems";
-import Chart from "./Chart";
-import RecentUpdates from "./RecentUpdates";
-import Orders from "./Orders";
-import DataGridCivs from "./DataGridCivs";
-import CivCompare from "./CivCompare";
-// react router tutorial to use https://www.youtube.com/watch?v=2aumoR0-jmQ
-import type { Building, Civilization, Technology, Unit } from "../types";
 import { useState } from "react";
-import { UnitContext } from "../contexts/UnitContext";
-import { CivContext } from "../contexts/CivContext";
-import { TechContext } from "../contexts/TechContext";
-import { BuildingContext } from "../contexts/BuildingContext";
+import { styled, createTheme, ThemeProvider } from "@mui/material/styles";
+import {
+  Badge,
+  Box,
+  Container,
+  CssBaseline,
+  Divider,
+  Drawer as MuiDrawer,
+  Grid,
+  List,
+  IconButton,
+  Paper,
+  Toolbar,
+  Typography,
+} from "@mui/material";
+import MuiAppBar, { AppBarProps as MuiAppBarProps } from "@mui/material/AppBar";
+import {
+  ChevronLeft as ChevronLeftIcon,
+  Menu as MenuIcon,
+  Notifications as NotificationsIcon,
+} from "@mui/icons-material";
 
+import type { Building, Civilization, Technology, Unit } from "../types";
+import { BuildingContext, CivContext, TechContext, UnitContext } from "../contexts";
 import { LIGHT_TAN_COLOR, MEDIUM_TAN_COLOR, DARK_TAN_COLOR } from "../constants/colors";
 
 import Copyright from "./Copyright";
+import CivCompare from "./CivCompare";
+import { mainListItems, secondaryListItems } from "./listItems";
 
 let unitData: Unit[] = require("./../data/units.json");
 let techData: Technology[] = require("./../data/techs.json");
@@ -41,6 +36,8 @@ let civData: Civilization[] = require("./../data/civs.json");
 let buildingData: Building[] = require("./../data/buildings.json");
 
 const drawerWidth: number = 240;
+
+// react router tutorial to use https://www.youtube.com/watch?v=2aumoR0-jmQ
 
 interface AppBarProps extends MuiAppBarProps {
   open?: boolean;
