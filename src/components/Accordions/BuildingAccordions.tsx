@@ -61,8 +61,38 @@ export default function BuildingAccordions(props: BuildingAccordionsProps) {
                 </Grid>
               </Grid>
             </AccordionSummary>
+            {/* Dropdown contents */}
             <AccordionDetails>
-              <Typography>stuff</Typography>
+              <Grid container>
+                <Grid item xs={12}>
+                  <Typography variant="caption">Description</Typography>
+                  <Typography variant="subtitle1">{building.special}</Typography>
+                </Grid>
+                <Grid item xs={6}>
+                  <Typography variant="caption">Hit Points</Typography>
+                  <Typography variant="subtitle1">{building.hit_points}</Typography>
+                </Grid>
+                <Grid item xs={6}>
+                  <Typography variant="caption">Attack</Typography>
+                  <Typography variant="subtitle1">{building.attack ? building.attack : "N/A"}</Typography>
+                </Grid>
+                <Grid item xs={6}>
+                  <Typography variant="caption">Armor</Typography>
+                  <Typography variant="subtitle1">{building.armor}</Typography>
+                </Grid>
+                <Grid item xs={6}>
+                  <Typography variant="caption">Range</Typography>
+                  <Typography variant="subtitle1">{building.range ? building.range : "N/A"}</Typography>
+                </Grid>
+                <Grid item xs={6}>
+                  <Typography variant="caption">Requires Age</Typography>
+                  <Typography variant="subtitle1">{building.age}</Typography>
+                </Grid>
+                <Grid item xs={6}>
+                  <Typography variant="caption">Build Time</Typography>
+                  <Typography variant="subtitle1">{building.build_time} seconds</Typography>
+                </Grid>
+              </Grid>
             </AccordionDetails>
           </Accordion>
         ))}

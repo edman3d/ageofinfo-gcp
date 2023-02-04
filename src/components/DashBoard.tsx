@@ -108,7 +108,7 @@ function DashboardContent() {
   const [civs, setCivs] = useState(civData);
   const [techs, setTechs] = useState(techData);
   const [buildings, setBuildings] = useState(buildingData);
-  console.log(`found ${buildings.length} buildings`);
+  // console.log(`found ${buildings.length} buildings`);
 
   const toggleDrawer = () => {
     setOpen(!open);
