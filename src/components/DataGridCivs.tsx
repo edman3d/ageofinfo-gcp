@@ -13,12 +13,12 @@ const columns: GridColDef[] = [
   {
     field: "army_type",
     headerName: "Army Type",
-    width: 200,
+    width: 220,
   },
   {
     field: "unique_unit",
-    headerName: "Unique Unit",
-    width: 200,
+    headerName: "Unique Unit/s",
+    width: 230,
   },
   {
     field: "unique_tech",
