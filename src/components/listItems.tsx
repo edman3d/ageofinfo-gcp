@@ -88,3 +88,67 @@ export const secondaryListItems = (
     </Link>
   </React.Fragment>
 );
+
+export const linkListItems = (
+  <React.Fragment>
+    <ListSubheader component="div" inset sx={{ backgroundColor: LIGHT_TAN_COLOR }}>
+      Links
+    </ListSubheader>
+
+    <Link
+      href="https://aoe2recs.com/"
+      rel="noopener noreferrer"
+      target="_blank"
+      style={{ textDecoration: "none", color: TEXT_COLOR_MAIN }}
+    >
+      <ListItemButton>
+        <ListItemIcon>
+          <AssignmentIcon />
+        </ListItemIcon>
+        <ListItemText primary="aoe2recs.com" secondary="Matchmaking Activity" />
+      </ListItemButton>
+    </Link>
+
+    <Link
+      href="https://liquipedia.net/ageofempires/Main_Page"
+      rel="noopener noreferrer"
+      target="_blank"
+      style={{ textDecoration: "none", color: TEXT_COLOR_MAIN }}
+    >
+      <ListItemButton>
+        <ListItemIcon>
+          <AssignmentIcon />
+        </ListItemIcon>
+        <ListItemText primary="liquipedia.net" secondary="Tournament Info" />
+      </ListItemButton>
+    </Link>
+
+    <Link
+      href="https://www.unitstatistics.com/age-of-empires2/"
+      rel="noopener noreferrer"
+      target="_blank"
+      style={{ textDecoration: "none", color: TEXT_COLOR_MAIN }}
+    >
+      <ListItemButton>
+        <ListItemIcon>
+          <AssignmentIcon />
+        </ListItemIcon>
+        <ListItemText primary="unitstatistics.com" secondary="More Unit Data" />
+      </ListItemButton>
+    </Link>
+
+    <Link
+      href="https://aoe2techtree.net/#Aztecs"
+      rel="noopener noreferrer"
+      target="_blank"
+      style={{ textDecoration: "none", color: TEXT_COLOR_MAIN }}
+    >
+      <ListItemButton>
+        <ListItemIcon>
+          <AssignmentIcon />
+        </ListItemIcon>
+        <ListItemText primary="aoe2techtree.net" secondary="Full Tech Trees" />
+      </ListItemButton>
+    </Link>
+  </React.Fragment>
+);

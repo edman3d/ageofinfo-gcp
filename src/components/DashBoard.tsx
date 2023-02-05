@@ -16,7 +16,7 @@ import { DARK_TAN_COLOR } from "../constants/colors";
 import { AppBar } from "./AppBar";
 import { Drawer } from "./Drawer";
 import Copyright from "./Copyright";
-import { mainListItems, secondaryListItems } from "./listItems";
+import { mainListItems, secondaryListItems, linkListItems } from "./listItems";
 
 import "@fontsource/roboto/300.css";
 import "@fontsource/roboto/400.css";
@@ -104,6 +104,8 @@ function DashboardContent() {
                     {mainListItems}
                     <Divider sx={{ my: 1 }} />
                     {secondaryListItems}
+                    <Divider sx={{ my: 1 }} />
+                    {linkListItems}
                   </List>
                 </Drawer>
 
