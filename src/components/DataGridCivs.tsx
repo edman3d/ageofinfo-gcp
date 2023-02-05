@@ -1,5 +1,5 @@
 import * as React from "react";
-import Box from "@mui/material/Box";
+import { Box, Typography } from "@mui/material";
 import { DataGrid, GridColDef } from "@mui/x-data-grid";
 import { useContext } from "react";
 import { CivContext } from "../contexts/CivContext";
@@ -40,7 +40,10 @@ const columns: GridColDef[] = [
 export default function DataGridCivs() {
   const civs = useContext(CivContext);
   return (
-    <Box sx={{ height: "90vh", width: "100%" }}>
+    <Box sx={{ height: "85vh", width: "100%" }}>
+      <Typography variant="h5" color="black" sx={{ marginBottom: 2 }}>
+        Raw Civilization Data
+      </Typography>
       <DataGrid
         rows={civs ?? ["None"]}
         columns={columns}

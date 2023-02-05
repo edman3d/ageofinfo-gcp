@@ -1,5 +1,5 @@
 import * as React from "react";
-import Box from "@mui/material/Box";
+import { Box, Typography } from "@mui/material";
 import { DataGrid, GridColDef } from "@mui/x-data-grid";
 import { useContext } from "react";
 import { TechContext } from "../contexts";
@@ -36,7 +36,10 @@ const columns: GridColDef[] = [
 export default function DataGridTechs() {
   const techs = useContext(TechContext);
   return (
-    <Box sx={{ height: "90vh", width: "100%" }}>
+    <Box sx={{ height: "85vh", width: "100%" }}>
+      <Typography variant="h5" color="black" sx={{ marginBottom: 2 }}>
+        Raw Technology Data
+      </Typography>
       <DataGrid
         rows={techs ?? ["None"]}
         columns={columns}

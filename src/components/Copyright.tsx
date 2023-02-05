@@ -4,10 +4,7 @@ export default function Copyright(props: any) {
   return (
     <Typography variant="body2" color="text.secondary" align="center" {...props}>
       {"Copyright © "}
-      <Link color="inherit" href="https://mui.com/">
-        edman3d
-      </Link>{" "}
-      {new Date().getFullYear()}
+      <Link color="inherit">edman3d</Link> {new Date().getFullYear()}
       {"."}
     </Typography>
   );
