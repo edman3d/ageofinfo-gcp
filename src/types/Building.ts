@@ -1,5 +1,6 @@
 export type Building = {
   name: string;
+  id: number;
   expansion: string;
   age: string;
   cost: string;
