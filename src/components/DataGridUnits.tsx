@@ -27,6 +27,11 @@ const columns: GridColDef[] = [
     width: 100,
   },
   {
+    field: "type",
+    headerName: "Type",
+    width: 100,
+  },
+  {
     field: "range",
     headerName: "Range",
     width: 100,

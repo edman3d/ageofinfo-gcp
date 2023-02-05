@@ -150,5 +150,18 @@ export const linkListItems = (
         <ListItemText primary="aoe2techtree.net" secondary="Full Tech Trees" />
       </ListItemButton>
     </Link>
+    <Link
+      href="https://www.ageofempires.com/news?game=aoeii"
+      rel="noopener noreferrer"
+      target="_blank"
+      style={{ textDecoration: "none", color: TEXT_COLOR_MAIN }}
+    >
+      <ListItemButton>
+        <ListItemIcon>
+          <AssignmentIcon />
+        </ListItemIcon>
+        <ListItemText primary="Official News" secondary="See Patch Notes" />
+      </ListItemButton>
+    </Link>
   </React.Fragment>
 );
