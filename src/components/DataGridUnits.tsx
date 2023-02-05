@@ -27,6 +27,21 @@ const columns: GridColDef[] = [
     width: 100,
   },
   {
+    field: "range",
+    headerName: "Range",
+    width: 100,
+  },
+  {
+    field: "movement_rate",
+    headerName: "Movespeed",
+    width: 150,
+  },
+  {
+    field: "accuracy",
+    headerName: "Accuracy",
+    width: 100,
+  },
+  {
     field: "armor_class",
     headerName: "Armor Class",
     width: 500,
