@@ -2,8 +2,9 @@ import * as React from "react";
 import Box from "@mui/material/Box";
 import { DataGrid, GridColDef } from "@mui/x-data-grid";
 import { useContext } from "react";
-import { CivContext } from "../contexts/CivContext";
+import { TechContext } from "../contexts";
 import { LIGHT_TAN_COLOR } from "../constants/colors";
+
 const columns: GridColDef[] = [
   {
     field: "name",
@@ -11,38 +12,33 @@ const columns: GridColDef[] = [
     width: 130,
   },
   {
-    field: "army_type",
-    headerName: "Army Type",
+    field: "applies_to",
+    headerName: "Applies To",
     width: 200,
   },
   {
-    field: "unique_unit",
-    headerName: "Unique Unit",
+    field: "description",
+    headerName: "Description",
     width: 200,
   },
   {
-    field: "unique_tech",
-    headerName: "Unique Tech",
+    field: "age",
+    headerName: "Age",
     width: 200,
   },
   {
-    field: "team_bonus",
-    headerName: "Team Bonus",
+    field: "build_time",
+    headerName: "Build Time",
     width: 200,
-  },
-  {
-    field: "civilization_bonus",
-    headerName: "Civ Bonus",
-    width: 400,
   },
 ];
 
-export default function DataGridCivs() {
-  const civs = useContext(CivContext);
+export default function DataGridTechs() {
+  const techs = useContext(TechContext);
   return (
     <Box sx={{ height: "90vh", width: "100%" }}>
       <DataGrid
-        rows={civs ?? ["None"]}
+        rows={techs ?? ["None"]}
         columns={columns}
         pageSize={25}
         rowsPerPageOptions={[25]}

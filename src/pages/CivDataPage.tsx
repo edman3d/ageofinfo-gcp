@@ -1,5 +1,7 @@
+import DataGridCivs from "../components/DataGridCivs";
+
 const CivDataPage = () => {
-  return <p>CivDataPage: Nothing here yet</p>;
+  return <DataGridCivs />;
 };
 
 export default CivDataPage;

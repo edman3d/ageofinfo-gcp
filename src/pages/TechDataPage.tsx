@@ -1,5 +1,7 @@
+import DataGridTechs from "../components/DataGridTechs";
+
 const TechDataPage = () => {
-  return <p>TechDataPage: Nothing here yet</p>;
+  return <DataGridTechs />;
 };
 
 export default TechDataPage;
