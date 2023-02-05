@@ -1,5 +1,6 @@
 export type Unit = {
   name: string;
+  id: number;
   description: string;
   expansion: string;
   age: string;

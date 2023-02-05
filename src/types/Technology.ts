@@ -1,6 +1,6 @@
 export type Technology = {
   name: string;
-  id: string;
+  id: number;
   expansion: string;
   age: string;
   develops_in: string;

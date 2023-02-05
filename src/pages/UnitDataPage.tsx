@@ -1,5 +1,7 @@
+import DataGridUnits from "../components/DataGridUnits";
+
 const UnitDataPage = () => {
-  return <p>UnitDataPage: Nothing here yet</p>;
+  return <DataGridUnits />;
 };
 
 export default UnitDataPage;
