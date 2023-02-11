@@ -14,5 +14,3 @@ made with the only tutorial that actually worked even though it still was dog sh
 
 - Update data (1 or 2 small patches behind)
 - Use `<Chip>` components for shit like armor classes
-- Restore dashboard side panel and implement routing with it
-- Add data tables for each data set on their own route
