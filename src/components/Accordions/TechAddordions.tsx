@@ -51,7 +51,7 @@ export default function TechAccordions(props: TechAccordionsProps) {
                   />
                 </Grid>
                 <Grid item xs="auto">
-                  <Grid container maxWidth={310}>
+                  <Grid container maxWidth={330}>
                     <Grid item xs={12}>
                       <Typography variant="body1" fontWeight={500}>
                         {tech.name}

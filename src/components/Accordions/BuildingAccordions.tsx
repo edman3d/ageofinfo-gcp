@@ -27,7 +27,7 @@ function getBuildingObjects(buildingNamesToFind: string[], allBuildings: Buildin
   return buildingObjects;
 }
 
-const iconSize = "64px";
+const iconSize = "110px";
 
 export default function BuildingAccordions(props: BuildingAccordionsProps) {
   const allBuildings = useContext(BuildingContext);
@@ -51,7 +51,7 @@ export default function BuildingAccordions(props: BuildingAccordionsProps) {
                   />
                 </Grid>
                 <Grid item xs="auto">
-                  <Grid container>
+                  <Grid container maxWidth={330}>
                     <Grid item xs={12}>
                       <Typography variant="body1" fontWeight={500}>
                         {building.name}
@@ -59,6 +59,9 @@ export default function BuildingAccordions(props: BuildingAccordionsProps) {
                     </Grid>
                     <Grid item xs={12}>
                       <CostDisplay costObject={getCostObject(building.cost)} />
+                    </Grid>
+                    <Grid item xs={12}>
+                      <Typography variant="caption">{building.special}</Typography>
                     </Grid>
                   </Grid>
                 </Grid>
