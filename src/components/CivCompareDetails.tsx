@@ -62,7 +62,7 @@ export default function CivCompareDetails(props: CivCompareDetailsProps) {
           alt="civ banner"
           sx={{ height: "64px", width: "64px" }}
         />
-        <Typography variant="h5" sx={{ marginLeft: 1 }}>
+        <Typography variant="h5" fontWeight={500} sx={{ marginLeft: 1 }}>
           {props.civ ? props.civ.name : "Select a Civilization"}
         </Typography>
       </div>

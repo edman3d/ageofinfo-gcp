@@ -57,7 +57,12 @@ export default function UnitAccordions(props: UnitAccordionsProps) {
                     height="140"
                     image={require(`../../images/units/${unit.image}.png`)}
                     alt="unitIcon"
-                    sx={{ height: iconSize, width: iconSize, marginRight: "10px" }}
+                    sx={{
+                      height: iconSize,
+                      width: iconSize,
+                      marginRight: "10px",
+                      border: `2px solid ${DARK_TAN_COLOR}`,
+                    }}
                   />
                 </Grid>
                 <Grid item xs="auto">
