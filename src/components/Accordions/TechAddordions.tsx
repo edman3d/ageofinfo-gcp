@@ -53,7 +53,7 @@ export default function TechAccordions(props: TechAccordionsProps) {
                 <Grid item xs="auto">
                   <Grid container>
                     <Grid item xs={12}>
-                      <Typography variant="body1">{tech.name}</Typography>
+                      <Typography variant="body1" fontWeight={500}>{tech.name}</Typography>
                     </Grid>
                     <Grid item xs={12}>
                       <CostDisplay costObject={getCostObject(tech.cost)} />

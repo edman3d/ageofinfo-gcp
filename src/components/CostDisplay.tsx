@@ -18,7 +18,7 @@ export default function CostDisplay(props: CostDisplayProps) {
   const hasStoneCost = props.costObject.Stone !== undefined && props.costObject.Stone > 0;
 
   return (
-    <div style={{ display: "inline-flex", alignItems: "center", marginTop: 6, border: "1px solid orange" }}>
+    <div style={{ display: "inline-flex", alignItems: "center", marginTop: 6 }}>
       {/* Wood */}
       {hasWoodCost ? (
         <div style={{ display: "inline-flex", alignItems: "center", marginRight: marginBetweenCostSets }}>

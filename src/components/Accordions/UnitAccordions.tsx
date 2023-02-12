@@ -50,8 +50,8 @@ export default function UnitAccordions(props: UnitAccordionsProps) {
         unitObjects.map((unit) => (
           <Accordion key={unit.name} sx={{ backgroundColor: MEDIUM_TAN_COLOR }}>
             <AccordionSummary expandIcon={<ExpandMoreIcon />} aria-controls="panel1a-content" id="panel1a-header">
-              <Grid container sx={{ border: "1px solid red", display: "inherit" }}>
-                <Grid item xs="auto" sx={{ border: "1px solid blue" }}>
+              <Grid container sx={{ display: "inherit" }}>
+                <Grid item xs="auto">
                   <CardMedia
                     component="img"
                     height="140"
@@ -60,10 +60,12 @@ export default function UnitAccordions(props: UnitAccordionsProps) {
                     sx={{ height: iconSize, width: iconSize, marginRight: "10px" }}
                   />
                 </Grid>
-                <Grid item xs="auto" sx={{ border: "1px solid green" }}>
+                <Grid item xs="auto">
                   <Grid container maxWidth={310}>
                     <Grid item xs={12}>
-                      <Typography variant="body1">{unit.name}</Typography>
+                      <Typography variant="body1" fontWeight={500}>
+                        {unit.name}
+                      </Typography>
                     </Grid>
                     <Grid item xs={12}>
                       <CostDisplay costObject={getCostObject(unit.cost)} />

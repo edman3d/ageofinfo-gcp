@@ -53,7 +53,9 @@ export default function BuildingAccordions(props: BuildingAccordionsProps) {
                 <Grid item xs="auto">
                   <Grid container>
                     <Grid item xs={12}>
-                      <Typography variant="body1">{building.name}</Typography>
+                      <Typography variant="body1" fontWeight={500}>
+                        {building.name}
+                      </Typography>
                     </Grid>
                     <Grid item xs={12}>
                       <CostDisplay costObject={getCostObject(building.cost)} />
