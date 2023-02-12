@@ -27,7 +27,7 @@ function getTechObjects(techNamesToFind: string[], allTechs: Technology[] | null
   return techObjects;
 }
 
-const iconSize = "64px";
+const iconSize = "110px";
 
 export default function TechAccordions(props: TechAccordionsProps) {
   const allTechs = useContext(TechContext);
@@ -51,12 +51,17 @@ export default function TechAccordions(props: TechAccordionsProps) {
                   />
                 </Grid>
                 <Grid item xs="auto">
-                  <Grid container>
+                  <Grid container maxWidth={310}>
                     <Grid item xs={12}>
-                      <Typography variant="body1" fontWeight={500}>{tech.name}</Typography>
+                      <Typography variant="body1" fontWeight={500}>
+                        {tech.name}
+                      </Typography>
                     </Grid>
                     <Grid item xs={12}>
                       <CostDisplay costObject={getCostObject(tech.cost)} />
+                    </Grid>
+                    <Grid item xs={12}>
+                      <Typography variant="caption">{tech.description}</Typography>
                     </Grid>
                   </Grid>
                 </Grid>
