@@ -35,17 +35,18 @@ export default function CivCompareDetails(props: CivCompareDetailsProps) {
       sx={{
         height: 1175,
         backgroundColor: LIGHT_TAN_COLOR,
-        overflowY: "auto",
+        overflowY: "scroll",
         "&::-webkit-scrollbar": {
           width: 20,
         },
         "&::-webkit-scrollbar-track": {
-          backgroundColor: DARK_TAN_COLOR,
+          // backgroundColor: "#b38a66",
+          backgroundColor: LIGHT_TAN_COLOR,
         },
         "&::-webkit-scrollbar-thumb": {
-          backgroundColor: "#e4bd9a",
+          backgroundColor: "#c9a483",
           border: "1px solid #966c46",
-          borderRadius: 1,
+          // borderRadius: 1,
         },
       }}
     >

@@ -119,7 +119,7 @@ function DashboardContent() {
                   }}
                 >
                   <Toolbar />
-                  <Container maxWidth="xl" sx={{ mt: 4, mb: 4, backgroundColor: DARK_TAN_COLOR }}>
+                  <Container maxWidth={false} sx={{ mt: 2, mb: 2, backgroundColor: DARK_TAN_COLOR }}>
                     <Routes>
                       <Route path="/" element={<CivComparePage />} />
                       <Route path="/civdata" element={<CivDataPage />} />

@@ -21,7 +21,7 @@ export default function StatDisplay(props: StatDisplayProps) {
   const rangedArmor = props.unit.armor.split("/")[1];
 
   return (
-    <div style={{ display: "inline-flex", alignItems: "center", marginTop: 6 }}>
+    <div style={{ display: "inline-flex", alignItems: "center", marginTop: 6, border: "1px solid orange" }}>
       <div style={{ display: "inline-flex", alignItems: "center", marginRight: marginBetweenCostSets }}>
         <StatIcon fileName="hp" iconSize={32} />
         <Typography variant={costValueVariant} style={{ marginLeft: marginBetweenIconAndValue }}>
