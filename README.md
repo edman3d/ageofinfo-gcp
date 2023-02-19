@@ -12,5 +12,8 @@ made with the only tutorial that actually worked even though it still was dog sh
 
 ## TODO/Ideas
 
-- Update data (1 or 2 small patches behind)
+- Paiks research time unknown
+
+## Ideas
+
 - Use `<Chip>` components for shit like armor classes

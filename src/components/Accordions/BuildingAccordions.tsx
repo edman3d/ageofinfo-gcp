@@ -32,6 +32,7 @@ const iconSize = "110px";
 export default function BuildingAccordions(props: BuildingAccordionsProps) {
   const allBuildings = useContext(BuildingContext);
   const buildingNames: string[] = props.unique_buildings ? props.unique_buildings.split(";") : [];
+  console.log(buildingNames);
   const buildingObjects = getBuildingObjects(buildingNames, allBuildings);
 
   return (

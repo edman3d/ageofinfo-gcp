@@ -33,7 +33,7 @@
    "expansion": "Age of Kings",
    "age": "Imperial",
    "develops_in": "Archery Range",
-   "cost": "{\"Food\":350; \"Gold\": 300}",
+   "cost": "{\"Food\":450; \"Gold\": 400}",
    "build_time": 50,
    "applies_to": "Crossbowman",
    "description": "Upgrade to Arbalest",
@@ -64,7 +64,7 @@
    "cost": "{\"Food\": 700; \"Gold\": 400}",
    "build_time": 40,
    "applies_to": "Gunpowder Units;Bombard Towers",
-   "description": "Gunpowder units fire more accurately at moving targets;Increases projectile speed of Bombard Cannons and Bombard Towers by +0.2",
+   "description": "Gunpowder units fire more accurately at moving targets. Increases projectile speed of Bombard Cannons and Bombard Towers by +0.2",
    "image": "unique-tech-imperial",
    "civ": "Portuguese",
    "type": "unique"
@@ -204,7 +204,7 @@
    "cost": "{\"Food\": 400; \"Gold\": 400}",
    "build_time": 60,
    "applies_to": "Franks;Throwing Axeman",
-   "description": "+1 range +1 Line of sight",
+   "description": "Throwing Axemen +1 Range & +1 Line of Sight",
    "image": "unique-tech-imperial",
    "civ": "Franks",
    "type": "unique"
@@ -596,7 +596,7 @@
    "cost": "{\"Food\": 600; \"Gold\": 400}",
    "build_time": 60,
    "applies_to": "Teutons;Castle",
-   "description": "+3 range and garrisoned infantry fires arrows",
+   "description": "Castles have +3 range and garrisoned infantry fire arrows",
    "image": "unique-tech-imperial",
    "civ": "",
    "type": "other"
@@ -621,7 +621,7 @@
    "expansion": "Age of Kings",
    "age": "Castle",
    "develops_in": "Archery Range",
-   "cost": "{\"Food\": 125; \"Gold\": 75}",
+   "cost": "{\"Food\": 175; \"Gold\": 125}",
    "build_time": 35,
    "applies_to": "Archer",
    "description": "Upgrade to Crossbowman",
@@ -694,7 +694,7 @@
    "cost": "{\"Food\": 500; \"Gold\": 450}",
    "build_time": 60,
    "applies_to": "Mongols",
-   "description": "Siege Workshop units Movement Rate*1.5",
+   "description": "Siege Workshop units move 50% faster",
    "image": "unique-tech-imperial",
    "civ": "",
    "type": "other"
@@ -952,8 +952,22 @@
    "type": "elite"
  },
  {
-   "name": "Elite Skirmisher",
+   "name": "Elite Shrivamsha Rider",
    "id": 68,
+   "expansion": "Dynasties of India",
+   "age": "Imperial",
+   "develops_in": "Castle",
+   "cost": "{\"Food\": 850; \"Gold\": 500}",
+   "build_time": 45,
+   "applies_to": "Shrivamsha Rider",
+   "description": "Upgrade to Elite Shrivamsha Rider",
+   "image": "elite-unique-unit",
+   "civ": "Gurjaras",
+   "type": "elite"
+ },
+ {
+   "name": "Elite Skirmisher",
+   "id": 69,
    "expansion": "Age of Kings",
    "age": "Imperial",
    "develops_in": "Archery Range",
@@ -967,7 +981,7 @@
  },
  {
    "name": "Elite Tarkan",
-   "id": 69,
+   "id": 70,
    "expansion": "The Conquerors",
    "age": "Imperial",
    "develops_in": "Castle",
@@ -981,7 +995,7 @@
  },
  {
    "name": "Elite Teutonic Knight",
-   "id": 70,
+   "id": 71,
    "expansion": "Age of Kings",
    "age": "Imperial",
    "develops_in": "Castle",
@@ -995,7 +1009,7 @@
  },
  {
    "name": "Elite Throwing Axeman",
-   "id": 71,
+   "id": 72,
    "expansion": "Age of Kings",
    "age": "Imperial",
    "develops_in": "Castle",
@@ -1009,7 +1023,7 @@
  },
  {
    "name": "Elite Turtle Ship",
-   "id": 72,
+   "id": 73,
    "expansion": "The Conquerors",
    "age": "Imperial",
    "develops_in": "Dock",
@@ -1023,7 +1037,7 @@
  },
  {
    "name": "Elite War Elephant",
-   "id": 73,
+   "id": 74,
    "expansion": "Age of Kings",
    "age": "Imperial",
    "develops_in": "Castle",
@@ -1037,7 +1051,7 @@
  },
  {
    "name": "Elite War Wagon",
-   "id": 74,
+   "id": 75,
    "expansion": "The Conquerors",
    "age": "Imperial",
    "develops_in": "Castle",
@@ -1051,7 +1065,7 @@
  },
  {
    "name": "Elite Woad Raider",
-   "id": 75,
+   "id": 76,
    "expansion": "Age of Kings",
    "age": "Imperial",
    "develops_in": "Castle",
@@ -1065,7 +1079,7 @@
  },
  {
    "name": "Eupseong",
-   "id": 76,
+   "id": 77,
    "expansion": "Definitive Edition",
    "age": "Castle",
    "develops_in": "Castle",
@@ -1079,7 +1093,7 @@
  },
  {
    "name": "Fabric Shields",
-   "id": 77,
+   "id": 78,
    "expansion": "The Forgotten",
    "age": "Imperial",
    "develops_in": "Castle",
@@ -1093,7 +1107,7 @@
  },
  {
    "name": "Faith",
-   "id": 78,
+   "id": 79,
    "expansion": "Age of Kings",
    "age": "Imperial",
    "develops_in": "Monastery",
@@ -1107,7 +1121,7 @@
  },
  {
    "name": "Farimba",
-   "id": 79,
+   "id": 80,
    "expansion": "The African Kingdoms",
    "age": "Imperial",
    "develops_in": "Castle",
@@ -1121,7 +1135,7 @@
  },
  {
    "name": "Fast Fire Ship",
-   "id": 80,
+   "id": 81,
    "expansion": "Age of Kings",
    "age": "Imperial",
    "develops_in": "Dock",
@@ -1135,7 +1149,7 @@
  },
  {
    "name": "Fervor",
-   "id": 81,
+   "id": 82,
    "expansion": "Age of Kings",
    "age": "Castle",
    "develops_in": "Monastery",
@@ -1149,7 +1163,7 @@
  },
  {
    "name": "Feudal Age",
-   "id": 82,
+   "id": 83,
    "expansion": "Age of Kings",
    "age": "Dark",
    "develops_in": "Town Center",
@@ -1163,7 +1177,7 @@
  },
  {
    "name": "First Crusade",
-   "id": 83,
+   "id": 84,
    "expansion": "Lords of the West",
    "age": "Castle",
    "develops_in": "Castle",
@@ -1177,7 +1191,7 @@
  },
  {
    "name": "Flemish Revolution",
-   "id": 84,
+   "id": 85,
    "expansion": "Lords of the West",
    "age": "Imperial",
    "develops_in": "Castle",
@@ -1191,7 +1205,7 @@
  },
  {
    "name": "Fletching",
-   "id": 85,
+   "id": 86,
    "expansion": "Age of Kings",
    "age": "Feudal",
    "develops_in": "Blacksmith",
@@ -1205,7 +1219,7 @@
  },
  {
    "name": "Forced Levy",
-   "id": 86,
+   "id": 87,
    "expansion": "Rise of the Rajas",
    "age": "Imperial",
    "develops_in": "Castle",
@@ -1219,7 +1233,7 @@
  },
  {
    "name": "Forging",
-   "id": 87,
+   "id": 88,
    "expansion": "Age of Kings",
    "age": "Feudal",
    "develops_in": "Blacksmith",
@@ -1233,7 +1247,7 @@
  },
  {
    "name": "Fortified Wall",
-   "id": 88,
+   "id": 89,
    "expansion": "Age of Kings",
    "age": "Castle",
    "develops_in": "University",
@@ -1247,35 +1261,35 @@
  },
  {
    "name": "Frontier Guards",
-   "id": 89,
+   "id": 90,
    "expansion": "Dynasties of India",
    "age": "Imperial",
    "develops_in": "Castle",
    "cost": "{\"Food\": 800; \"Gold\": 700}",
    "build_time": -1,
    "applies_to": "Camel Riders and Elephant Archers",
-   "description": "Camel Riders and Elephant Archers get +4 armor",
+   "description": "Camel Riders and Elephant Archers get +4 melee armor",
    "image": "unique-tech-imperial",
    "civ": "Gurjaras",
    "type": "unique"
  },
  {
    "name": "Furor Celtica",
-   "id": 90,
+   "id": 91,
    "expansion": "Age of Kings",
    "age": "Imperial",
    "develops_in": "Castle",
    "cost": "{\"Food\": 750; \"Gold\": 450}",
    "build_time": 50,
    "applies_to": "Celts",
-   "description": "Siege Workshop Units HP*1.5 (50% extra HP)",
+   "description": "Siege Workshop units gain 50% extra HP",
    "image": "unique-tech-imperial",
    "civ": "Celts",
    "type": "unique"
  },
  {
    "name": "Galleon",
-   "id": 91,
+   "id": 92,
    "expansion": "Age of Kings",
    "age": "Imperial",
    "develops_in": "Dock",
@@ -1289,7 +1303,7 @@
  },
  {
    "name": "Garland Wars",
-   "id": 92,
+   "id": 93,
    "expansion": "The Conquerors",
    "age": "Imperial",
    "develops_in": "Castle",
@@ -1303,7 +1317,7 @@
  },
  {
    "name": "Gillnets",
-   "id": 93,
+   "id": 94,
    "expansion": "The Forgotten",
    "age": "Castle",
    "develops_in": "Dock",
@@ -1317,7 +1331,7 @@
  },
  {
    "name": "Gold Mining",
-   "id": 94,
+   "id": 95,
    "expansion": "Age of Kings",
    "age": "Feudal",
    "develops_in": "Mining Camp",
@@ -1331,7 +1345,7 @@
  },
  {
    "name": "Gold Shaft Mining",
-   "id": 95,
+   "id": 96,
    "expansion": "Age of Kings",
    "age": "Castle",
    "develops_in": "Mining Camp",
@@ -1345,7 +1359,7 @@
  },
  {
    "name": "Grand Trunk Road",
-   "id": 96,
+   "id": 97,
    "expansion": "Dynasties of India",
    "age": "Castle",
    "develops_in": "Castle",
@@ -1359,7 +1373,7 @@
  },
  {
    "name": "Great Wall",
-   "id": 97,
+   "id": 98,
    "expansion": "The Forgotten",
    "age": "Castle",
    "develops_in": "Castle",
@@ -1373,7 +1387,7 @@
  },
  {
    "name": "Greek Fire",
-   "id": 98,
+   "id": 99,
    "expansion": "The Forgotten",
    "age": "Castle",
    "develops_in": "Castle",
@@ -1387,7 +1401,7 @@
  },
  {
    "name": "Guard Tower",
-   "id": 99,
+   "id": 100,
    "expansion": "Age of Kings",
    "age": "Castle",
    "develops_in": "University",
@@ -1401,7 +1415,7 @@
  },
  {
    "name": "Guilds",
-   "id": 100,
+   "id": 101,
    "expansion": "Age of Kings",
    "age": "Imperial",
    "develops_in": "Market",
@@ -1415,7 +1429,7 @@
  },
  {
    "name": "Halberdier",
-   "id": 101,
+   "id": 102,
    "expansion": "The Conquerors",
    "age": "Imperial",
    "develops_in": "Barracks",
@@ -1429,7 +1443,7 @@
  },
  {
    "name": "Hand Cart",
-   "id": 102,
+   "id": 103,
    "expansion": "Age of Kings",
    "age": "Castle",
    "develops_in": "Town Center",
@@ -1443,7 +1457,7 @@
  },
  {
    "name": "Hauberk",
-   "id": 103,
+   "id": 104,
    "expansion": "Lords of the West",
    "age": "Imperial",
    "develops_in": "Castle",
@@ -1457,7 +1471,7 @@
  },
  {
    "name": "Heated Shot",
-   "id": 104,
+   "id": 105,
    "expansion": "Age of Kings",
    "age": "Castle",
    "develops_in": "University",
@@ -1471,7 +1485,7 @@
  },
  {
    "name": "Heavy Camel",
-   "id": 105,
+   "id": 106,
    "expansion": "Age of Kings",
    "age": "Imperial",
    "develops_in": "Stable",
@@ -1485,7 +1499,7 @@
  },
  {
    "name": "Heavy Cavalry Archer",
-   "id": 106,
+   "id": 107,
    "expansion": "Age of Kings",
    "age": "Imperial",
    "develops_in": "Archery Range",
@@ -1499,7 +1513,7 @@
  },
  {
    "name": "Heavy Demolition Ship",
-   "id": 107,
+   "id": 108,
    "expansion": "Age of Kings",
    "age": "Imperial",
    "develops_in": "Dock",
@@ -1513,7 +1527,7 @@
  },
  {
    "name": "Heavy Plow",
-   "id": 108,
+   "id": 109,
    "expansion": "Age of Kings",
    "age": "Castle",
    "develops_in": "Mill",
@@ -1527,7 +1541,7 @@
  },
  {
    "name": "Heavy Scorpion",
-   "id": 109,
+   "id": 110,
    "expansion": "Age of Kings",
    "age": "Imperial",
    "develops_in": "Siege Workshop",
@@ -1541,7 +1555,7 @@
  },
  {
    "name": "Herbal Medicine",
-   "id": 110,
+   "id": 111,
    "expansion": "Age of Kings",
    "age": "Castle",
    "develops_in": "Monastery",
@@ -1555,7 +1569,7 @@
  },
  {
    "name": "Heresy",
-   "id": 111,
+   "id": 112,
    "expansion": "Age of Kings",
    "age": "Castle",
    "develops_in": "Monastery",
@@ -1569,7 +1583,7 @@
  },
  {
    "name": "Hill Forts",
-   "id": 112,
+   "id": 113,
    "expansion": "The Last Khans",
    "age": "Castle",
    "develops_in": "Castle",
@@ -1583,7 +1597,7 @@
  },
  {
    "name": "Hoardings",
-   "id": 113,
+   "id": 114,
    "expansion": "Age of Kings",
    "age": "Imperial",
    "develops_in": "Castle",
@@ -1597,7 +1611,7 @@
  },
  {
    "name": "Horse Collar",
-   "id": 114,
+   "id": 115,
    "expansion": "Age of Kings",
    "age": "Feudal",
    "develops_in": "Mill",
@@ -1611,7 +1625,7 @@
  },
  {
    "name": "Howdah",
-   "id": 115,
+   "id": 116,
    "expansion": "Rise of the Rajas",
    "age": "Castle",
    "develops_in": "Castle",
@@ -1625,7 +1639,7 @@
  },
  {
    "name": "Hul'che Javelineers",
-   "id": 116,
+   "id": 117,
    "expansion": "Lords of the West",
    "age": "Castle",
    "develops_in": "Castle",
@@ -1639,7 +1653,7 @@
  },
  {
    "name": "Husbandry",
-   "id": 117,
+   "id": 118,
    "expansion": "Age of Kings",
    "age": "Castle",
    "develops_in": "Stable",
@@ -1653,7 +1667,7 @@
  },
  {
    "name": "Hussar",
-   "id": 118,
+   "id": 119,
    "expansion": "The Conquerors",
    "age": "Imperial",
    "develops_in": "Stable",
@@ -1667,7 +1681,7 @@
  },
  {
    "name": "Hussite Reforms",
-   "id": 119,
+   "id": 120,
    "expansion": "Dawn of the Dukes",
    "age": "Imperial",
    "develops_in": "Castle",
@@ -1681,7 +1695,7 @@
  },
  {
    "name": "Illumination",
-   "id": 120,
+   "id": 121,
    "expansion": "Age of Kings",
    "age": "Imperial",
    "develops_in": "Monastery",
@@ -1695,7 +1709,7 @@
  },
  {
    "name": "Imperial Age",
-   "id": 121,
+   "id": 122,
    "expansion": "Age of Kings",
    "age": "Castle",
    "develops_in": "Town Center",
@@ -1709,7 +1723,7 @@
  },
  {
    "name": "Inquisition",
-   "id": 122,
+   "id": 123,
    "expansion": "The Forgotten",
    "age": "Castle",
    "develops_in": "Castle",
@@ -1723,7 +1737,7 @@
  },
  {
    "name": "Iron Casting",
-   "id": 123,
+   "id": 124,
    "expansion": "Age of Kings",
    "age": "Castle",
    "develops_in": "Blacksmith",
@@ -1737,7 +1751,7 @@
  },
  {
    "name": "Ironclad",
-   "id": 124,
+   "id": 125,
    "expansion": "The Forgotten",
    "age": "Castle",
    "develops_in": "Castle",
@@ -1751,7 +1765,7 @@
  },
  {
    "name": "Kamandaran",
-   "id": 125,
+   "id": 126,
    "expansion": "The Last Khans",
    "age": "Castle",
    "develops_in": "Castle",
@@ -1765,7 +1779,7 @@
  },
  {
    "name": "Kasbah",
-   "id": 126,
+   "id": 127,
    "expansion": "The African Kingdoms",
    "age": "Castle",
    "develops_in": "Castle",
@@ -1779,21 +1793,21 @@
  },
  {
    "name": "Kataparuto",
-   "id": 127,
+   "id": 128,
    "expansion": "Age of Kings",
    "age": "Imperial",
    "develops_in": "Castle",
    "cost": "{\"Food\": 750; \"Gold\": 400}",
    "build_time": 60,
    "applies_to": "Japanese;Trebuchet",
-   "description": "Trebuchets RT * 0.75 (25% faster reload time and practically 33% faster firing) and also (un)pack 4x faster",
+   "description": "Trebuchets pack/unpack faster and fire 33% faster",
    "image": "unique-tech-imperial",
    "civ": "Japanese",
    "type": "unique"
  },
  {
    "name": "Keep",
-   "id": 128,
+   "id": 129,
    "expansion": "Age of Kings",
    "age": "Imperial",
    "develops_in": "University",
@@ -1807,7 +1821,7 @@
  },
  {
    "name": "Kshatriyas",
-   "id": 129,
+   "id": 130,
    "expansion": "Dynasties of India",
    "age": "Castle",
    "develops_in": "Castle",
@@ -1821,7 +1835,7 @@
  },
  {
    "name": "Leather Archer Armor",
-   "id": 130,
+   "id": 131,
    "expansion": "Age of Kings",
    "age": "Castle",
    "develops_in": "Blacksmith",
@@ -1835,7 +1849,7 @@
  },
  {
    "name": "Lechitic Legacy",
-   "id": 131,
+   "id": 132,
    "expansion": "Dawn of the Dukes",
    "age": "Imperial",
    "develops_in": "Castle",
@@ -1849,7 +1863,7 @@
  },
  {
    "name": "Light Cavalry",
-   "id": 132,
+   "id": 133,
    "expansion": "Age of Kings",
    "age": "Castle",
    "develops_in": "Stable",
@@ -1863,7 +1877,7 @@
  },
  {
    "name": "Logistica",
-   "id": 133,
+   "id": 134,
    "expansion": "Age of Kings",
    "age": "Imperial",
    "develops_in": "Castle",
@@ -1877,7 +1891,7 @@
  },
  {
    "name": "Long Swordman",
-   "id": 134,
+   "id": 135,
    "expansion": "Age of Kings",
    "age": "Castle",
    "develops_in": "Barracks",
@@ -1891,7 +1905,7 @@
  },
  {
    "name": "Loom",
-   "id": 135,
+   "id": 136,
    "expansion": "Age of Kings",
    "age": "Dark",
    "develops_in": "Town Center",
@@ -1905,7 +1919,7 @@
  },
  {
    "name": "Maghrabi Camels",
-   "id": 136,
+   "id": 137,
    "expansion": "The African Kingdoms",
    "age": "Imperial",
    "develops_in": "Castle",
@@ -1919,7 +1933,7 @@
  },
  {
    "name": "Mahayana",
-   "id": 137,
+   "id": 138,
    "expansion": "Dynasties of India",
    "age": "Imperial",
    "develops_in": "Castle",
@@ -1933,21 +1947,21 @@
  },
  {
    "name": "Mahouts",
-   "id": 138,
+   "id": 139,
    "expansion": "Age of Kings",
    "age": "Imperial",
    "develops_in": "Castle",
    "cost": "{\"Food\": 300; \"Gold\": 300}",
    "build_time": 50,
    "applies_to": "Persians;War Elephant",
-   "description": "War Elephant Movement Rate * 1.3 = 0.78",
+   "description": "War Elephants move 30% faster",
    "image": "unique-tech-imperial",
    "civ": "",
    "type": "other"
  },
  {
    "name": "Man At Arms",
-   "id": 139,
+   "id": 140,
    "expansion": "Age of Kings",
    "age": "Feudal",
    "develops_in": "Barracks",
@@ -1961,7 +1975,7 @@
  },
  {
    "name": "Manipur Cavalry",
-   "id": 140,
+   "id": 141,
    "expansion": "Rise of the Rajas",
    "age": "Imperial",
    "develops_in": "Castle",
@@ -1975,7 +1989,7 @@
  },
  {
    "name": "Marauders",
-   "id": 141,
+   "id": 142,
    "expansion": "The Forgotten",
    "age": "Castle",
    "develops_in": "Castle",
@@ -1989,7 +2003,7 @@
  },
  {
    "name": "Masonry",
-   "id": 142,
+   "id": 143,
    "expansion": "Age of Kings",
    "age": "Castle",
    "develops_in": "University",
@@ -2003,7 +2017,7 @@
  },
  {
    "name": "Medical Corps",
-   "id": 143,
+   "id": 144,
    "expansion": "Dynasties of India",
    "age": "Castle",
    "develops_in": "Castle",
@@ -2017,7 +2031,7 @@
  },
  {
    "name": "Murder Holes",
-   "id": 144,
+   "id": 145,
    "expansion": "Age of Kings",
    "age": "Castle",
    "develops_in": "University",
@@ -2031,7 +2045,7 @@
  },
  {
    "name": "Nomads",
-   "id": 145,
+   "id": 146,
    "expansion": "The Forgotten",
    "age": "Castle",
    "develops_in": "Castle",
@@ -2045,7 +2059,7 @@
  },
  {
    "name": "Obsidian Arrows",
-   "id": 146,
+   "id": 147,
    "expansion": "The Forgotten",
    "age": "Castle",
    "develops_in": "Castle",
@@ -2059,7 +2073,7 @@
  },
  {
    "name": "Onager",
-   "id": 147,
+   "id": 148,
    "expansion": "Age of Kings",
    "age": "Imperial",
    "develops_in": "Siege Workshop",
@@ -2073,7 +2087,7 @@
  },
  {
    "name": "Padded Archer Armor",
-   "id": 148,
+   "id": 149,
    "expansion": "Age of Kings",
    "age": "Feudal",
    "develops_in": "Blacksmith",
@@ -2087,7 +2101,7 @@
  },
  {
    "name": "Paiks",
-   "id": 149,
+   "id": 150,
    "expansion": "Dynasties of India",
    "age": "Castle",
    "develops_in": "Castle",
@@ -2101,7 +2115,7 @@
  },
  {
    "name": "Paladin",
-   "id": 150,
+   "id": 151,
    "expansion": "Age of Kings",
    "age": "Imperial",
    "develops_in": "Stable",
@@ -2115,7 +2129,7 @@
  },
  {
    "name": "Panokseon",
-   "id": 151,
+   "id": 152,
    "expansion": "The Forgotten",
    "age": "Castle",
    "develops_in": "Castle",
@@ -2129,21 +2143,21 @@
  },
  {
    "name": "Paper Money",
-   "id": 152,
+   "id": 153,
    "expansion": "Rise of the Rajas",
    "age": "Imperial",
    "develops_in": "Castle",
-   "cost": "{\"Food\": 500;\"Wood\": 300}",
+   "cost": "{\"Wood\": 600;\"Gold\": 350}",
    "build_time": 60,
-   "applies_to": "Player;Team",
-   "description": "The player and all allies receive 500 gold",
+   "applies_to": "Player",
+   "description": "Lumberjacks generate 0.014 gold (0.023 gold when fully upgraded) per second while gathering wood",
    "image": "unique-tech-imperial",
    "civ": "Vietnamese",
    "type": "unique"
  },
  {
    "name": "Parthian Tactics",
-   "id": 153,
+   "id": 154,
    "expansion": "Age of Kings",
    "age": "Imperial",
    "develops_in": "Archery Range",
@@ -2157,7 +2171,7 @@
  },
  {
    "name": "Pavise",
-   "id": 154,
+   "id": 155,
    "expansion": "The Forgotten",
    "age": "Castle",
    "develops_in": "Castle",
@@ -2171,21 +2185,21 @@
  },
  {
    "name": "Perfusion",
-   "id": 155,
+   "id": 156,
    "expansion": "Age of Kings",
    "age": "Imperial",
    "develops_in": "Castle",
    "cost": "{\"Food\": 400; \"Gold\": 600}",
    "build_time": 40,
    "applies_to": "Goths;Barracks",
-   "description": "Barracks working rate * 2 (unit creation time halved)",
+   "description": "Barracks work 2x faster",
    "image": "unique-tech-imperial",
    "civ": "Goths",
    "type": "unique"
  },
  {
    "name": "Pikeman",
-   "id": 156,
+   "id": 157,
    "expansion": "Age of Kings",
    "age": "Castle",
    "develops_in": "Barracks",
@@ -2199,7 +2213,7 @@
  },
  {
    "name": "Plate Barding Armor",
-   "id": 157,
+   "id": 158,
    "expansion": "Age of Kings",
    "age": "Imperial",
    "develops_in": "Blacksmith",
@@ -2213,7 +2227,7 @@
  },
  {
    "name": "Plate Mail Armor",
-   "id": 158,
+   "id": 159,
    "expansion": "Age of Kings",
    "age": "Imperial",
    "develops_in": "Blacksmith",
@@ -2227,7 +2241,7 @@
  },
  {
    "name": "Recurve Bow",
-   "id": 159,
+   "id": 160,
    "expansion": "The Forgotten",
    "age": "Imperial",
    "develops_in": "Castle",
@@ -2241,7 +2255,7 @@
  },
  {
    "name": "Redemption",
-   "id": 160,
+   "id": 161,
    "expansion": "Age of Kings",
    "age": "Castle",
    "develops_in": "Monastery",
@@ -2255,7 +2269,7 @@
  },
  {
    "name": "Ring Archer Armor",
-   "id": 161,
+   "id": 162,
    "expansion": "Age of Kings",
    "age": "Imperial",
    "develops_in": "Blacksmith",
@@ -2269,7 +2283,7 @@
  },
  {
    "name": "Rocketry",
-   "id": 162,
+   "id": 163,
    "expansion": "Age of Kings",
    "age": "Imperial",
    "develops_in": "Castle",
@@ -2283,7 +2297,7 @@
  },
  {
    "name": "Royal Heirs",
-   "id": 163,
+   "id": 164,
    "expansion": "The African Kingdoms",
    "age": "Castle",
    "develops_in": "Castle",
@@ -2297,7 +2311,7 @@
  },
  {
    "name": "Sanctity",
-   "id": 164,
+   "id": 165,
    "expansion": "Age of Kings",
    "age": "Castle",
    "develops_in": "Monastery",
@@ -2311,7 +2325,7 @@
  },
  {
    "name": "Sappers",
-   "id": 165,
+   "id": 166,
    "expansion": "Age of Kings",
    "age": "Imperial",
    "develops_in": "Castle",
@@ -2325,7 +2339,7 @@
  },
  {
    "name": "Scale Barding Armor",
-   "id": 166,
+   "id": 167,
    "expansion": "Age of Kings",
    "age": "Feudal",
    "develops_in": "Blacksmith",
@@ -2339,7 +2353,7 @@
  },
  {
    "name": "Scale Mail Armor",
-   "id": 167,
+   "id": 168,
    "expansion": "Age of Kings",
    "age": "Feudal",
    "develops_in": "Blacksmith",
@@ -2353,7 +2367,7 @@
  },
  {
    "name": "Shatagni",
-   "id": 168,
+   "id": 169,
    "expansion": "The Forgotten",
    "age": "Imperial",
    "develops_in": "Castle",
@@ -2367,7 +2381,7 @@
  },
  {
    "name": "Shinkichon",
-   "id": 169,
+   "id": 170,
    "expansion": "The Conquerors",
    "age": "Imperial",
    "develops_in": "Castle",
@@ -2381,7 +2395,7 @@
  },
  {
    "name": "Shipwright",
-   "id": 170,
+   "id": 171,
    "expansion": "Age of Kings",
    "age": "Imperial",
    "develops_in": "Dock",
@@ -2395,7 +2409,7 @@
  },
  {
    "name": "Siege Engineers",
-   "id": 171,
+   "id": 172,
    "expansion": "Age of Kings",
    "age": "Imperial",
    "develops_in": "University",
@@ -2409,7 +2423,7 @@
  },
  {
    "name": "Siege Onager",
-   "id": 172,
+   "id": 173,
    "expansion": "Age of Kings",
    "age": "Imperial",
    "develops_in": "Siege Workshop",
@@ -2423,7 +2437,7 @@
  },
  {
    "name": "Siege Ram",
-   "id": 173,
+   "id": 174,
    "expansion": "Age of Kings",
    "age": "Imperial",
    "develops_in": "Siege Workshop",
@@ -2437,7 +2451,7 @@
  },
  {
    "name": "Silk Armor",
-   "id": 174,
+   "id": 175,
    "expansion": "The Last Khans",
    "age": "Castle",
    "develops_in": "Castle",
@@ -2451,7 +2465,7 @@
  },
  {
    "name": "Silk Road",
-   "id": 175,
+   "id": 176,
    "expansion": "The Forgotten",
    "age": "Imperial",
    "develops_in": "Castle",
@@ -2465,7 +2479,7 @@
  },
  {
    "name": "Sipahi",
-   "id": 176,
+   "id": 177,
    "expansion": "The Forgotten",
    "age": "Castle",
    "develops_in": "Castle",
@@ -2479,7 +2493,7 @@
  },
  {
    "name": "Spies",
-   "id": 177,
+   "id": 178,
    "expansion": "Age of Kings",
    "age": "Imperial",
    "develops_in": "Castle",
@@ -2493,7 +2507,7 @@
  },
  {
    "name": "Squires",
-   "id": 178,
+   "id": 179,
    "expansion": "Age of Kings",
    "age": "Castle",
    "develops_in": "Barracks",
@@ -2507,7 +2521,7 @@
  },
  {
    "name": "Steppe Husbandry",
-   "id": 179,
+   "id": 180,
    "expansion": "The Last Khans",
    "age": "Castle",
    "develops_in": "Castle",
@@ -2521,7 +2535,7 @@
  },
  {
    "name": "Stirrups",
-   "id": 180,
+   "id": 181,
    "expansion": "Definitive Edition",
    "age": "Castle",
    "develops_in": "Castle",
@@ -2535,7 +2549,7 @@
  },
  {
    "name": "Stone Mining",
-   "id": 181,
+   "id": 182,
    "expansion": "Age of Kings",
    "age": "Feudal",
    "develops_in": "Mining Camp",
@@ -2549,7 +2563,7 @@
  },
  {
    "name": "Stone Shaft Mining",
-   "id": 182,
+   "id": 183,
    "expansion": "Age of Kings",
    "age": "Castle",
    "develops_in": "Mining Camp",
@@ -2563,7 +2577,7 @@
  },
  {
    "name": "Stronghold",
-   "id": 183,
+   "id": 184,
    "expansion": "The Forgotten",
    "age": "Castle",
    "develops_in": "Castle",
@@ -2577,7 +2591,7 @@
  },
  {
    "name": "Sultans",
-   "id": 184,
+   "id": 185,
    "expansion": "The Forgotten",
    "age": "Castle",
    "develops_in": "Castle",
@@ -2591,7 +2605,7 @@
  },
  {
    "name": "Supplies",
-   "id": 185,
+   "id": 186,
    "expansion": "Definitive Edition",
    "age": "Feudal",
    "develops_in": "Barracks",
@@ -2605,21 +2619,21 @@
  },
  {
    "name": "Supremacy",
-   "id": 186,
+   "id": 187,
    "expansion": "The Conquerors",
    "age": "Imperial",
    "develops_in": "Castle",
    "cost": "{\"Food\": 400; \"Gold\": 250}",
    "build_time": 60,
    "applies_to": "Spanish;Villager",
-   "description": "Villagers +6 attack and +40 hit points and +2/+2 armor / with loom: 80HP 9 attack 3/4 armor",
+   "description": "Villagers +6 attack, +40 hit points and +2/+2 armor",
    "image": "unique-tech-imperial",
    "civ": "Spanish",
    "type": "unique"
  },
  {
    "name": "Szlachta Privileges",
-   "id": 187,
+   "id": 188,
    "expansion": "Dawn of the Dukes",
    "age": "Castle",
    "develops_in": "Castle",
@@ -2633,7 +2647,7 @@
  },
  {
    "name": "Thalassocracy",
-   "id": 188,
+   "id": 189,
    "expansion": "Rise of the Rajas",
    "age": "Castle",
    "develops_in": "Castle",
@@ -2647,7 +2661,7 @@
  },
  {
    "name": "Theocracy",
-   "id": 189,
+   "id": 190,
    "expansion": "Age of Kings",
    "age": "Imperial",
    "develops_in": "Monastery",
@@ -2661,35 +2675,35 @@
  },
  {
    "name": "Thumb Ring",
-   "id": 190,
+   "id": 191,
    "expansion": "Age of Kings",
    "age": "Castle",
    "develops_in": "Archery Range",
    "cost": "{\"Food\": 300; \"Wood\": 250}",
    "build_time": 45,
    "applies_to": "Archer;Cavalry Archer",
-   "description": "Archers and Cavalry Archers fire faster and with 100% accuracy",
+   "description": "Archers and Cavalry Archers fire faster and with 100% accuracy. Slingers +17% attack speed.",
    "image": "thumb-ring",
    "civ": "",
    "type": "other"
  },
  {
    "name": "Tigui",
-   "id": 191,
+   "id": 192,
    "expansion": "The African Kingdoms",
    "age": "Castle",
    "develops_in": "Castle",
    "cost": "{\"Food\": 200; \"Wood\": 300}",
    "build_time": 40,
    "applies_to": "Town Centers",
-   "description": "Town Centers fire arrows",
+   "description": "Town Centers fire arrows even when not garrisoned",
    "image": "unique-tech-castle",
    "civ": "Malians",
    "type": "unique"
  },
  {
    "name": "Timurid Siegecraft",
-   "id": 192,
+   "id": 193,
    "expansion": "The Last Khans",
    "age": "Imperial",
    "develops_in": "Castle",
@@ -2703,7 +2717,7 @@
  },
  {
    "name": "Torsion Engines",
-   "id": 193,
+   "id": 194,
    "expansion": "The African Kingdoms",
    "age": "Imperial",
    "develops_in": "Castle",
@@ -2717,7 +2731,7 @@
  },
  {
    "name": "Tower Shields",
-   "id": 194,
+   "id": 195,
    "expansion": "The Last Khans",
    "age": "Imperial",
    "develops_in": "Castle",
@@ -2731,7 +2745,7 @@
  },
  {
    "name": "Town Patrol",
-   "id": 195,
+   "id": 196,
    "expansion": "Age of Kings",
    "age": "Castle",
    "develops_in": "Town Center",
@@ -2745,7 +2759,7 @@
  },
  {
    "name": "Town Watch",
-   "id": 196,
+   "id": 197,
    "expansion": "Age of Kings",
    "age": "Feudal",
    "develops_in": "Town Center",
@@ -2759,7 +2773,7 @@
  },
  {
    "name": "Treadmill Crane",
-   "id": 197,
+   "id": 198,
    "expansion": "Age of Kings",
    "age": "Castle",
    "develops_in": "University",
@@ -2773,7 +2787,7 @@
  },
  {
    "name": "Treason",
-   "id": 198,
+   "id": 199,
    "expansion": "Age of Kings",
    "age": "Imperial",
    "develops_in": "Castle",
@@ -2787,7 +2801,7 @@
  },
  {
    "name": "Tusk Swords",
-   "id": 199,
+   "id": 200,
    "expansion": "Rise of the Rajas",
    "age": "Castle",
    "develops_in": "Castle",
@@ -2801,7 +2815,7 @@
  },
  {
    "name": "Two Handed Swordsman",
-   "id": 200,
+   "id": 201,
    "expansion": "Age of Kings",
    "age": "Imperial",
    "develops_in": "Barracks",
@@ -2815,7 +2829,7 @@
  },
  {
    "name": "Two Man Saw",
-   "id": 201,
+   "id": 202,
    "expansion": "Age of Kings",
    "age": "Imperial",
    "develops_in": "Lumber Camp",
@@ -2829,7 +2843,7 @@
  },
  {
    "name": "Wagenburg Tactics",
-   "id": 202,
+   "id": 203,
    "expansion": "Dawn of the Dukes",
    "age": "Castle",
    "develops_in": "Castle",
@@ -2843,7 +2857,7 @@
  },
  {
    "name": "War Galley",
-   "id": 203,
+   "id": 204,
    "expansion": "Age of Kings",
    "age": "Castle",
    "develops_in": "Dock",
@@ -2857,7 +2871,7 @@
  },
  {
    "name": "Warwolf",
-   "id": 204,
+   "id": 205,
    "expansion": "The Forgotten",
    "age": "Imperial",
    "develops_in": "Castle",
@@ -2871,7 +2885,7 @@
  },
  {
    "name": "Wheelbarrow",
-   "id": 205,
+   "id": 206,
    "expansion": "Age of Kings",
    "age": "Feudal",
    "develops_in": "Town Center",
@@ -2885,7 +2899,7 @@
  },
  {
    "name": "Wootz Steel",
-   "id": 206,
+   "id": 207,
    "expansion": "Dynasties of India",
    "age": "Imperial",
    "develops_in": "Castle",
@@ -2899,7 +2913,7 @@
  },
  {
    "name": "Yasama",
-   "id": 207,
+   "id": 208,
    "expansion": "The Forgotten",
    "age": "Castle",
    "develops_in": "Castle",
@@ -2913,7 +2927,7 @@
  },
  {
    "name": "Yeomen",
-   "id": 208,
+   "id": 209,
    "expansion": "Age of Kings",
    "age": "Imperial",
    "develops_in": "Castle",
