@@ -1,6 +1,7 @@
 import { Routes, Route } from "react-router-dom";
 import CivComparePage from "./pages/CivComparePage";
 import CivDataPage from "./pages/CivDataPage";
+
 const Main = () => {
   return (
     <Routes>

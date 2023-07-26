@@ -3,12 +3,8 @@ import TextField from "@mui/material/TextField";
 import { Autocomplete, Box } from "@mui/material";
 import type { Civilization } from "../types";
 
-import { useContext, useState } from "react";
+import { useContext } from "react";
 import { CivContext } from "../contexts/CivContext";
-
-import { LIGHT_TAN_COLOR, MEDIUM_TAN_COLOR, DARK_TAN_COLOR } from "../constants/colors";
-
-// image={require(`../../images/buildings/${building.image}.png`)}
 
 type AutoCompleteSelectProps = {
   setSelectedCiv: (civ?: Civilization) => void;
@@ -34,14 +30,12 @@ export default function AutoCompleteSelect(props: AutoCompleteSelectProps) {
       <Autocomplete
         value={value || null}
         onChange={(event: any, newValue: string | null) => {
-          // console.log(`newValue: ${newValue}`);
           const chosenCiv = civs?.find((c) => newValue === c.name);
           setValue(newValue);
           props.setSelectedCiv(chosenCiv);
         }}
         inputValue={inputValue}
         onInputChange={(event, newInputValue) => {
-          // console.log(`newInputValue: ${newInputValue}`);
           setInputValue(newInputValue);
         }}
         id="civ-autocomplete-select"
@@ -54,12 +48,9 @@ export default function AutoCompleteSelect(props: AutoCompleteSelectProps) {
               loading="lazy"
               width="20"
               src={require(`../images/civilizations/${option.toLowerCase()}.png`)}
-              // src={`https://flagcdn.com/w20/${option.code.toLowerCase()}.png`}
-              // srcSet={`https://flagcdn.com/w40/${option.code.toLowerCase()}.png 2x`}
               alt=""
             />
             <span>{option}</span>
-            {/* {option.label} ({option.code}) */}
           </Box>
         )}
       />

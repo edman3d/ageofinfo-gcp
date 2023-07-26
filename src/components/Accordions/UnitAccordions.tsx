@@ -4,19 +4,12 @@ import { Accordion, AccordionDetails, AccordionSummary, CardMedia, Grid, Typogra
 import ExpandMoreIcon from "@mui/icons-material/ExpandMore";
 import { UnitContext } from "../../contexts/UnitContext";
 import type { Unit } from "../../types";
-import { LIGHT_TAN_COLOR, MEDIUM_TAN_COLOR, DARK_TAN_COLOR } from "../../constants/colors";
-
+import { MEDIUM_TAN_COLOR, DARK_TAN_COLOR } from "../../constants/colors";
 import getCostObject from "../../util/getCost";
-
-import StatIcon from "../StatIcon";
-import StatIconWithValue from "../StatIconWithValue";
-
 import CostDisplay from "../CostDisplay";
 import DetailsList from "../DetailsList";
-
 import StatDisplay from "../StatDisplay";
 
-// should take in a string and return 1 or more accordions (some civs have multiple unique units)
 type UnitAccordionsProps = {
   unique_units: string | null;
 };
@@ -38,11 +31,8 @@ const iconSize = "110px";
 
 export default function UnitAccordions(props: UnitAccordionsProps) {
   const allUnits = useContext(UnitContext);
-  // console.log("props", props);
   const unitNames: string[] = props.unique_units ? props.unique_units.split(";") : [];
-  console.log("unitNames", unitNames);
   const unitObjects = getUnitObjects(unitNames, allUnits);
-  console.log("unitObjects", unitObjects);
 
   return (
     <div>

@@ -4,12 +4,11 @@ import { Accordion, AccordionDetails, AccordionSummary, CardMedia, Grid, Typogra
 import ExpandMoreIcon from "@mui/icons-material/ExpandMore";
 import { BuildingContext } from "../../contexts/BuildingContext";
 import type { Building } from "../../types";
-import { LIGHT_TAN_COLOR, MEDIUM_TAN_COLOR, DARK_TAN_COLOR } from "../../constants/colors";
+import { MEDIUM_TAN_COLOR } from "../../constants/colors";
 
 import CostDisplay from "../CostDisplay";
 import getCostObject from "../../util/getCost";
 import DetailsList from "../DetailsList";
-// should take in a string and return 1 or more accordions (some civs have multiple unique units)
 
 type BuildingAccordionsProps = {
   unique_buildings: string | null;
@@ -32,7 +31,6 @@ const iconSize = "110px";
 export default function BuildingAccordions(props: BuildingAccordionsProps) {
   const allBuildings = useContext(BuildingContext);
   const buildingNames: string[] = props.unique_buildings ? props.unique_buildings.split(";") : [];
-  console.log(buildingNames);
   const buildingObjects = getBuildingObjects(buildingNames, allBuildings);
 
   return (

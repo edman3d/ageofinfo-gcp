@@ -1,5 +1,5 @@
 import * as React from "react";
-import { Accordion, AccordionDetails, AccordionSummary, CardMedia, Grid, Typography } from "@mui/material";
+import { CardMedia } from "@mui/material";
 
 interface StatIconProps {
   fileName: string;
