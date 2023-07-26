@@ -1,6 +1,5 @@
 import * as React from "react";
 import { Box, Grid, Typography } from "@mui/material";
-import Title from "./Title";
 import type { Civilization } from "../types";
 import CivCompareDetails from "./CivCompareDetails";
 import AutoCompleteSelect from "./AutoCompleteSelect";

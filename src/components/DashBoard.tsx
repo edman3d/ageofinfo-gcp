@@ -23,6 +23,7 @@ import "@fontsource/roboto/400.css";
 import "@fontsource/roboto/500.css";
 import "@fontsource/roboto/700.css";
 import CivComparePage from "../pages/CivComparePage";
+
 // Data Tables
 import CivDataPage from "../pages/CivDataPage";
 import TechDataPage from "../pages/TechDataPage";
@@ -42,7 +43,6 @@ function DashboardContent() {
   const [civs, setCivs] = useState(civData);
   const [techs, setTechs] = useState(techData);
   const [buildings, setBuildings] = useState(buildingData);
-  // console.log(`found ${buildings.length} buildings`);
 
   const toggleDrawer = () => {
     setOpen(!open);

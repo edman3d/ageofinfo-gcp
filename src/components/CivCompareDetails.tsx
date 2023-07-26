@@ -1,14 +1,9 @@
 import * as React from "react";
-import { Card, CardActionArea, CardContent, CardMedia, Divider, Grid, Typography } from "@mui/material";
+import { Card, CardContent, CardMedia, Divider, Grid, Typography } from "@mui/material";
 import type { Civilization } from "../types";
 import DetailsList from "./DetailsList";
 
-import { useContext, useState } from "react";
-import { UnitContext } from "../contexts/UnitContext";
-import { CivContext } from "../contexts/CivContext";
-import { TechContext } from "../contexts/TechContext";
-
-import { LIGHT_TAN_COLOR, MEDIUM_TAN_COLOR, DARK_TAN_COLOR } from "../constants/colors";
+import { LIGHT_TAN_COLOR } from "../constants/colors";
 
 import UnitAccordions from "./Accordions/UnitAccordions";
 import TechAccordions from "./Accordions/TechAddordions";
@@ -22,14 +17,6 @@ type CivCompareDetailsProps = {
 };
 
 export default function CivCompareDetails(props: CivCompareDetailsProps) {
-  const units = useContext(UnitContext);
-  const civs = useContext(CivContext);
-  const techs = useContext(TechContext);
-
-  // console.log(`unit context found ${units?.length} units`);
-  // console.log(`civs context found ${civs?.length} civs`);
-  // console.log(`techs context found ${techs?.length} techs`);
-
   return (
     <Card
       sx={{
@@ -40,13 +27,11 @@ export default function CivCompareDetails(props: CivCompareDetailsProps) {
           width: 20,
         },
         "&::-webkit-scrollbar-track": {
-          // backgroundColor: "#b38a66",
           backgroundColor: LIGHT_TAN_COLOR,
         },
         "&::-webkit-scrollbar-thumb": {
           backgroundColor: "#c9a483",
           border: "1px solid #966c46",
-          // borderRadius: 1,
         },
       }}
     >
@@ -74,9 +59,6 @@ export default function CivCompareDetails(props: CivCompareDetailsProps) {
                 Civ Bonus
               </Typography>
             </Divider>
-            {/* <Typography variant="body2" color="text.secondary">
-              Civ Bonus
-            </Typography> */}
             <Typography
               variant="subtitle2"
               color="text.secondary"

@@ -1,6 +1,6 @@
-import { styled, createTheme, ThemeProvider } from "@mui/material/styles";
+import { styled } from "@mui/material/styles";
 import { Drawer as MuiDrawer } from "@mui/material";
-import { LIGHT_TAN_COLOR, MEDIUM_TAN_COLOR, DARK_TAN_COLOR } from "../constants/colors";
+import { LIGHT_TAN_COLOR } from "../constants/colors";
 
 const drawerWidth: number = 240;
 

@@ -4,12 +4,10 @@ import { Accordion, AccordionDetails, AccordionSummary, CardMedia, Grid, Typogra
 import ExpandMoreIcon from "@mui/icons-material/ExpandMore";
 import { TechContext } from "../../contexts/TechContext";
 import type { Technology } from "../../types";
-import { LIGHT_TAN_COLOR, MEDIUM_TAN_COLOR, DARK_TAN_COLOR } from "../../constants/colors";
-
+import { MEDIUM_TAN_COLOR } from "../../constants/colors";
 import CostDisplay from "../CostDisplay";
 import getCostObject from "../../util/getCost";
 import DetailsList from "../DetailsList";
-// should take in a string and return 1 or more accordions (some civs have multiple unique units)
 
 type TechAccordionsProps = {
   unique_techs: string | null;

@@ -1,5 +1,5 @@
 import * as React from "react";
-import { Accordion, AccordionDetails, AccordionSummary, CardMedia, Grid, Typography } from "@mui/material";
+import { Typography } from "@mui/material";
 import { CostType } from "../util/getCost";
 import StatIcon from "./StatIcon";
 

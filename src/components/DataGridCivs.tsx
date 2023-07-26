@@ -4,6 +4,7 @@ import { DataGrid, GridColDef } from "@mui/x-data-grid";
 import { useContext } from "react";
 import { CivContext } from "../contexts/CivContext";
 import { LIGHT_TAN_COLOR } from "../constants/colors";
+
 const columns: GridColDef[] = [
   {
     field: "name",
