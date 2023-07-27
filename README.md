@@ -1,7 +1,14 @@
-## Deploying Revision to GCP
+## Deploying Revision to GCP (CI/CD)
 
-- use `gcloud builds submit --tag gcr.io/ageofinfo-gcp/age-of-info` for updating image (adds a new revision)
-- then edit/deploy new revision and select it from gcp dashboard
+- Merge latest code into `main` for deployment
+- Create a new release tag
+- This will trigger the GCP Cloud Build and update the Cloud Run service with the new build
+
+## Deploy Revision to GCP manually (requires setting revision active in GCP)
+
+- Merge latest code into `main` for deployment
+- Use `gcloud builds submit --tag gcr.io/ageofinfo-gcp/age-of-info` for updating image (adds a new revision) to the `react-with-cloudrun` service
+- To divert traffic to this revision, select the `react-with-cloudrun` service -> Edit/Deploy New Revision and select the build tagged (latest) from the list
 
 ## Data Updating Process
 
