@@ -76,7 +76,7 @@ function DashboardContent() {
                       <MenuIcon sx={{ color: DARK_TAN_COLOR }} />
                     </IconButton>
                     <Typography component="h1" variant="h6" color="black" noWrap sx={{ flexGrow: 1 }}>
-                      AgeOfInfo Dashboard (10:20am)
+                      AgeOfInfo Dashboard (10:30am)
                     </Typography>
                     <IconButton color="inherit">
                       <Badge badgeContent={4} color="secondary">
