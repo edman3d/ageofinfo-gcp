@@ -7,7 +7,7 @@ export type CostType = {
 
 export default function getCostObject(delimitedString: string): CostType {
   if (delimitedString.length < 4) {
-    return {};
+    throw new SyntaxError("Cost string must be 4 or more characters");
   }
   const costString = delimitedString.replace(";", ",");
   const costObj = JSON.parse(costString);
