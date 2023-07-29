@@ -7,14 +7,12 @@ import {
   Menu as MenuIcon,
   Notifications as NotificationsIcon,
 } from "@mui/icons-material";
-
 import type { Building, Civilization, Technology, Unit } from "../types";
 import { CivComparePage, CivDataPage, TechDataPage, BuildingDataPage, UnitDataPage } from "../pages";
 import { BuildingContext, CivContext, TechContext, UnitContext } from "../contexts";
-import { DARK_TAN_COLOR } from "../constants/colors";
+import { DARK_TAN_COLOR } from "../constants";
 import { AppBar, Drawer, DrawerToolsSection, DrawerDataTablesSection, DrawerLinksSection } from "./Layout";
 import { Copyright } from "./Micro";
-
 import "@fontsource/roboto/400.css"; // todo move to font export or something
 
 let unitData: Unit[] = require("./../data/units.json");
