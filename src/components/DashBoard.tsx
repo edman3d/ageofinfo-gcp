@@ -13,7 +13,7 @@ import { BuildingContext, CivContext, TechContext, UnitContext } from "../contex
 import { DARK_TAN_COLOR } from "../constants";
 import { AppBar, Drawer, DrawerToolsSection, DrawerDataTablesSection, DrawerLinksSection } from "./Layout";
 import { Copyright } from "./Micro";
-import "@fontsource/roboto/400.css"; // todo move to font export or something
+import "@fontsource/roboto/400.css";
 
 let unitData: Unit[] = require("./../data/units.json");
 let techData: Technology[] = require("./../data/techs.json");
@@ -22,10 +22,10 @@ let buildingData: Building[] = require("./../data/buildings.json");
 
 function DashboardContent() {
   const [open, setOpen] = useState(true);
-  const [units, setUnits] = useState(unitData);
-  const [civs, setCivs] = useState(civData);
-  const [techs, setTechs] = useState(techData);
-  const [buildings, setBuildings] = useState(buildingData);
+  const [units] = useState(unitData);
+  const [civs] = useState(civData);
+  const [techs] = useState(techData);
+  const [buildings] = useState(buildingData);
 
   const toggleDrawer = () => {
     setOpen(!open);

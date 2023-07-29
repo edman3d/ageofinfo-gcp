@@ -11,7 +11,7 @@ type AutoCompleteSelectProps = {
 
 function getCivDropdownValues(civs: Civilization[] | null) {
   let dropdownOptions: string[] = [];
-  civs?.map((civ) => {
+  civs?.forEach((civ) => {
     dropdownOptions.push(civ.name);
   });
   return dropdownOptions;
