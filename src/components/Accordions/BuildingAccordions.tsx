@@ -28,7 +28,7 @@ function getBuildingObjects(buildingNamesToFind: string[], allBuildings: Buildin
 
 const iconSize = "110px";
 
-export default function BuildingAccordions(props: BuildingAccordionsProps) {
+export function BuildingAccordions(props: BuildingAccordionsProps) {
   const allBuildings = useContext(BuildingContext);
   const buildingNames: string[] = props.unique_buildings ? props.unique_buildings.split(";") : [];
   const buildingObjects = getBuildingObjects(buildingNames, allBuildings);

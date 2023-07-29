@@ -29,7 +29,7 @@ function getUnitObjects(unitNamesToFind: string[], allUnits: Unit[] | null) {
 
 const iconSize = "110px";
 
-export default function UnitAccordions(props: UnitAccordionsProps) {
+export function UnitAccordions(props: UnitAccordionsProps) {
   const allUnits = useContext(UnitContext);
   const unitNames: string[] = props.unique_units ? props.unique_units.split(";") : [];
   const unitObjects = getUnitObjects(unitNames, allUnits);

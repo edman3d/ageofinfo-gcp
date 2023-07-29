@@ -2,12 +2,8 @@ import * as React from "react";
 import { Card, CardContent, CardMedia, Divider, Grid, Typography } from "@mui/material";
 import type { Civilization } from "../../types";
 import DetailsList from "./DetailsList";
-
 import { LIGHT_TAN_COLOR } from "../../constants/colors";
-
-import UnitAccordions from "../Accordions/UnitAccordions";
-import TechAccordions from "../Accordions/TechAddordions";
-import BuildingAccordions from "../Accordions/BuildingAccordions";
+import { BuildingAccordions, TechAccordions, UnitAccordions } from "../Accordions";
 
 const marginBottom = "10px"; // margin between stat rows
 const paddingLeft = "0px";
