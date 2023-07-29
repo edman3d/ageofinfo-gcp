@@ -8,11 +8,11 @@ import ShoppingCartIcon from "@mui/icons-material/ShoppingCart";
 import BarChartIcon from "@mui/icons-material/BarChart";
 import LayersIcon from "@mui/icons-material/Layers";
 import AssignmentIcon from "@mui/icons-material/Assignment";
-import { LIGHT_TAN_COLOR, TEXT_COLOR_MAIN } from "../constants/colors";
+import { LIGHT_TAN_COLOR, TEXT_COLOR_MAIN } from "../../constants/colors";
 import { Link as RouterLink } from "react-router-dom";
 import Link from "@mui/material/Link";
 
-export const mainListItems = (
+export const DrawerToolsSection = (
   <React.Fragment>
     <ListSubheader component="div" inset sx={{ backgroundColor: LIGHT_TAN_COLOR }}>
       Tools
@@ -29,7 +29,7 @@ export const mainListItems = (
   </React.Fragment>
 );
 
-export const secondaryListItems = (
+export const DrawerDataTablesSection = (
   <React.Fragment>
     <ListSubheader component="div" inset sx={{ backgroundColor: LIGHT_TAN_COLOR }}>
       Data Tables
@@ -73,7 +73,7 @@ export const secondaryListItems = (
   </React.Fragment>
 );
 
-export const linkListItems = (
+export const DrawerLinksSection = (
   <React.Fragment>
     <ListSubheader component="div" inset sx={{ backgroundColor: LIGHT_TAN_COLOR }}>
       Links

@@ -1,10 +1,9 @@
 import * as React from "react";
 import TextField from "@mui/material/TextField";
 import { Autocomplete, Box } from "@mui/material";
-import type { Civilization } from "../types";
-
+import type { Civilization } from "../../types";
 import { useContext } from "react";
-import { CivContext } from "../contexts/CivContext";
+import { CivContext } from "../../contexts/CivContext";
 
 type AutoCompleteSelectProps = {
   setSelectedCiv: (civ?: Civilization) => void;
@@ -12,13 +11,13 @@ type AutoCompleteSelectProps = {
 
 function getCivDropdownValues(civs: Civilization[] | null) {
   let dropdownOptions: string[] = [];
-  civs?.map((civ) => {
+  civs?.forEach((civ) => {
     dropdownOptions.push(civ.name);
   });
   return dropdownOptions;
 }
 
-export default function AutoCompleteSelect(props: AutoCompleteSelectProps) {
+export function AutoCompleteSelect(props: AutoCompleteSelectProps) {
   const [value, setValue] = React.useState<string | null>();
   const [inputValue, setInputValue] = React.useState("");
   const civs = useContext(CivContext);
@@ -47,7 +46,7 @@ export default function AutoCompleteSelect(props: AutoCompleteSelectProps) {
             <img
               loading="lazy"
               width="20"
-              src={require(`../images/civilizations/${option.toLowerCase()}.png`)}
+              src={require(`../../images/civilizations/${option.toLowerCase()}.png`)}
               alt=""
             />
             <span>{option}</span>

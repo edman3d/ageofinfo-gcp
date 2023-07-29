@@ -6,9 +6,9 @@ import { UnitContext } from "../../contexts/UnitContext";
 import type { Unit } from "../../types";
 import { MEDIUM_TAN_COLOR, DARK_TAN_COLOR } from "../../constants/colors";
 import getCostObject from "../../util/getCost";
-import CostDisplay from "../CostDisplay";
-import DetailsList from "../DetailsList";
-import StatDisplay from "../StatDisplay";
+import CostDisplay from "../Stats/CostDisplay";
+import DetailsList from "../ComparePanels/DetailsList";
+import StatDisplay from "../Stats/StatDisplay";
 
 type UnitAccordionsProps = {
   unique_units: string | null;
@@ -29,7 +29,7 @@ function getUnitObjects(unitNamesToFind: string[], allUnits: Unit[] | null) {
 
 const iconSize = "110px";
 
-export default function UnitAccordions(props: UnitAccordionsProps) {
+export function UnitAccordions(props: UnitAccordionsProps) {
   const allUnits = useContext(UnitContext);
   const unitNames: string[] = props.unique_units ? props.unique_units.split(";") : [];
   const unitObjects = getUnitObjects(unitNames, allUnits);

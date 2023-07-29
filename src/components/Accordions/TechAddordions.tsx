@@ -5,9 +5,9 @@ import ExpandMoreIcon from "@mui/icons-material/ExpandMore";
 import { TechContext } from "../../contexts/TechContext";
 import type { Technology } from "../../types";
 import { MEDIUM_TAN_COLOR } from "../../constants/colors";
-import CostDisplay from "../CostDisplay";
+import CostDisplay from "../Stats/CostDisplay";
 import getCostObject from "../../util/getCost";
-import DetailsList from "../DetailsList";
+import DetailsList from "../ComparePanels/DetailsList";
 
 type TechAccordionsProps = {
   unique_techs: string | null;
@@ -27,7 +27,7 @@ function getTechObjects(techNamesToFind: string[], allTechs: Technology[] | null
 
 const iconSize = "110px";
 
-export default function TechAccordions(props: TechAccordionsProps) {
+export function TechAccordions(props: TechAccordionsProps) {
   const allTechs = useContext(TechContext);
   const techNames: string[] = props.unique_techs ? props.unique_techs.split(";") : [];
   const techObjects = getTechObjects(techNames, allTechs);

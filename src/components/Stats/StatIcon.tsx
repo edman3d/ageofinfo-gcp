@@ -11,7 +11,7 @@ export default function StatIcon(props: StatIconProps) {
     <CardMedia
       component="img"
       height="140"
-      image={require(`../images/staticons/${props.fileName}.png`)}
+      image={require(`../../images/staticons/${props.fileName}.png`)}
       alt={`${props.fileName}-icon`}
       sx={{ height: props.iconSize, width: props.iconSize }}
     />

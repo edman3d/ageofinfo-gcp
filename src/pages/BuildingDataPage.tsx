@@ -1,7 +1,7 @@
-import DataGridBuildings from "../components/DataGridBuildings";
+import DataGridBuildings from "../components/DataGrids/DataGridBuildings";
 
 const BuildingDataPage = () => {
   return <DataGridBuildings />;
 };
 
-export default BuildingDataPage;
+export { BuildingDataPage };

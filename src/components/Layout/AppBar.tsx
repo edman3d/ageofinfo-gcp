@@ -1,6 +1,6 @@
 import { styled } from "@mui/material/styles";
 import MuiAppBar, { AppBarProps as MuiAppBarProps } from "@mui/material/AppBar";
-import { MEDIUM_TAN_COLOR } from "../constants/colors";
+import { MEDIUM_TAN_COLOR } from "../../constants/colors";
 const drawerWidth: number = 240;
 
 interface AppBarProps extends MuiAppBarProps {

@@ -6,9 +6,9 @@ import { BuildingContext } from "../../contexts/BuildingContext";
 import type { Building } from "../../types";
 import { MEDIUM_TAN_COLOR } from "../../constants/colors";
 
-import CostDisplay from "../CostDisplay";
+import CostDisplay from "../Stats/CostDisplay";
 import getCostObject from "../../util/getCost";
-import DetailsList from "../DetailsList";
+import DetailsList from "../ComparePanels/DetailsList";
 
 type BuildingAccordionsProps = {
   unique_buildings: string | null;
@@ -28,7 +28,7 @@ function getBuildingObjects(buildingNamesToFind: string[], allBuildings: Buildin
 
 const iconSize = "110px";
 
-export default function BuildingAccordions(props: BuildingAccordionsProps) {
+export function BuildingAccordions(props: BuildingAccordionsProps) {
   const allBuildings = useContext(BuildingContext);
   const buildingNames: string[] = props.unique_buildings ? props.unique_buildings.split(";") : [];
   const buildingObjects = getBuildingObjects(buildingNames, allBuildings);
