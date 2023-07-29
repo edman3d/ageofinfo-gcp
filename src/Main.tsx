@@ -1,6 +1,5 @@
 import { Routes, Route } from "react-router-dom";
-import CivComparePage from "./pages/CivComparePage";
-import CivDataPage from "./pages/CivDataPage";
+import { CivComparePage, CivDataPage } from "./pages";
 
 const Main = () => {
   return (

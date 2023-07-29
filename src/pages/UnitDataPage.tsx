@@ -4,4 +4,4 @@ const UnitDataPage = () => {
   return <DataGridUnits />;
 };
 
-export default UnitDataPage;
+export { UnitDataPage };

@@ -1,7 +1,7 @@
 import CivCompare from "../components/ComparePanels/CivCompare";
 
-export const CivComparePage = () => {
+const CivComparePage = () => {
   return <CivCompare />;
 };
 
-export default CivComparePage;
+export { CivComparePage };

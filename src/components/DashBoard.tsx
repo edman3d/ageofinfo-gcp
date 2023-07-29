@@ -22,13 +22,8 @@ import "@fontsource/roboto/300.css";
 import "@fontsource/roboto/400.css";
 import "@fontsource/roboto/500.css";
 import "@fontsource/roboto/700.css";
-import CivComparePage from "../pages/CivComparePage";
 
-// Data Tables
-import CivDataPage from "../pages/CivDataPage";
-import TechDataPage from "../pages/TechDataPage";
-import BuildingDataPage from "../pages/BuildingDataPage";
-import UnitDataPage from "../pages/UnitDataPage";
+import { CivComparePage, CivDataPage, TechDataPage, BuildingDataPage, UnitDataPage } from "../pages";
 
 let unitData: Unit[] = require("./../data/units.json");
 let techData: Technology[] = require("./../data/techs.json");

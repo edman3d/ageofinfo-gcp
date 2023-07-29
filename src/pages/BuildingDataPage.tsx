@@ -4,4 +4,4 @@ const BuildingDataPage = () => {
   return <DataGridBuildings />;
 };
 
-export default BuildingDataPage;
+export { BuildingDataPage };

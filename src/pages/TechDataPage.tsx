@@ -4,4 +4,4 @@ const TechDataPage = () => {
   return <DataGridTechs />;
 };
 
-export default TechDataPage;
+export { TechDataPage };

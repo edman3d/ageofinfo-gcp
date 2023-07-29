@@ -4,4 +4,4 @@ const CivDataPage = () => {
   return <DataGridCivs />;
 };
 
-export default CivDataPage;
+export { CivDataPage };
