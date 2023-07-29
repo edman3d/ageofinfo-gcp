@@ -1,13 +1,8 @@
-export type CostType = {
-  Wood?: number;
-  Food?: number;
-  Gold?: number;
-  Stone?: number;
-};
+import { Cost } from "../types";
 
-export default function getCostObject(delimitedString: string): CostType {
+export default function getCostObject(delimitedString: string): Cost {
   if (delimitedString.length < 4) {
-    return {};
+    throw new SyntaxError("Cost string must be 4 or more characters");
   }
   const costString = delimitedString.replace(";", ",");
   const costObj = JSON.parse(costString);
