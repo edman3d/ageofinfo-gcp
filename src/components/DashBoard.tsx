@@ -1,5 +1,6 @@
 import * as React from "react";
 import { useState } from "react";
+import { Routes, Route } from "react-router-dom";
 import { Badge, Box, Container, CssBaseline, Divider, List, IconButton, Toolbar, Typography } from "@mui/material";
 import {
   ChevronLeft as ChevronLeftIcon,
@@ -7,18 +8,14 @@ import {
   Notifications as NotificationsIcon,
 } from "@mui/icons-material";
 
-import { Routes, Route } from "react-router-dom";
 import type { Building, Civilization, Technology, Unit } from "../types";
+import { CivComparePage, CivDataPage, TechDataPage, BuildingDataPage, UnitDataPage } from "../pages";
 import { BuildingContext, CivContext, TechContext, UnitContext } from "../contexts";
 import { DARK_TAN_COLOR } from "../constants/colors";
-
-import { AppBar, Drawer } from "./Layout";
+import { AppBar, Drawer, DrawerToolsSection, DrawerDataTablesSection, DrawerLinksSection } from "./Layout";
 import Copyright from "./Micro/Copyright";
-import { mainListItems, secondaryListItems, linkListItems } from "./Layout/DrawerLinks";
 
-import "@fontsource/roboto/400.css";
-
-import { CivComparePage, CivDataPage, TechDataPage, BuildingDataPage, UnitDataPage } from "../pages";
+import "@fontsource/roboto/400.css"; // todo move to font export or something
 
 let unitData: Unit[] = require("./../data/units.json");
 let techData: Technology[] = require("./../data/techs.json");
@@ -88,11 +85,11 @@ function DashboardContent() {
                 </Toolbar>
                 <Divider />
                 <List component="nav">
-                  {mainListItems}
+                  {DrawerToolsSection}
                   <Divider sx={{ my: 1 }} />
-                  {secondaryListItems}
+                  {DrawerDataTablesSection}
                   <Divider sx={{ my: 1 }} />
-                  {linkListItems}
+                  {DrawerLinksSection}
                 </List>
               </Drawer>
 
