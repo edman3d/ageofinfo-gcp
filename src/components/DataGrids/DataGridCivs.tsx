@@ -2,46 +2,51 @@ import * as React from "react";
 import { Box, Typography } from "@mui/material";
 import { DataGrid, GridColDef } from "@mui/x-data-grid";
 import { useContext } from "react";
-import { TechContext } from "../contexts";
-import { LIGHT_TAN_COLOR } from "../constants/colors";
+import { CivContext } from "../../contexts";
+import { LIGHT_TAN_COLOR } from "../../constants/colors";
 
 const columns: GridColDef[] = [
   {
     field: "name",
     headerName: "Name",
-    width: 200,
+    width: 130,
   },
   {
-    field: "age",
-    headerName: "Age",
-    width: 120,
-  },
-  {
-    field: "build_time",
-    headerName: "Build Time",
-    width: 120,
-  },
-  {
-    field: "applies_to",
-    headerName: "Applies To",
+    field: "army_type",
+    headerName: "Army Type",
     width: 220,
   },
   {
-    field: "description",
-    headerName: "Description",
-    width: 600,
+    field: "unique_unit",
+    headerName: "Unique Unit/s",
+    width: 230,
+  },
+  {
+    field: "unique_tech",
+    headerName: "Unique Tech",
+    width: 200,
+  },
+  {
+    field: "team_bonus",
+    headerName: "Team Bonus",
+    width: 200,
+  },
+  {
+    field: "civilization_bonus",
+    headerName: "Civ Bonus",
+    width: 400,
   },
 ];
 
-export default function DataGridTechs() {
-  const techs = useContext(TechContext);
+export default function DataGridCivs() {
+  const civs = useContext(CivContext);
   return (
     <Box sx={{ height: "85vh", width: "100%" }}>
       <Typography variant="h5" color="black" sx={{ marginBottom: 2 }}>
-        Raw Technology Data
+        Raw Civilization Data
       </Typography>
       <DataGrid
-        rows={techs ?? ["None"]}
+        rows={civs ?? ["None"]}
         columns={columns}
         pageSize={25}
         rowsPerPageOptions={[25]}

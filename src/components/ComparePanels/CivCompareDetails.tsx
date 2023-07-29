@@ -1,13 +1,13 @@
 import * as React from "react";
 import { Card, CardContent, CardMedia, Divider, Grid, Typography } from "@mui/material";
-import type { Civilization } from "../types";
+import type { Civilization } from "../../types";
 import DetailsList from "./DetailsList";
 
-import { LIGHT_TAN_COLOR } from "../constants/colors";
+import { LIGHT_TAN_COLOR } from "../../constants/colors";
 
-import UnitAccordions from "./Accordions/UnitAccordions";
-import TechAccordions from "./Accordions/TechAddordions";
-import BuildingAccordions from "./Accordions/BuildingAccordions";
+import UnitAccordions from "../Accordions/UnitAccordions";
+import TechAccordions from "../Accordions/TechAddordions";
+import BuildingAccordions from "../Accordions/BuildingAccordions";
 
 const marginBottom = "10px"; // margin between stat rows
 const paddingLeft = "0px";
@@ -41,8 +41,8 @@ export default function CivCompareDetails(props: CivCompareDetailsProps) {
           height="140"
           image={
             props.civ
-              ? require(`../images/civilizations/${props.civ?.image}.png`)
-              : require("../images/staticons/convert.png")
+              ? require(`../../images/civilizations/${props.civ?.image}.png`)
+              : require("../../images/staticons/convert.png")
           }
           alt="civ banner"
           sx={{ height: "64px", width: "64px" }}

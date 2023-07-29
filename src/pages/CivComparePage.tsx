@@ -1,4 +1,4 @@
-import CivCompare from "../components/CivCompare";
+import CivCompare from "../components/ComparePanels/CivCompare";
 
 export const CivComparePage = () => {
   return <CivCompare />;

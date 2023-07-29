@@ -1,7 +1,7 @@
 import * as React from "react";
 import { Typography } from "@mui/material";
 import StatIcon from "./StatIcon";
-import type { Unit } from "../types";
+import type { Unit } from "../../types";
 
 interface StatDisplayProps {
   unit: Unit;

@@ -13,10 +13,10 @@ import type { Building, Civilization, Technology, Unit } from "../types";
 import { BuildingContext, CivContext, TechContext, UnitContext } from "../contexts";
 import { DARK_TAN_COLOR } from "../constants/colors";
 
-import { AppBar } from "./AppBar";
-import { Drawer } from "./Drawer";
-import Copyright from "./Copyright";
-import { mainListItems, secondaryListItems, linkListItems } from "./listItems";
+import { AppBar } from "./Layout/AppBar";
+import { Drawer } from "./Layout/Drawer";
+import Copyright from "./Micro/Copyright";
+import { mainListItems, secondaryListItems, linkListItems } from "./Layout/DrawerLinks";
 
 import "@fontsource/roboto/300.css";
 import "@fontsource/roboto/400.css";

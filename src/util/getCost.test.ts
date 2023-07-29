@@ -1,14 +1,15 @@
-import getCostObject, { CostType } from "./getCost";
+import getCostObject from "./getCost";
+import type { Cost } from "../types";
 
 describe("getCost function tests", () => {
   test("gets single cost value correctly", () => {
     const costString = '{"Food": 50}';
-    const costObject: CostType = getCostObject(costString);
+    const costObject: Cost = getCostObject(costString);
     expect(costObject.Food).toEqual(50);
   });
   test("gets multiple cost value correctly", () => {
     const costString = '{"Food": 65;"Gold": 20}';
-    const costObject: CostType = getCostObject(costString);
+    const costObject: Cost = getCostObject(costString);
     expect(costObject.Food).toEqual(65);
     expect(costObject.Gold).toEqual(20);
   });

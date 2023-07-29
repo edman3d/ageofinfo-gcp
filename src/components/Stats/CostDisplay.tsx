@@ -1,10 +1,10 @@
 import * as React from "react";
 import { Typography } from "@mui/material";
-import { CostType } from "../util/getCost";
+import { Cost } from "../../types/Cost";
 import StatIcon from "./StatIcon";
 
 interface CostDisplayProps {
-  costObject: CostType;
+  costObject: Cost;
 }
 
 const costValueVariant = "body2";

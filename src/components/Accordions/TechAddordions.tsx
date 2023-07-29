@@ -5,9 +5,9 @@ import ExpandMoreIcon from "@mui/icons-material/ExpandMore";
 import { TechContext } from "../../contexts/TechContext";
 import type { Technology } from "../../types";
 import { MEDIUM_TAN_COLOR } from "../../constants/colors";
-import CostDisplay from "../CostDisplay";
+import CostDisplay from "../Stats/CostDisplay";
 import getCostObject from "../../util/getCost";
-import DetailsList from "../DetailsList";
+import DetailsList from "../ComparePanels/DetailsList";
 
 type TechAccordionsProps = {
   unique_techs: string | null;

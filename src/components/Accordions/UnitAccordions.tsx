@@ -6,9 +6,9 @@ import { UnitContext } from "../../contexts/UnitContext";
 import type { Unit } from "../../types";
 import { MEDIUM_TAN_COLOR, DARK_TAN_COLOR } from "../../constants/colors";
 import getCostObject from "../../util/getCost";
-import CostDisplay from "../CostDisplay";
-import DetailsList from "../DetailsList";
-import StatDisplay from "../StatDisplay";
+import CostDisplay from "../Stats/CostDisplay";
+import DetailsList from "../ComparePanels/DetailsList";
+import StatDisplay from "../Stats/StatDisplay";
 
 type UnitAccordionsProps = {
   unique_units: string | null;

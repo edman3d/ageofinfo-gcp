@@ -1,4 +1,4 @@
-import DataGridTechs from "../components/DataGridTechs";
+import DataGridTechs from "../components/DataGrids/DataGridTechs";
 
 const TechDataPage = () => {
   return <DataGridTechs />;
