@@ -17,7 +17,7 @@ function getCivDropdownValues(civs: Civilization[] | null) {
   return dropdownOptions;
 }
 
-export default function AutoCompleteSelect(props: AutoCompleteSelectProps) {
+export function AutoCompleteSelect(props: AutoCompleteSelectProps) {
   const [value, setValue] = React.useState<string | null>();
   const [inputValue, setInputValue] = React.useState("");
   const civs = useContext(CivContext);

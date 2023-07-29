@@ -2,7 +2,7 @@ import * as React from "react";
 import { Box, Grid, Typography } from "@mui/material";
 import type { Civilization } from "../../types";
 import CivCompareDetails from "./CivCompareDetails";
-import AutoCompleteSelect from "../Micro/AutoCompleteSelect";
+import { AutoCompleteSelect } from "../Micro";
 
 export default function CivCompare() {
   const [selectedCivOne, setSelectedCivOne] = React.useState<Civilization | undefined | null>(null);

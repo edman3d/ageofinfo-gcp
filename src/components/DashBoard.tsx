@@ -13,7 +13,7 @@ import { CivComparePage, CivDataPage, TechDataPage, BuildingDataPage, UnitDataPa
 import { BuildingContext, CivContext, TechContext, UnitContext } from "../contexts";
 import { DARK_TAN_COLOR } from "../constants/colors";
 import { AppBar, Drawer, DrawerToolsSection, DrawerDataTablesSection, DrawerLinksSection } from "./Layout";
-import Copyright from "./Micro/Copyright";
+import { Copyright } from "./Micro";
 
 import "@fontsource/roboto/400.css"; // todo move to font export or something
 
