@@ -14,9 +14,9 @@ describe("getCost function tests", () => {
     expect(costObject.Gold).toEqual(20);
   });
   test("return empty object if delimited string is too short", () => {
-    const costString = "{x}";
+    const costString = "{x";
     expect(() => getCostObject(costString)).toThrow(SyntaxError);
-    expect(() => getCostObject(costString)).toThrow("Cost string must be 4 or more characters");
+    expect(() => getCostObject(costString)).toThrow("Cost string must be 3 or more characters");
   });
   test("malformed cost string throws SyntaxError", () => {
     const costString = '{Food: 65;"Gold": 20}';
