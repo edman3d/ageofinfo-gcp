@@ -40,6 +40,6 @@ export function getCreatedInFileName(name: string): string {
     case "Town Center":
       return `town-center.png`;
     default:
-      return "barracks.png";
+      return "castle.png";
   }
 }
