@@ -1,14 +1,23 @@
 import * as React from "react";
 import { useContext } from "react";
-import { Accordion, AccordionDetails, AccordionSummary, CardMedia, Grid, Typography } from "@mui/material";
+import {
+  Accordion,
+  AccordionDetails,
+  AccordionSummary,
+  Avatar,
+  CardMedia,
+  Chip,
+  Grid,
+  Typography,
+} from "@mui/material";
 import ExpandMoreIcon from "@mui/icons-material/ExpandMore";
 import { TechContext } from "../../contexts/TechContext";
 import type { Technology } from "../../types";
 import { MEDIUM_TAN_COLOR } from "../../constants/colors";
 import CostDisplay from "../Stats/CostDisplay";
 import getCostObject from "../../util/getCost";
-import DetailsList from "../ComparePanels/DetailsList";
 import ChipList from "../ComparePanels/ChipList";
+import { getCreatedInFileName, getRequiresAgeFileName } from "../../util/getAvatarFileName";
 
 type TechAccordionsProps = {
   unique_techs: string | null;
@@ -74,8 +83,37 @@ export function TechAccordions(props: TechAccordionsProps) {
                   <Typography variant="subtitle1">{tech.description}</Typography>
                 </Grid>
                 <Grid item xs={6}>
+                  <Typography variant="caption">Requires Age</Typography>
+                  <br />
+                  <Chip
+                    size="medium"
+                    avatar={
+                      <Avatar
+                        alt="develops-in"
+                        src={require(`../../images/technologies/${getRequiresAgeFileName(tech.age)}`)}
+                      />
+                    }
+                    label={tech.age}
+                    sx={{ fontSize: "1rem", marginBottom: 1 }}
+                  />
+                </Grid>
+                <Grid item xs={6}>
+                  <Typography variant="caption">Develops In</Typography>
+                  <br />
+                  <Chip
+                    size="medium"
+                    avatar={
+                      <Avatar
+                        alt="develops-in"
+                        src={require(`../../images/buildings/${getCreatedInFileName(tech.develops_in)}`)}
+                      />
+                    }
+                    label={tech.develops_in}
+                    sx={{ fontSize: "1rem", marginBottom: 1 }}
+                  />
+                </Grid>
+                <Grid item xs={6}>
                   <Typography variant="caption">Applies To</Typography>
-                  {/* <DetailsList delimitedString={tech.applies_to} /> */}
                   <ChipList delimitedString={tech.applies_to} />
                 </Grid>
                 <Grid item xs={6}>
@@ -83,23 +121,10 @@ export function TechAccordions(props: TechAccordionsProps) {
                   <Typography variant="subtitle1">{tech.build_time} seconds</Typography>
                 </Grid>
                 <Grid item xs={6}>
-                  <Typography variant="caption">Civilization</Typography>
-                  <Typography variant="subtitle1">{tech.civ ? tech.civ : "All"}</Typography>
-                </Grid>
-                <Grid item xs={6}>
                   <Typography variant="caption">Type</Typography>
-                  {/* <Typography variant="subtitle1">{tech.type}</Typography> */}
                   <ChipList delimitedString={tech.type} />
                 </Grid>
                 <Grid item xs={6}>
-                  <Typography variant="caption">Develops In</Typography>
-                  <Typography variant="subtitle1">{tech.develops_in}</Typography>
-                </Grid>
-                <Grid item xs={6}>
-                  <Typography variant="caption">Age Required</Typography>
-                  <Typography variant="subtitle1">{tech.age}</Typography>
-                </Grid>
-                <Grid item xs={12}>
                   <Typography variant="caption">Expansion</Typography>
                   <Typography variant="subtitle1">{tech.expansion}</Typography>
                 </Grid>
