@@ -16,15 +16,3 @@
 2. Download it as `.csv`
 3. Convert to JSON here https://www.convertcsv.com/csv-to-json.htm (default settings, CLRF line endings)
 4. Place in `/data/` folder
-
-## TODO/Ideas
-
-- Paiks research time unknown
-
-## Ideas
-
-- Use `<Chip>` components for armor classes
-
-## Other
-
-- https://dev.to/johannesvitt/deploy-a-react-app-on-gcp-with-google-cloud-run-il3

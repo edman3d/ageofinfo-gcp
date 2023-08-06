@@ -1,6 +1,15 @@
 import * as React from "react";
 import { useContext } from "react";
-import { Accordion, AccordionDetails, AccordionSummary, CardMedia, Grid, Typography } from "@mui/material";
+import {
+  Accordion,
+  AccordionDetails,
+  AccordionSummary,
+  Avatar,
+  CardMedia,
+  Chip,
+  Grid,
+  Typography,
+} from "@mui/material";
 import ExpandMoreIcon from "@mui/icons-material/ExpandMore";
 import { UnitContext } from "../../contexts/UnitContext";
 import type { Unit } from "../../types";
@@ -9,6 +18,8 @@ import getCostObject from "../../util/getCost";
 import CostDisplay from "../Stats/CostDisplay";
 import DetailsList from "../ComparePanels/DetailsList";
 import StatDisplay from "../Stats/StatDisplay";
+import ChipList from "../ComparePanels/ChipList";
+import { getCreatedInFileName, getRequiresAgeFileName } from "../../util/getAvatarFileName";
 
 type UnitAccordionsProps = {
   unique_units: string | null;
@@ -81,11 +92,33 @@ export function UnitAccordions(props: UnitAccordionsProps) {
                 </Grid>
                 <Grid item xs={6}>
                   <Typography variant="caption">Requires Age</Typography>
-                  <Typography variant="subtitle1">{unit.age}</Typography>
+                  <br />
+                  <Chip
+                    size="medium"
+                    avatar={
+                      <Avatar
+                        alt="requires-age"
+                        src={require(`../../images/technologies/${getRequiresAgeFileName(unit.age)}`)}
+                      />
+                    }
+                    label={unit.age}
+                    sx={{ fontSize: "1rem", marginBottom: 1 }}
+                  />
                 </Grid>
                 <Grid item xs={6}>
                   <Typography variant="caption">Created In</Typography>
-                  <Typography variant="subtitle1">{unit.created_in}</Typography>
+                  <br />
+                  <Chip
+                    size="medium"
+                    avatar={
+                      <Avatar
+                        alt="requires-age"
+                        src={require(`../../images/buildings/${getCreatedInFileName(unit.created_in)}`)}
+                      />
+                    }
+                    label={unit.created_in}
+                    sx={{ fontSize: "1rem", marginBottom: 1 }}
+                  />
                 </Grid>
                 <Grid item xs={6}>
                   <Typography variant="caption">Attack Bonus</Typography>
@@ -97,11 +130,11 @@ export function UnitAccordions(props: UnitAccordionsProps) {
                 </Grid>
                 <Grid item xs={6}>
                   <Typography variant="caption">Type</Typography>
-                  <Typography variant="subtitle1">{unit.type}</Typography>
+                  <ChipList delimitedString={unit.type} />
                 </Grid>
                 <Grid item xs={6}>
                   <Typography variant="caption">Armor Class</Typography>
-                  <DetailsList delimitedString={unit.armor_class} />
+                  <ChipList delimitedString={unit.armor_class} />
                 </Grid>
                 <Grid item xs={6}>
                   <Typography variant="caption">Training Time</Typography>
@@ -113,7 +146,7 @@ export function UnitAccordions(props: UnitAccordionsProps) {
                 </Grid>
                 <Grid item xs={6}>
                   <Typography variant="caption">Movement Speed</Typography>
-                  <Typography variant="subtitle1">{unit.movement_rate} tiles per second</Typography>
+                  <Typography variant="subtitle1">{unit.movement_rate} tile/s per second</Typography>
                 </Grid>
                 <Grid item xs={6}>
                   <Typography variant="caption">Accuracy</Typography>
