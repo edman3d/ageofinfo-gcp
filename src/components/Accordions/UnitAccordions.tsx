@@ -19,7 +19,7 @@ import CostDisplay from "../Stats/CostDisplay";
 import DetailsList from "../ComparePanels/DetailsList";
 import StatDisplay from "../Stats/StatDisplay";
 import ChipList from "../ComparePanels/ChipList";
-import getRequiresAgeFileName from "../../util/getAvatarFileName";
+import { getCreatedInFileName, getRequiresAgeFileName } from "../../util/getAvatarFileName";
 
 type UnitAccordionsProps = {
   unique_units: string | null;
@@ -92,7 +92,6 @@ export function UnitAccordions(props: UnitAccordionsProps) {
                 </Grid>
                 <Grid item xs={6}>
                   <Typography variant="caption">Requires Age</Typography>
-                  {/* <Typography variant="subtitle1">{unit.age}</Typography> */}
                   <br />
                   <Chip
                     size="medium"
@@ -108,11 +107,18 @@ export function UnitAccordions(props: UnitAccordionsProps) {
                 </Grid>
                 <Grid item xs={6}>
                   <Typography variant="caption">Created In</Typography>
-                  <Typography variant="subtitle1">{unit.created_in}</Typography>
-                  {/* <Chip
-                    avatar={<Avatar alt="created-in" src={require(`../../images/technologies/castle-age.png`)} />}
+                  <br />
+                  <Chip
+                    size="medium"
+                    avatar={
+                      <Avatar
+                        alt="requires-age"
+                        src={require(`../../images/buildings/${getCreatedInFileName(unit.created_in)}`)}
+                      />
+                    }
                     label={unit.created_in}
-                  /> */}
+                    sx={{ fontSize: "1rem", marginBottom: 1 }}
+                  />
                 </Grid>
                 <Grid item xs={6}>
                   <Typography variant="caption">Attack Bonus</Typography>
