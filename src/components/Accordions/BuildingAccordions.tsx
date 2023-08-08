@@ -13,7 +13,7 @@ import {
 import ExpandMoreIcon from "@mui/icons-material/ExpandMore";
 import { BuildingContext } from "../../contexts/BuildingContext";
 import type { Building } from "../../types";
-import { MEDIUM_TAN_COLOR } from "../../constants/colors";
+import { DARK_TAN_COLOR, MEDIUM_TAN_COLOR } from "../../constants/colors";
 
 import CostDisplay from "../Stats/CostDisplay";
 import getCostObject from "../../util/getCost";
@@ -56,7 +56,12 @@ export function BuildingAccordions(props: BuildingAccordionsProps) {
                     height="140"
                     image={require(`../../images/buildings/${building.image}.png`)}
                     alt="buildingIcon"
-                    sx={{ height: iconSize, width: iconSize, marginRight: "10px" }}
+                    sx={{
+                      height: iconSize,
+                      width: iconSize,
+                      marginRight: "10px",
+                      border: `2px solid ${DARK_TAN_COLOR}`,
+                    }}
                   />
                 </Grid>
                 <Grid item xs="auto">
