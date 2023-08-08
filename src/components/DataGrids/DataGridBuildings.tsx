@@ -9,7 +9,7 @@ const columns: GridColDef[] = [
   {
     field: "name",
     headerName: "Name",
-    width: 160,
+    width: 180,
   },
   {
     field: "age",
@@ -39,7 +39,7 @@ const columns: GridColDef[] = [
   {
     field: "special",
     headerName: "Special",
-    width: 400,
+    width: 900,
   },
 ];
 
@@ -55,9 +55,9 @@ export default function DataGridBuildings() {
         columns={columns}
         pageSize={25}
         rowsPerPageOptions={[25]}
-        checkboxSelection
+        // checkboxSelection
         disableSelectionOnClick
-        experimentalFeatures={{ newEditingApi: true }}
+        // experimentalFeatures={{ newEditingApi: true }}
         sx={{ backgroundColor: LIGHT_TAN_COLOR }}
       />
     </Box>

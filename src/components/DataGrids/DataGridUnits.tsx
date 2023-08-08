@@ -65,9 +65,9 @@ export default function DataGridUnits() {
         columns={columns}
         pageSize={25}
         rowsPerPageOptions={[25]}
-        checkboxSelection
+        // checkboxSelection
         disableSelectionOnClick
-        experimentalFeatures={{ newEditingApi: true }}
+        // experimentalFeatures={{ newEditingApi: true }}
         sx={{ backgroundColor: LIGHT_TAN_COLOR }}
       />
     </Box>
