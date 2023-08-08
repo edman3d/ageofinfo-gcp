@@ -114,6 +114,8 @@ export default function CivCompareDetails(props: CivCompareDetailsProps) {
               <BuildingAccordions unique_buildings={props.civ.unique_buildings} />
             </Typography>
 
+            <Divider sx={{ marginBottom: 1 }} />
+
             <Grid container>
               <Grid item xs={6}>
                 <Typography variant="body2" color="text.secondary">

@@ -21,7 +21,7 @@ let civData: Civilization[] = require("./../data/civs.json");
 let buildingData: Building[] = require("./../data/buildings.json");
 
 function DashboardContent() {
-  const [open, setOpen] = useState(true);
+  const [open, setOpen] = useState(false);
   const [units] = useState(unitData);
   const [civs] = useState(civData);
   const [techs] = useState(techData);
@@ -61,7 +61,7 @@ function DashboardContent() {
                     AgeOfInfo Dashboard
                   </Typography>
                   <IconButton color="inherit">
-                    <Badge badgeContent={4} color="secondary">
+                    <Badge badgeContent={0} color="secondary">
                       <NotificationsIcon />
                     </Badge>
                   </IconButton>

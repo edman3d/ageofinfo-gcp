@@ -13,7 +13,7 @@ import {
 import ExpandMoreIcon from "@mui/icons-material/ExpandMore";
 import { TechContext } from "../../contexts/TechContext";
 import type { Technology } from "../../types";
-import { MEDIUM_TAN_COLOR } from "../../constants/colors";
+import { DARK_TAN_COLOR, MEDIUM_TAN_COLOR } from "../../constants/colors";
 import CostDisplay from "../Stats/CostDisplay";
 import getCostObject from "../../util/getCost";
 import ChipList from "../ComparePanels/ChipList";
@@ -47,19 +47,28 @@ export function TechAccordions(props: TechAccordionsProps) {
       {techObjects &&
         techObjects.map((tech) => (
           <Accordion key={tech.name} sx={{ backgroundColor: MEDIUM_TAN_COLOR }}>
-            <AccordionSummary expandIcon={<ExpandMoreIcon />} aria-controls="panel1a-content" id="panel1a-header">
+            <AccordionSummary
+              expandIcon={<ExpandMoreIcon />}
+              aria-controls={`${tech.name}-content`}
+              id={`${tech.name}-header`}
+            >
               <Grid container>
-                <Grid item xs="auto">
+                <Grid item xl="auto">
                   <CardMedia
                     component="img"
                     height="140"
                     image={require(`../../images/technologies/${tech.image}.png`)}
                     alt="unitIcon"
-                    sx={{ height: iconSize, width: iconSize, marginRight: "10px" }}
+                    sx={{
+                      height: iconSize,
+                      width: iconSize,
+                      marginRight: "10px",
+                      border: `2px solid ${DARK_TAN_COLOR}`,
+                    }}
                   />
                 </Grid>
-                <Grid item xs="auto">
-                  <Grid container maxWidth={330}>
+                <Grid item xl={9} md={8} sm={7} xs="auto">
+                  <Grid container>
                     <Grid item xs={12}>
                       <Typography variant="body1" fontWeight={500}>
                         {tech.name}
@@ -89,7 +98,7 @@ export function TechAccordions(props: TechAccordionsProps) {
                     size="medium"
                     avatar={
                       <Avatar
-                        alt="develops-in"
+                        alt="requires-age"
                         src={require(`../../images/technologies/${getRequiresAgeFileName(tech.age)}`)}
                       />
                     }

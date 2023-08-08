@@ -1,14 +1,24 @@
 import * as React from "react";
 import { useContext } from "react";
-import { Accordion, AccordionDetails, AccordionSummary, CardMedia, Grid, Typography } from "@mui/material";
+import {
+  Accordion,
+  AccordionDetails,
+  AccordionSummary,
+  Avatar,
+  CardMedia,
+  Chip,
+  Grid,
+  Typography,
+} from "@mui/material";
 import ExpandMoreIcon from "@mui/icons-material/ExpandMore";
 import { BuildingContext } from "../../contexts/BuildingContext";
 import type { Building } from "../../types";
-import { MEDIUM_TAN_COLOR } from "../../constants/colors";
+import { DARK_TAN_COLOR, MEDIUM_TAN_COLOR } from "../../constants/colors";
 
 import CostDisplay from "../Stats/CostDisplay";
 import getCostObject from "../../util/getCost";
 import DetailsList from "../ComparePanels/DetailsList";
+import { getRequiresAgeFileName } from "../../util/getAvatarFileName";
 
 type BuildingAccordionsProps = {
   unique_buildings: string | null;
@@ -38,19 +48,28 @@ export function BuildingAccordions(props: BuildingAccordionsProps) {
       {buildingObjects && buildingObjects.length > 0 ? (
         buildingObjects.map((building) => (
           <Accordion key={building.name} sx={{ backgroundColor: MEDIUM_TAN_COLOR }}>
-            <AccordionSummary expandIcon={<ExpandMoreIcon />} aria-controls="panel1a-content" id="panel1a-header">
+            <AccordionSummary
+              expandIcon={<ExpandMoreIcon />}
+              aria-controls={`${building.name}-content`}
+              id={`${building.name}-header`}
+            >
               <Grid container>
-                <Grid item xs="auto">
+                <Grid item xl="auto">
                   <CardMedia
                     component="img"
                     height="140"
                     image={require(`../../images/buildings/${building.image}.png`)}
                     alt="buildingIcon"
-                    sx={{ height: iconSize, width: iconSize, marginRight: "10px" }}
+                    sx={{
+                      height: iconSize,
+                      width: iconSize,
+                      marginRight: "10px",
+                      border: `2px solid ${DARK_TAN_COLOR}`,
+                    }}
                   />
                 </Grid>
-                <Grid item xs="auto">
-                  <Grid container maxWidth={330}>
+                <Grid item xl={9} md={8} sm={7} xs="auto">
+                  <Grid container>
                     <Grid item xs={12}>
                       <Typography variant="body1" fontWeight={500}>
                         {building.name}
@@ -91,7 +110,18 @@ export function BuildingAccordions(props: BuildingAccordionsProps) {
                 </Grid>
                 <Grid item xs={6}>
                   <Typography variant="caption">Requires Age</Typography>
-                  <Typography variant="subtitle1">{building.age}</Typography>
+                  <br />
+                  <Chip
+                    size="medium"
+                    avatar={
+                      <Avatar
+                        alt="requires-age"
+                        src={require(`../../images/technologies/${getRequiresAgeFileName(building.age)}`)}
+                      />
+                    }
+                    label={building.age}
+                    sx={{ fontSize: "1rem", marginBottom: 1 }}
+                  />
                 </Grid>
                 <Grid item xs={6}>
                   <Typography variant="caption">Build Time</Typography>

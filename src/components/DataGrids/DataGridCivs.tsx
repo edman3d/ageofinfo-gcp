@@ -24,17 +24,17 @@ const columns: GridColDef[] = [
   {
     field: "unique_tech",
     headerName: "Unique Tech",
-    width: 200,
+    width: 225,
   },
   {
     field: "team_bonus",
     headerName: "Team Bonus",
-    width: 200,
+    width: 380,
   },
   {
     field: "civilization_bonus",
     headerName: "Civ Bonus",
-    width: 400,
+    width: 700,
   },
 ];
 
@@ -50,9 +50,9 @@ export default function DataGridCivs() {
         columns={columns}
         pageSize={25}
         rowsPerPageOptions={[25]}
-        checkboxSelection
+        // checkboxSelection
         disableSelectionOnClick
-        experimentalFeatures={{ newEditingApi: true }}
+        // experimentalFeatures={{ newEditingApi: true }}
         sx={{ backgroundColor: LIGHT_TAN_COLOR }}
       />
     </Box>

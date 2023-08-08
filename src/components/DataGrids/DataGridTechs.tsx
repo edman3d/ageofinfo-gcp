@@ -24,12 +24,12 @@ const columns: GridColDef[] = [
   {
     field: "applies_to",
     headerName: "Applies To",
-    width: 220,
+    width: 400,
   },
   {
     field: "description",
     headerName: "Description",
-    width: 600,
+    width: 900,
   },
 ];
 
@@ -45,9 +45,9 @@ export default function DataGridTechs() {
         columns={columns}
         pageSize={25}
         rowsPerPageOptions={[25]}
-        checkboxSelection
+        // checkboxSelection
         disableSelectionOnClick
-        experimentalFeatures={{ newEditingApi: true }}
+        // experimentalFeatures={{ newEditingApi: true }}
         sx={{ backgroundColor: LIGHT_TAN_COLOR }}
       />
     </Box>
