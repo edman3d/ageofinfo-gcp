@@ -50,7 +50,7 @@ export function BuildingAccordions(props: BuildingAccordionsProps) {
           <Accordion key={building.name} sx={{ backgroundColor: MEDIUM_TAN_COLOR }}>
             <AccordionSummary expandIcon={<ExpandMoreIcon />} aria-controls="panel1a-content" id="panel1a-header">
               <Grid container>
-                <Grid item xs="auto">
+                <Grid item xl="auto">
                   <CardMedia
                     component="img"
                     height="140"
@@ -64,8 +64,8 @@ export function BuildingAccordions(props: BuildingAccordionsProps) {
                     }}
                   />
                 </Grid>
-                <Grid item xs="auto">
-                  <Grid container maxWidth={330}>
+                <Grid item xl={9} md={8} sm={7} xs="auto">
+                  <Grid container>
                     <Grid item xs={12}>
                       <Typography variant="body1" fontWeight={500}>
                         {building.name}
