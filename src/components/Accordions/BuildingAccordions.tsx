@@ -1,6 +1,15 @@
 import * as React from "react";
 import { useContext } from "react";
-import { Accordion, AccordionDetails, AccordionSummary, CardMedia, Grid, Typography } from "@mui/material";
+import {
+  Accordion,
+  AccordionDetails,
+  AccordionSummary,
+  Avatar,
+  CardMedia,
+  Chip,
+  Grid,
+  Typography,
+} from "@mui/material";
 import ExpandMoreIcon from "@mui/icons-material/ExpandMore";
 import { BuildingContext } from "../../contexts/BuildingContext";
 import type { Building } from "../../types";
@@ -9,6 +18,7 @@ import { MEDIUM_TAN_COLOR } from "../../constants/colors";
 import CostDisplay from "../Stats/CostDisplay";
 import getCostObject from "../../util/getCost";
 import DetailsList from "../ComparePanels/DetailsList";
+import { getRequiresAgeFileName } from "../../util/getAvatarFileName";
 
 type BuildingAccordionsProps = {
   unique_buildings: string | null;
@@ -91,7 +101,18 @@ export function BuildingAccordions(props: BuildingAccordionsProps) {
                 </Grid>
                 <Grid item xs={6}>
                   <Typography variant="caption">Requires Age</Typography>
-                  <Typography variant="subtitle1">{building.age}</Typography>
+                  <br />
+                  <Chip
+                    size="medium"
+                    avatar={
+                      <Avatar
+                        alt="requires-age"
+                        src={require(`../../images/technologies/${getRequiresAgeFileName(building.age)}`)}
+                      />
+                    }
+                    label={building.age}
+                    sx={{ fontSize: "1rem", marginBottom: 1 }}
+                  />
                 </Grid>
                 <Grid item xs={6}>
                   <Typography variant="caption">Build Time</Typography>
