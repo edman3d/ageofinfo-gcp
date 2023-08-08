@@ -49,7 +49,7 @@ export function TechAccordions(props: TechAccordionsProps) {
           <Accordion key={tech.name} sx={{ backgroundColor: MEDIUM_TAN_COLOR }}>
             <AccordionSummary expandIcon={<ExpandMoreIcon />} aria-controls="panel1a-content" id="panel1a-header">
               <Grid container>
-                <Grid item xl="auto" xs="auto">
+                <Grid item xl="auto">
                   <CardMedia
                     component="img"
                     height="140"
@@ -63,8 +63,8 @@ export function TechAccordions(props: TechAccordionsProps) {
                     }}
                   />
                 </Grid>
-                <Grid item xl={9} md={8} sm={7} xs={4}>
-                  <Grid container sx={{ border: "1px solid red" }}>
+                <Grid item xl={9} md={8} sm={7} xs="auto">
+                  <Grid container>
                     <Grid item xs={12}>
                       <Typography variant="body1" fontWeight={500}>
                         {tech.name}
