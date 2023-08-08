@@ -13,7 +13,7 @@ export default function ChipList(props: ChipListProps) {
     <Stack spacing={0.5} marginBottom={1}>
       {hasABonus ? (
         listItems.map((item, index) => (
-          <Chip label={item} size="medium" sx={{ maxWidth: "fit-content", fontSize: "1rem" }} />
+          <Chip key={index} label={item} size="medium" sx={{ maxWidth: "fit-content", fontSize: "1rem" }} />
         ))
       ) : (
         <Chip label="None" size="medium" sx={{ maxWidth: "fit-content", fontSize: "1rem" }} />
