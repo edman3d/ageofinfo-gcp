@@ -47,7 +47,11 @@ export function TechAccordions(props: TechAccordionsProps) {
       {techObjects &&
         techObjects.map((tech) => (
           <Accordion key={tech.name} sx={{ backgroundColor: MEDIUM_TAN_COLOR }}>
-            <AccordionSummary expandIcon={<ExpandMoreIcon />} aria-controls="panel1a-content" id="panel1a-header">
+            <AccordionSummary
+              expandIcon={<ExpandMoreIcon />}
+              aria-controls={`${tech.name}-content`}
+              id={`${tech.name}-header`}
+            >
               <Grid container>
                 <Grid item xl="auto">
                   <CardMedia

@@ -48,7 +48,11 @@ export function BuildingAccordions(props: BuildingAccordionsProps) {
       {buildingObjects && buildingObjects.length > 0 ? (
         buildingObjects.map((building) => (
           <Accordion key={building.name} sx={{ backgroundColor: MEDIUM_TAN_COLOR }}>
-            <AccordionSummary expandIcon={<ExpandMoreIcon />} aria-controls="panel1a-content" id="panel1a-header">
+            <AccordionSummary
+              expandIcon={<ExpandMoreIcon />}
+              aria-controls={`${building.name}-content`}
+              id={`${building.name}-header`}
+            >
               <Grid container>
                 <Grid item xl="auto">
                   <CardMedia

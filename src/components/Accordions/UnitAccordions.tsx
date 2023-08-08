@@ -50,7 +50,11 @@ export function UnitAccordions(props: UnitAccordionsProps) {
       {unitObjects &&
         unitObjects.map((unit) => (
           <Accordion key={unit.name} sx={{ backgroundColor: MEDIUM_TAN_COLOR }}>
-            <AccordionSummary expandIcon={<ExpandMoreIcon />} aria-controls="panel1a-content" id="panel1a-header">
+            <AccordionSummary
+              expandIcon={<ExpandMoreIcon />}
+              aria-controls={`${unit.name}-content`}
+              id={`${unit.name}-header`}
+            >
               <Grid container>
                 <Grid item xl="auto">
                   <CardMedia
