@@ -18,7 +18,12 @@ export const DrawerToolsSection = (
       Tools
     </ListSubheader>
 
-    <Link component={RouterLink} to="/" style={{ textDecoration: "none", color: TEXT_COLOR_MAIN }}>
+    <Link
+      title="Compare Civilizations"
+      component={RouterLink}
+      to="/"
+      style={{ textDecoration: "none", color: TEXT_COLOR_MAIN }}
+    >
       <ListItemButton>
         <ListItemIcon>
           <DashboardIcon />
@@ -35,7 +40,12 @@ export const DrawerDataTablesSection = (
       Data Tables
     </ListSubheader>
 
-    <Link component={RouterLink} to="unitdata" style={{ textDecoration: "none", color: TEXT_COLOR_MAIN }}>
+    <Link
+      title="Unit Data"
+      component={RouterLink}
+      to="unitdata"
+      style={{ textDecoration: "none", color: TEXT_COLOR_MAIN }}
+    >
       <ListItemButton>
         <ListItemIcon>
           <AssignmentIcon />
@@ -44,7 +54,12 @@ export const DrawerDataTablesSection = (
       </ListItemButton>
     </Link>
 
-    <Link component={RouterLink} to="civdata" style={{ textDecoration: "none", color: TEXT_COLOR_MAIN }}>
+    <Link
+      title="Civilization Data"
+      component={RouterLink}
+      to="civdata"
+      style={{ textDecoration: "none", color: TEXT_COLOR_MAIN }}
+    >
       <ListItemButton>
         <ListItemIcon>
           <ShoppingCartIcon />
@@ -53,7 +68,12 @@ export const DrawerDataTablesSection = (
       </ListItemButton>
     </Link>
 
-    <Link component={RouterLink} to="techdata" style={{ textDecoration: "none", color: TEXT_COLOR_MAIN }}>
+    <Link
+      title="Technology Data"
+      component={RouterLink}
+      to="techdata"
+      style={{ textDecoration: "none", color: TEXT_COLOR_MAIN }}
+    >
       <ListItemButton>
         <ListItemIcon>
           <BarChartIcon />
@@ -62,7 +82,12 @@ export const DrawerDataTablesSection = (
       </ListItemButton>
     </Link>
 
-    <Link component={RouterLink} to="buildingdata" style={{ textDecoration: "none", color: TEXT_COLOR_MAIN }}>
+    <Link
+      title="Building Data"
+      component={RouterLink}
+      to="buildingdata"
+      style={{ textDecoration: "none", color: TEXT_COLOR_MAIN }}
+    >
       <ListItemButton>
         <ListItemIcon>
           <LayersIcon />
@@ -84,6 +109,7 @@ export const DrawerLinksSection = (
       rel="noopener noreferrer"
       target="_blank"
       style={{ textDecoration: "none", color: TEXT_COLOR_MAIN }}
+      title="aoe2recs Dashboard"
     >
       <ListItemButton>
         <ListItemIcon>
@@ -98,6 +124,7 @@ export const DrawerLinksSection = (
       rel="noopener noreferrer"
       target="_blank"
       style={{ textDecoration: "none", color: TEXT_COLOR_MAIN }}
+      title="Liquipedia"
     >
       <ListItemButton>
         <ListItemIcon>
@@ -112,6 +139,7 @@ export const DrawerLinksSection = (
       rel="noopener noreferrer"
       target="_blank"
       style={{ textDecoration: "none", color: TEXT_COLOR_MAIN }}
+      title="More Unit Statistics"
     >
       <ListItemButton>
         <ListItemIcon>
@@ -126,6 +154,7 @@ export const DrawerLinksSection = (
       rel="noopener noreferrer"
       target="_blank"
       style={{ textDecoration: "none", color: TEXT_COLOR_MAIN }}
+      title="Civilization Tech Trees"
     >
       <ListItemButton>
         <ListItemIcon>
@@ -139,6 +168,7 @@ export const DrawerLinksSection = (
       rel="noopener noreferrer"
       target="_blank"
       style={{ textDecoration: "none", color: TEXT_COLOR_MAIN }}
+      title="Official AOE2 News"
     >
       <ListItemButton>
         <ListItemIcon>

@@ -14,7 +14,7 @@ export default function CivCompare() {
       <Card
         sx={{
           backgroundColor: LIGHT_TAN_COLOR,
-          marginBottom: 1,
+          marginBottom: 2,
         }}
       >
         <Typography variant="h5" color="black" sx={{ padding: 1, textAlign: "center" }}>
