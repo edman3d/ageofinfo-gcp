@@ -1,7 +1,7 @@
 import * as React from "react";
 import { Typography } from "@mui/material";
 import { Cost } from "../../types/Cost";
-import StatIcon from "./StatIcon";
+import { StatIcon } from "./StatIcon";
 
 interface CostDisplayProps {
   costObject: Cost;
@@ -11,7 +11,7 @@ const costValueVariant = "body2";
 const marginBetweenCostSets = 12;
 const marginBetweenIconAndValue = 4;
 
-export default function CostDisplay(props: CostDisplayProps) {
+export function CostDisplay(props: CostDisplayProps) {
   const hasWoodCost = props.costObject.Wood !== undefined && props.costObject.Wood > 0;
   const hasFoodCost = props.costObject.Food !== undefined && props.costObject.Food > 0;
   const hasGoldCost = props.costObject.Gold !== undefined && props.costObject.Gold > 0;

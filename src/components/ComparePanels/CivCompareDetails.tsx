@@ -2,7 +2,7 @@ import * as React from "react";
 import { Card, CardContent, CardMedia, Divider, Grid, Typography } from "@mui/material";
 import type { Civilization } from "../../types";
 import DetailsList from "./DetailsList";
-import { LIGHT_TAN_COLOR } from "../../constants/colors";
+import { LIGHT_TAN_COLOR } from "../../constants";
 import { BuildingAccordions, TechAccordions, UnitAccordions } from "../Accordions";
 
 const marginBottom = "10px"; // margin between stat rows

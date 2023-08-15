@@ -6,7 +6,7 @@ interface StatIconProps {
   iconSize: number;
 }
 
-export default function StatIcon(props: StatIconProps) {
+export function StatIcon(props: StatIconProps) {
   return (
     <CardMedia
       component="img"

@@ -1,6 +1,6 @@
 import * as React from "react";
 
-import StatIcon from "./StatIcon";
+import { StatIcon } from "./StatIcon";
 
 interface StatIconWithValueProps {
   fileName: string;
@@ -8,7 +8,7 @@ interface StatIconWithValueProps {
   value: number;
 }
 
-export default function StatIconWithValue(props: StatIconWithValueProps) {
+export function StatIconWithValue(props: StatIconWithValueProps) {
   const hasValue = props.value && props.value > 0;
   return (
     <div style={{ display: "inline-flex", alignItems: "center" }}>

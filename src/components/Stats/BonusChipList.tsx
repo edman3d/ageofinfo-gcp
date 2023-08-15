@@ -6,7 +6,7 @@ type ChipListProps = {
   bonuses?: CombatBonus[];
 };
 
-export default function BonusChipList(props: ChipListProps) {
+export function BonusChipList(props: ChipListProps) {
   const bonusesArray = props.bonuses ? JSON.parse(props.bonuses.toString()) : [];
   return (
     <Stack spacing={0.5} marginBottom={1}>

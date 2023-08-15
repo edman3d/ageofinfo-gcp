@@ -11,15 +11,11 @@ import {
   Typography,
 } from "@mui/material";
 import ExpandMoreIcon from "@mui/icons-material/ExpandMore";
-import { UnitContext } from "../../contexts/UnitContext";
+import { UnitContext } from "../../contexts";
 import type { Unit } from "../../types";
-import { MEDIUM_TAN_COLOR, DARK_TAN_COLOR } from "../../constants/colors";
-import getCostObject from "../../util/getCost";
-import CostDisplay from "../Stats/CostDisplay";
-import StatDisplay from "../Stats/StatDisplay";
-import ChipList from "../ComparePanels/ChipList";
-import { getCreatedInFileName, getRequiresAgeFileName } from "../../util/getAvatarFileName";
-import BonusChipList from "../ComparePanels/BonusChipList";
+import { MEDIUM_TAN_COLOR, DARK_TAN_COLOR } from "../../constants";
+import { getCostObject, getCreatedInFileName, getRequiresAgeFileName } from "../../util";
+import { BonusChipList, ChipList, CostDisplay, StatDisplay } from "../Stats";
 
 type UnitAccordionsProps = {
   unique_units: string | null;

@@ -5,7 +5,7 @@ type ChipListProps = {
   delimitedString: string;
 };
 
-export default function ChipList(props: ChipListProps) {
+export function ChipList(props: ChipListProps) {
   const listItems = props.delimitedString.trim().split(";");
   let hasABonus = props.delimitedString.length > 0 && listItems.length > 0;
 

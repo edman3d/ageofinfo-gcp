@@ -1,6 +1,6 @@
 import * as React from "react";
 import { Typography } from "@mui/material";
-import StatIcon from "./StatIcon";
+import { StatIcon } from "./StatIcon";
 import type { Unit } from "../../types";
 
 interface StatDisplayProps {
@@ -11,9 +11,7 @@ const costValueVariant = "body2";
 const marginBetweenCostSets = 12;
 const marginBetweenIconAndValue = 4;
 
-export default function StatDisplay(props: StatDisplayProps) {
-  //   console.log(props.unit);
-
+export function StatDisplay(props: StatDisplayProps) {
   const { attack, hit_points, range } = props.unit;
 
   const meleeArmor = props.unit.armor.split("/")[0];
