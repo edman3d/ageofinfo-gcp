@@ -17,7 +17,7 @@ export default function CivCompare() {
           marginBottom: 2,
         }}
       >
-        <Typography variant="h5" color="black" sx={{ padding: 1, textAlign: "center" }}>
+        <Typography fontWeight={500} variant="h5" color="black" sx={{ padding: 1, textAlign: "center" }}>
           Compare Civilizations
         </Typography>
       </Card>

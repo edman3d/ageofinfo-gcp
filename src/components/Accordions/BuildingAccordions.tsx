@@ -11,17 +11,16 @@ import {
   Typography,
 } from "@mui/material";
 import ExpandMoreIcon from "@mui/icons-material/ExpandMore";
-import { BuildingContext } from "../../contexts/BuildingContext";
+import { BuildingContext } from "../../contexts";
 import type { Building } from "../../types";
-import { DARK_TAN_COLOR, MEDIUM_TAN_COLOR } from "../../constants/colors";
-
-import CostDisplay from "../Stats/CostDisplay";
-import getCostObject from "../../util/getCost";
+import { DARK_TAN_COLOR, MEDIUM_TAN_COLOR } from "../../constants";
 import DetailsList from "../ComparePanels/DetailsList";
-import { getRequiresAgeFileName } from "../../util/getAvatarFileName";
+import { getCostObject, getRequiresAgeFileName } from "../../util";
+import { CostDisplay } from "../Stats";
 
 type BuildingAccordionsProps = {
   unique_buildings: string | null;
+  iconSize: number;
 };
 
 function getBuildingObjects(buildingNamesToFind: string[], allBuildings: Building[] | null) {
@@ -35,8 +34,6 @@ function getBuildingObjects(buildingNamesToFind: string[], allBuildings: Buildin
   });
   return buildingObjects;
 }
-
-const iconSize = "110px";
 
 export function BuildingAccordions(props: BuildingAccordionsProps) {
   const allBuildings = useContext(BuildingContext);
@@ -61,8 +58,8 @@ export function BuildingAccordions(props: BuildingAccordionsProps) {
                     image={require(`../../images/buildings/${building.image}.png`)}
                     alt="buildingIcon"
                     sx={{
-                      height: iconSize,
-                      width: iconSize,
+                      height: `${props.iconSize}px`,
+                      width: `${props.iconSize}px`,
                       marginRight: "10px",
                       border: `2px solid ${DARK_TAN_COLOR}`,
                     }}

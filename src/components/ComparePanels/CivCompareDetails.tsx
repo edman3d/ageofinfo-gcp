@@ -2,15 +2,17 @@ import * as React from "react";
 import { Card, CardContent, CardMedia, Divider, Grid, Typography } from "@mui/material";
 import type { Civilization } from "../../types";
 import DetailsList from "./DetailsList";
-import { LIGHT_TAN_COLOR } from "../../constants/colors";
+import { LIGHT_TAN_COLOR } from "../../constants";
 import { BuildingAccordions, TechAccordions, UnitAccordions } from "../Accordions";
-
-const marginBottom = "10px"; // margin between stat rows
-const paddingLeft = "0px";
 
 type CivCompareDetailsProps = {
   civ?: Civilization | null;
 };
+
+const CIV_ICON_SIZE: number = 64;
+const ACCORDION_ICON_SIZE: number = 110;
+const MARGIN_BETWEEN_DIVIDERS: number = 10;
+const DIVIDER_FONT_WEIGHT: number = 800;
 
 export default function CivCompareDetails(props: CivCompareDetailsProps) {
   return (
@@ -40,10 +42,10 @@ export default function CivCompareDetails(props: CivCompareDetailsProps) {
               ? require(`../../images/civilizations/${props.civ?.image}.png`)
               : require("../../images/staticons/convert.png")
           }
-          alt="civ banner"
-          sx={{ height: "64px", width: "64px" }}
+          alt="civ-banner"
+          sx={{ height: `${CIV_ICON_SIZE}px`, width: `${CIV_ICON_SIZE}px` }}
         />
-        <Typography variant="h5" fontWeight={500} sx={{ marginLeft: 1 }}>
+        <Typography variant="h5" fontWeight={600} sx={{ marginLeft: 1 }}>
           {props.civ ? props.civ.name : "Select a Civilization"}
         </Typography>
       </div>
@@ -51,93 +53,85 @@ export default function CivCompareDetails(props: CivCompareDetailsProps) {
         {props.civ ? (
           <>
             <Divider textAlign="left">
-              <Typography variant="body2" color="text.secondary">
+              <Typography fontWeight={DIVIDER_FONT_WEIGHT} variant="body2" color="text.secondary">
                 Civ Bonus
               </Typography>
             </Divider>
             <Typography
               variant="subtitle2"
               color="text.secondary"
-              sx={{ marginBottom: marginBottom, paddingLeft: paddingLeft }}
+              sx={{ marginBottom: `${MARGIN_BETWEEN_DIVIDERS}px` }}
             >
               <DetailsList delimitedString={props.civ.civilization_bonus} />
             </Typography>
 
             <Divider textAlign="left">
-              <Typography variant="body2" color="text.secondary">
+              <Typography fontWeight={DIVIDER_FONT_WEIGHT} variant="body2" color="text.secondary">
                 Team Bonus
               </Typography>
             </Divider>
             <Typography
               variant="subtitle2"
               color="text.secondary"
-              sx={{ marginBottom: marginBottom, paddingLeft: paddingLeft }}
+              sx={{ marginBottom: `${MARGIN_BETWEEN_DIVIDERS}px` }}
             >
               <DetailsList delimitedString={props.civ.team_bonus} />
             </Typography>
 
-            <Divider textAlign="left" sx={{ marginBottom: "6px" }}>
-              <Typography variant="body2" color="text.secondary">
+            <Divider textAlign="left" sx={{ marginBottom: `${MARGIN_BETWEEN_DIVIDERS}px` }}>
+              <Typography fontWeight={DIVIDER_FONT_WEIGHT} variant="body2" color="text.secondary">
                 Unique Units
               </Typography>
             </Divider>
             <Typography
               variant="subtitle2"
               color="text.secondary"
-              sx={{ marginBottom: marginBottom, paddingLeft: paddingLeft }}
+              sx={{ marginBottom: `${MARGIN_BETWEEN_DIVIDERS}px` }}
             >
-              <UnitAccordions unique_units={props.civ.unique_unit} />
+              <UnitAccordions unique_units={props.civ.unique_unit} iconSize={ACCORDION_ICON_SIZE} />
             </Typography>
-            <Divider textAlign="left" sx={{ marginBottom: "6px" }}>
-              <Typography variant="body2" color="text.secondary">
+            <Divider textAlign="left" sx={{ marginBottom: `${MARGIN_BETWEEN_DIVIDERS}px` }}>
+              <Typography fontWeight={DIVIDER_FONT_WEIGHT} variant="body2" color="text.secondary">
                 Unique Techs
               </Typography>
             </Divider>
             <Typography
               variant="subtitle2"
               color="text.secondary"
-              sx={{ marginBottom: marginBottom, paddingLeft: paddingLeft }}
+              sx={{ marginBottom: `${MARGIN_BETWEEN_DIVIDERS}px` }}
             >
-              <TechAccordions unique_techs={props.civ.unique_tech} />
+              <TechAccordions unique_techs={props.civ.unique_tech} iconSize={ACCORDION_ICON_SIZE} />
             </Typography>
 
-            <Divider textAlign="left" sx={{ marginBottom: "6px" }}>
-              <Typography variant="body2" color="text.secondary">
+            <Divider textAlign="left" sx={{ marginBottom: `${MARGIN_BETWEEN_DIVIDERS}px` }}>
+              <Typography fontWeight={DIVIDER_FONT_WEIGHT} variant="body2" color="text.secondary">
                 Unique Buildings
               </Typography>
             </Divider>
             <Typography
               variant="subtitle2"
               color="text.secondary"
-              sx={{ marginBottom: marginBottom, paddingLeft: paddingLeft }}
+              sx={{ marginBottom: `${MARGIN_BETWEEN_DIVIDERS}px` }}
             >
-              <BuildingAccordions unique_buildings={props.civ.unique_buildings} />
+              <BuildingAccordions unique_buildings={props.civ.unique_buildings} iconSize={ACCORDION_ICON_SIZE} />
             </Typography>
 
-            <Divider sx={{ marginBottom: 1 }} />
+            <Divider sx={{ marginBottom: `${MARGIN_BETWEEN_DIVIDERS}px` }} />
 
             <Grid container>
               <Grid item xs={6}>
-                <Typography variant="body2" color="text.secondary">
+                <Typography fontWeight={DIVIDER_FONT_WEIGHT} variant="body2" color="text.secondary">
                   Army Type
                 </Typography>
-                <Typography
-                  variant="subtitle2"
-                  color="text.secondary"
-                  sx={{ marginBottom: marginBottom, paddingLeft: paddingLeft }}
-                >
+                <Typography variant="subtitle2" color="text.secondary">
                   <DetailsList delimitedString={props.civ.army_type} />
                 </Typography>
               </Grid>
               <Grid item xs={6}>
-                <Typography variant="body2" color="text.secondary">
+                <Typography fontWeight={DIVIDER_FONT_WEIGHT} variant="body2" color="text.secondary">
                   Expansion
                 </Typography>
-                <Typography
-                  variant="subtitle2"
-                  color="text.secondary"
-                  sx={{ marginBottom: marginBottom, paddingLeft: paddingLeft }}
-                >
+                <Typography variant="subtitle2" color="text.secondary">
                   <DetailsList delimitedString={props.civ.expansion} />
                 </Typography>
               </Grid>

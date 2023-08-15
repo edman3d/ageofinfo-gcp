@@ -1,6 +1,6 @@
 import { Cost } from "../types";
 
-export default function getCostObject(delimitedString: string): Cost {
+export function getCostObject(delimitedString: string): Cost {
   if (delimitedString.length < 3) {
     throw new SyntaxError("Cost string must be 3 or more characters");
   }

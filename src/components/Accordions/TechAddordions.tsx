@@ -11,16 +11,15 @@ import {
   Typography,
 } from "@mui/material";
 import ExpandMoreIcon from "@mui/icons-material/ExpandMore";
-import { TechContext } from "../../contexts/TechContext";
+import { TechContext } from "../../contexts";
 import type { Technology } from "../../types";
-import { DARK_TAN_COLOR, MEDIUM_TAN_COLOR } from "../../constants/colors";
-import CostDisplay from "../Stats/CostDisplay";
-import getCostObject from "../../util/getCost";
-import ChipList from "../ComparePanels/ChipList";
-import { getCreatedInFileName, getRequiresAgeFileName } from "../../util/getAvatarFileName";
+import { DARK_TAN_COLOR, MEDIUM_TAN_COLOR } from "../../constants";
+import { getCostObject, getCreatedInFileName, getRequiresAgeFileName } from "../../util";
+import { ChipList, CostDisplay } from "../Stats";
 
 type TechAccordionsProps = {
   unique_techs: string | null;
+  iconSize: number;
 };
 
 function getTechObjects(techNamesToFind: string[], allTechs: Technology[] | null) {
@@ -34,8 +33,6 @@ function getTechObjects(techNamesToFind: string[], allTechs: Technology[] | null
   });
   return techObjects;
 }
-
-const iconSize = "110px";
 
 export function TechAccordions(props: TechAccordionsProps) {
   const allTechs = useContext(TechContext);
@@ -60,8 +57,8 @@ export function TechAccordions(props: TechAccordionsProps) {
                     image={require(`../../images/technologies/${tech.image}.png`)}
                     alt="unitIcon"
                     sx={{
-                      height: iconSize,
-                      width: iconSize,
+                      height: `${props.iconSize}px`,
+                      width: `${props.iconSize}px`,
                       marginRight: "10px",
                       border: `2px solid ${DARK_TAN_COLOR}`,
                     }}

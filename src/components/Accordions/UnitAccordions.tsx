@@ -11,18 +11,15 @@ import {
   Typography,
 } from "@mui/material";
 import ExpandMoreIcon from "@mui/icons-material/ExpandMore";
-import { UnitContext } from "../../contexts/UnitContext";
+import { UnitContext } from "../../contexts";
 import type { Unit } from "../../types";
-import { MEDIUM_TAN_COLOR, DARK_TAN_COLOR } from "../../constants/colors";
-import getCostObject from "../../util/getCost";
-import CostDisplay from "../Stats/CostDisplay";
-import StatDisplay from "../Stats/StatDisplay";
-import ChipList from "../ComparePanels/ChipList";
-import { getCreatedInFileName, getRequiresAgeFileName } from "../../util/getAvatarFileName";
-import BonusChipList from "../ComparePanels/BonusChipList";
+import { MEDIUM_TAN_COLOR, DARK_TAN_COLOR } from "../../constants";
+import { getCostObject, getCreatedInFileName, getRequiresAgeFileName } from "../../util";
+import { BonusChipList, ChipList, CostDisplay, StatDisplay } from "../Stats";
 
 type UnitAccordionsProps = {
   unique_units: string | null;
+  iconSize: number;
 };
 
 function getUnitObjects(unitNamesToFind: string[], allUnits: Unit[] | null) {
@@ -37,8 +34,6 @@ function getUnitObjects(unitNamesToFind: string[], allUnits: Unit[] | null) {
   });
   return unitObjects;
 }
-
-const iconSize = "110px";
 
 export function UnitAccordions(props: UnitAccordionsProps) {
   const allUnits = useContext(UnitContext);
@@ -63,8 +58,8 @@ export function UnitAccordions(props: UnitAccordionsProps) {
                     image={require(`../../images/units/${unit.image}.png`)}
                     alt="unitIcon"
                     sx={{
-                      height: iconSize,
-                      width: iconSize,
+                      height: `${props.iconSize}px`,
+                      width: `${props.iconSize}px`,
                       marginRight: "10px",
                       border: `2px solid ${DARK_TAN_COLOR}`,
                     }}
@@ -132,11 +127,11 @@ export function UnitAccordions(props: UnitAccordionsProps) {
                 </Grid>
                 <Grid item xs={6}>
                   <Typography variant="caption">Attack Bonus</Typography>
-                  <BonusChipList bonuses={unit.atk_bonus} />
+                  <BonusChipList bonuses={unit.attack_bonus} />
                 </Grid>
                 <Grid item xs={6}>
                   <Typography variant="caption">Armor Bonus</Typography>
-                  <BonusChipList bonuses={unit.armr_bonus} />
+                  <BonusChipList bonuses={unit.armor_bonus} />
                 </Grid>
                 <Grid item xs={6}>
                   <Typography variant="caption">Type</Typography>

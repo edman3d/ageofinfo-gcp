@@ -1,4 +1,4 @@
-import getCostObject from "./getCost";
+import { getCostObject } from "./getCostObject";
 import type { Cost } from "../types";
 
 describe("getCost function tests", () => {
