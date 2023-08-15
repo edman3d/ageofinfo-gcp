@@ -16,13 +16,21 @@ export type Unit = {
   attack: number;
   armor: string;
   attack_bonus: string;
+  atk_bonus?: CombatBonus[];
   armor_bonus: string;
+  armr_bonus?: CombatBonus[];
   search_radius: number;
   accuracy: number;
   blast_radius: number;
   image: string;
   type: string;
   armor_class: string;
+  special: string;
+};
+
+export type CombatBonus = {
+  amount: number;
+  against: string;
 };
 
 // "name": "Alfred the Alpaca",

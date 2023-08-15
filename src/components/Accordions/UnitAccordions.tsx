@@ -16,10 +16,10 @@ import type { Unit } from "../../types";
 import { MEDIUM_TAN_COLOR, DARK_TAN_COLOR } from "../../constants/colors";
 import getCostObject from "../../util/getCost";
 import CostDisplay from "../Stats/CostDisplay";
-import DetailsList from "../ComparePanels/DetailsList";
 import StatDisplay from "../Stats/StatDisplay";
 import ChipList from "../ComparePanels/ChipList";
 import { getCreatedInFileName, getRequiresAgeFileName } from "../../util/getAvatarFileName";
+import BonusChipList from "../ComparePanels/BonusChipList";
 
 type UnitAccordionsProps = {
   unique_units: string | null;
@@ -90,7 +90,7 @@ export function UnitAccordions(props: UnitAccordionsProps) {
             {/* Dropdown contents */}
             <AccordionDetails>
               <Grid container>
-                <Grid item xs={12}>
+                <Grid item xs={12} marginBottom={1}>
                   <Typography variant="caption">Description</Typography>
                   <Typography variant="subtitle1">{unit.description}</Typography>
                 </Grid>
@@ -126,11 +126,11 @@ export function UnitAccordions(props: UnitAccordionsProps) {
                 </Grid>
                 <Grid item xs={6}>
                   <Typography variant="caption">Attack Bonus</Typography>
-                  <DetailsList delimitedString={unit.attack_bonus} />
+                  <BonusChipList bonuses={unit.atk_bonus} />
                 </Grid>
                 <Grid item xs={6}>
                   <Typography variant="caption">Armor Bonus</Typography>
-                  <DetailsList delimitedString={unit.armor_bonus} />
+                  <BonusChipList bonuses={unit.armr_bonus} />
                 </Grid>
                 <Grid item xs={6}>
                   <Typography variant="caption">Type</Typography>
