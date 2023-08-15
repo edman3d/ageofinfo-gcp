@@ -19,6 +19,7 @@ import { BonusChipList, ChipList, CostDisplay, StatDisplay } from "../Stats";
 
 type UnitAccordionsProps = {
   unique_units: string | null;
+  iconSize: number;
 };
 
 function getUnitObjects(unitNamesToFind: string[], allUnits: Unit[] | null) {
@@ -33,8 +34,6 @@ function getUnitObjects(unitNamesToFind: string[], allUnits: Unit[] | null) {
   });
   return unitObjects;
 }
-
-const iconSize = "110px";
 
 export function UnitAccordions(props: UnitAccordionsProps) {
   const allUnits = useContext(UnitContext);
@@ -59,8 +58,8 @@ export function UnitAccordions(props: UnitAccordionsProps) {
                     image={require(`../../images/units/${unit.image}.png`)}
                     alt="unitIcon"
                     sx={{
-                      height: iconSize,
-                      width: iconSize,
+                      height: `${props.iconSize}px`,
+                      width: `${props.iconSize}px`,
                       marginRight: "10px",
                       border: `2px solid ${DARK_TAN_COLOR}`,
                     }}

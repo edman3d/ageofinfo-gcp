@@ -20,6 +20,7 @@ import { CostDisplay } from "../Stats";
 
 type BuildingAccordionsProps = {
   unique_buildings: string | null;
+  iconSize: number;
 };
 
 function getBuildingObjects(buildingNamesToFind: string[], allBuildings: Building[] | null) {
@@ -33,8 +34,6 @@ function getBuildingObjects(buildingNamesToFind: string[], allBuildings: Buildin
   });
   return buildingObjects;
 }
-
-const iconSize = "110px";
 
 export function BuildingAccordions(props: BuildingAccordionsProps) {
   const allBuildings = useContext(BuildingContext);
@@ -59,8 +58,8 @@ export function BuildingAccordions(props: BuildingAccordionsProps) {
                     image={require(`../../images/buildings/${building.image}.png`)}
                     alt="buildingIcon"
                     sx={{
-                      height: iconSize,
-                      width: iconSize,
+                      height: `${props.iconSize}px`,
+                      width: `${props.iconSize}px`,
                       marginRight: "10px",
                       border: `2px solid ${DARK_TAN_COLOR}`,
                     }}

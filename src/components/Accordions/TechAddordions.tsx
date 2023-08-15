@@ -19,6 +19,7 @@ import { ChipList, CostDisplay } from "../Stats";
 
 type TechAccordionsProps = {
   unique_techs: string | null;
+  iconSize: number;
 };
 
 function getTechObjects(techNamesToFind: string[], allTechs: Technology[] | null) {
@@ -32,8 +33,6 @@ function getTechObjects(techNamesToFind: string[], allTechs: Technology[] | null
   });
   return techObjects;
 }
-
-const iconSize = "110px";
 
 export function TechAccordions(props: TechAccordionsProps) {
   const allTechs = useContext(TechContext);
@@ -58,8 +57,8 @@ export function TechAccordions(props: TechAccordionsProps) {
                     image={require(`../../images/technologies/${tech.image}.png`)}
                     alt="unitIcon"
                     sx={{
-                      height: iconSize,
-                      width: iconSize,
+                      height: `${props.iconSize}px`,
+                      width: `${props.iconSize}px`,
                       marginRight: "10px",
                       border: `2px solid ${DARK_TAN_COLOR}`,
                     }}
