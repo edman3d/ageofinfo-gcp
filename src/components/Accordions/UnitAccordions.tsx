@@ -132,11 +132,11 @@ export function UnitAccordions(props: UnitAccordionsProps) {
                 </Grid>
                 <Grid item xs={6}>
                   <Typography variant="caption">Attack Bonus</Typography>
-                  <BonusChipList bonuses={unit.atk_bonus} />
+                  <BonusChipList bonuses={unit.attack_bonus} />
                 </Grid>
                 <Grid item xs={6}>
                   <Typography variant="caption">Armor Bonus</Typography>
-                  <BonusChipList bonuses={unit.armr_bonus} />
+                  <BonusChipList bonuses={unit.armor_bonus} />
                 </Grid>
                 <Grid item xs={6}>
                   <Typography variant="caption">Type</Typography>
