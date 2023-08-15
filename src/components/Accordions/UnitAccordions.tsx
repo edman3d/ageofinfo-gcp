@@ -94,6 +94,12 @@ export function UnitAccordions(props: UnitAccordionsProps) {
                   <Typography variant="caption">Description</Typography>
                   <Typography variant="subtitle1">{unit.description}</Typography>
                 </Grid>
+                {unit.special ? (
+                  <Grid item xs={12} marginBottom={1}>
+                    <Typography variant="caption">Special Ability</Typography>
+                    <Typography variant="subtitle1">{unit.special}</Typography>
+                  </Grid>
+                ) : null}
                 <Grid item xs={6}>
                   <Typography variant="caption">Requires Age</Typography>
                   <br />
