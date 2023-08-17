@@ -69,7 +69,7 @@ export function UnitAccordions(props: UnitAccordionsProps) {
                 <Grid item xl={9} md={8} sm={7} xs="auto">
                   <Grid container>
                     <Grid item xs={12}>
-                      <Typography variant="body1" fontWeight={500}>
+                      <Typography variant="body1" fontWeight={600}>
                         {unit.name}
                       </Typography>
                     </Grid>
@@ -144,7 +144,9 @@ export function UnitAccordions(props: UnitAccordionsProps) {
                 </Grid>
                 <Grid item xs={6}>
                   <Typography variant="caption">Training Time</Typography>
-                  <Typography variant="subtitle1">{unit.build_time} seconds</Typography>
+                  <Typography variant="subtitle1">
+                    {unit.build_time === "N/A" ? "N/A" : `${unit.build_time} seconds`}{" "}
+                  </Typography>
                 </Grid>
                 <Grid item xs={6}>
                   <Typography variant="caption">Line of Sight</Typography>

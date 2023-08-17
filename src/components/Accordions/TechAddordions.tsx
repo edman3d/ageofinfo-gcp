@@ -68,7 +68,7 @@ export function TechAccordions(props: TechAccordionsProps) {
                 <Grid item xl={9} md={8} sm={7} xs="auto">
                   <Grid container>
                     <Grid item xs={12}>
-                      <Typography variant="body1" fontWeight={500}>
+                      <Typography variant="body1" fontWeight={600}>
                         {tech.name}
                       </Typography>
                     </Grid>
