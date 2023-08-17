@@ -44,6 +44,7 @@ export default function CivCompareDetails(props: CivCompareDetailsProps) {
           }
           alt="civ-banner"
           sx={{ height: `${CIV_ICON_SIZE}px`, width: `${CIV_ICON_SIZE}px` }}
+          title={props.civ?.name}
         />
         <Typography variant="h5" fontWeight={600} sx={{ marginLeft: 1 }}>
           {props.civ ? props.civ.name : "Select a Civilization"}
