@@ -1,6 +1,6 @@
 {
   "name": "age-of-info-ts-gcp",
-  "version": "0.2.0",
+  "version": "0.3.0",
   "private": true,
   "dependencies": {
     "@emotion/react": "^11.10.5",
@@ -13,6 +13,7 @@
     "@types/react": "^18.0.26",
     "@types/react-dom": "^18.0.10",
     "@types/react-router-dom": "^5.3.3",
+    "preval.macro": "^5.0.0",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
     "react-router-dom": "^6.8.0",
@@ -47,6 +48,7 @@
     "@babel/preset-typescript": "^7.22.5",
     "@testing-library/react": "^14.0.0",
     "@types/jest": "^29.5.3",
+    "@types/preval.macro": "^3.0.0",
     "jest": "^27.5.1"
   },
   "jest": {

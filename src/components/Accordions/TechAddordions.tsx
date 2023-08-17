@@ -62,12 +62,13 @@ export function TechAccordions(props: TechAccordionsProps) {
                       marginRight: "10px",
                       border: `2px solid ${DARK_TAN_COLOR}`,
                     }}
+                    title={tech.name}
                   />
                 </Grid>
                 <Grid item xl={9} md={8} sm={7} xs="auto">
                   <Grid container>
                     <Grid item xs={12}>
-                      <Typography variant="body1" fontWeight={500}>
+                      <Typography variant="body1" fontWeight={600}>
                         {tech.name}
                       </Typography>
                     </Grid>
@@ -84,7 +85,7 @@ export function TechAccordions(props: TechAccordionsProps) {
             {/* Dropdown contents */}
             <AccordionDetails>
               <Grid container>
-                <Grid item xs={12}>
+                <Grid item xs={12} marginBottom={0.5}>
                   <Typography variant="caption">Description</Typography>
                   <Typography variant="subtitle1">{tech.description}</Typography>
                 </Grid>

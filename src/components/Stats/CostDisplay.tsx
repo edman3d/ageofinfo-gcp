@@ -22,7 +22,7 @@ export function CostDisplay(props: CostDisplayProps) {
       {/* Wood */}
       {hasWoodCost ? (
         <div style={{ display: "inline-flex", alignItems: "center", marginRight: marginBetweenCostSets }}>
-          <StatIcon fileName="wood" iconSize={32} />
+          <StatIcon tooltip="Wood" fileName="wood" iconSize={32} />
           <Typography variant={costValueVariant} style={{ marginLeft: marginBetweenIconAndValue }}>
             {props.costObject.Wood}
           </Typography>
@@ -31,7 +31,7 @@ export function CostDisplay(props: CostDisplayProps) {
       {/* Food */}
       {hasFoodCost ? (
         <div style={{ display: "inline-flex", alignItems: "center", marginRight: marginBetweenCostSets }}>
-          <StatIcon fileName="food" iconSize={32} />
+          <StatIcon tooltip="Food" fileName="food" iconSize={32} />
           <Typography variant={costValueVariant} style={{ marginLeft: marginBetweenIconAndValue }}>
             {props.costObject.Food}
           </Typography>
@@ -40,7 +40,7 @@ export function CostDisplay(props: CostDisplayProps) {
       {/* Gold */}
       {hasGoldCost ? (
         <div style={{ display: "inline-flex", alignItems: "center", marginRight: marginBetweenCostSets }}>
-          <StatIcon fileName="gold" iconSize={32} />
+          <StatIcon tooltip="Gold" fileName="gold" iconSize={32} />
           <Typography variant={costValueVariant} style={{ marginLeft: marginBetweenIconAndValue }}>
             {props.costObject.Gold}
           </Typography>
@@ -49,7 +49,7 @@ export function CostDisplay(props: CostDisplayProps) {
       {/* Stone */}
       {hasStoneCost ? (
         <div style={{ display: "inline-flex", alignItems: "center", marginRight: marginBetweenCostSets }}>
-          <StatIcon fileName="stone" iconSize={32} />
+          <StatIcon tooltip="Stone" fileName="stone" iconSize={32} />
           <Typography variant={costValueVariant} style={{ marginLeft: marginBetweenIconAndValue }}>
             {props.costObject.Stone}
           </Typography>

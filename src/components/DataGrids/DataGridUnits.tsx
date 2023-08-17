@@ -22,9 +22,14 @@ const columns: GridColDef[] = [
     width: 100,
   },
   {
-    field: "armor",
-    headerName: "Armor",
-    width: 100,
+    field: "melee_armor",
+    headerName: "Melee Armor",
+    width: 110,
+  },
+  {
+    field: "ranged_armor",
+    headerName: "Ranged Armor",
+    width: 110,
   },
   {
     field: "type",
@@ -32,8 +37,13 @@ const columns: GridColDef[] = [
     width: 100,
   },
   {
-    field: "range",
-    headerName: "Range",
+    field: "min_range",
+    headerName: "Min Range",
+    width: 100,
+  },
+  {
+    field: "max_range",
+    headerName: "Max Range",
     width: 100,
   },
   {
@@ -49,7 +59,7 @@ const columns: GridColDef[] = [
   {
     field: "armor_class",
     headerName: "Armor Class",
-    width: 500,
+    width: 350,
   },
 ];
 

@@ -12,41 +12,42 @@ const marginBetweenCostSets = 12;
 const marginBetweenIconAndValue = 4;
 
 export function StatDisplay(props: StatDisplayProps) {
-  const { attack, hit_points, range } = props.unit;
-
-  const meleeArmor = props.unit.armor.split("/")[0];
-  const rangedArmor = props.unit.armor.split("/")[1];
+  const { attack, hit_points, melee_armor, ranged_armor, min_range, max_range } = props.unit;
 
   return (
     <div style={{ display: "inline-flex", alignItems: "center", marginTop: 6 }}>
       <div style={{ display: "inline-flex", alignItems: "center", marginRight: marginBetweenCostSets }}>
-        <StatIcon fileName="hp" iconSize={32} />
+        <StatIcon tooltip="Hit Points" fileName="hp" iconSize={32} />
         <Typography variant={costValueVariant} style={{ marginLeft: marginBetweenIconAndValue }}>
           {hit_points}
         </Typography>
       </div>
       <div style={{ display: "inline-flex", alignItems: "center", marginRight: marginBetweenCostSets }}>
-        <StatIcon fileName="damage" iconSize={32} />
+        <StatIcon
+          tooltip={max_range === 0 ? "Melee Attack Damage" : "Ranged Attack Damage"}
+          fileName="damage"
+          iconSize={32}
+        />
         <Typography variant={costValueVariant} style={{ marginLeft: marginBetweenIconAndValue }}>
           {attack}
         </Typography>
       </div>
       <div style={{ display: "inline-flex", alignItems: "center", marginRight: marginBetweenCostSets }}>
-        <StatIcon fileName="armor" iconSize={32} />
+        <StatIcon tooltip="Melee Armor" fileName="armor" iconSize={32} />
         <Typography variant={costValueVariant} style={{ marginLeft: marginBetweenIconAndValue }}>
-          {meleeArmor}
+          {melee_armor}
         </Typography>
       </div>
       <div style={{ display: "inline-flex", alignItems: "center", marginRight: marginBetweenCostSets }}>
-        <StatIcon fileName="range-armor" iconSize={32} />
+        <StatIcon tooltip="Ranged Armor" fileName="range-armor" iconSize={32} />
         <Typography variant={costValueVariant} style={{ marginLeft: marginBetweenIconAndValue }}>
-          {rangedArmor}
+          {ranged_armor}
         </Typography>
       </div>
       <div style={{ display: "inline-flex", alignItems: "center", marginRight: marginBetweenCostSets }}>
-        <StatIcon fileName="range" iconSize={32} />
+        <StatIcon tooltip="Range" fileName="range" iconSize={32} />
         <Typography variant={costValueVariant} style={{ marginLeft: marginBetweenIconAndValue }}>
-          {range}
+          {max_range} {max_range === 0 ? "(Melee)" : null} {min_range !== 0 ? `(${min_range} minimum)` : null}
         </Typography>
       </div>
     </div>

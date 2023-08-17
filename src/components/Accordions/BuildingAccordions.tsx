@@ -63,12 +63,13 @@ export function BuildingAccordions(props: BuildingAccordionsProps) {
                       marginRight: "10px",
                       border: `2px solid ${DARK_TAN_COLOR}`,
                     }}
+                    title={building.name}
                   />
                 </Grid>
                 <Grid item xl={9} md={8} sm={7} xs="auto">
                   <Grid container>
                     <Grid item xs={12}>
-                      <Typography variant="body1" fontWeight={500}>
+                      <Typography variant="body1" fontWeight={600}>
                         {building.name}
                       </Typography>
                     </Grid>
@@ -99,11 +100,16 @@ export function BuildingAccordions(props: BuildingAccordionsProps) {
                 </Grid>
                 <Grid item xs={6}>
                   <Typography variant="caption">Armor</Typography>
-                  <Typography variant="subtitle1">{building.armor}</Typography>
+                  <Typography variant="subtitle1">
+                    {building.melee_armor} / {building.ranged_armor}
+                  </Typography>
                 </Grid>
                 <Grid item xs={6}>
                   <Typography variant="caption">Range</Typography>
-                  <Typography variant="subtitle1">{building.range ? building.range : "N/A"}</Typography>
+                  <Typography variant="subtitle1">
+                    {building.max_range ? building.max_range : "N/A"}{" "}
+                    {building.min_range !== 0 ? `(${building.min_range} minimum)` : null}
+                  </Typography>
                 </Grid>
                 <Grid item xs={6}>
                   <Typography variant="caption">Requires Age</Typography>
