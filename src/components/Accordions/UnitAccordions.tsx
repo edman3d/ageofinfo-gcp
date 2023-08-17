@@ -74,7 +74,7 @@ export function UnitAccordions(props: UnitAccordionsProps) {
                       </Typography>
                     </Grid>
                     <Grid item xs={12}>
-                      <CostDisplay costObject={getCostObject(unit.cost)} />
+                      {unit.cost !== "N/A" ? <CostDisplay costObject={getCostObject(unit.cost)} /> : null}
                     </Grid>
                     <Grid item xs={12}>
                       <StatDisplay unit={unit} />
