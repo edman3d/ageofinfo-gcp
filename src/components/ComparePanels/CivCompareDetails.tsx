@@ -46,11 +46,14 @@ export default function CivCompareDetails(props: CivCompareDetailsProps) {
           sx={{ height: `${CIV_ICON_SIZE}px`, width: `${CIV_ICON_SIZE}px` }}
           title={props.civ?.name}
         />
-        <Typography variant="h5" fontWeight={600} sx={{ marginLeft: 1 }}>
-          {props.civ ? props.civ.name : "Select a Civilization"}
-        </Typography>
+        <div style={{ display: "flex", flexDirection: "column", marginLeft: 2 }}>
+          <Typography variant="h5" fontWeight={600}>
+            {props.civ ? props.civ.name : "Select a Civilization"}
+          </Typography>
+          <Typography variant="subtitle2">{props.civ?.army_type} Civilization</Typography>
+        </div>
       </div>
-      <CardContent sx={{ height: 750, paddingTop: "0" }}>
+      <CardContent sx={{ height: 750, paddingTop: "0", marginTop: 1 }}>
         {props.civ ? (
           <>
             <Divider textAlign="left">
