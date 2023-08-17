@@ -17,33 +17,33 @@ export function StatDisplay(props: StatDisplayProps) {
   return (
     <div style={{ display: "inline-flex", alignItems: "center", marginTop: 6 }}>
       <div style={{ display: "inline-flex", alignItems: "center", marginRight: marginBetweenCostSets }}>
-        <StatIcon fileName="hp" iconSize={32} />
+        <StatIcon tooltip="Hit Points" fileName="hp" iconSize={32} />
         <Typography variant={costValueVariant} style={{ marginLeft: marginBetweenIconAndValue }}>
           {hit_points}
         </Typography>
       </div>
       <div style={{ display: "inline-flex", alignItems: "center", marginRight: marginBetweenCostSets }}>
-        <StatIcon fileName="damage" iconSize={32} />
+        <StatIcon tooltip="Damage" fileName="damage" iconSize={32} />
         <Typography variant={costValueVariant} style={{ marginLeft: marginBetweenIconAndValue }}>
           {attack}
         </Typography>
       </div>
       <div style={{ display: "inline-flex", alignItems: "center", marginRight: marginBetweenCostSets }}>
-        <StatIcon fileName="armor" iconSize={32} />
+        <StatIcon tooltip="Melee Armor" fileName="armor" iconSize={32} />
         <Typography variant={costValueVariant} style={{ marginLeft: marginBetweenIconAndValue }}>
           {melee_armor}
         </Typography>
       </div>
       <div style={{ display: "inline-flex", alignItems: "center", marginRight: marginBetweenCostSets }}>
-        <StatIcon fileName="range-armor" iconSize={32} />
+        <StatIcon tooltip="Ranged Armor" fileName="range-armor" iconSize={32} />
         <Typography variant={costValueVariant} style={{ marginLeft: marginBetweenIconAndValue }}>
           {ranged_armor}
         </Typography>
       </div>
       <div style={{ display: "inline-flex", alignItems: "center", marginRight: marginBetweenCostSets }}>
-        <StatIcon fileName="range" iconSize={32} />
+        <StatIcon tooltip="Range" fileName="range" iconSize={32} />
         <Typography variant={costValueVariant} style={{ marginLeft: marginBetweenIconAndValue }}>
-          {max_range} {min_range !== 0 ? `(${min_range} minimum)` : null}
+          {max_range} {max_range === 0 ? "(Melee)" : null} {min_range !== 0 ? `(${min_range} minimum)` : null}
         </Typography>
       </div>
     </div>

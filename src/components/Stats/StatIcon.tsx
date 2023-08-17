@@ -4,6 +4,7 @@ import { CardMedia } from "@mui/material";
 interface StatIconProps {
   fileName: string;
   iconSize: number;
+  tooltip?: string;
 }
 
 export function StatIcon(props: StatIconProps) {
@@ -14,6 +15,7 @@ export function StatIcon(props: StatIconProps) {
       image={require(`../../images/staticons/${props.fileName}.png`)}
       alt={`${props.fileName}-icon`}
       sx={{ height: props.iconSize, width: props.iconSize }}
+      title={props.tooltip ? props.tooltip : "StatIcon"}
     />
   );
 }
