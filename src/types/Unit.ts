@@ -12,9 +12,11 @@ export type Unit = {
   movement_rate: number;
   line_of_sight: number;
   hit_points: number;
-  range: string; // string type because some units have a min range (e.g. 5-12)
+  min_range: number;
+  max_range: number;
   attack: number;
-  armor: string; // string type because its currently represented as melee armor/ranged armor (e.g 2/5)
+  melee_armor: number;
+  ranged_armor: number;
   attack_bonus?: CombatBonus[];
   armor_bonus?: CombatBonus[];
   search_radius: number;
