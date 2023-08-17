@@ -50,7 +50,7 @@ export default function CivCompareDetails(props: CivCompareDetailsProps) {
           <Typography variant="h5" fontWeight={600}>
             {props.civ ? props.civ.name : "Select a Civilization"}
           </Typography>
-          <Typography variant="subtitle2">{props.civ?.army_type} Civilization</Typography>
+          <Typography variant="subtitle2">{props.civ ? `${props.civ?.army_type} Civilization` : null} </Typography>
         </div>
       </div>
       <CardContent sx={{ height: 750, paddingTop: "0", marginTop: 1 }}>
