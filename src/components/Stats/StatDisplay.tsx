@@ -23,7 +23,11 @@ export function StatDisplay(props: StatDisplayProps) {
         </Typography>
       </div>
       <div style={{ display: "inline-flex", alignItems: "center", marginRight: marginBetweenCostSets }}>
-        <StatIcon tooltip="Damage" fileName="damage" iconSize={32} />
+        <StatIcon
+          tooltip={max_range === 0 ? "Melee Attack Damage" : "Ranged Attack Damage"}
+          fileName="damage"
+          iconSize={32}
+        />
         <Typography variant={costValueVariant} style={{ marginLeft: marginBetweenIconAndValue }}>
           {attack}
         </Typography>
