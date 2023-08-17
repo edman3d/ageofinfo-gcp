@@ -27,9 +27,14 @@ const columns: GridColDef[] = [
     width: 120,
   },
   {
-    field: "armor",
-    headerName: "Armor",
-    width: 120,
+    field: "melee_armor",
+    headerName: "Melee Armor",
+    width: 110,
+  },
+  {
+    field: "ranged_armor",
+    headerName: "Ranged Armor",
+    width: 110,
   },
   {
     field: "line_of_sight",
