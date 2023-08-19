@@ -1,6 +1,6 @@
 import * as React from "react";
 import { useState } from "react";
-import { Routes, Route } from "react-router-dom";
+import { Routes, Route, useLocation } from "react-router-dom";
 import { Badge, Box, Container, CssBaseline, Divider, List, IconButton, Toolbar, Typography } from "@mui/material";
 import {
   ChevronLeft as ChevronLeftIcon,
@@ -26,6 +26,7 @@ function DashboardContent() {
   const [civs] = useState(civData);
   const [techs] = useState(techData);
   const [buildings] = useState(buildingData);
+  const pathName = useLocation().pathname;
 
   const toggleDrawer = () => {
     setOpen(!open);
@@ -58,7 +59,7 @@ function DashboardContent() {
                     <MenuIcon sx={{ color: DARK_TAN_COLOR }} />
                   </IconButton>
                   <Typography component="h1" variant="h6" color="black" noWrap sx={{ flexGrow: 1 }}>
-                    AgeOfInfo Dashboard
+                    AgeOfInfo {pathName === "/" ? " > Compare Civilizations" : null}
                   </Typography>
                   <IconButton color="inherit">
                     <Badge badgeContent={0} color="secondary">
