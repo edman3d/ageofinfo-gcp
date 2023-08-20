@@ -11,7 +11,7 @@ type ChipListProps = {
 };
 
 /**
- * Renders one or more `<Chip/>` components. Creates 1 `<Chip/>` per delimited string.
+ * Renders one or more `<Chip/>` components. Creates 1 `<Chip/>` per value in a delimited string.
  * @param props
  * @returns a `<Stack/>` of `<Chip/>` components
  */
