@@ -22,7 +22,7 @@ export function ChipList(props: ChipListProps) {
   return (
     <Stack spacing={0.5} marginBottom={1}>
       {hasAtLeastOneValue ? (
-        listItems.map((item, index) => (
+        listItems.map((item: string, index: number) => (
           <Chip key={index} label={item} size="medium" sx={{ maxWidth: "fit-content", fontSize: "1rem" }} />
         ))
       ) : (
