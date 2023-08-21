@@ -35,7 +35,8 @@ function getBuildingObjects(buildingNamesToFind: string[], allBuildings: Buildin
   return buildingObjects;
 }
 
-export function BuildingAccordions(props: BuildingAccordionsProps) {
+function BuildingAccordions(props: BuildingAccordionsProps) {
+  console.log(`BuildingAccordions: : ${props.unique_buildings}`);
   const allBuildings = useContext(BuildingContext);
   const buildingNames: string[] = props.unique_buildings ? props.unique_buildings.split(";") : [];
   const buildingObjects = getBuildingObjects(buildingNames, allBuildings);
@@ -140,3 +141,5 @@ export function BuildingAccordions(props: BuildingAccordionsProps) {
     </div>
   );
 }
+
+export default React.memo(BuildingAccordions);
