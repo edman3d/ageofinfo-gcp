@@ -34,7 +34,8 @@ function getTechObjects(techNamesToFind: string[], allTechs: Technology[] | null
   return techObjects;
 }
 
-export function TechAccordions(props: TechAccordionsProps) {
+function TechAccordions(props: TechAccordionsProps) {
+  // console.log(`TechAccordions: : ${props.unique_techs}`);
   const allTechs = useContext(TechContext);
   const techNames: string[] = props.unique_techs ? props.unique_techs.split(";") : [];
   const techObjects = getTechObjects(techNames, allTechs);
@@ -142,3 +143,5 @@ export function TechAccordions(props: TechAccordionsProps) {
     </div>
   );
 }
+
+export default React.memo(TechAccordions);

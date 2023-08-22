@@ -23,6 +23,7 @@ type UnitAccordionsProps = {
 };
 
 function getUnitObjects(unitNamesToFind: string[], allUnits: Unit[] | null) {
+  // console.log("getUnitObjects: " + unitNamesToFind);
   if (!allUnits) return;
   let unitObjects: Unit[] = [];
   unitNamesToFind.forEach((unitName) => {
@@ -35,7 +36,8 @@ function getUnitObjects(unitNamesToFind: string[], allUnits: Unit[] | null) {
   return unitObjects;
 }
 
-export function UnitAccordions(props: UnitAccordionsProps) {
+function UnitAccordions(props: UnitAccordionsProps) {
+  // console.log(`UnitAccordions: : ${props.unique_units}`);
   const allUnits = useContext(UnitContext);
   const unitNames: string[] = props.unique_units ? props.unique_units.split(";") : [];
   const unitObjects = getUnitObjects(unitNames, allUnits);
@@ -175,3 +177,5 @@ export function UnitAccordions(props: UnitAccordionsProps) {
     </div>
   );
 }
+
+export default React.memo(UnitAccordions);

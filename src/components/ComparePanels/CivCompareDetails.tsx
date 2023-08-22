@@ -3,7 +3,9 @@ import { Card, CardContent, CardMedia, Divider, Grid, Typography } from "@mui/ma
 import type { Civilization } from "../../types";
 import DetailsList from "./DetailsList";
 import { LIGHT_TAN_COLOR } from "../../constants";
-import { BuildingAccordions, TechAccordions, UnitAccordions } from "../Accordions";
+import BuildingAccordions from "../Accordions/BuildingAccordions";
+import TechAccordions from "../Accordions/TechAddordions";
+import UnitAccordions from "../Accordions/UnitAccordions";
 
 type CivCompareDetailsProps = {
   civ?: Civilization | null;
@@ -14,7 +16,7 @@ const ACCORDION_ICON_SIZE: number = 110;
 const MARGIN_BETWEEN_DIVIDERS: number = 10;
 const DIVIDER_FONT_WEIGHT: number = 800;
 
-export default function CivCompareDetails(props: CivCompareDetailsProps) {
+export function CivCompareDetails(props: CivCompareDetailsProps) {
   return (
     <Card
       sx={{
@@ -146,3 +148,5 @@ export default function CivCompareDetails(props: CivCompareDetailsProps) {
     </Card>
   );
 }
+
+export default React.memo(CivCompareDetails);
