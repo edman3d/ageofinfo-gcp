@@ -1,29 +1,24 @@
 import * as React from "react";
 import TextField from "@mui/material/TextField";
 import { Autocomplete, Box } from "@mui/material";
-import type { Civilization } from "../../types";
-import { useContext, useState } from "react";
-import { CivContext } from "../../contexts/CivContext";
+import { useState } from "react";
 
 type AutoCompleteSelectProps = {
   options: string[];
-  setSelectedCiv: (civ?: Civilization) => void;
+  selectCiv: (civName: string) => void;
 };
 
 export function AutoCompleteSelect(props: AutoCompleteSelectProps) {
-  console.log("AutoCompleteSelect");
   const [value, setValue] = useState<string | null>();
   const [inputValue, setInputValue] = useState("");
-  const civs = useContext(CivContext);
 
   return (
     <div>
       <Autocomplete
         value={value || null}
         onChange={(event: any, newValue: string | null) => {
-          const chosenCiv = civs?.find((c) => newValue === c.name);
           setValue(newValue);
-          props.setSelectedCiv(chosenCiv);
+          props.selectCiv(newValue || "");
         }}
         inputValue={inputValue}
         onInputChange={(event, newInputValue) => {

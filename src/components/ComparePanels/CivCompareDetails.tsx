@@ -17,7 +17,6 @@ const MARGIN_BETWEEN_DIVIDERS: number = 10;
 const DIVIDER_FONT_WEIGHT: number = 800;
 
 export function CivCompareDetails(props: CivCompareDetailsProps) {
-  console.log(`CivCompareDetails: : ${props.civ?.name}`);
   return (
     <Card
       sx={{
