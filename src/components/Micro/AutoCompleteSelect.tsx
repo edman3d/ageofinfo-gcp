@@ -2,27 +2,19 @@ import * as React from "react";
 import TextField from "@mui/material/TextField";
 import { Autocomplete, Box } from "@mui/material";
 import type { Civilization } from "../../types";
-import { useContext } from "react";
+import { useContext, useState } from "react";
 import { CivContext } from "../../contexts/CivContext";
 
 type AutoCompleteSelectProps = {
+  options: string[];
   setSelectedCiv: (civ?: Civilization) => void;
 };
 
-function getCivDropdownValues(civs: Civilization[] | null) {
-  let dropdownOptions: string[] = [];
-  civs?.forEach((civ) => {
-    dropdownOptions.push(civ.name);
-  });
-  return dropdownOptions;
-}
-
 export function AutoCompleteSelect(props: AutoCompleteSelectProps) {
-  const [value, setValue] = React.useState<string | null>();
-  const [inputValue, setInputValue] = React.useState("");
+  console.log("AutoCompleteSelect");
+  const [value, setValue] = useState<string | null>();
+  const [inputValue, setInputValue] = useState("");
   const civs = useContext(CivContext);
-
-  const dropdownOptions = getCivDropdownValues(civs);
 
   return (
     <div>
@@ -38,7 +30,7 @@ export function AutoCompleteSelect(props: AutoCompleteSelectProps) {
           setInputValue(newInputValue);
         }}
         id="civ-autocomplete-select"
-        options={dropdownOptions}
+        options={props.options}
         sx={{ width: "100%", marginBottom: 1 }}
         renderInput={(params) => <TextField {...params} label="Select a Civilization" />}
         renderOption={(props, option) => (
@@ -56,3 +48,5 @@ export function AutoCompleteSelect(props: AutoCompleteSelectProps) {
     </div>
   );
 }
+
+export default React.memo(AutoCompleteSelect);
