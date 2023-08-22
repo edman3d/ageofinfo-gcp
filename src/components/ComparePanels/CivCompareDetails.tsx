@@ -16,8 +16,8 @@ const ACCORDION_ICON_SIZE: number = 110;
 const MARGIN_BETWEEN_DIVIDERS: number = 10;
 const DIVIDER_FONT_WEIGHT: number = 800;
 
-export default function CivCompareDetails(props: CivCompareDetailsProps) {
-  //console.log(`CivCompareDetails: : ${props.civ?.name}`);
+export function CivCompareDetails(props: CivCompareDetailsProps) {
+  console.log(`CivCompareDetails: : ${props.civ?.name}`);
   return (
     <Card
       sx={{
@@ -149,3 +149,5 @@ export default function CivCompareDetails(props: CivCompareDetailsProps) {
     </Card>
   );
 }
+
+export default React.memo(CivCompareDetails);
