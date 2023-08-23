@@ -21,7 +21,7 @@ import {
 } from "@mui/icons-material";
 import { Settings, type Building, type Civilization, type Technology, type Unit } from "../types";
 import { CivComparePage, CivDataPage, TechDataPage, BuildingDataPage, UnitDataPage } from "../pages";
-import { BuildingContext, CivContext, SettingsContext, TechContext, UnitContext } from "../contexts";
+import { BuildingContext, CivContext, DEFAULT_SETTINGS, SettingsContext, TechContext, UnitContext } from "../contexts";
 import { DARK_TAN_COLOR } from "../constants";
 import { AppBar, Drawer, DrawerToolsSection, DrawerDataTablesSection, DrawerLinksSection } from "./Layout";
 import { Copyright } from "./Micro";
@@ -32,24 +32,20 @@ let techData: Technology[] = require("./../data/techs.json");
 let civData: Civilization[] = require("./../data/civs.json");
 let buildingData: Building[] = require("./../data/buildings.json");
 
-const DEFAULT_SETTINGS: Settings = {
-  showEliteUnits: false,
-};
-
 function DashboardContent() {
-  const [open, setOpen] = useState(false);
+  const [drawerOpen, setDrawerOpen] = useState(false);
   const [units] = useState(unitData);
   const [civs] = useState(civData);
   const [techs] = useState(techData);
   const [buildings] = useState(buildingData);
   const pathName = useLocation().pathname;
-  const [settings, setSettings] = useState(DEFAULT_SETTINGS);
+  const [settings, setSettings] = useState<Settings>(DEFAULT_SETTINGS);
 
   const toggleDrawer = () => {
-    setOpen(!open);
+    setDrawerOpen(!drawerOpen);
   };
 
-  const handleChange = () => {
+  const toggleShowElites = () => {
     setSettings({ showEliteUnits: !settings.showEliteUnits });
   };
 
@@ -62,7 +58,7 @@ function DashboardContent() {
               <Box sx={{ display: "flex" }}>
                 <CssBaseline />
 
-                <AppBar position="absolute" open={open}>
+                <AppBar position="absolute" open={drawerOpen}>
                   <Toolbar
                     sx={{
                       pr: "24px", // keep right padding when drawer closed
@@ -75,7 +71,7 @@ function DashboardContent() {
                       onClick={toggleDrawer}
                       sx={{
                         marginRight: "36px",
-                        ...(open && { display: "none" }),
+                        ...(drawerOpen && { display: "none" }),
                       }}
                     >
                       <MenuIcon sx={{ color: DARK_TAN_COLOR }} />
@@ -88,11 +84,15 @@ function DashboardContent() {
                         control={
                           <Checkbox
                             checked={settings.showEliteUnits}
-                            onChange={handleChange}
+                            onChange={toggleShowElites}
                             inputProps={{ "aria-label": "controlled" }}
                           />
                         }
-                        label="Show Elite Units"
+                        label={
+                          <Typography sx={{ color: "black", marginRight: 2, userSelect: "none" }} variant="body1">
+                            Show Elite Units
+                          </Typography>
+                        }
                       />
                     ) : null}
 
@@ -104,7 +104,7 @@ function DashboardContent() {
                   </Toolbar>
                 </AppBar>
 
-                <Drawer variant="permanent" open={open}>
+                <Drawer variant="permanent" open={drawerOpen}>
                   <Toolbar
                     sx={{
                       display: "flex",

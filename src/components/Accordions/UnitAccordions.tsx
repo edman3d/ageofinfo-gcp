@@ -12,7 +12,7 @@ import {
 } from "@mui/material";
 import ExpandMoreIcon from "@mui/icons-material/ExpandMore";
 import { SettingsContext, UnitContext } from "../../contexts";
-import type { Unit } from "../../types";
+import type { Settings, Unit } from "../../types";
 import { MEDIUM_TAN_COLOR, DARK_TAN_COLOR } from "../../constants";
 import { getCostObject, getCreatedInFileName, getRequiresAgeFileName } from "../../util";
 import { BonusChipList, ChipList, CostDisplay, StatDisplay } from "../Stats";
@@ -22,11 +22,14 @@ type UnitAccordionsProps = {
   iconSize: number;
 };
 
-function getUnitObjects(unitNamesToFind: string[], allUnits: Unit[] | null) {
+function getUnitObjects(unitNamesToFind: string[], allUnits: Unit[] | null, settings: Settings) {
   // console.log("getUnitObjects: " + unitNamesToFind);
   if (!allUnits) return;
   let unitObjects: Unit[] = [];
   unitNamesToFind.forEach((unitName) => {
+    if (!settings.showEliteUnits && unitName.startsWith("Elite")) {
+      return;
+    }
     const result = allUnits.find(({ name }) => name === unitName);
 
     if (result) {
@@ -37,11 +40,11 @@ function getUnitObjects(unitNamesToFind: string[], allUnits: Unit[] | null) {
 }
 
 function UnitAccordions(props: UnitAccordionsProps) {
-  console.log(`UnitAccordions: : ${props.unique_units}`);
+  // console.log(`UnitAccordions: : ${props.unique_units}`);
   const allUnits = useContext(UnitContext);
   const settings = useContext(SettingsContext);
   const unitNames: string[] = props.unique_units ? props.unique_units.split(";") : [];
-  const unitObjects = getUnitObjects(unitNames, allUnits);
+  const unitObjects = getUnitObjects(unitNames, allUnits, settings);
 
   return (
     <div>
@@ -73,7 +76,7 @@ function UnitAccordions(props: UnitAccordionsProps) {
                   <Grid container>
                     <Grid item xs={12}>
                       <Typography variant="body1" fontWeight={600}>
-                        {unit.name} {String(settings?.showEliteUnits)}
+                        {unit.name}
                       </Typography>
                     </Grid>
                     <Grid item xs={12}>

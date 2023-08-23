@@ -1,6 +1,10 @@
 import React from "react";
-import { Settings } from "../types";
+import type { Settings } from "../types";
 
-const SettingsContext = React.createContext<Settings | null>(null);
+export const DEFAULT_SETTINGS: Settings = {
+  showEliteUnits: false,
+};
+
+const SettingsContext = React.createContext<Settings>(DEFAULT_SETTINGS);
 
 export { SettingsContext };
