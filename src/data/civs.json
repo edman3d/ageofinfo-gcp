@@ -28,7 +28,7 @@
     "id": 3,
     "expansion": "The African Kingdoms",
     "army_type": "Cavalry and Naval",
-    "unique_unit": "Camel Archer;Elite Camel Archer",
+    "unique_unit": "Camel Archer;Elite Camel Archer;Genitour;Elite Genitour",
     "unique_tech": "Kasbah;Maghrabi Camels",
     "team_bonus": "Genitours are available at the Archery Range.",
     "civilization_bonus": "Villagers move +10% faster.;Stable units are 15%/20% cheaper in the Castle/Imperial Age.;Ships move +10% faster.",
