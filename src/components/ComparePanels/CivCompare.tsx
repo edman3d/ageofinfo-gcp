@@ -1,5 +1,5 @@
 import * as React from "react";
-import { useCallback, useContext, useMemo, useState } from "react";
+import { useContext, useMemo, useState } from "react";
 import { Box, Grid } from "@mui/material";
 import type { Civilization } from "../../types";
 import CivCompareDetails from "./CivCompareDetails";
