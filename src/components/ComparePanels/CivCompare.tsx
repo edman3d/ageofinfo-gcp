@@ -1,6 +1,6 @@
 import * as React from "react";
 import { useCallback, useContext, useMemo, useState } from "react";
-import { Box, Grid } from "@mui/material";
+import { Box, Checkbox, FormControlLabel, Grid } from "@mui/material";
 import type { Civilization } from "../../types";
 import CivCompareDetails from "./CivCompareDetails";
 import { AutoCompleteSelect } from "../Micro";
@@ -40,6 +40,12 @@ export function CivCompare() {
   //   [civs]
   // );
 
+  // const [checked, setChecked] = useState<boolean>(false);
+  // const handleChange = (e: React.ChangeEvent) => {
+  //   console.log("checkbox changed");
+  //   setChecked(!checked);
+  // };
+
   const dropdownOptions = useMemo(() => {
     let dropdownOptions: string[] = [];
     civs?.forEach((civ) => {
@@ -50,6 +56,7 @@ export function CivCompare() {
 
   return (
     <Box sx={{ width: "100%" }}>
+      {/* <Checkbox checked={checked} onChange={handleChange} inputProps={{ "aria-label": "controlled" }} /> */}
       <Grid container spacing={3}>
         <Grid item xs={6}>
           <AutoCompleteSelect options={dropdownOptions} selectCiv={selectCivOne} />

@@ -35,7 +35,7 @@ function getTechObjects(techNamesToFind: string[], allTechs: Technology[] | null
 }
 
 function TechAccordions(props: TechAccordionsProps) {
-  // console.log(`TechAccordions: : ${props.unique_techs}`);
+  console.log(`TechAccordions: : ${props.unique_techs}`);
   const allTechs = useContext(TechContext);
   const techNames: string[] = props.unique_techs ? props.unique_techs.split(";") : [];
   const techObjects = getTechObjects(techNames, allTechs);
