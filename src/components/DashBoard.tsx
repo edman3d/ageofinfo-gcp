@@ -1,5 +1,5 @@
 import * as React from "react";
-import { useState } from "react";
+import { useContext, useState } from "react";
 import { Routes, Route, useLocation } from "react-router-dom";
 import {
   Badge,
@@ -19,9 +19,9 @@ import {
   Menu as MenuIcon,
   Notifications as NotificationsIcon,
 } from "@mui/icons-material";
-import { Settings, type Building, type Civilization, type Technology, type Unit } from "../types";
+import { type Building, type Civilization, type Technology, type Unit } from "../types";
 import { CivComparePage, CivDataPage, TechDataPage, BuildingDataPage, UnitDataPage } from "../pages";
-import { BuildingContext, CivContext, DEFAULT_SETTINGS, SettingsContext, TechContext, UnitContext } from "../contexts";
+import { BuildingContext, CivContext, SettingsContext, TechContext, UnitContext } from "../contexts";
 import { DARK_TAN_COLOR } from "../constants";
 import { AppBar, Drawer, DrawerToolsSection, DrawerDataTablesSection, DrawerLinksSection } from "./Layout";
 import { Copyright } from "./Micro";
@@ -39,121 +39,115 @@ function DashboardContent() {
   const [techs] = useState(techData);
   const [buildings] = useState(buildingData);
   const pathName = useLocation().pathname;
-  const [settings, setSettings] = useState<Settings>(DEFAULT_SETTINGS);
+  const { showEliteUnits, toggleShowEliteUnits } = useContext(SettingsContext);
 
   const toggleDrawer = () => {
     setDrawerOpen(!drawerOpen);
   };
 
-  const toggleShowElites = () => {
-    setSettings({ showEliteUnits: !settings.showEliteUnits });
-  };
-
   return (
-    <SettingsContext.Provider value={settings}>
-      <BuildingContext.Provider value={buildings}>
-        <TechContext.Provider value={techs}>
-          <CivContext.Provider value={civs}>
-            <UnitContext.Provider value={units}>
-              <Box sx={{ display: "flex" }}>
-                <CssBaseline />
+    <BuildingContext.Provider value={buildings}>
+      <TechContext.Provider value={techs}>
+        <CivContext.Provider value={civs}>
+          <UnitContext.Provider value={units}>
+            <Box sx={{ display: "flex" }}>
+              <CssBaseline />
 
-                <AppBar position="absolute" open={drawerOpen}>
-                  <Toolbar
-                    sx={{
-                      pr: "24px", // keep right padding when drawer closed
-                    }}
-                  >
-                    <IconButton
-                      edge="start"
-                      color="inherit"
-                      aria-label="open drawer"
-                      onClick={toggleDrawer}
-                      sx={{
-                        marginRight: "36px",
-                        ...(drawerOpen && { display: "none" }),
-                      }}
-                    >
-                      <MenuIcon sx={{ color: DARK_TAN_COLOR }} />
-                    </IconButton>
-                    <Typography component="h1" variant="h6" color="black" noWrap sx={{ flexGrow: 1 }}>
-                      AgeOfInfo {pathName === "/" ? " > Compare Civilizations" : null}
-                    </Typography>
-                    {pathName === "/" ? (
-                      <FormControlLabel
-                        control={
-                          <Checkbox
-                            checked={settings.showEliteUnits}
-                            onChange={toggleShowElites}
-                            inputProps={{ "aria-label": "controlled" }}
-                          />
-                        }
-                        label={
-                          <Typography sx={{ color: "black", marginRight: 2, userSelect: "none" }} variant="body1">
-                            Show Elite Units
-                          </Typography>
-                        }
-                      />
-                    ) : null}
-
-                    <IconButton color="inherit">
-                      <Badge badgeContent={0} color="secondary">
-                        <NotificationsIcon />
-                      </Badge>
-                    </IconButton>
-                  </Toolbar>
-                </AppBar>
-
-                <Drawer variant="permanent" open={drawerOpen}>
-                  <Toolbar
-                    sx={{
-                      display: "flex",
-                      alignItems: "center",
-                      justifyContent: "flex-end",
-                      px: [1],
-                    }}
-                  >
-                    <IconButton onClick={toggleDrawer}>
-                      <ChevronLeftIcon />
-                    </IconButton>
-                  </Toolbar>
-                  <Divider />
-                  <List component="nav">
-                    {DrawerToolsSection}
-                    <Divider sx={{ my: 1 }} />
-                    {DrawerDataTablesSection}
-                    <Divider sx={{ my: 1 }} />
-                    {DrawerLinksSection}
-                  </List>
-                </Drawer>
-
-                <Box
-                  component="main"
+              <AppBar position="absolute" open={drawerOpen}>
+                <Toolbar
                   sx={{
-                    backgroundColor: DARK_TAN_COLOR,
-                    flexGrow: 1,
-                    height: "100vh",
-                    overflow: "auto",
+                    pr: "24px", // keep right padding when drawer closed
                   }}
                 >
-                  <Toolbar />
-                  <Container maxWidth={false} sx={{ mt: 2, mb: 2, backgroundColor: DARK_TAN_COLOR }}>
-                    <Routes>
-                      <Route path="/" element={<CivComparePage />} />
-                      <Route path="/civdata" element={<CivDataPage />} />
-                      <Route path="/unitdata" element={<UnitDataPage />} />
-                      <Route path="/techdata" element={<TechDataPage />} />
-                      <Route path="/buildingdata" element={<BuildingDataPage />} />
-                    </Routes>
-                    <Copyright sx={{ pt: 4 }} />
-                  </Container>
-                </Box>
+                  <IconButton
+                    edge="start"
+                    color="inherit"
+                    aria-label="open drawer"
+                    onClick={toggleDrawer}
+                    sx={{
+                      marginRight: "36px",
+                      ...(drawerOpen && { display: "none" }),
+                    }}
+                  >
+                    <MenuIcon sx={{ color: DARK_TAN_COLOR }} />
+                  </IconButton>
+                  <Typography component="h1" variant="h6" color="black" noWrap sx={{ flexGrow: 1 }}>
+                    AgeOfInfo {pathName === "/" ? " > Compare Civilizations" : null}
+                  </Typography>
+                  {pathName === "/" ? (
+                    <FormControlLabel
+                      control={
+                        <Checkbox
+                          checked={showEliteUnits}
+                          onChange={toggleShowEliteUnits}
+                          inputProps={{ "aria-label": "controlled" }}
+                        />
+                      }
+                      label={
+                        <Typography sx={{ color: "black", marginRight: 2, userSelect: "none" }} variant="body1">
+                          Show Elite Units
+                        </Typography>
+                      }
+                    />
+                  ) : null}
+
+                  <IconButton color="inherit">
+                    <Badge badgeContent={0} color="secondary">
+                      <NotificationsIcon />
+                    </Badge>
+                  </IconButton>
+                </Toolbar>
+              </AppBar>
+
+              <Drawer variant="permanent" open={drawerOpen}>
+                <Toolbar
+                  sx={{
+                    display: "flex",
+                    alignItems: "center",
+                    justifyContent: "flex-end",
+                    px: [1],
+                  }}
+                >
+                  <IconButton onClick={toggleDrawer}>
+                    <ChevronLeftIcon />
+                  </IconButton>
+                </Toolbar>
+                <Divider />
+                <List component="nav">
+                  {DrawerToolsSection}
+                  <Divider sx={{ my: 1 }} />
+                  {DrawerDataTablesSection}
+                  <Divider sx={{ my: 1 }} />
+                  {DrawerLinksSection}
+                </List>
+              </Drawer>
+
+              <Box
+                component="main"
+                sx={{
+                  backgroundColor: DARK_TAN_COLOR,
+                  flexGrow: 1,
+                  height: "100vh",
+                  overflow: "auto",
+                }}
+              >
+                <Toolbar />
+                <Container maxWidth={false} sx={{ mt: 2, mb: 2, backgroundColor: DARK_TAN_COLOR }}>
+                  <Routes>
+                    <Route path="/" element={<CivComparePage />} />
+                    <Route path="/civdata" element={<CivDataPage />} />
+                    <Route path="/unitdata" element={<UnitDataPage />} />
+                    <Route path="/techdata" element={<TechDataPage />} />
+                    <Route path="/buildingdata" element={<BuildingDataPage />} />
+                  </Routes>
+                  <Copyright sx={{ pt: 4 }} />
+                </Container>
               </Box>
-            </UnitContext.Provider>
-          </CivContext.Provider>
-        </TechContext.Provider>
-      </BuildingContext.Provider>
-    </SettingsContext.Provider>
+            </Box>
+          </UnitContext.Provider>
+        </CivContext.Provider>
+      </TechContext.Provider>
+    </BuildingContext.Provider>
   );
 }
 
