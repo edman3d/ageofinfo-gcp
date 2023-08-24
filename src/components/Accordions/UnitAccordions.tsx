@@ -15,7 +15,10 @@ import { SettingsContext, UnitContext } from "../../contexts";
 import type { Unit } from "../../types";
 import { MEDIUM_TAN_COLOR, DARK_TAN_COLOR } from "../../constants";
 import { getCreatedInFileName, getRequiresAgeFileName } from "../../util";
-import { BonusChipList, ChipList, CostDisplay, StatDisplay } from "../Stats";
+import BonusChipList from "../Stats/BonusChipList";
+import ChipList from "../Stats/ChipList";
+import StatDisplay from "../Stats/StatDisplay";
+import CostDisplay from "../Stats/CostDisplay";
 
 type UnitAccordionsProps = {
   unique_units: string | null;

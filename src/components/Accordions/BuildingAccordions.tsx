@@ -16,7 +16,7 @@ import type { Building } from "../../types";
 import { DARK_TAN_COLOR, MEDIUM_TAN_COLOR } from "../../constants";
 import DetailsList from "../ComparePanels/DetailsList";
 import { getRequiresAgeFileName } from "../../util";
-import { CostDisplay } from "../Stats";
+import CostDisplay from "../Stats/CostDisplay";
 
 type BuildingAccordionsProps = {
   unique_buildings: string | null;

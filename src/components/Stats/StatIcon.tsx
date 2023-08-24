@@ -7,7 +7,7 @@ interface StatIconProps {
   tooltip?: string;
 }
 
-export function StatIcon(props: StatIconProps) {
+function StatIcon(props: StatIconProps) {
   return (
     <CardMedia
       component="img"
@@ -19,3 +19,5 @@ export function StatIcon(props: StatIconProps) {
     />
   );
 }
+
+export default React.memo(StatIcon);

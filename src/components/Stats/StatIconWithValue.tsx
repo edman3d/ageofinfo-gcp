@@ -1,6 +1,6 @@
 import * as React from "react";
 import { Typography } from "@mui/material";
-import { StatIcon } from "./StatIcon";
+import StatIcon from "./StatIcon";
 
 interface StatIconWithValueProps {
   fileName: string;
@@ -9,7 +9,7 @@ interface StatIconWithValueProps {
   value: number;
 }
 
-export function StatIconWithValue({ fileName, iconSize = 32, tooltip, value }: StatIconWithValueProps) {
+function StatIconWithValue({ fileName, iconSize = 32, tooltip, value }: StatIconWithValueProps) {
   const hasValue = value && value > 0;
 
   if (hasValue) {
@@ -24,3 +24,5 @@ export function StatIconWithValue({ fileName, iconSize = 32, tooltip, value }: S
   }
   return null;
 }
+
+export default React.memo(StatIconWithValue);

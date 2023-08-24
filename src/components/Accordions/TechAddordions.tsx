@@ -15,7 +15,8 @@ import { TechContext } from "../../contexts";
 import type { Technology } from "../../types";
 import { DARK_TAN_COLOR, MEDIUM_TAN_COLOR } from "../../constants";
 import { getCreatedInFileName, getRequiresAgeFileName } from "../../util";
-import { ChipList, CostDisplay } from "../Stats";
+import ChipList from "../Stats/ChipList";
+import CostDisplay from "../Stats/CostDisplay";
 
 type TechAccordionsProps = {
   unique_techs: string | null;

@@ -1,12 +1,12 @@
 import * as React from "react";
 import { Cost } from "../../types/Cost";
-import { StatIconWithValue } from "./StatIconWithValue";
+import StatIconWithValue from "./StatIconWithValue";
 
 type CostDisplayProps = {
   costString: string;
 };
 
-export function CostDisplay(props: CostDisplayProps) {
+function CostDisplay(props: CostDisplayProps) {
   const costObject: Cost = JSON.parse(props.costString);
   const { Wood, Food, Gold, Stone } = costObject;
 
@@ -19,3 +19,5 @@ export function CostDisplay(props: CostDisplayProps) {
     </div>
   );
 }
+
+export default React.memo(CostDisplay);
