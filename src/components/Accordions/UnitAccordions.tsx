@@ -27,21 +27,21 @@ type UnitAccordionsProps = {
 
 function UnitAccordions(props: UnitAccordionsProps) {
   // console.log(`UnitAccordions: : ${props.unique_units}`);
+  const { iconSize, unique_units } = props;
   const allUnits = useContext(UnitContext);
   const { showEliteUnits } = useContext(SettingsContext);
 
   const unitNames = useMemo(() => {
-    if (props.unique_units) {
-      return props.unique_units.split(";");
+    if (unique_units) {
+      return unique_units.split(";");
     }
     return [];
-  }, [props.unique_units]);
+  }, [unique_units]);
 
   const unitObjects = useMemo(() => {
     let unitObjects: Unit[] = [];
     unitNames.forEach((unitName) => {
       const result = allUnits?.find(({ name }) => name === unitName);
-
       if (result) {
         unitObjects.push(result);
       }
@@ -69,8 +69,8 @@ function UnitAccordions(props: UnitAccordionsProps) {
                         image={require(`../../images/units/${unit.image}.png`)}
                         alt="unitIcon"
                         sx={{
-                          height: `${props.iconSize}px`,
-                          width: `${props.iconSize}px`,
+                          height: `${iconSize}px`,
+                          width: `${iconSize}px`,
                           marginRight: "10px",
                           border: `2px solid ${DARK_TAN_COLOR}`,
                         }}
