@@ -15,7 +15,7 @@ import { BuildingContext } from "../../contexts";
 import type { Building } from "../../types";
 import { DARK_TAN_COLOR, MEDIUM_TAN_COLOR } from "../../constants";
 import DetailsList from "../ComparePanels/DetailsList";
-import { getCostObject, getRequiresAgeFileName } from "../../util";
+import { getRequiresAgeFileName } from "../../util";
 import { CostDisplay } from "../Stats";
 
 type BuildingAccordionsProps = {

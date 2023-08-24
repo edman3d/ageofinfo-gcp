@@ -1,2 +1,1 @@
-export * from "./getAvatarFileName";
-export * from "./getCostObject";
+export * from "./getImageFileNames";

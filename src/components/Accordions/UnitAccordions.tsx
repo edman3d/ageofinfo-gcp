@@ -14,7 +14,7 @@ import ExpandMoreIcon from "@mui/icons-material/ExpandMore";
 import { SettingsContext, UnitContext } from "../../contexts";
 import type { Unit } from "../../types";
 import { MEDIUM_TAN_COLOR, DARK_TAN_COLOR } from "../../constants";
-import { getCostObject, getCreatedInFileName, getRequiresAgeFileName } from "../../util";
+import { getCreatedInFileName, getRequiresAgeFileName } from "../../util";
 import { BonusChipList, ChipList, CostDisplay, StatDisplay } from "../Stats";
 
 type UnitAccordionsProps = {

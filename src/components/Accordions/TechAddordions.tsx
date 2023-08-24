@@ -14,9 +14,8 @@ import ExpandMoreIcon from "@mui/icons-material/ExpandMore";
 import { TechContext } from "../../contexts";
 import type { Technology } from "../../types";
 import { DARK_TAN_COLOR, MEDIUM_TAN_COLOR } from "../../constants";
-import { getCostObject, getCreatedInFileName, getRequiresAgeFileName } from "../../util";
+import { getCreatedInFileName, getRequiresAgeFileName } from "../../util";
 import { ChipList, CostDisplay } from "../Stats";
-import UnitAccordions from "./UnitAccordions";
 
 type TechAccordionsProps = {
   unique_techs: string | null;
