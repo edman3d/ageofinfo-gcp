@@ -7,6 +7,7 @@ import { AutoCompleteSelect } from "../Micro";
 import { CivContext } from "../../contexts/CivContext";
 
 export function CivCompare() {
+  // console.log("CivCompare");
   const civs = useContext(CivContext);
   const [selectedCivOne, setSelectedCivOne] = useState<Civilization | undefined | null>(null);
   const [selectedCivTwo, setSelectedCivTwo] = useState<Civilization | undefined | null>(null);
