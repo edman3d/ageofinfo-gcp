@@ -1,21 +1,11 @@
 import * as React from "react";
 import { Chip, Stack } from "@mui/material";
 
-/**
- * e.g. Army Type - `'Elephants;Ships'`
- *
- * e.g. Armor Class - `'Infantry;Unique Unit'`
- */
 type ChipListProps = {
   delimitedString: string;
 };
 
-/**
- * Renders one or more `<Chip/>` components. Creates 1 `<Chip/>` per value in a delimited string.
- * @param props
- * @returns a `<Stack/>` of `<Chip/>` components
- */
-export function ChipList(props: ChipListProps) {
+function ChipList(props: ChipListProps) {
   const listItems: string[] = props.delimitedString.trim().split(";");
   const hasAtLeastOneValue: boolean = props.delimitedString.length > 0 && listItems.length > 0;
 
@@ -31,3 +21,5 @@ export function ChipList(props: ChipListProps) {
     </Stack>
   );
 }
+
+export default React.memo(ChipList);

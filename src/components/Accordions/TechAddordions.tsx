@@ -1,5 +1,5 @@
 import * as React from "react";
-import { useContext } from "react";
+import { useContext, useMemo } from "react";
 import {
   Accordion,
   AccordionDetails,
@@ -14,31 +14,36 @@ import ExpandMoreIcon from "@mui/icons-material/ExpandMore";
 import { TechContext } from "../../contexts";
 import type { Technology } from "../../types";
 import { DARK_TAN_COLOR, MEDIUM_TAN_COLOR } from "../../constants";
-import { getCostObject, getCreatedInFileName, getRequiresAgeFileName } from "../../util";
-import { ChipList, CostDisplay } from "../Stats";
+import { getCreatedInFileName, getRequiresAgeFileName } from "../../util";
+import ChipList from "../Stats/ChipList";
+import CostDisplay from "../Stats/CostDisplay";
 
 type TechAccordionsProps = {
   unique_techs: string | null;
   iconSize: number;
 };
 
-function getTechObjects(techNamesToFind: string[], allTechs: Technology[] | null) {
-  if (!allTechs) return;
-  let techObjects: Technology[] = [];
-  techNamesToFind.forEach((techName) => {
-    const result = allTechs.find(({ name }) => name === techName);
-    if (result) {
-      techObjects.push(result);
-    }
-  });
-  return techObjects;
-}
-
 function TechAccordions(props: TechAccordionsProps) {
-  // console.log(`TechAccordions: : ${props.unique_techs}`);
+  const { iconSize, unique_techs } = props;
   const allTechs = useContext(TechContext);
-  const techNames: string[] = props.unique_techs ? props.unique_techs.split(";") : [];
-  const techObjects = getTechObjects(techNames, allTechs);
+
+  const techNames = useMemo(() => {
+    if (unique_techs) {
+      return unique_techs.split(";");
+    }
+    return [];
+  }, [unique_techs]);
+
+  const techObjects = useMemo(() => {
+    let tObjects: Technology[] = [];
+    techNames.forEach((techName) => {
+      const result = allTechs?.find(({ name }) => name === techName);
+      if (result) {
+        tObjects.push(result);
+      }
+    });
+    return tObjects;
+  }, [allTechs, techNames]);
 
   return (
     <div>
@@ -58,8 +63,8 @@ function TechAccordions(props: TechAccordionsProps) {
                     image={require(`../../images/technologies/${tech.image}.png`)}
                     alt="unitIcon"
                     sx={{
-                      height: `${props.iconSize}px`,
-                      width: `${props.iconSize}px`,
+                      height: `${iconSize}px`,
+                      width: `${iconSize}px`,
                       marginRight: "10px",
                       border: `2px solid ${DARK_TAN_COLOR}`,
                     }}
@@ -74,7 +79,7 @@ function TechAccordions(props: TechAccordionsProps) {
                       </Typography>
                     </Grid>
                     <Grid item xs={12}>
-                      <CostDisplay costObject={getCostObject(tech.cost)} />
+                      <CostDisplay costString={tech.cost} />
                     </Grid>
                     <Grid item xs={12}>
                       <Typography variant="caption">{tech.description}</Typography>

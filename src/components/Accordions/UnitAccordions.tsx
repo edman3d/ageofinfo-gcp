@@ -14,8 +14,11 @@ import ExpandMoreIcon from "@mui/icons-material/ExpandMore";
 import { SettingsContext, UnitContext } from "../../contexts";
 import type { Unit } from "../../types";
 import { MEDIUM_TAN_COLOR, DARK_TAN_COLOR } from "../../constants";
-import { getCostObject, getCreatedInFileName, getRequiresAgeFileName } from "../../util";
-import { BonusChipList, ChipList, CostDisplay, StatDisplay } from "../Stats";
+import { getCreatedInFileName, getRequiresAgeFileName } from "../../util";
+import BonusChipList from "../Stats/BonusChipList";
+import ChipList from "../Stats/ChipList";
+import StatDisplay from "../Stats/StatDisplay";
+import CostDisplay from "../Stats/CostDisplay";
 
 type UnitAccordionsProps = {
   unique_units: string | null;
@@ -24,21 +27,21 @@ type UnitAccordionsProps = {
 
 function UnitAccordions(props: UnitAccordionsProps) {
   // console.log(`UnitAccordions: : ${props.unique_units}`);
+  const { iconSize, unique_units } = props;
   const allUnits = useContext(UnitContext);
   const { showEliteUnits } = useContext(SettingsContext);
 
   const unitNames = useMemo(() => {
-    if (props.unique_units) {
-      return props.unique_units.split(";");
+    if (unique_units) {
+      return unique_units.split(";");
     }
     return [];
-  }, [props.unique_units]);
+  }, [unique_units]);
 
   const unitObjects = useMemo(() => {
     let unitObjects: Unit[] = [];
     unitNames.forEach((unitName) => {
       const result = allUnits?.find(({ name }) => name === unitName);
-
       if (result) {
         unitObjects.push(result);
       }
@@ -66,8 +69,8 @@ function UnitAccordions(props: UnitAccordionsProps) {
                         image={require(`../../images/units/${unit.image}.png`)}
                         alt="unitIcon"
                         sx={{
-                          height: `${props.iconSize}px`,
-                          width: `${props.iconSize}px`,
+                          height: `${iconSize}px`,
+                          width: `${iconSize}px`,
                           marginRight: "10px",
                           border: `2px solid ${DARK_TAN_COLOR}`,
                         }}
@@ -82,7 +85,7 @@ function UnitAccordions(props: UnitAccordionsProps) {
                           </Typography>
                         </Grid>
                         <Grid item xs={12}>
-                          {unit.cost !== "N/A" ? <CostDisplay costObject={getCostObject(unit.cost)} /> : null}
+                          <CostDisplay costString={unit.cost} />
                         </Grid>
                         <Grid item xs={12}>
                           <StatDisplay unit={unit} />

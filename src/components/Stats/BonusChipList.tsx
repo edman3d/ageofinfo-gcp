@@ -6,7 +6,7 @@ type ChipListProps = {
   bonuses?: CombatBonus[];
 };
 
-export function BonusChipList(props: ChipListProps) {
+function BonusChipList(props: ChipListProps) {
   const bonusesArray = props.bonuses ? JSON.parse(props.bonuses.toString()) : [];
   return (
     <Stack spacing={0.5} marginBottom={1}>
@@ -25,3 +25,5 @@ export function BonusChipList(props: ChipListProps) {
     </Stack>
   );
 }
+
+export default React.memo(BonusChipList);

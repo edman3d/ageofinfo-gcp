@@ -1,5 +1,5 @@
 import * as React from "react";
-import { useContext } from "react";
+import { useContext, useMemo } from "react";
 import {
   Accordion,
   AccordionDetails,
@@ -15,31 +15,35 @@ import { BuildingContext } from "../../contexts";
 import type { Building } from "../../types";
 import { DARK_TAN_COLOR, MEDIUM_TAN_COLOR } from "../../constants";
 import DetailsList from "../ComparePanels/DetailsList";
-import { getCostObject, getRequiresAgeFileName } from "../../util";
-import { CostDisplay } from "../Stats";
+import { getRequiresAgeFileName } from "../../util";
+import CostDisplay from "../Stats/CostDisplay";
 
 type BuildingAccordionsProps = {
   unique_buildings: string | null;
   iconSize: number;
 };
 
-function getBuildingObjects(buildingNamesToFind: string[], allBuildings: Building[] | null) {
-  if (!allBuildings) return;
-  let buildingObjects: Building[] = [];
-  buildingNamesToFind.forEach((buildingName) => {
-    const result = allBuildings.find(({ name }) => name === buildingName);
-    if (result) {
-      buildingObjects.push(result);
-    }
-  });
-  return buildingObjects;
-}
-
 function BuildingAccordions(props: BuildingAccordionsProps) {
-  // console.log(`BuildingAccordions: : ${props.unique_buildings}`);
+  const { iconSize, unique_buildings } = props;
   const allBuildings = useContext(BuildingContext);
-  const buildingNames: string[] = props.unique_buildings ? props.unique_buildings.split(";") : [];
-  const buildingObjects = getBuildingObjects(buildingNames, allBuildings);
+
+  const buildingNames = useMemo(() => {
+    if (unique_buildings) {
+      return unique_buildings.split(";");
+    }
+    return [];
+  }, [unique_buildings]);
+
+  const buildingObjects = useMemo(() => {
+    let bldgObjects: Building[] = [];
+    buildingNames.forEach((buildingName) => {
+      const result = allBuildings?.find(({ name }) => name === buildingName);
+      if (result) {
+        bldgObjects.push(result);
+      }
+    });
+    return bldgObjects;
+  }, [allBuildings, buildingNames]);
 
   return (
     <div>
@@ -59,8 +63,8 @@ function BuildingAccordions(props: BuildingAccordionsProps) {
                     image={require(`../../images/buildings/${building.image}.png`)}
                     alt="buildingIcon"
                     sx={{
-                      height: `${props.iconSize}px`,
-                      width: `${props.iconSize}px`,
+                      height: `${iconSize}px`,
+                      width: `${iconSize}px`,
                       marginRight: "10px",
                       border: `2px solid ${DARK_TAN_COLOR}`,
                     }}
@@ -75,7 +79,7 @@ function BuildingAccordions(props: BuildingAccordionsProps) {
                       </Typography>
                     </Grid>
                     <Grid item xs={12}>
-                      <CostDisplay costObject={getCostObject(building.cost)} />
+                      <CostDisplay costString={building.cost} />
                     </Grid>
                     <Grid item xs={12}>
                       <Typography variant="caption">{building.special}</Typography>
