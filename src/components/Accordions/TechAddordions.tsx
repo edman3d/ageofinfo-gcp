@@ -1,5 +1,5 @@
 import * as React from "react";
-import { useContext } from "react";
+import { useContext, useMemo } from "react";
 import {
   Accordion,
   AccordionDetails,
@@ -23,24 +23,27 @@ type TechAccordionsProps = {
   iconSize: number;
 };
 
-// TODO: optimize like UnitAccordion
-function getTechObjects(techNamesToFind: string[], allTechs: Technology[] | null) {
-  if (!allTechs) return;
-  let techObjects: Technology[] = [];
-  techNamesToFind.forEach((techName) => {
-    const result = allTechs.find(({ name }) => name === techName);
-    if (result) {
-      techObjects.push(result);
-    }
-  });
-  return techObjects;
-}
-
 function TechAccordions(props: TechAccordionsProps) {
-  // console.log(`TechAccordions: : ${props.unique_techs}`);
+  const { iconSize, unique_techs } = props;
   const allTechs = useContext(TechContext);
-  const techNames: string[] = props.unique_techs ? props.unique_techs.split(";") : [];
-  const techObjects = getTechObjects(techNames, allTechs);
+
+  const techNames = useMemo(() => {
+    if (unique_techs) {
+      return unique_techs.split(";");
+    }
+    return [];
+  }, [unique_techs]);
+
+  const techObjects = useMemo(() => {
+    let tObjects: Technology[] = [];
+    techNames.forEach((techName) => {
+      const result = allTechs?.find(({ name }) => name === techName);
+      if (result) {
+        tObjects.push(result);
+      }
+    });
+    return tObjects;
+  }, [allTechs, techNames]);
 
   return (
     <div>
@@ -60,8 +63,8 @@ function TechAccordions(props: TechAccordionsProps) {
                     image={require(`../../images/technologies/${tech.image}.png`)}
                     alt="unitIcon"
                     sx={{
-                      height: `${props.iconSize}px`,
-                      width: `${props.iconSize}px`,
+                      height: `${iconSize}px`,
+                      width: `${iconSize}px`,
                       marginRight: "10px",
                       border: `2px solid ${DARK_TAN_COLOR}`,
                     }}

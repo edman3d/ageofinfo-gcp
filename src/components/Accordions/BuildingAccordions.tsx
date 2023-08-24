@@ -24,14 +24,15 @@ type BuildingAccordionsProps = {
 };
 
 function BuildingAccordions(props: BuildingAccordionsProps) {
+  const { iconSize, unique_buildings } = props;
   const allBuildings = useContext(BuildingContext);
 
   const buildingNames = useMemo(() => {
-    if (props.unique_buildings) {
-      return props.unique_buildings.split(";");
+    if (unique_buildings) {
+      return unique_buildings.split(";");
     }
     return [];
-  }, [props.unique_buildings]);
+  }, [unique_buildings]);
 
   const buildingObjects = useMemo(() => {
     let bldgObjects: Building[] = [];
@@ -62,8 +63,8 @@ function BuildingAccordions(props: BuildingAccordionsProps) {
                     image={require(`../../images/buildings/${building.image}.png`)}
                     alt="buildingIcon"
                     sx={{
-                      height: `${props.iconSize}px`,
-                      width: `${props.iconSize}px`,
+                      height: `${iconSize}px`,
+                      width: `${iconSize}px`,
                       marginRight: "10px",
                       border: `2px solid ${DARK_TAN_COLOR}`,
                     }}
