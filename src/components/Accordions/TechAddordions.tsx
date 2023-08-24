@@ -23,6 +23,7 @@ type TechAccordionsProps = {
   iconSize: number;
 };
 
+// TODO: optimize like UnitAccordion
 function getTechObjects(techNamesToFind: string[], allTechs: Technology[] | null) {
   if (!allTechs) return;
   let techObjects: Technology[] = [];

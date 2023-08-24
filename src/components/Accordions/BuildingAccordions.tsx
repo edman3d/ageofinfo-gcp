@@ -23,6 +23,7 @@ type BuildingAccordionsProps = {
   iconSize: number;
 };
 
+// TODO: optimize like UnitAccordion
 function getBuildingObjects(buildingNamesToFind: string[], allBuildings: Building[] | null) {
   if (!allBuildings) return;
   let buildingObjects: Building[] = [];
