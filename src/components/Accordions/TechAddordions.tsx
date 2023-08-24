@@ -16,6 +16,7 @@ import type { Technology } from "../../types";
 import { DARK_TAN_COLOR, MEDIUM_TAN_COLOR } from "../../constants";
 import { getCostObject, getCreatedInFileName, getRequiresAgeFileName } from "../../util";
 import { ChipList, CostDisplay } from "../Stats";
+import UnitAccordions from "./UnitAccordions";
 
 type TechAccordionsProps = {
   unique_techs: string | null;
@@ -74,7 +75,7 @@ function TechAccordions(props: TechAccordionsProps) {
                       </Typography>
                     </Grid>
                     <Grid item xs={12}>
-                      <CostDisplay costObject={getCostObject(tech.cost)} />
+                      <CostDisplay costString={tech.cost} />
                     </Grid>
                     <Grid item xs={12}>
                       <Typography variant="caption">{tech.description}</Typography>

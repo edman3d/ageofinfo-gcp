@@ -75,7 +75,7 @@ function BuildingAccordions(props: BuildingAccordionsProps) {
                       </Typography>
                     </Grid>
                     <Grid item xs={12}>
-                      <CostDisplay costObject={getCostObject(building.cost)} />
+                      <CostDisplay costString={building.cost} />
                     </Grid>
                     <Grid item xs={12}>
                       <Typography variant="caption">{building.special}</Typography>
