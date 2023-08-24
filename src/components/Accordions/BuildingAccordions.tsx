@@ -1,5 +1,5 @@
 import * as React from "react";
-import { useContext } from "react";
+import { useContext, useMemo } from "react";
 import {
   Accordion,
   AccordionDetails,
@@ -23,24 +23,26 @@ type BuildingAccordionsProps = {
   iconSize: number;
 };
 
-// TODO: optimize like UnitAccordion
-function getBuildingObjects(buildingNamesToFind: string[], allBuildings: Building[] | null) {
-  if (!allBuildings) return;
-  let buildingObjects: Building[] = [];
-  buildingNamesToFind.forEach((buildingName) => {
-    const result = allBuildings.find(({ name }) => name === buildingName);
-    if (result) {
-      buildingObjects.push(result);
-    }
-  });
-  return buildingObjects;
-}
-
 function BuildingAccordions(props: BuildingAccordionsProps) {
-  // console.log(`BuildingAccordions: : ${props.unique_buildings}`);
   const allBuildings = useContext(BuildingContext);
-  const buildingNames: string[] = props.unique_buildings ? props.unique_buildings.split(";") : [];
-  const buildingObjects = getBuildingObjects(buildingNames, allBuildings);
+
+  const buildingNames = useMemo(() => {
+    if (props.unique_buildings) {
+      return props.unique_buildings.split(";");
+    }
+    return [];
+  }, [props.unique_buildings]);
+
+  const buildingObjects = useMemo(() => {
+    let bldgObjects: Building[] = [];
+    buildingNames.forEach((buildingName) => {
+      const result = allBuildings?.find(({ name }) => name === buildingName);
+      if (result) {
+        bldgObjects.push(result);
+      }
+    });
+    return bldgObjects;
+  }, [allBuildings, buildingNames]);
 
   return (
     <div>
