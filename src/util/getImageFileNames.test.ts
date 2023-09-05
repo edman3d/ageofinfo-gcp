@@ -9,7 +9,7 @@ describe("getCreatedInFileName() function tests", () => {
   test("returns correct default image if not found", () => {
     const mockBuilding: string = "Archery Rangee";
     const underTest: string = getCreatedInFileName(mockBuilding);
-    expect(underTest).toEqual("castleddd.png");
+    expect(underTest).toEqual("castle.png");
   });
   test("ends with proper file extension", () => {
     const mockBuilding: string = "Dock";
