@@ -11,7 +11,7 @@ import {
   Typography,
 } from "@mui/material";
 import ExpandMoreIcon from "@mui/icons-material/ExpandMore";
-import { TechContext } from "../../contexts";
+import { JSONDataContext } from "../../contexts";
 import type { Technology } from "../../types";
 import { DARK_TAN_COLOR, MEDIUM_TAN_COLOR } from "../../constants";
 import { getCreatedInFileName, getRequiresAgeFileName } from "../../util";
@@ -25,7 +25,7 @@ type TechAccordionsProps = {
 
 function TechAccordions(props: TechAccordionsProps) {
   const { iconSize, unique_techs } = props;
-  const allTechs = useContext(TechContext);
+  const { techs: allTechs } = useContext(JSONDataContext);
 
   const techNames = useMemo(() => {
     if (unique_techs) {

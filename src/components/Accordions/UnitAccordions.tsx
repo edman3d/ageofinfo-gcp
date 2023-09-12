@@ -11,7 +11,7 @@ import {
   Typography,
 } from "@mui/material";
 import ExpandMoreIcon from "@mui/icons-material/ExpandMore";
-import { SettingsContext, UnitContext } from "../../contexts";
+import { JSONDataContext, SettingsContext } from "../../contexts";
 import type { Unit } from "../../types";
 import { MEDIUM_TAN_COLOR, DARK_TAN_COLOR } from "../../constants";
 import { getCreatedInFileName, getRequiresAgeFileName } from "../../util";
@@ -28,7 +28,7 @@ type UnitAccordionsProps = {
 function UnitAccordions(props: UnitAccordionsProps) {
   // console.log(`UnitAccordions: : ${props.unique_units}`);
   const { iconSize, unique_units } = props;
-  const allUnits = useContext(UnitContext);
+  const { units: allUnits } = useContext(JSONDataContext);
   const { showEliteUnits } = useContext(SettingsContext);
 
   const unitNames = useMemo(() => {
