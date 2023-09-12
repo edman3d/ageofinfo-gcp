@@ -43,7 +43,7 @@ export const DrawerDataTablesSection = (
     <Link
       title="Unit Data"
       component={RouterLink}
-      to="unitdata"
+      to="/data/units"
       style={{ textDecoration: "none", color: TEXT_COLOR_MAIN }}
     >
       <ListItemButton>
@@ -57,7 +57,7 @@ export const DrawerDataTablesSection = (
     <Link
       title="Civilization Data"
       component={RouterLink}
-      to="civdata"
+      to="/data/civs"
       style={{ textDecoration: "none", color: TEXT_COLOR_MAIN }}
     >
       <ListItemButton>
@@ -71,7 +71,7 @@ export const DrawerDataTablesSection = (
     <Link
       title="Technology Data"
       component={RouterLink}
-      to="techdata"
+      to="/data/techs"
       style={{ textDecoration: "none", color: TEXT_COLOR_MAIN }}
     >
       <ListItemButton>
@@ -85,7 +85,7 @@ export const DrawerDataTablesSection = (
     <Link
       title="Building Data"
       component={RouterLink}
-      to="buildingdata"
+      to="/data/buildings"
       style={{ textDecoration: "none", color: TEXT_COLOR_MAIN }}
     >
       <ListItemButton>

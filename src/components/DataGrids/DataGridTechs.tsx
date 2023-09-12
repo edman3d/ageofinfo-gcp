@@ -2,7 +2,7 @@ import * as React from "react";
 import { Box, Typography } from "@mui/material";
 import { DataGrid, GridColDef } from "@mui/x-data-grid";
 import { useContext } from "react";
-import { TechContext } from "../../contexts";
+import { JSONDataContext } from "../../contexts";
 import { LIGHT_TAN_COLOR } from "../../constants";
 
 const columns: GridColDef[] = [
@@ -34,7 +34,7 @@ const columns: GridColDef[] = [
 ];
 
 export default function DataGridTechs() {
-  const techs = useContext(TechContext);
+  const { techs } = useContext(JSONDataContext);
   return (
     <Box sx={{ height: "85vh", width: "100%" }}>
       <Typography variant="h5" color="black" sx={{ marginBottom: 2 }}>

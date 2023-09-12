@@ -11,7 +11,7 @@ import {
   Typography,
 } from "@mui/material";
 import ExpandMoreIcon from "@mui/icons-material/ExpandMore";
-import { BuildingContext } from "../../contexts";
+import { JSONDataContext } from "../../contexts";
 import type { Building } from "../../types";
 import { DARK_TAN_COLOR, MEDIUM_TAN_COLOR } from "../../constants";
 import DetailsList from "../ComparePanels/DetailsList";
@@ -25,7 +25,7 @@ type BuildingAccordionsProps = {
 
 function BuildingAccordions(props: BuildingAccordionsProps) {
   const { iconSize, unique_buildings } = props;
-  const allBuildings = useContext(BuildingContext);
+  const { buildings: allBuildings } = useContext(JSONDataContext);
 
   const buildingNames = useMemo(() => {
     if (unique_buildings) {

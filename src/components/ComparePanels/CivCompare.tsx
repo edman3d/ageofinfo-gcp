@@ -4,11 +4,11 @@ import { Box, Grid } from "@mui/material";
 import type { Civilization } from "../../types";
 import CivCompareDetails from "./CivCompareDetails";
 import { AutoCompleteSelect } from "../Micro";
-import { CivContext } from "../../contexts/CivContext";
+import { JSONDataContext } from "../../contexts";
 
 export function CivCompare() {
   // console.log("CivCompare");
-  const civs = useContext(CivContext);
+  const { civs } = useContext(JSONDataContext);
   const [selectedCivOne, setSelectedCivOne] = useState<Civilization | undefined | null>(null);
   const [selectedCivTwo, setSelectedCivTwo] = useState<Civilization | undefined | null>(null);
 
