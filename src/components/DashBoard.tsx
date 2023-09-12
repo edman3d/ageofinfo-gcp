@@ -27,6 +27,11 @@ import { AppBar, Drawer, DrawerToolsSection, DrawerDataTablesSection, DrawerLink
 import { Copyright } from "./Micro";
 import "@fontsource/roboto/400.css";
 import DataIndex from "./DataGrids/DataIndex";
+import CivDataIndex from "./DataGrids/CivDataIndex";
+import UnitDataIndex from "./DataGrids/UnitDataIndex";
+import TechDataIndex from "./DataGrids/TechDataIndex";
+import BuildingDataIndex from "./DataGrids/BuildingDataIndex";
+
 let unitData: Unit[] = require("./../data/units.json");
 let techData: Technology[] = require("./../data/techs.json");
 let civData: Civilization[] = require("./../data/civs.json");
@@ -136,10 +141,25 @@ function DashboardContent() {
                   <Routes>
                     <Route path="/" element={<CivComparePage />} />
                     <Route path="data" element={<DataIndex />}>
-                      <Route path="civs" element={<CivDataPage />} />
-                      <Route path="units" element={<UnitDataPage />} />
-                      <Route path="techs" element={<TechDataPage />} />
-                      <Route path="buildings" element={<BuildingDataPage />} />
+                      <Route path="civs" element={<CivDataIndex />}>
+                        <Route index element={<CivDataPage />} />
+                        <Route path="edit" element={<p>TODO: EDIT CIV FORM</p>} />
+                      </Route>
+
+                      <Route path="units" element={<UnitDataIndex />}>
+                        <Route index element={<UnitDataPage />} />
+                        <Route path="edit" element={<p>TODO: EDIT UNIT FORM</p>} />
+                      </Route>
+
+                      <Route path="techs" element={<TechDataIndex />}>
+                        <Route index element={<TechDataPage />} />
+                        <Route path="edit" element={<p>TODO: EDIT TECH FORM</p>} />
+                      </Route>
+
+                      <Route path="buildings" element={<BuildingDataIndex />}>
+                        <Route index element={<BuildingDataPage />} />
+                        <Route path="edit" element={<p>TODO: EDIT BUILDING FORM</p>} />
+                      </Route>
                     </Route>
                   </Routes>
                   <Copyright sx={{ pt: 4 }} />

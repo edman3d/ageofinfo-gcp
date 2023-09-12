@@ -1,8 +1,8 @@
 import * as React from "react";
 import { Outlet } from "react-router-dom";
 
-function DataIndex() {
+function TechDataIndex() {
   return <Outlet />;
 }
 
-export default React.memo(DataIndex);
+export default React.memo(TechDataIndex);
