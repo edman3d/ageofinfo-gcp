@@ -26,7 +26,7 @@ import { DARK_TAN_COLOR } from "../constants";
 import { AppBar, Drawer, DrawerToolsSection, DrawerDataTablesSection, DrawerLinksSection } from "./Layout";
 import { Copyright } from "./Micro";
 import "@fontsource/roboto/400.css";
-
+import DataIndex from "./DataGrids/DataIndex";
 let unitData: Unit[] = require("./../data/units.json");
 let techData: Technology[] = require("./../data/techs.json");
 let civData: Civilization[] = require("./../data/civs.json");
@@ -135,10 +135,12 @@ function DashboardContent() {
                 <Container maxWidth={false} sx={{ mt: 2, mb: 2, backgroundColor: DARK_TAN_COLOR }}>
                   <Routes>
                     <Route path="/" element={<CivComparePage />} />
-                    <Route path="/civdata" element={<CivDataPage />} />
-                    <Route path="/unitdata" element={<UnitDataPage />} />
-                    <Route path="/techdata" element={<TechDataPage />} />
-                    <Route path="/buildingdata" element={<BuildingDataPage />} />
+                    <Route path="data" element={<DataIndex />}>
+                      <Route path="civs" element={<CivDataPage />} />
+                      <Route path="units" element={<UnitDataPage />} />
+                      <Route path="techs" element={<TechDataPage />} />
+                      <Route path="buildings" element={<BuildingDataPage />} />
+                    </Route>
                   </Routes>
                   <Copyright sx={{ pt: 4 }} />
                 </Container>
