@@ -1,0 +1,2 @@
+// Note: nvm use does not work with .nvmrc on Windows because Windows is using "NVM for Windows" which is a different thing
+18.7.0
