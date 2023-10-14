@@ -396,8 +396,20 @@
    "unique_buildings": "Feitoria"
  },
  {
-   "name": "Saracens",
+   "name": "Romans",
    "id": 34,
+   "expansion": "Return of Rome",
+   "army_type": "Infantry",
+   "unique_unit": "Legionary;Centurion;Elite Centurion;",
+   "unique_tech": "Ballistas;Comitatenses",
+   "team_bonus": "Scorpion-line minimum range reduced",
+   "civilization_bonus": "Villagers gather, build, and repair 5% faster;Galley-line +1 attack;War Galleys +1/+1P armor, Galleons and Dromons +2/+2P armor;Infantry receives double effect from Blacksmith armor upgrades;Scorpions cost -60% gold and benefit from Ballistics research",
+   "image": "romans",
+   "unique_buildings": ""
+ },
+ {
+   "name": "Saracens",
+   "id": 35,
    "expansion": "Age of Kings",
    "army_type": "Camel and naval",
    "unique_unit": "Mameluke;Elite Mameluke",
@@ -409,7 +421,7 @@
  },
  {
    "name": "Sicilians",
-   "id": 35,
+   "id": 36,
    "expansion": "Lords of the West",
    "army_type": "Infantry and Cavalry",
    "unique_unit": "Serjeant;Elite Serjeant",
@@ -421,7 +433,7 @@
  },
  {
    "name": "Slavs",
-   "id": 36,
+   "id": 37,
    "expansion": "The Forgotten",
    "army_type": "Infantry and Siege Weapons",
    "unique_unit": "Boyar;Elite Boyar",
@@ -433,7 +445,7 @@
  },
  {
    "name": "Spanish",
-   "id": 37,
+   "id": 38,
    "expansion": "The Conquerors",
    "army_type": "Gunpowder and Monk",
    "unique_unit": "Conquistador;Elite Conquistador;Missionary",
@@ -445,7 +457,7 @@
  },
  {
    "name": "Tatars",
-   "id": 38,
+   "id": 39,
    "expansion": "Definitive Edition",
    "army_type": "Cavalry Archer",
    "unique_unit": "Keshik;Elite Keshik;Flaming Camel",
@@ -457,7 +469,7 @@
  },
  {
    "name": "Teutons",
-   "id": 39,
+   "id": 40,
    "expansion": "Age of Kings",
    "army_type": "Infantry",
    "unique_unit": "Teutonic Knight;Elite Teutonic Knight",
@@ -469,7 +481,7 @@
  },
  {
    "name": "Turks",
-   "id": 40,
+   "id": 41,
    "expansion": "Age of Kings",
    "army_type": "Gunpowder Units",
    "unique_unit": "Janissary;Elite Janissary",
@@ -481,7 +493,7 @@
  },
  {
    "name": "Vietnamese",
-   "id": 41,
+   "id": 42,
    "expansion": "Rise of the Rajas",
    "army_type": "Archers",
    "unique_unit": "Rattan Archer;Elite Rattan Archer;Imperial Skirmisher",
@@ -493,7 +505,7 @@
  },
  {
    "name": "Vikings",
-   "id": 42,
+   "id": 43,
    "expansion": "Age of Kings",
    "army_type": "Infantry and Naval",
    "unique_unit": "Berserk;Elite Berserk;Longboat;Elite Longboat",
