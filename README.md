@@ -20,3 +20,12 @@
 2. Download it as `.csv`
 3. Convert to JSON here https://www.convertcsv.com/csv-to-json.htm (default settings, CLRF line endings)
 4. Place in `/data/` folder
+
+## Node Version Notes
+
+- Uses `node v18.7.0`
+- `.nvmrc` exists but `nvm use` does not work as a command on Windows when using "NVM for Windows"
+
+## Run the app locally
+
+- Use `npm start`

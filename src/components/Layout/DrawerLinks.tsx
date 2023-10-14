@@ -39,7 +39,6 @@ export const DrawerDataTablesSection = (
     <ListSubheader component="div" inset sx={{ backgroundColor: LIGHT_TAN_COLOR }}>
       Data Tables
     </ListSubheader>
-
     <Link
       title="Unit Data"
       component={RouterLink}
@@ -53,7 +52,6 @@ export const DrawerDataTablesSection = (
         <ListItemText primary="Units" />
       </ListItemButton>
     </Link>
-
     <Link
       title="Civilization Data"
       component={RouterLink}
@@ -67,7 +65,6 @@ export const DrawerDataTablesSection = (
         <ListItemText primary="Civilizations" />
       </ListItemButton>
     </Link>
-
     <Link
       title="Technology Data"
       component={RouterLink}
@@ -81,7 +78,6 @@ export const DrawerDataTablesSection = (
         <ListItemText primary="Technologies" />
       </ListItemButton>
     </Link>
-
     <Link
       title="Building Data"
       component={RouterLink}
@@ -175,6 +171,20 @@ export const DrawerLinksSection = (
           <AssignmentIcon />
         </ListItemIcon>
         <ListItemText primary="Official News" secondary="See Patch Notes" />
+      </ListItemButton>
+    </Link>
+    <Link
+      href="https://ageofnotes.com/age-of-empires-2-patch-notes/"
+      rel="noopener noreferrer"
+      target="_blank"
+      style={{ textDecoration: "none", color: TEXT_COLOR_MAIN }}
+      title="Age of Notes"
+    >
+      <ListItemButton>
+        <ListItemIcon>
+          <AssignmentIcon />
+        </ListItemIcon>
+        <ListItemText primary="Age of Notes" secondary="Historical Patch Notes" />
       </ListItemButton>
     </Link>
   </React.Fragment>
