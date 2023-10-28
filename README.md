@@ -18,8 +18,9 @@
 
 1. Update main AOE2:DE Data Spreadsheet
 2. Download it as `.csv`
-3. Convert to JSON here https://www.convertcsv.com/csv-to-json.htm (default settings, CLRF line endings)
-4. Place in `/data/` folder
+3. Drag `.csv` files straight into `/src/data/rawData`
+4. CD into root of project and use `npm run gen` to generate new JSON
+5. Done!
 
 ## Node Version Notes
 
@@ -33,3 +34,4 @@
 ## Scripts
 
 - Use `npm run testdev` to run tests and watch for a single file. Update the test directory in `package.json`` to swap files
+- Use `npm run gen` to turn CSV files in `/src/data/rawData` into JSON (keep exact filename when downloading from Google Sheets)
