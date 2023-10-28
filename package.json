@@ -13,6 +13,7 @@
     "@types/react": "^18.0.26",
     "@types/react-dom": "^18.0.10",
     "@types/react-router-dom": "^5.3.3",
+    "csvtojson": "^2.0.10",
     "preval.macro": "^5.0.0",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
@@ -25,7 +26,8 @@
     "build": "react-scripts build",
     "test": "jest --coverage",
     "eject": "react-scripts eject",
-    "testdev": "npm test -- src/__tests/dataValidation.test.ts --watch"
+    "testdev": "npm test -- src/__tests/dataValidation.test.ts --watch",
+    "gen": "npx tsx src/data/generate-data.ts"
   },
   "eslintConfig": {
     "extends": [
