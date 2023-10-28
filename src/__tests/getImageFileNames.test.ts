@@ -1,4 +1,4 @@
-import { getCreatedInFileName, getRequiresAgeFileName } from "./getImageFileNames";
+import { getCreatedInFileName, getRequiresAgeFileName } from "../util/getImageFileNames";
 
 describe("getCreatedInFileName() function tests", () => {
   test("returns correct image for parameter", () => {
