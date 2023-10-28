@@ -2,7 +2,7 @@ const fs = require("fs");
 const csv = require("csvtojson/v2");
 
 const csvReadPath = "src/data/rawData";
-const jsonWritePath = "src/data/rawData";
+const jsonWritePath = "src/data";
 
 const unitCsvDefaultName = `${csvReadPath}/aoe2_de_data_v3 - units.csv`;
 const unitCsvFilePath = `${csvReadPath}/aoe2_de_v3_units.csv`;
@@ -21,19 +21,19 @@ const civsCsvFilePath = `${csvReadPath}/aoe2_de_v3_civs.csv`;
  * but csvtojson doesn't work with spaces so we must rename the files
  */
 async function renameFiles() {
-  fs.rename(unitCsvDefaultName, unitCsvFilePath, function (err) {
+  fs.rename(unitCsvDefaultName, unitCsvFilePath, function (err: any) {
     if (err) console.log(err);
   });
 
-  fs.rename(techsCsvDefaultName, techsCsvFilePath, function (err) {
+  fs.rename(techsCsvDefaultName, techsCsvFilePath, function (err: any) {
     if (err) console.log(err);
   });
 
-  fs.rename(buildingsCsvDefaultName, buildingsCsvFilePath, function (err) {
+  fs.rename(buildingsCsvDefaultName, buildingsCsvFilePath, function (err: any) {
     if (err) console.log(err);
   });
 
-  fs.rename(civsCsvDefaultName, civsCsvFilePath, function (err) {
+  fs.rename(civsCsvDefaultName, civsCsvFilePath, function (err: any) {
     if (err) console.log(err);
   });
 }
@@ -41,7 +41,7 @@ async function renameFiles() {
 async function parseAndWriteUnitData() {
   const unitsArray = await csv()
     .fromFile(unitCsvFilePath)
-    .subscribe((jsonObj, index) => {
+    .subscribe((jsonObj: any, index: number) => {
       return new Promise((resolve, reject) => {
         // TODO: here we can force valid data
         // jsonObj.myNewKey = "new value";
@@ -49,7 +49,7 @@ async function parseAndWriteUnitData() {
         resolve();
       });
     });
-  fs.writeFile(`${jsonWritePath}/units.json`, JSON.stringify(unitsArray), (err) => {
+  fs.writeFile(`${jsonWritePath}/units.json`, JSON.stringify(unitsArray), (err: any) => {
     if (err) console.log(err);
     else {
       console.log("Units file written successfully");
@@ -60,13 +60,13 @@ async function parseAndWriteUnitData() {
 async function parseAndWriteTechnologyData() {
   const techsArray = await csv()
     .fromFile(techsCsvFilePath)
-    .subscribe((jsonObj, index) => {
+    .subscribe((jsonObj: any, index: number) => {
       return new Promise((resolve, reject) => {
         // jsonObj.myNewKey = "new value";
         resolve();
       });
     });
-  fs.writeFile(`${jsonWritePath}/techs.json`, JSON.stringify(techsArray), (err) => {
+  fs.writeFile(`${jsonWritePath}/techs.json`, JSON.stringify(techsArray), (err: any) => {
     if (err) console.log(err);
     else {
       console.log("Techs file written successfully");
@@ -77,13 +77,13 @@ async function parseAndWriteTechnologyData() {
 async function parseAndWriteBuildingData() {
   const buildingsArray = await csv()
     .fromFile(buildingsCsvFilePath)
-    .subscribe((jsonObj, index) => {
+    .subscribe((jsonObj: any, index: number) => {
       return new Promise((resolve, reject) => {
         // jsonObj.myNewKey = "new value";
         resolve();
       });
     });
-  fs.writeFile(`${jsonWritePath}/buildings.json`, JSON.stringify(buildingsArray), (err) => {
+  fs.writeFile(`${jsonWritePath}/buildings.json`, JSON.stringify(buildingsArray), (err: any) => {
     if (err) console.log(err);
     else {
       console.log("Buildings file written successfully");
@@ -94,13 +94,13 @@ async function parseAndWriteBuildingData() {
 async function parseAndWriteCivilizationData() {
   const civsArray = await csv()
     .fromFile(civsCsvFilePath)
-    .subscribe((jsonObj, index) => {
+    .subscribe((jsonObj: any, index: number) => {
       return new Promise((resolve, reject) => {
         // jsonObj.myNewKey = "new value";
         resolve();
       });
     });
-  fs.writeFile(`${jsonWritePath}/civs.json`, JSON.stringify(civsArray), (err) => {
+  fs.writeFile(`${jsonWritePath}/civs.json`, JSON.stringify(civsArray), (err: any) => {
     if (err) console.log(err);
     else {
       console.log("Civs file written successfully");
@@ -126,3 +126,5 @@ async function parseAndWriteAllCSVData() {
 }
 
 parseAndWriteAllCSVData();
+
+export {};
