@@ -320,7 +320,7 @@
    "max_range": 8,
    "reload_time": 2,
    "attack": 5,
-   "special": "Trains Serjeants and attacks enemies",
+   "special": "Trains Serjeants and attacks enemies. Functions as a prerequisite for Archery Range and Stable",
    "image": "donjon"
  },
  {
@@ -346,7 +346,7 @@
    "id": 19,
    "expansion": "The African Kingdoms",
    "age": "Imperial",
-   "cost": "{\"Gold\": 250,\"Stone\": 250}",
+   "cost": "{\"Gold\": 350,\"Stone\": 300}",
    "build_time": 120,
    "hit_points": 5200,
    "line_of_sight": 6,
@@ -392,7 +392,7 @@
    "max_range": 0,
    "reload_time": null,
    "attack": null,
-   "special": "Instantly collects 10% of the food provided by seeded or reseeded Farms in a radius of 4 tiles around the Folwark",
+   "special": "Instantly collects 8% of the food provided by seeded or reseeded Farms in a radius of 4 tiles around the Folwark",
    "image": "folwark"
  },
  {
