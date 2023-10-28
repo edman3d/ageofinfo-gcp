@@ -1,10 +1,42 @@
 const fs = require("fs");
 const csv = require("csvtojson/v2");
 
-const unitCsvFilePath = "src/data/rawData/aoe2_de_v3_units.csv";
-const techsCsvFilePath = "src/data/rawData/aoe2_de_v3_techs.csv";
-const buildingsCsvFilePath = "src/data/rawData/aoe2_de_v3_buildings.csv";
-const civsCsvFilePath = "src/data/rawData/aoe2_de_v3_civs.csv";
+const csvReadPath = "src/data/rawData";
+const jsonWritePath = "src/data/rawData";
+
+const unitCsvDefaultName = `${csvReadPath}/aoe2_de_data_v3 - units.csv`;
+const unitCsvFilePath = `${csvReadPath}/aoe2_de_v3_units.csv`;
+
+const techsCsvDefaultName = `${csvReadPath}/aoe2_de_data_v3 - techs.csv`;
+const techsCsvFilePath = `${csvReadPath}/aoe2_de_v3_techs.csv`;
+
+const buildingsCsvDefaultName = `${csvReadPath}/aoe2_de_data_v3 - buildings.csv`;
+const buildingsCsvFilePath = `${csvReadPath}/aoe2_de_v3_buildings.csv`;
+
+const civsCsvDefaultName = `${csvReadPath}/aoe2_de_data_v3 - civs.csv`;
+const civsCsvFilePath = `${csvReadPath}/aoe2_de_v3_civs.csv`;
+
+/**
+ * Google Sheets downloads the files as such: "aoe2_de_data_v3 - units.csv"
+ * but csvtojson doesn't work with spaces so we must rename the files
+ */
+async function renameFiles() {
+  fs.rename(unitCsvDefaultName, unitCsvFilePath, function (err) {
+    if (err) console.log(err);
+  });
+
+  fs.rename(techsCsvDefaultName, techsCsvFilePath, function (err) {
+    if (err) console.log(err);
+  });
+
+  fs.rename(buildingsCsvDefaultName, buildingsCsvFilePath, function (err) {
+    if (err) console.log(err);
+  });
+
+  fs.rename(civsCsvDefaultName, civsCsvFilePath, function (err) {
+    if (err) console.log(err);
+  });
+}
 
 async function parseAndWriteUnitData() {
   const unitsArray = await csv()
@@ -17,7 +49,7 @@ async function parseAndWriteUnitData() {
         resolve();
       });
     });
-  fs.writeFile("src/data/rawData/units.json", JSON.stringify(unitsArray), (err) => {
+  fs.writeFile(`${jsonWritePath}/units.json`, JSON.stringify(unitsArray), (err) => {
     if (err) console.log(err);
     else {
       console.log("Units file written successfully");
@@ -34,7 +66,7 @@ async function parseAndWriteTechnologyData() {
         resolve();
       });
     });
-  fs.writeFile("src/data/rawData/techs.json", JSON.stringify(techsArray), (err) => {
+  fs.writeFile(`${jsonWritePath}/techs.json`, JSON.stringify(techsArray), (err) => {
     if (err) console.log(err);
     else {
       console.log("Techs file written successfully");
@@ -51,7 +83,7 @@ async function parseAndWriteBuildingData() {
         resolve();
       });
     });
-  fs.writeFile("src/data/rawData/buildings.json", JSON.stringify(buildingsArray), (err) => {
+  fs.writeFile(`${jsonWritePath}/buildings.json`, JSON.stringify(buildingsArray), (err) => {
     if (err) console.log(err);
     else {
       console.log("Buildings file written successfully");
@@ -68,7 +100,7 @@ async function parseAndWriteCivilizationData() {
         resolve();
       });
     });
-  fs.writeFile("src/data/rawData/civs.json", JSON.stringify(civsArray), (err) => {
+  fs.writeFile(`${jsonWritePath}/civs.json`, JSON.stringify(civsArray), (err) => {
     if (err) console.log(err);
     else {
       console.log("Civs file written successfully");
@@ -77,6 +109,9 @@ async function parseAndWriteCivilizationData() {
 }
 
 async function parseAndWriteAllCSVData() {
+  // Rename files so csvtojson will work properly
+  await renameFiles();
+
   // Parse and write Unit Data
   await parseAndWriteUnitData();
 
