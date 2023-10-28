@@ -8,6 +8,8 @@ export function Copyright(props: any) {
       <Link color="inherit">edman3d</Link> {new Date().getFullYear()}
       {" | "}
       Last Build Date: {preval`module.exports = new Date().toLocaleString();`}
+      {" | "}
+      Updated to Patch: 87863 (June 27, 2023)
     </Typography>
   );
 }
