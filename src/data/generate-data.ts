@@ -46,7 +46,7 @@ async function parseAndWriteUnitData() {
         // TODO: here we can force valid data
         // jsonObj.myNewKey = "new value";
         // console.log(jsonObj);
-        resolve();
+        resolve(jsonObj);
       });
     });
   fs.writeFile(`${jsonWritePath}/units.json`, JSON.stringify(unitsArray), (err: any) => {
@@ -63,7 +63,7 @@ async function parseAndWriteTechnologyData() {
     .subscribe((jsonObj: any, index: number) => {
       return new Promise((resolve, reject) => {
         // jsonObj.myNewKey = "new value";
-        resolve();
+        resolve(jsonObj);
       });
     });
   fs.writeFile(`${jsonWritePath}/techs.json`, JSON.stringify(techsArray), (err: any) => {
@@ -80,7 +80,7 @@ async function parseAndWriteBuildingData() {
     .subscribe((jsonObj: any, index: number) => {
       return new Promise((resolve, reject) => {
         // jsonObj.myNewKey = "new value";
-        resolve();
+        resolve(jsonObj);
       });
     });
   fs.writeFile(`${jsonWritePath}/buildings.json`, JSON.stringify(buildingsArray), (err: any) => {
@@ -97,7 +97,7 @@ async function parseAndWriteCivilizationData() {
     .subscribe((jsonObj: any, index: number) => {
       return new Promise((resolve, reject) => {
         // jsonObj.myNewKey = "new value";
-        resolve();
+        resolve(jsonObj);
       });
     });
   fs.writeFile(`${jsonWritePath}/civs.json`, JSON.stringify(civsArray), (err: any) => {
