@@ -13,8 +13,14 @@ describe("test unit data is valid", () => {
 
   test.each(units)("testing unit ($id, $name)", (unit) => {
     if (unit.type !== "Gaia" && unit.type !== "Unbuildable") {
+      // Check that cost field is valid
       const costObj = JSON.parse(unit.cost);
       expect(costObj).toBeInstanceOf(Object);
+
+      // Check that attack_bonus field is valid
+      //   const atk_bonus_array = JSON.parse(unit.attack_bonus);
+      console.log(unit.attack_bonus + "d");
+      // todo: attack_bonus should be [{amount: against}]
     }
   });
 });
