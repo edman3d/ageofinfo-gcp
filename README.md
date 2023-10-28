@@ -29,3 +29,7 @@
 ## Run the app locally
 
 - Use `npm start`
+
+## Scripts
+
+- Use `npm run testdev` to run tests and watch for a single file. Update the test directory in `package.json`` to swap files

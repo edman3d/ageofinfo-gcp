@@ -24,7 +24,8 @@
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "jest --coverage",
-    "eject": "react-scripts eject"
+    "eject": "react-scripts eject",
+    "testdev": "npm test -- src/__tests/dataValidation.test.ts --watch"
   },
   "eslintConfig": {
     "extends": [
