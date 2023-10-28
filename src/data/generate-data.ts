@@ -44,4 +44,16 @@ async function parseAndWriteData() {
   });
 }
 
-parseAndWriteData();
+async function preFileLine() {
+  const unitsArray = await csv()
+    .fromFile(unitCsvFilePath)
+    .subscribe((jsonObj, index) => {
+      return new Promise((resolve, reject) => {
+        jsonObj.myNewKey = "some value";
+        console.log(jsonObj);
+        resolve();
+      });
+    });
+}
+
+preFileLine();
