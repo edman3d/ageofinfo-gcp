@@ -36,7 +36,4 @@ describe("getRequiresAgeFileName() function tests", () => {
     expect(underTest).toEqual("imperial-age.png");
     expect(underTest.endsWith(".png")).toBeTruthy();
   });
-  test("failure test", () => {
-    expect(1).toEqual(2);
-  });
 });
