@@ -5,7 +5,7 @@ export type Unit = {
   expansion: string;
   age: "N/A" | "Dark" | "Feudal" | "Castle" | "Imperial";
   created_in: string; // some units can be created in multiple bldgs (e.g. Castle;Donjon)
-  cost: string; // not a Cost type because data isnt JSON by default (e.g. {Food: 2; Wood: 2} instead of {Food: 2, Wood: 2})
+  cost?: string;
   build_time: string; // string type because some are "N/A"
   reload_time: number;
   attack_delay: number;
