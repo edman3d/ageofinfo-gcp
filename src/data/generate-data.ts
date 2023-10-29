@@ -44,8 +44,9 @@ async function parseAndWriteUnitData() {
     .subscribe((jsonObj: any, index: number) => {
       return new Promise((resolve, reject) => {
         // TODO: here we can force valid data
-        // jsonObj.myNewKey = "new value";
-        // console.log(jsonObj);
+        if (jsonObj.attack_bonus.length === 0) {
+          jsonObj.attack_bonus = undefined;
+        }
         resolve(jsonObj);
       });
     });

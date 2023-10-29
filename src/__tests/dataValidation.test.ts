@@ -18,9 +18,9 @@ describe("test unit data is valid", () => {
       expect(costObj).toBeInstanceOf(Object);
 
       // Check that attack_bonus field is valid
-      //   const atk_bonus_array = JSON.parse(unit.attack_bonus);
-      console.log(unit.attack_bonus + "d");
-      // todo: attack_bonus should be [{amount: against}]
+      if (unit.attack_bonus) {
+        const atkbonus = JSON.parse(unit.attack_bonus.toString());
+      }
     }
   });
 });
