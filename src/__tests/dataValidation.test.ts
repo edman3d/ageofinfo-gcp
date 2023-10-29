@@ -5,7 +5,7 @@ import { isValidJSON } from "../util/isValidJSON";
 const units: Unit[] = require("./../data/units.json");
 
 describe("test unit data is valid", () => {
-  test.each(units)("testing unit ($id, $name)", (unit) => {
+  test.each(units)("testing unit ($name)", (unit) => {
     // Check that cost field is valid
     if (unit.cost) {
       expect(isValidJSON(unit.cost)).toBe(true);
