@@ -1,16 +1,8 @@
 /* eslint-disable jest/no-conditional-expect */
 import { type Unit } from "../types";
+import { isValidJSON } from "../util/isValidJSON";
 
 const units: Unit[] = require("./../data/units.json");
-
-const isValidJSON = (str: string) => {
-  try {
-    JSON.parse(str);
-  } catch (e) {
-    return false;
-  }
-  return true;
-};
 
 describe("test unit data is valid", () => {
   test.each(units)("testing unit ($id, $name)", (unit) => {
