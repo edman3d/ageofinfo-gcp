@@ -1,6 +1,6 @@
+const { v4: uuidv4 } = require("uuid");
 const fs = require("fs");
 const csv = require("csvtojson/v2");
-
 const csvReadPath = "src/data/rawData";
 const jsonWritePath = "src/data";
 
@@ -44,8 +44,32 @@ async function parseAndWriteUnitData() {
     .subscribe((jsonObj: any, index: number) => {
       return new Promise((resolve, reject) => {
         // TODO: here we can force valid data
-        // jsonObj.myNewKey = "new value";
-        // console.log(jsonObj);
+        jsonObj.id = uuidv4();
+        if (jsonObj.cost.length === 0) {
+          jsonObj.cost = undefined;
+        }
+        if (jsonObj.attack_bonus.length === 0) {
+          jsonObj.attack_bonus = undefined;
+        }
+        if (jsonObj.armor_bonus.length === 0) {
+          jsonObj.armor_bonus = undefined;
+        }
+        // Convert all numbers into number types
+        jsonObj.attack = Number(jsonObj.attack);
+        jsonObj.build_time = Number(jsonObj.build_time);
+        jsonObj.reload_time = Number(jsonObj.reload_time);
+        jsonObj.attack_delay = Number(jsonObj.attack_delay);
+        jsonObj.movement_rate = Number(jsonObj.movement_rate);
+        jsonObj.line_of_sight = Number(jsonObj.line_of_sight);
+        jsonObj.hit_points = Number(jsonObj.hit_points);
+        jsonObj.min_range = Number(jsonObj.min_range);
+        jsonObj.max_range = Number(jsonObj.max_range);
+        jsonObj.melee_armor = Number(jsonObj.melee_armor);
+        jsonObj.ranged_armor = Number(jsonObj.ranged_armor);
+        jsonObj.search_radius = Number(jsonObj.search_radius);
+        jsonObj.accuracy = Number(jsonObj.accuracy);
+        jsonObj.blast_radius = Number(jsonObj.blast_radius);
+        // Return updated JSON object
         resolve(jsonObj);
       });
     });

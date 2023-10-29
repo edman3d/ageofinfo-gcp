@@ -3,11 +3,11 @@ import { Cost } from "../../types/Cost";
 import StatIconWithValue from "./StatIconWithValue";
 
 type CostDisplayProps = {
-  costString: string;
+  costString?: string;
 };
 
 function CostDisplay(props: CostDisplayProps) {
-  const costObject: Cost = JSON.parse(props.costString);
+  const costObject: Cost = props.costString ? JSON.parse(props.costString) : {};
   const { Wood, Food, Gold, Stone } = costObject;
 
   return (
