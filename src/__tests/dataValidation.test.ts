@@ -14,6 +14,10 @@ describe("test unit data is valid", () => {
       if (unit.attack_bonus) {
         expect(isValidJSON(unit.attack_bonus.toString())).toBe(true);
       }
+
+      if (unit.armor_bonus) {
+        expect(isValidJSON(unit.armor_bonus.toString())).toBe(true);
+      }
     }
   });
 });

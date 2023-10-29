@@ -47,6 +47,9 @@ async function parseAndWriteUnitData() {
         if (jsonObj.attack_bonus.length === 0) {
           jsonObj.attack_bonus = undefined;
         }
+        if (jsonObj.armor_bonus.length === 0) {
+          jsonObj.armor_bonus = undefined;
+        }
         resolve(jsonObj);
       });
     });
