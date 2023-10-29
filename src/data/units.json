@@ -1,7 +1,6 @@
 [
   {
     "name": "Alfred the Alpaca",
-    "id": "0",
     "description": "Cheat unit.",
     "expansion": "Age of Empires II HD: The Forgotten",
     "age": "Dark",
@@ -23,11 +22,11 @@
     "blast_radius": 1,
     "image": "alfred-the-alpaca",
     "type": "Cheat",
-    "armor_class": "None"
+    "armor_class": "None",
+    "id": "00fe0d5c-0225-46d0-96a9-a79fa07eb097"
   },
   {
     "name": "Amazon Archer",
-    "id": "1",
     "description": "Fast-moving archer. Strong vs. infantry. Weak vs. cavalry.",
     "expansion": "Age of Empires II HD: The Forgotten",
     "age": "Dark",
@@ -49,11 +48,11 @@
     "blast_radius": 0,
     "image": "amazon-archer",
     "type": "Unbuildable",
-    "armor_class": "Archer"
+    "armor_class": "Archer",
+    "id": "76a84e3c-6d5f-4a91-8b9c-1cf68fc24ded"
   },
   {
     "name": "Amazon Warrior",
-    "id": "2",
     "description": "Fast-moving infantry unit. Strong vs. buildings and siege weapons. Weak vs. archers and cavalry.",
     "expansion": "Age of Empires II HD: The Forgotten",
     "age": "Dark",
@@ -75,11 +74,11 @@
     "blast_radius": 0,
     "image": "amazon-warrior",
     "type": "Unbuildable",
-    "armor_class": "Infantry"
+    "armor_class": "Infantry",
+    "id": "8b93adc8-d3b4-455c-a73b-40345cd3db78"
   },
   {
     "name": "Arambai",
-    "id": "3",
     "description": "Burmese unique cavalry archer with a powerful but inaccurate dart attack. Strong vs. infantry and cavalry. Weak vs. archers.",
     "expansion": "Age of Empires II HD: Rise of the Rajas",
     "age": "Castle",
@@ -102,11 +101,11 @@
     "blast_radius": 0,
     "image": "arambai",
     "type": "Military",
-    "armor_class": "Archer;Cavalry Archer;Cavalry;Unique Unit"
+    "armor_class": "Archer;Cavalry Archer;Cavalry;Unique Unit",
+    "id": "6c99d1df-9f7c-4375-9145-9b64fea5fd28"
   },
   {
     "name": "Arbalester",
-    "id": "4",
     "description": "Ranged unit. Strong vs. units at long range. Weak vs. Elite Skirmishers, Onagers, and units at close range.",
     "expansion": "Age of Kings",
     "age": "Imperial",
@@ -130,11 +129,11 @@
     "blast_radius": 0,
     "image": "arbalester",
     "type": "Military",
-    "armor_class": "Archer"
+    "armor_class": "Archer",
+    "id": "7a928af1-31c9-484b-a975-83585b452b19"
   },
   {
     "name": "Archer",
-    "id": "5",
     "description": "Ranged unit. Strong vs. units at long range. Weak vs. Skirmishers and units at close range.",
     "expansion": "Age of Kings",
     "age": "Feudal",
@@ -157,11 +156,11 @@
     "blast_radius": 0,
     "image": "archer",
     "type": "Military",
-    "armor_class": "Archer"
+    "armor_class": "Archer",
+    "id": "53e2100a-afef-45be-a7dd-e852789a47aa"
   },
   {
     "name": "Armored Elephant",
-    "id": "6",
     "description": "A mounted siege unit with high HP.",
     "expansion": "Dynasties of India",
     "age": "Castle",
@@ -185,11 +184,11 @@
     "blast_radius": 0,
     "image": "armored-elephant",
     "type": "Military",
-    "armor_class": "Cavalry;War elephant;Siege Weapon;Ram"
+    "armor_class": "Cavalry;War elephant;Siege Weapon;Ram",
+    "id": "dc3afe7f-7d4d-4a47-8eb8-6d816ba52d3e"
   },
   {
     "name": "Bactrian Camel",
-    "id": "7",
     "description": "Unbuildable scout unit.",
     "expansion": "The Last Khans",
     "age": "Dark",
@@ -211,11 +210,11 @@
     "blast_radius": 0,
     "image": "bactrian-camel",
     "type": "Unbuildable",
-    "armor_class": "Cavalry"
+    "armor_class": "Cavalry",
+    "id": "bb23bae1-2e22-4be4-a4d0-4442b3c419e1"
   },
   {
     "name": "Ballista Elephant",
-    "id": "8",
     "description": "Khmer unique elephant equipped with a Scorpion. Can destroy trees. Strong vs. infantry and archers. Weak vs. cavalry and siege weapons.",
     "expansion": "Definitive Edition",
     "age": "Castle",
@@ -238,11 +237,11 @@
     "blast_radius": 0,
     "image": "ballista-elephant",
     "type": "Military",
-    "armor_class": "Cavalry;War Elephant;Siege Weapon;Unique Unit;Hussite Wagon"
+    "armor_class": "Cavalry;War Elephant;Siege Weapon;Unique Unit;Hussite Wagon",
+    "id": "264667fe-1265-455d-aa2d-3bbb30df2e7d"
   },
   {
     "name": "Battering Ram",
-    "id": "9",
     "description": "Anti-building siege weapon. Resistant to most ranged attacks. Garrisoned infantry increase speed and attack.",
     "expansion": "Age of Kings",
     "age": "Castle",
@@ -267,11 +266,11 @@
     "blast_radius": 0,
     "image": "battering-ram",
     "type": "Military",
-    "armor_class": "Siege Weapon;Ram"
+    "armor_class": "Siege Weapon;Ram",
+    "id": "44ed7c38-184e-44d7-82fc-ddae50a39c2f"
   },
   {
     "name": "Battle Elephant",
-    "id": "10",
     "description": "Slow and heavy cavalry. Strong vs. cavalry, infantry, and archers. Weak vs. Monks and Pikemen.",
     "expansion": "Definitive Edition",
     "age": "Castle",
@@ -294,11 +293,11 @@
     "blast_radius": 0.4,
     "image": "battle-elephant",
     "type": "Military",
-    "armor_class": "Cavalry;War Elephant"
+    "armor_class": "Cavalry;War Elephant",
+    "id": "88c8a7ad-0aca-48f5-9b15-af07b17bca19"
   },
   {
     "name": "Berserk",
-    "id": "11",
     "description": "Viking unique infantry unit that slowly heals itself. Strong vs. infantry and siege weapons. Weak vs. archers.",
     "expansion": "Age of Kings",
     "age": "Castle",
@@ -322,11 +321,11 @@
     "blast_radius": 0,
     "image": "berserk",
     "type": "Military",
-    "armor_class": "Infantry;Unique Unit"
+    "armor_class": "Infantry;Unique Unit",
+    "id": "089c653f-ab47-445a-b1fc-e8e5a3b83bde"
   },
   {
     "name": "Bombard Cannon",
-    "id": "12",
     "description": "Siege weapon with long range. Strong vs. buildings and siege weapons. Weak vs. melee units.",
     "expansion": "Age of Kings",
     "age": "Imperial",
@@ -350,11 +349,11 @@
     "blast_radius": 0.5,
     "image": "bombard-cannon",
     "type": "Military",
-    "armor_class": "Siege Weapon;Gunpowder Unit"
+    "armor_class": "Siege Weapon;Gunpowder Unit",
+    "id": "333fac5d-56ad-4f31-847d-494b6f71602d"
   },
   {
     "name": "Boyar",
-    "id": "13",
     "description": "Powerful all-purpose cavalry. Strong vs. infantry and archers. Weak vs. Halberdiers, Heavy Camel Riders, and Monks.",
     "expansion": "Age of Empires II HD: The Forgotten",
     "age": "Castle",
@@ -377,11 +376,11 @@
     "blast_radius": 0,
     "image": "boyar",
     "type": "Military",
-    "armor_class": "Cavalry;Unique Unit"
+    "armor_class": "Cavalry;Unique Unit",
+    "id": "0ab4c423-f594-4027-bd41-6227936549ef"
   },
   {
     "name": "Camel",
-    "id": "14",
     "description": "Gaia unit.",
     "expansion": "Age of Kings",
     "age": "N/A",
@@ -403,11 +402,11 @@
     "blast_radius": 0,
     "image": "camel",
     "type": "Gaia",
-    "armor_class": "None"
+    "armor_class": "None",
+    "id": "f0dfa703-feee-48d2-9300-7ecdd1cd9a13"
   },
   {
     "name": "Camel Archer",
-    "id": "15",
     "description": "Berber unique mounted archer. Strong vs. Cavalry Archers and infantry. Weak vs. Pikemen, Skirmishers, and Camel Riders.",
     "expansion": "Age of Empires II HD: The African Kingdoms",
     "age": "Castle",
@@ -431,11 +430,11 @@
     "blast_radius": 0,
     "image": "camel-archer",
     "type": "Military",
-    "armor_class": "Archer;Cavalry Archer;Camel;Unique Unit"
+    "armor_class": "Archer;Cavalry Archer;Camel;Unique Unit",
+    "id": "74b6e203-467e-40ae-8e33-40867b3e1367"
   },
   {
     "name": "Camel Rider",
-    "id": "16",
     "description": "Fast anti-cavalry unit. Strong vs. cavalry. Weak vs. Spearmen, Monks, and archers. (not classified as cavalry)",
     "expansion": "Age of Kings",
     "age": "Castle",
@@ -459,11 +458,11 @@
     "blast_radius": 0,
     "image": "camel-rider",
     "type": "Military",
-    "armor_class": "Camel"
+    "armor_class": "Camel",
+    "id": "f7c5d326-1fe5-492e-a01a-8c47caa31850"
   },
   {
     "name": "Cannon Galleon",
-    "id": "17",
     "description": "Anti-building siege warship with long range, but cannot attack enemies at close range. Strong vs. buildings. Weak vs. other units.",
     "expansion": "Age of Kings",
     "age": "Imperial",
@@ -487,11 +486,11 @@
     "blast_radius": 0,
     "image": "cannon-galleon",
     "type": "Navy",
-    "armor_class": "Ship;Gunpowder Unit"
+    "armor_class": "Ship;Gunpowder Unit",
+    "id": "7d00068d-5a55-41ff-b7f5-e0805becad3d"
   },
   {
     "name": "Canoe",
-    "id": "18",
     "description": "Small fast-moving boat that fires multiple arrows. Strong vs. land units and buildings.",
     "expansion": "Age of Empires II HD: The Forgotten",
     "age": "N/A",
@@ -513,11 +512,11 @@
     "blast_radius": 0,
     "image": "canoe",
     "type": "Unbuildable",
-    "armor_class": "None"
+    "armor_class": "None",
+    "id": "d6ea1a43-a633-4f5e-8f4f-ee6462fa9566"
   },
   {
     "name": "Capped Ram",
-    "id": "19",
     "description": "Anti-building siege weapon. Resistant to most ranged attacks. Garrisoned infantry increase speed and attack.",
     "expansion": "Age of Kings",
     "age": "Imperial",
@@ -542,11 +541,11 @@
     "blast_radius": 1.5,
     "image": "capped-ram",
     "type": "Military",
-    "armor_class": "Siege Weapon;Ram"
+    "armor_class": "Siege Weapon;Ram",
+    "id": "ad51da85-8da6-44ac-87f1-ac2d60df0419"
   },
   {
     "name": "Caravel",
-    "id": "20",
     "description": "Portuguese unique ship that fires bolts that pierce multiple units. Strong vs. large groups of ships. Weak vs. Fire Ships.",
     "expansion": "Age of Empires II HD: The African Kingdoms",
     "age": "Castle",
@@ -569,11 +568,11 @@
     "blast_radius": 0,
     "image": "caravel",
     "type": "Navy",
-    "armor_class": "Ship;Unique Unit"
+    "armor_class": "Ship;Unique Unit",
+    "id": "d66b8498-db3d-447c-9e94-62464b3d9a66"
   },
   {
     "name": "Cataphract",
-    "id": "21",
     "description": "Byzantine unique cavalry unit. Strong vs. infantry. Weak vs. archers.",
     "expansion": "Age of Kings",
     "age": "Castle",
@@ -598,11 +597,11 @@
     "blast_radius": 0,
     "image": "cataphract",
     "type": "Military",
-    "armor_class": "Cavalry;Unique Unit"
+    "armor_class": "Cavalry;Unique Unit",
+    "id": "71ab5a06-f942-434f-8e04-c837c5a84934"
   },
   {
     "name": "Cavalier",
-    "id": "22",
     "description": "Powerful all-purpose cavalry. Strong vs. infantry and archers. Weak vs. Pikemen, Camel Riders, and Monks.",
     "expansion": "Age of Kings",
     "age": "Imperial",
@@ -625,11 +624,11 @@
     "blast_radius": 0,
     "image": "cavalier",
     "type": "Military",
-    "armor_class": "Cavalry"
+    "armor_class": "Cavalry",
+    "id": "6abffcd5-795b-4f19-9037-0664a6ae5b0b"
   },
   {
     "name": "Cavalry Archer",
-    "id": "23",
     "description": "Mounted archer. Strong vs. slow units at long range. Weak vs. Elite Skirmishers and units at close range.",
     "expansion": "Age of Kings",
     "age": "Castle",
@@ -653,11 +652,11 @@
     "blast_radius": 0,
     "image": "cavalry-archer",
     "type": "Military",
-    "armor_class": "Archer;Cavalry Archer;Cavalry"
+    "armor_class": "Archer;Cavalry Archer;Cavalry",
+    "id": "4c532c41-dba4-4c77-b2e9-4d772aa6c48e"
   },
   {
     "name": "Centurion",
-    "id": "24",
     "description": "Roman Unique Cavalry Unit, trained at Castle. Increases movement speed by 10% (15% Elite) and attack speed by 25% (33% Elite) of Militia-line units in 10 (12 Elite) tile radius. The effect does not stack for multiple Centurions.",
     "expansion": "Return to Rome",
     "age": "Castle",
@@ -680,11 +679,11 @@
     "blast_radius": 0,
     "image": "centurion",
     "type": "Military",
-    "armor_class": "Cavalry;Unique Unit"
+    "armor_class": "Cavalry;Unique Unit",
+    "id": "1e2b4051-1b46-4ed8-bf87-a2c6c08075b5"
   },
   {
     "name": "Chakram Thrower",
-    "id": "25",
     "description": "Gurjara unique infantry unit with ranged melee attack that passes through enemies for 100% damage. Strong vs. infantry. Weak vs. archers and siege weapons.",
     "expansion": "Dynasties of India",
     "age": "Castle",
@@ -708,11 +707,11 @@
     "blast_radius": 0,
     "image": "chakram-thrower",
     "type": "Military",
-    "armor_class": "Infantry;Unique Unit"
+    "armor_class": "Infantry;Unique Unit",
+    "id": "7d58a7bc-c4ae-4752-b4c3-9ed61ba32102"
   },
   {
     "name": "Champion",
-    "id": "26",
     "description": "All-purpose infantry unit. Strong vs. buildings and infantry. Weak vs. archers at long range.",
     "expansion": "Age of Kings",
     "age": "Imperial",
@@ -736,11 +735,11 @@
     "blast_radius": 0,
     "image": "champion",
     "type": "Military",
-    "armor_class": "Infantry"
+    "armor_class": "Infantry",
+    "id": "8b4b76f7-1297-4efa-97e3-7f8b098b2337"
   },
   {
     "name": "Chu Ko Nu",
-    "id": "27",
     "description": "Chinese unique archer with rapid-fire attack. Strong vs. infantry. Weak vs. archers and siege weapons.",
     "expansion": "Age of Kings",
     "age": "Castle",
@@ -764,11 +763,11 @@
     "blast_radius": 0,
     "image": "chukonu",
     "type": "Military",
-    "armor_class": "Archer"
+    "armor_class": "Archer",
+    "id": "94eadc07-0673-4e22-ba76-048e8570fbce"
   },
   {
     "name": "Cobra Car",
-    "id": "28",
     "description": "Cheat unit.",
     "expansion": "Age of Kings",
     "age": "N/A",
@@ -790,11 +789,11 @@
     "blast_radius": 1,
     "image": "cobra-car",
     "type": "Cheat",
-    "armor_class": "Siege Weapon"
+    "armor_class": "Siege Weapon",
+    "id": "44f3341c-8bbf-4129-bb3a-47eb83db4e4b"
   },
   {
     "name": "Condottiero",
-    "id": "29",
     "description": "Japanese unique infantry unit with fast attack. Strong vs. unique units and infantry. Weak vs. archers.",
     "expansion": "Age of Empires II HD: The Forgotten",
     "age": "Imperial",
@@ -817,11 +816,11 @@
     "blast_radius": 0,
     "image": "condottiero",
     "type": "Military",
-    "armor_class": "Infantry;Unique Unit;Condottiero"
+    "armor_class": "Infantry;Unique Unit;Condottiero",
+    "id": "e4223472-5d11-42a7-9a24-b7d7598d651f"
   },
   {
     "name": "Conquistador",
-    "id": "30",
     "description": "Spanish unique mounted hand cannoneer. Strong vs. infantry. Weak vs. Pikemen, Skirmishers, and Monks.",
     "expansion": "Age of Kings",
     "age": "Castle",
@@ -845,11 +844,11 @@
     "blast_radius": 0,
     "image": "conquistador",
     "type": "Military",
-    "armor_class": "Archer;Cavalry Archer;Cavalry;Gunpowder Unit;Unique Unit"
+    "armor_class": "Archer;Cavalry Archer;Cavalry;Gunpowder Unit;Unique Unit",
+    "id": "a235cfc2-7670-4d67-bbfa-10ce3cfa3fac"
   },
   {
     "name": "Coustillier",
-    "id": "31",
     "description": "Burgundian unique cavalry unit which can charge its attack. Strong vs. infantry and archers. Weak vs. Camel Riders and Monks.",
     "expansion": "Lords of the West",
     "age": "Castle",
@@ -872,11 +871,11 @@
     "blast_radius": 0,
     "image": "coustillier",
     "type": "Military",
-    "armor_class": "Cavalry;Unique Unit"
+    "armor_class": "Cavalry;Unique Unit",
+    "id": "10795753-2b0d-4113-b1ac-9e2ec8cd6cc4"
   },
   {
     "name": "Cow",
-    "id": "32",
     "description": "Gaia unit.",
     "expansion": "Age of Kings",
     "age": "N/A",
@@ -898,11 +897,11 @@
     "blast_radius": 0,
     "image": "cow",
     "type": "Gaia",
-    "armor_class": "None"
+    "armor_class": "None",
+    "id": "7e7cfe4e-d4c0-4722-8743-ae7a47763210"
   },
   {
     "name": "Crocodile",
-    "id": "33",
     "description": "Gaia unit.",
     "expansion": "Age of Kings",
     "age": "N/A",
@@ -924,11 +923,11 @@
     "blast_radius": 0,
     "image": "crocodile",
     "type": "Gaia",
-    "armor_class": "None"
+    "armor_class": "None",
+    "id": "9659410e-7ebb-42a2-8909-918503270156"
   },
   {
     "name": "Crossbowman",
-    "id": "34",
     "description": "Ranged unit. Strong vs. units at long range. Weak vs. Elite Skirmishers, Mangonels, and units at close range.",
     "expansion": "Age of Kings",
     "age": "Castle",
@@ -952,11 +951,11 @@
     "blast_radius": 0,
     "image": "crossbowman",
     "type": "Military",
-    "armor_class": "Archer"
+    "armor_class": "Archer",
+    "id": "3932abef-a36f-4701-97e8-e705817a7d69"
   },
   {
     "name": "Crusader Knight",
-    "id": "35",
     "description": "Powerful all-purpose cavalry. Strong vs. melee and slow ranged units. Weak vs. Halberdiers. Cannot be converted by enemy Monks.",
     "expansion": "Dawn of the Dukes",
     "age": "Castle",
@@ -979,11 +978,11 @@
     "blast_radius": 0,
     "image": "crusader-knight",
     "type": "Unbuildable",
-    "armor_class": "Cavalry"
+    "armor_class": "Cavalry",
+    "id": "00dcfd01-6824-4b6b-bfb6-893000049a68"
   },
   {
     "name": "Deer",
-    "id": "36",
     "description": "Wild deers running around",
     "expansion": "Age of Kings",
     "age": "N/A",
@@ -1005,11 +1004,11 @@
     "blast_radius": 0,
     "image": "deer",
     "type": "Gaia",
-    "armor_class": "None"
+    "armor_class": "None",
+    "id": "1f8f1b59-f491-4e98-a57a-dcb394919b4f"
   },
   {
     "name": "Demolition Raft",
-    "id": "37",
     "description": "Demolition ship armed with explosives. Strong vs. Fire Galleys and buildings. Self-destructs when used.",
     "expansion": "Age of Empires II HD: The African Kingdoms",
     "age": "Feudal",
@@ -1032,11 +1031,11 @@
     "blast_radius": 2.5,
     "image": "demolition-raft",
     "type": "Navy",
-    "armor_class": "Ship"
+    "armor_class": "Ship",
+    "id": "0e48550b-fbb7-4837-a495-39d9addb055b"
   },
   {
     "name": "Demolition Ship",
-    "id": "38",
     "description": "Demolition ship armed with explosives. Strong vs. Fire Ships and buildings. Self-destructs when used.",
     "expansion": "Age of Kings",
     "age": "Castle",
@@ -1061,11 +1060,11 @@
     "blast_radius": 3,
     "image": "demolition-ship",
     "type": "Navy",
-    "armor_class": "Ship"
+    "armor_class": "Ship",
+    "id": "09497217-2b39-42b7-8dd2-83dff6e309ec"
   },
   {
     "name": "Donkey",
-    "id": "39",
     "description": "Gaia unit.",
     "expansion": "Age of Kings",
     "age": "N/A",
@@ -1087,11 +1086,11 @@
     "blast_radius": 0,
     "image": "donkey",
     "type": "Gaia",
-    "armor_class": "None"
+    "armor_class": "None",
+    "id": "7e196a7e-db41-45a8-a7a7-22479ccee9b4"
   },
   {
     "name": "Dragon Ship",
-    "id": "40",
     "description": "Warship that spews fire at close range. Strong vs. War Galleys. Weak vs. Demolition Ships",
     "expansion": "Age of Empires II HD: The Forgotten",
     "age": "N/A",
@@ -1113,11 +1112,11 @@
     "blast_radius": 0,
     "image": "dragon-ship",
     "type": "Unbuildable",
-    "armor_class": "Ship"
+    "armor_class": "Ship",
+    "id": "56e5a6e3-fc65-4ab6-81f5-8de3e845006c"
   },
   {
     "name": "Dromon",
-    "id": "41",
     "description": "Anti-building siege warship with long range and area of effect attack, but cannot attack enemies at close range. Effective vs. buildings and large groups of units",
     "expansion": "Return to Rome",
     "age": "Imperial",
@@ -1141,11 +1140,11 @@
     "blast_radius": 0.8,
     "image": "dromon",
     "type": "Navy",
-    "armor_class": "Ship"
+    "armor_class": "Ship",
+    "id": "f313aad8-b978-4771-bd07-1c4c8657c569"
   },
   {
     "name": "Eagle Scout",
-    "id": "42",
     "description": "Fast infantry for scouting and raiding. Resistant to conversion. Strong vs. Monks and archers. Weak vs. Men-at-Arms and cavalry.",
     "expansion": "Age of Empires II HD: The Forgotten",
     "age": "Feudal",
@@ -1168,11 +1167,11 @@
     "blast_radius": 0,
     "image": "eagle-scout",
     "type": "Military",
-    "armor_class": "Infantry;Eagle Warrior"
+    "armor_class": "Infantry;Eagle Warrior",
+    "id": "59b6f544-5f0c-4132-b589-e1ae445bf768"
   },
   {
     "name": "Eagle Warrior",
-    "id": "43",
     "description": "Fast infantry for scouting and raiding. Resistant to conversion. Strong vs. Monks and archers. Weak vs. Long Swordsmen and cavalry.",
     "expansion": "The Conquerors",
     "age": "Dark",
@@ -1196,11 +1195,11 @@
     "blast_radius": 0,
     "image": "eagle-warrior",
     "type": "Military",
-    "armor_class": "Infantry;Eagle Warrior"
+    "armor_class": "Infantry;Eagle Warrior",
+    "id": "5f5a4141-6cca-445d-9bc5-0fba56dfb9eb"
   },
   {
     "name": "Eastern Swordsman",
-    "id": "44",
     "description": "All-purpose infantry unit. Strong vs. buildings and infantry. Weak vs. archers at long range.",
     "expansion": "Age of Empires II HD: The Forgotten",
     "age": "N/A",
@@ -1222,11 +1221,11 @@
     "blast_radius": 0,
     "image": "eastern-swordsman",
     "type": "Unbuildable",
-    "armor_class": "Infantry"
+    "armor_class": "Infantry",
+    "id": "519f4b82-35f7-4197-8123-ef6e1e6cf503"
   },
   {
     "name": "Elephant",
-    "id": "45",
     "description": "Gaia unit.",
     "expansion": "Age of Kings",
     "age": "N/A",
@@ -1248,11 +1247,11 @@
     "blast_radius": 0,
     "image": "elephant",
     "type": "Gaia",
-    "armor_class": "None"
+    "armor_class": "None",
+    "id": "ceb5cebf-b2c2-4e65-b09a-991febfd1a0f"
   },
   {
     "name": "Elephant Archer",
-    "id": "46",
     "description": "Slow, high HP cavalry archer. Strong vs most ranged units. Weak vs skirmishers, camels, pikemen, monks.",
     "expansion": "Dynasties of India",
     "age": "Castle",
@@ -1275,11 +1274,11 @@
     "blast_radius": 0,
     "image": "elephant-archer",
     "type": "Military",
-    "armor_class": "Cavalry Archer;Archer;Cavalry;War Elephant"
+    "armor_class": "Cavalry Archer;Archer;Cavalry;War Elephant",
+    "id": "464800f7-5afe-40c0-9fee-46a79357053b"
   },
   {
     "name": "Elite Arambai",
-    "id": "47",
     "description": "Burmese unique cavalry archer with a powerful but inaccurate dart attack. Strong vs. infantry and cavalry. Weak vs. archers.",
     "expansion": "Age of Empires II HD: Rise of the Rajas",
     "age": "Imperial",
@@ -1302,11 +1301,11 @@
     "blast_radius": 0,
     "image": "arambai",
     "type": "Military",
-    "armor_class": "Archer;Cavalry Archer;Cavalry;Unique Unit"
+    "armor_class": "Archer;Cavalry Archer;Cavalry;Unique Unit",
+    "id": "b902f444-b14e-4ebd-933f-5ca441affb68"
   },
   {
     "name": "Elite Ballista Elephant",
-    "id": "48",
     "description": "Khmer unique elephant equipped with a Scorpion. Can destroy trees. Strong vs. infantry and archers. Weak vs. cavalry and siege weapons.",
     "expansion": "Definitive Edition",
     "age": "Imperial",
@@ -1329,11 +1328,11 @@
     "blast_radius": 0,
     "image": "ballista-elephant",
     "type": "Military",
-    "armor_class": "Cavalry;War Elephant;Siege Weapon;Unique Unit;Hussite Wagon"
+    "armor_class": "Cavalry;War Elephant;Siege Weapon;Unique Unit;Hussite Wagon",
+    "id": "10d84c99-1e40-4ef9-af86-55d4aee23b6d"
   },
   {
     "name": "Elite Battle Elephant",
-    "id": "49",
     "description": "Slow and heavy cavalry. Strong vs. cavalry, infantry, and archers. Weak vs. Monks and Pikemen.",
     "expansion": "Definitive Edition",
     "age": "Imperial",
@@ -1356,11 +1355,11 @@
     "blast_radius": 0.4,
     "image": "elite-battle-elephant",
     "type": "Military",
-    "armor_class": "Cavalry;War Elephant"
+    "armor_class": "Cavalry;War Elephant",
+    "id": "41be9094-ba6f-4411-824b-33f4092914e0"
   },
   {
     "name": "Elite Berserk",
-    "id": "50",
     "description": "Viking unique infantry unit that slowly heals itself. Strong vs. infantry and siege weapons. Weak vs. archers.",
     "expansion": "Age of Kings",
     "age": "Imperial",
@@ -1384,11 +1383,11 @@
     "blast_radius": 0,
     "image": "berserk",
     "type": "Military",
-    "armor_class": "Infantry;Unique Unit"
+    "armor_class": "Infantry;Unique Unit",
+    "id": "4873d04b-32c0-4501-b355-84aed7a4dbd6"
   },
   {
     "name": "Elite Boyar",
-    "id": "51",
     "description": "Powerful all-purpose cavalry. Strong vs. infantry and archers. Weak vs. Halberdiers, Heavy Camel Riders, and Monks.",
     "expansion": "Age of Empires II HD: The Forgotten",
     "age": "Imperial",
@@ -1411,11 +1410,11 @@
     "blast_radius": 0,
     "image": "boyar",
     "type": "Military",
-    "armor_class": "Cavalry;Unique Unit"
+    "armor_class": "Cavalry;Unique Unit",
+    "id": "9baae993-8381-4c44-b793-68659a4ad613"
   },
   {
     "name": "Elite Camel Archer",
-    "id": "52",
     "description": "Berber unique mounted archer. Strong vs. Cavalry Archers and infantry. Weak vs. Pikemen, Skirmishers, and Camel Riders.",
     "expansion": "Age of Empires II HD: The African Kingdoms",
     "age": "Imperial",
@@ -1439,11 +1438,11 @@
     "blast_radius": 0,
     "image": "camel-archer",
     "type": "Military",
-    "armor_class": "Archer;Cavalry Archer;Camel;Unique Unit"
+    "armor_class": "Archer;Cavalry Archer;Camel;Unique Unit",
+    "id": "7ab7f15d-481b-4045-84a9-d2e0c09e49d4"
   },
   {
     "name": "Elite Cannon Galleon",
-    "id": "53",
     "description": "Anti-building siege warship with long range, but cannot attack enemies at close range. Strong vs. buildings. Weak vs. other units.",
     "expansion": "Age of Kings",
     "age": "Imperial",
@@ -1467,11 +1466,11 @@
     "blast_radius": 0,
     "image": "cannon-galleon",
     "type": "Military",
-    "armor_class": "Ship;Gunpowder Unit"
+    "armor_class": "Ship;Gunpowder Unit",
+    "id": "65474fd7-9b45-447e-8ee8-0f84454937ce"
   },
   {
     "name": "Elite Caravel",
-    "id": "54",
     "description": "Portuguese unique ship that fires bolts that pierce multiple units. Strong vs. large groups of ships. Weak vs. Fire Ships.",
     "expansion": "Age of Empires II HD: The African Kingdoms",
     "age": "Imperial",
@@ -1494,11 +1493,11 @@
     "blast_radius": 0,
     "image": "caravel",
     "type": "Navy",
-    "armor_class": "Ship;Unique Unit"
+    "armor_class": "Ship;Unique Unit",
+    "id": "f64b6ad1-bc8c-466d-9a48-adce82af0a07"
   },
   {
     "name": "Elite Cataphract",
-    "id": "55",
     "description": "Byzantine unique cavalry unit. Strong vs. infantry. Weak vs. archers.",
     "expansion": "Age of Kings",
     "age": "Imperial",
@@ -1523,11 +1522,11 @@
     "blast_radius": 0,
     "image": "cataphract",
     "type": "Military",
-    "armor_class": "Cavalry;Unique Unit"
+    "armor_class": "Cavalry;Unique Unit",
+    "id": "f1c245fd-71bf-4544-a9fb-d324264e52cd"
   },
   {
     "name": "Elite Centurion",
-    "id": "56",
     "description": "Roman Unique Cavalry Unit, trained at Castle. Increases movement speed by 10% (15% Elite) and attack speed by 25% (33% Elite) of Militia-line units in 10 (12 Elite) tile radius. The effect does not stack for multiple Centurions.",
     "expansion": "Return to Rome",
     "age": "Imperial",
@@ -1550,11 +1549,11 @@
     "blast_radius": 0,
     "image": "centurion",
     "type": "Military",
-    "armor_class": "Cavalry;Unique Unit"
+    "armor_class": "Cavalry;Unique Unit",
+    "id": "7ad042ce-5c43-4974-a0e3-bf80006cccdd"
   },
   {
     "name": "Elite Chakram Thrower",
-    "id": "57",
     "description": "Gurjara unique infantry unit with ranged melee attack that passes through enemies for 100% damage. Strong vs. infantry. Weak vs. archers and siege weapons.",
     "expansion": "Dynasties of India",
     "age": "Imperial",
@@ -1578,11 +1577,11 @@
     "blast_radius": 0,
     "image": "chakram-thrower",
     "type": "Military",
-    "armor_class": "Infantry;Unique Unit"
+    "armor_class": "Infantry;Unique Unit",
+    "id": "fe277574-2511-4753-9fed-6fa4288096ba"
   },
   {
     "name": "Elite Chu Ko Nu",
-    "id": "58",
     "description": "Chinese unique archer with rapid-fire attack. Strong vs. infantry. Weak vs. archers and siege weapons.",
     "expansion": "Age of Kings",
     "age": "Imperial",
@@ -1606,11 +1605,11 @@
     "blast_radius": 0,
     "image": "chukonu",
     "type": "Military",
-    "armor_class": "Archer"
+    "armor_class": "Archer",
+    "id": "584594fa-0d1a-40c9-8c8f-a10ea715654c"
   },
   {
     "name": "Elite Conquistador",
-    "id": "59",
     "description": "Spanish unique mounted hand cannoneer. Strong vs. infantry. Weak vs. Pikemen, Skirmishers, and Monks.",
     "expansion": "Age of Kings",
     "age": "Imperial",
@@ -1634,11 +1633,11 @@
     "blast_radius": 0,
     "image": "conquistador",
     "type": "Military",
-    "armor_class": "Archer;Cavalry Archer;Cavalry;Gunpowder Unit;Unique Unit"
+    "armor_class": "Archer;Cavalry Archer;Cavalry;Gunpowder Unit;Unique Unit",
+    "id": "e0d127ab-08ce-49b4-8df2-dbc30124165d"
   },
   {
     "name": "Elite Coustillier",
-    "id": "60",
     "description": "Burgundian unique cavalry unit which can charge its attack. Strong vs. infantry and archers. Weak vs. Camel Riders and Monks.",
     "expansion": "Lords of the West",
     "age": "Imperial",
@@ -1661,11 +1660,11 @@
     "blast_radius": 0,
     "image": "coustillier",
     "type": "Military",
-    "armor_class": "Cavalry;Unique Unit"
+    "armor_class": "Cavalry;Unique Unit",
+    "id": "920ddfbc-ac67-4dc7-806f-7c69b4967c33"
   },
   {
     "name": "Elite Eagle Warrior",
-    "id": "61",
     "description": "Fast infantry for scouting and raiding. Resistant to conversion. Strong vs. Monks and archers. Weak vs. Long Swordsmen and cavalry.",
     "expansion": "The Conquerors",
     "age": "Imperial",
@@ -1689,11 +1688,11 @@
     "blast_radius": 0,
     "image": "eagle-warrior",
     "type": "Military",
-    "armor_class": "Infantry;Eagle Warrior"
+    "armor_class": "Infantry;Eagle Warrior",
+    "id": "b541b6a4-b435-4800-b5b8-b1320e2e2b6b"
   },
   {
     "name": "Elite Elephant Archer",
-    "id": "62",
     "description": "Slow, high HP cavalry archer. Strong vs most ranged units. Weak vs skirmishers, camels, pikemen, monks.",
     "expansion": "Dynasties of India",
     "age": "Imperial",
@@ -1716,11 +1715,11 @@
     "blast_radius": 0,
     "image": "elite-elephant-archer",
     "type": "Military",
-    "armor_class": "Cavalry Archer;Archer;Cavalry;War Elephant"
+    "armor_class": "Cavalry Archer;Archer;Cavalry;War Elephant",
+    "id": "d5b7fda8-b3a6-48a1-8d9d-218e9d2af1d6"
   },
   {
     "name": "Elite Gbeto",
-    "id": "63",
     "description": "Malian unique infantry unit with ranged melee attack. Fast-moving. Strong vs. infantry. Weak vs. archers and siege weapons.",
     "expansion": "Age of Kings",
     "age": "Imperial",
@@ -1743,11 +1742,11 @@
     "blast_radius": 0,
     "image": "gbeto",
     "type": "Military",
-    "armor_class": "Infantry;Unique Unit"
+    "armor_class": "Infantry;Unique Unit",
+    "id": "cc6c178a-9866-4e2c-a8a7-a29a77d90eb2"
   },
   {
     "name": "Elite Genitour",
-    "id": "64",
     "description": "Mounted skirmisher. Strong vs. archers. Weak vs. units at close range. Trainable by Berbers and their allies.",
     "expansion": "Definitive Edition",
     "age": "Imperial",
@@ -1771,11 +1770,11 @@
     "blast_radius": 0,
     "image": "genitour",
     "type": "Military",
-    "armor_class": "Archer;Cavalry Archer;Cavalry;Unique Unit"
+    "armor_class": "Archer;Cavalry Archer;Cavalry;Unique Unit",
+    "id": "365692a8-4c94-47db-8ecb-0eb956977ab7"
   },
   {
     "name": "Elite Genoese Crossbowman",
-    "id": "65",
     "description": "Italian unique unit. Foot archer with an attack bonus against cavalry.",
     "expansion": "The Forgotten",
     "age": "Imperial",
@@ -1799,11 +1798,11 @@
     "blast_radius": 0,
     "image": "genoese-crossbowman",
     "type": "Military",
-    "armor_class": "Archer;Unique Unit"
+    "armor_class": "Archer;Unique Unit",
+    "id": "6523931a-e75f-4c34-bc25-036eb2d44975"
   },
   {
     "name": "Elite Ghulam",
-    "id": "66",
     "description": "Fast infantry with high pierce armor. Thrusts its spear through multiple targets dealing 50% damage to units 1 tile behind the target",
     "expansion": "Dynasties of India",
     "age": "Imperial",
@@ -1827,11 +1826,11 @@
     "blast_radius": 1,
     "image": "ghulam",
     "type": "Military",
-    "armor_class": "Infantry;Unique Unit"
+    "armor_class": "Infantry;Unique Unit",
+    "id": "372a6ae5-007b-4576-a94e-8b6571fe4278"
   },
   {
     "name": "Elite Huskarl",
-    "id": "67",
     "description": "Gothic unique infantry unit with high pierce armor. Strong vs. archers and buildings. Weak vs. cavalry.",
     "expansion": "Age of Kings",
     "age": "Imperial",
@@ -1855,11 +1854,11 @@
     "blast_radius": 0,
     "image": "huskarl",
     "type": "Military",
-    "armor_class": "Infantry;Unique Unit"
+    "armor_class": "Infantry;Unique Unit",
+    "id": "c038025a-c6bd-4d47-87e7-af9301b2151a"
   },
   {
     "name": "Elite Hussite Wagon",
-    "id": "68",
     "description": "Bohemian unique siege unit. Units behind it receive 50% less damage from incoming projectiles. Strong vs. archers. Weak vs. siege weapons.",
     "expansion": "Dawn of the Dukes",
     "age": "Imperial",
@@ -1883,11 +1882,11 @@
     "blast_radius": 0,
     "image": "hussite-wagon",
     "type": "Military",
-    "armor_class": "Siege Weapon;Gunpowder Unit;Unique Unit;Hussite Wagon"
+    "armor_class": "Siege Weapon;Gunpowder Unit;Unique Unit;Hussite Wagon",
+    "id": "db4b14af-7977-4ce9-a9c9-f4efe7468c0d"
   },
   {
     "name": "Elite Jaguar Warrior",
-    "id": "69",
     "description": "Aztec unique infantry unit. Strong vs. infantry. Weak vs. cavalry and archers.",
     "expansion": "The Conquerors",
     "age": "Imperial",
@@ -1911,11 +1910,11 @@
     "blast_radius": 0,
     "image": "jaguar-warrior",
     "type": "Military",
-    "armor_class": "Infantry;Unique Unit"
+    "armor_class": "Infantry;Unique Unit",
+    "id": "1aa90629-85d5-4afe-aede-07910872c846"
   },
   {
     "name": "Elite Janissary",
-    "id": "70",
     "description": "Turkish unique hand cannoneer with longer range and no minimum range. Strong vs. infantry. Weak vs. archers.",
     "expansion": "Age of Kings",
     "age": "Imperial",
@@ -1939,11 +1938,11 @@
     "blast_radius": 0,
     "image": "janissary",
     "type": "Military",
-    "armor_class": "Archer;Gunpowder Unit;Unique Unit"
+    "armor_class": "Archer;Gunpowder Unit;Unique Unit",
+    "id": "9a8338e9-9003-43fd-838f-2532d0fc4c98"
   },
   {
     "name": "Elite Kamayuk",
-    "id": "71",
     "description": "Japanese unique infantry unit with fast attack. Strong vs. unique units and infantry. Weak vs. archers.",
     "expansion": "The Conquerors",
     "age": "Imperial",
@@ -1966,11 +1965,11 @@
     "blast_radius": 0,
     "image": "kamayuk",
     "type": "Military",
-    "armor_class": "Infantry;Unique Unit"
+    "armor_class": "Infantry;Unique Unit",
+    "id": "01a7b64d-3ae8-4b54-a40d-624fbb2977e2"
   },
   {
     "name": "Elite Karambit Warrior",
-    "id": "72",
     "description": "Malay unique infantry unit. Cheap and only takes half a population unit. Strong in high numbers. Weak vs. cavalry and archers.",
     "expansion": "The Conquerors",
     "age": "Imperial",
@@ -1993,11 +1992,11 @@
     "blast_radius": 0,
     "image": "karambit-warrior",
     "type": "Military",
-    "armor_class": "Infantry;Unique Unit"
+    "armor_class": "Infantry;Unique Unit",
+    "id": "6f67b26d-5cc5-4ec3-808a-3791cea7f43f"
   },
   {
     "name": "Elite Keshik",
-    "id": "73",
     "description": "Tatar unique cavalry unit that generates 0.3625 gold per second when attacking enemy units.",
     "expansion": "Definitive Edition",
     "age": "Imperial",
@@ -2020,11 +2019,11 @@
     "blast_radius": 0,
     "image": "keshik",
     "type": "Military",
-    "armor_class": "Cavalry;Unique Unit"
+    "armor_class": "Cavalry;Unique Unit",
+    "id": "ac5df410-a384-4b93-841c-b820ed97375c"
   },
   {
     "name": "Elite Kipchak",
-    "id": "74",
     "description": "Cuman unique cavalry archer with rapid-fire attack. Fires three (four when Elite) arrows at once. First arrow deals full damage, other arrows deal 1 pierce and 0 melee damage. Strong vs. infantry. Weak vs. Skirmishers.",
     "expansion": "Definitive Edition",
     "age": "Imperial",
@@ -2047,11 +2046,11 @@
     "blast_radius": 0,
     "image": "kipchak",
     "type": "Military",
-    "armor_class": "Archer;Cavalry Archer;Cavalry;Unique Unit"
+    "armor_class": "Archer;Cavalry Archer;Cavalry;Unique Unit",
+    "id": "8645512a-2fe9-4e6b-a8de-ff20c8054bb1"
   },
   {
     "name": "Elite Konnik",
-    "id": "75",
     "description": "Bulgarian unique cavalry unit that fights on as infantry when felled. Strong vs. infantry and archers. Weak vs. Camel Riders and Monks.",
     "expansion": "Definitive Edition",
     "age": "Imperial",
@@ -2074,11 +2073,11 @@
     "blast_radius": 0,
     "image": "konnik",
     "type": "Military",
-    "armor_class": "Cavalry;Unique Unit"
+    "armor_class": "Cavalry;Unique Unit",
+    "id": "e2df17ba-481f-475e-a622-82bad326c40b"
   },
   {
     "name": "Elite Konnik (Dismounted)",
-    "id": "76",
     "description": "Bulgarian unique cavalry unit that fights on as infantry when felled. Strong vs. infantry and archers. Weak vs. Camel Riders and Monks.",
     "expansion": "Definitive Edition",
     "age": "Imperial",
@@ -2102,11 +2101,11 @@
     "blast_radius": 0,
     "image": "konnik-dismounted",
     "type": "Military",
-    "armor_class": "Infantry;Unique Unit"
+    "armor_class": "Infantry;Unique Unit",
+    "id": "ea04603c-9704-4f64-a06d-f02000191dd7"
   },
   {
     "name": "Elite Leitis",
-    "id": "77",
     "description": "Lithuanian unique cavalry unit with attack that ignores armor. Each captured relic adds +1 damage (max 4). Strong vs. armored units.",
     "expansion": "Definitive Edition",
     "age": "Imperial",
@@ -2129,11 +2128,11 @@
     "blast_radius": 0,
     "image": "leitis",
     "type": "Military",
-    "armor_class": "Cavalry;Unique Unit"
+    "armor_class": "Cavalry;Unique Unit",
+    "id": "8967494f-c7a6-4982-a70a-64ad4a1bc069"
   },
   {
     "name": "Elite Longboat",
-    "id": "78",
     "description": "Viking unique ship that fires multiple arrows. Strong vs. War Galleys, land units, and buildings.",
     "expansion": "Age of Kings",
     "age": "Imperial",
@@ -2157,11 +2156,11 @@
     "blast_radius": 0,
     "image": "longboat",
     "type": "Navy",
-    "armor_class": "Ship;Unique Unit"
+    "armor_class": "Ship;Unique Unit",
+    "id": "c225b5ba-a3b7-4fe7-904f-2f35af5cfab0"
   },
   {
     "name": "Elite Longbowman",
-    "id": "79",
     "description": "British unique archer with very long range. Strong vs. infantry. Weak vs. cavalry and Skirmishers.",
     "expansion": "Age of Kings",
     "age": "Imperial",
@@ -2185,11 +2184,11 @@
     "blast_radius": 0,
     "image": "longbowman",
     "type": "Military",
-    "armor_class": "Archer;Unique Unit"
+    "armor_class": "Archer;Unique Unit",
+    "id": "5b5f72d9-90fb-42fc-9903-3139949c1955"
   },
   {
     "name": "Elite Magyar Huszar",
-    "id": "80",
     "description": "Byzantine unique cavalry unit. Strong vs. infantry. Weak vs. archers.",
     "expansion": "Definitive Edition",
     "age": "Imperial",
@@ -2212,11 +2211,11 @@
     "blast_radius": 0,
     "image": "magyar-huszar",
     "type": "Military",
-    "armor_class": "Cavalry;Unique Unit"
+    "armor_class": "Cavalry;Unique Unit",
+    "id": "72fbb3cd-2ef8-483b-9c25-88f3e287dd34"
   },
   {
     "name": "Elite Mameluke",
-    "id": "81",
     "description": "Saracen unique camel unit with ranged melee attack. Strong vs. cavalry. Weak vs. archers.",
     "expansion": "Age of Kings",
     "age": "Imperial",
@@ -2241,11 +2240,11 @@
     "blast_radius": 0,
     "image": "mameluke",
     "type": "Military",
-    "armor_class": "Mameluke;Camel;Unique Unit"
+    "armor_class": "Mameluke;Camel;Unique Unit",
+    "id": "8fff25a0-dbc6-422e-817e-b0c7b3ed32b1"
   },
   {
     "name": "Elite Mangudai",
-    "id": "82",
     "description": "Mongol unique cavalry archer with fast-firing attack. Strong vs. siege weapons and infantry. Weak vs. Skirmishers, Pikemen, and Camel Riders.",
     "expansion": "Age of Kings",
     "age": "Imperial",
@@ -2269,11 +2268,11 @@
     "blast_radius": 0,
     "image": "mangudai",
     "type": "Military",
-    "armor_class": "Archer;Cavalry Archer;Cavalry;Unique Unit"
+    "armor_class": "Archer;Cavalry Archer;Cavalry;Unique Unit",
+    "id": "47ab6509-03f9-41a6-8b7d-2289e009809c"
   },
   {
     "name": "Elite Obuch",
-    "id": "83",
     "description": "Polish unique infantry unit which can damage the armor of units it is fighting. Strong vs. buildings and infantry. Weak vs. archers at long range.",
     "expansion": "Dawn of the Dukes",
     "age": "Imperial",
@@ -2297,11 +2296,11 @@
     "blast_radius": 0,
     "image": "obuch",
     "type": "Military",
-    "armor_class": "Infantry;Unique Unit"
+    "armor_class": "Infantry;Unique Unit",
+    "id": "11b27a00-d67a-4622-bc89-64b50bd9f2d9"
   },
   {
     "name": "Elite Organ Gun",
-    "id": "84",
     "description": "Portuguese unique siege unit. Fires a volley of bullets. Strong vs. large groups of units. Weak vs. cavalry and Mangonels.",
     "expansion": "Age of Empires II HD: The African Kingdoms",
     "age": "Imperial",
@@ -2325,11 +2324,11 @@
     "blast_radius": 0,
     "image": "organ-gun",
     "type": "Military",
-    "armor_class": "Siege Weapon;Gunpowder Unit;Unique Unit"
+    "armor_class": "Siege Weapon;Gunpowder Unit;Unique Unit",
+    "id": "8cfb0bfb-9ce2-4214-a8df-dc5dfbec630f"
   },
   {
     "name": "Elite Plumed Archer",
-    "id": "85",
     "description": "Mayan unique fast-moving archer. Strong vs. archers and infantry. Weak vs. cavalry.",
     "expansion": "The Conquerors",
     "age": "Imperial",
@@ -2353,11 +2352,11 @@
     "blast_radius": 0,
     "image": "plumed-archer",
     "type": "Military",
-    "armor_class": "Archer;Unique Unit"
+    "armor_class": "Archer;Unique Unit",
+    "id": "36a612b4-2a3e-4d2c-9d7e-3c13c403c925"
   },
   {
     "name": "Elite Ratha (Melee)",
-    "id": "86",
     "description": "Bengali unique chariot that can switch between melee and ranged attacks. Strong vs. infantry. Weak vs. Skirmishers and Camel Riders.",
     "expansion": "Dynasties of India",
     "age": "Imperial",
@@ -2380,11 +2379,11 @@
     "blast_radius": 0,
     "image": "ratha-melee",
     "type": "Military",
-    "armor_class": "Archer;Cavalry Archer;Cavalry;Unique Unit"
+    "armor_class": "Archer;Cavalry Archer;Cavalry;Unique Unit",
+    "id": "1bfe21af-379f-4fb8-bc26-cb4e242d94d1"
   },
   {
     "name": "Elite Ratha (Ranged)",
-    "id": "87",
     "description": "Bengali unique chariot that can switch between melee and ranged attacks. Strong vs. infantry. Weak vs. Skirmishers and Camel Riders.",
     "expansion": "Dynasties of India",
     "age": "Imperial",
@@ -2407,11 +2406,11 @@
     "blast_radius": 0,
     "image": "ratha-ranged",
     "type": "Military",
-    "armor_class": "Archer;Cavalry Archer;Cavalry;Unique Unit"
+    "armor_class": "Archer;Cavalry Archer;Cavalry;Unique Unit",
+    "id": "1f054c8a-6cf9-4af3-8346-8e78816ba977"
   },
   {
     "name": "Elite Rattan Archer",
-    "id": "88",
     "description": "Vietnamese unique archer with high pierce armor. Strong vs. archers and infantry. Weak vs. cavalry and Skirmishers.",
     "expansion": "Age of Empires II HD: Rise of the Rajas",
     "age": "Imperial",
@@ -2435,11 +2434,11 @@
     "blast_radius": 0,
     "image": "rattan-archer",
     "type": "Military",
-    "armor_class": "Archer;Unique Unit"
+    "armor_class": "Archer;Unique Unit",
+    "id": "75823358-2c04-4811-a07c-a5bfcbaef59a"
   },
   {
     "name": "Elite Samurai",
-    "id": "89",
     "description": "Japanese unique infantry unit with fast attack. Strong vs. unique units and infantry. Weak vs. archers.",
     "expansion": "Age of Kings",
     "age": "Imperial",
@@ -2463,11 +2462,11 @@
     "blast_radius": 0,
     "image": "samurai",
     "type": "Military",
-    "armor_class": "Infantry;Unique Unit"
+    "armor_class": "Infantry;Unique Unit",
+    "id": "be49b613-7edb-4cfe-91f4-8251f8fd97cc"
   },
   {
     "name": "Elite Serjeant",
-    "id": "90",
     "description": "Sicilian unique infantry unit which can construct Donjons.",
     "expansion": "Lords of the West",
     "age": "Imperial",
@@ -2491,11 +2490,11 @@
     "blast_radius": 0,
     "image": "serjeant",
     "type": "Military",
-    "armor_class": "Infantry;Unique Unit"
+    "armor_class": "Infantry;Unique Unit",
+    "id": "063ae58f-2a9d-4075-97d7-7958a8b4fec2"
   },
   {
     "name": "Elite Shotel Warrior",
-    "id": "91",
     "description": "Ethiopian unique infantry with high attack and fast training speed. Fast-moving. Strong vs. infantry. Weak vs. archers.",
     "expansion": "Definitive Edition",
     "age": "Imperial",
@@ -2518,11 +2517,11 @@
     "blast_radius": 0,
     "image": "shotel-warrior",
     "type": "Military",
-    "armor_class": "Infantry;Unique Unit"
+    "armor_class": "Infantry;Unique Unit",
+    "id": "7b78f305-1898-4db8-a3e6-3587d9131558"
   },
   {
     "name": "Elite Shrivamsha Rider",
-    "id": "92",
     "description": "Gurjara unique light cavalry unit which can dodge projectiles. Will not dodge splash damage. Strong vs. archers. Weak vs. Pikemen and Camel Riders.",
     "expansion": "Dynasties of India",
     "age": "Imperial",
@@ -2545,11 +2544,11 @@
     "blast_radius": 0,
     "image": "shrivamsha-rider",
     "type": "Military",
-    "armor_class": "Cavalry;Unique Unit"
+    "armor_class": "Cavalry;Unique Unit",
+    "id": "6051e416-4573-45b3-b924-b07791fcbfc1"
   },
   {
     "name": "Elite Skirmisher",
-    "id": "93",
     "description": "Ranged anti-archer unit that cannot attack at close range. Strong vs. archers. Weak vs. units at close range.",
     "expansion": "Age of Kings",
     "age": "Castle",
@@ -2573,11 +2572,11 @@
     "blast_radius": 0,
     "image": "elite-skirmisher",
     "type": "Military",
-    "armor_class": "Archer"
+    "armor_class": "Archer",
+    "id": "15257be0-a2fc-42fa-a982-768c934569d8"
   },
   {
     "name": "Elite Steppe Lancer",
-    "id": "94",
     "description": "Light cavalry unit with increased attack range. Strong in groups. Weak vs. Camel Riders and archers.",
     "expansion": "Definitive Edition",
     "age": "Imperial",
@@ -2600,11 +2599,11 @@
     "blast_radius": 0,
     "image": "elite-steppe-lancer",
     "type": "Military",
-    "armor_class": "Cavalry"
+    "armor_class": "Cavalry",
+    "id": "1aaf6f27-ad12-40d4-a74f-e05bfc2f6f07"
   },
   {
     "name": "Elite Tarkan",
-    "id": "95",
     "description": "Hunnic unique cavalry unit with attack bonus vs. buildings. Strong vs. buildings and archers. Weak vs. Pikemen and Camel Riders.",
     "expansion": "The Conquerors",
     "age": "Imperial",
@@ -2628,11 +2627,11 @@
     "blast_radius": 0,
     "image": "tarkan",
     "type": "Military",
-    "armor_class": "Cavalry;Unique Unit"
+    "armor_class": "Cavalry;Unique Unit",
+    "id": "724191c5-1ea2-4ccf-baa4-a6ed741bfa98"
   },
   {
     "name": "Elite Teutonic Knight",
-    "id": "96",
     "description": "Teutonic unique infantry unit. Slow and powerful. Strong vs. melee units. Weak vs. archers and Scorpions.",
     "expansion": "Age of Kings",
     "age": "Imperial",
@@ -2656,11 +2655,11 @@
     "blast_radius": 0,
     "image": "teutonic-knight",
     "type": "Military",
-    "armor_class": "Infantry;Unique Unit"
+    "armor_class": "Infantry;Unique Unit",
+    "id": "ff977639-9f36-449d-8a9b-44f572735dd8"
   },
   {
     "name": "Elite Throwing Axeman",
-    "id": "97",
     "description": "Frankish unique infantry unit with ranged melee attack. Strong vs. infantry. Weak vs. archers and siege weapons.",
     "expansion": "Age of Kings",
     "age": "Imperial",
@@ -2684,11 +2683,11 @@
     "blast_radius": 0,
     "image": "throwing-axeman",
     "type": "Military",
-    "armor_class": "Infantry;Unique Unit"
+    "armor_class": "Infantry;Unique Unit",
+    "id": "4860c979-56cf-42da-8172-030b747e8cf3"
   },
   {
     "name": "Elite Turtle Ship",
-    "id": "98",
     "description": "Korean unique ship. Slow and ironclad. Strong vs. warships and buildings.",
     "expansion": "The Conquerors",
     "age": "Imperial",
@@ -2712,11 +2711,11 @@
     "blast_radius": 0.5,
     "image": "turtle-ship",
     "type": "Navy",
-    "armor_class": "Ship;Turtle Ship;Gunpowder Unit;Unique Unit"
+    "armor_class": "Ship;Turtle Ship;Gunpowder Unit;Unique Unit",
+    "id": "6dbb3a92-02ec-47be-86a7-1747db6267c7"
   },
   {
     "name": "Elite Urumi Swordsman",
-    "id": "99",
     "description": "An infantry unit that charges its attack over a period of time, dealing increased damage on its first attack against an enemy unit, the charged attacks also do trample damage, but not regular attacks.",
     "expansion": "Dynasties of India",
     "age": "Imperial",
@@ -2740,11 +2739,11 @@
     "blast_radius": 0,
     "image": "urumi-swordsman",
     "type": "Military",
-    "armor_class": "Infantry;Unique Unit"
+    "armor_class": "Infantry;Unique Unit",
+    "id": "a8cd0758-8bac-44a9-b874-cb5948291a19"
   },
   {
     "name": "Elite War Elephant",
-    "id": "100",
     "description": "Persian unique unit. Slow and powerful cavalry. Strong vs. buildings and units at close range. Weak vs. Monks.",
     "expansion": "Age of Kings",
     "age": "Imperial",
@@ -2768,11 +2767,11 @@
     "blast_radius": 0.5,
     "image": "war-elephant",
     "type": "Military",
-    "armor_class": "Cavalry;War Elephant;Unique Unit"
+    "armor_class": "Cavalry;War Elephant;Unique Unit",
+    "id": "69d5880c-19c5-4102-8561-e485cb5ad69c"
   },
   {
     "name": "Elite War Wagon",
-    "id": "101",
     "description": "Korean unique cavalry archer unit. Strong vs. infantry and archers. Weak vs. Pikemen, Skirmishers, and Camel Riders.",
     "expansion": "The Conquerors",
     "age": "Imperial",
@@ -2796,11 +2795,11 @@
     "blast_radius": 0,
     "image": "war-wagon",
     "type": "Military",
-    "armor_class": "Archer;Cavalry Archer;Cavalry;Unique Unit"
+    "armor_class": "Archer;Cavalry Archer;Cavalry;Unique Unit",
+    "id": "dada258a-bdbb-461b-8567-904acff5936f"
   },
   {
     "name": "Elite Woad Raider",
-    "id": "102",
     "description": "Celtic unique infantry unit. Fast-moving. Strong vs. infantry and siege weapons. Weak vs. archers and cavalry.",
     "expansion": "Age of Kings",
     "age": "Imperial",
@@ -2824,11 +2823,11 @@
     "blast_radius": 0,
     "image": "woad-raider",
     "type": "Military",
-    "armor_class": "Infantry;Unique Unit"
+    "armor_class": "Infantry;Unique Unit",
+    "id": "fc41e97a-f85c-4188-a44e-0c4776af444a"
   },
   {
     "name": "Fast Fire Ship",
-    "id": "103",
     "description": "Warship that spews fire at close range. Strong vs. War Galleys. Weak vs. Demolition Ships.",
     "expansion": "Age of Kings",
     "age": "Imperial",
@@ -2853,11 +2852,11 @@
     "blast_radius": 0,
     "image": "fast-fire-ship",
     "type": "Navy",
-    "armor_class": "Ship"
+    "armor_class": "Ship",
+    "id": "524c1aed-f122-4503-9ffb-37d64095bc79"
   },
   {
     "name": "Fire Ship",
-    "id": "104",
     "description": "Warship that spews fire at close range. Strong vs. War Galleys. Weak vs. Demolition Ships.",
     "expansion": "Age of Kings",
     "age": "Castle",
@@ -2882,11 +2881,11 @@
     "blast_radius": 0,
     "image": "fire-ship",
     "type": "Navy",
-    "armor_class": "Ship"
+    "armor_class": "Ship",
+    "id": "e7ac3d0a-10ff-452d-abb1-c4ea64f752f9"
   },
   {
     "name": "Fishing Ship",
-    "id": "105",
     "description": "Gathers food from fish and Fish Traps. Builds Fish Traps.",
     "expansion": "Age of Kings",
     "age": "Dark",
@@ -2909,11 +2908,11 @@
     "blast_radius": 0,
     "image": "fishing-ship",
     "type": "Navy",
-    "armor_class": "Fishing Ship"
+    "armor_class": "Fishing Ship",
+    "id": "0f43571c-8020-4e74-9a9d-6c84da423440"
   },
   {
     "name": "Flamethrower",
-    "id": "106",
     "description": "Siege weapon that spews fire at close range. Strong vs. buildings and melee units. Weak vs. archers at long range.",
     "expansion": "Age of Empires II HD: The Forgotten",
     "age": "N/A",
@@ -2935,11 +2934,11 @@
     "blast_radius": 0,
     "image": "flamethrower",
     "type": "Unbuildable",
-    "armor_class": "Siege Weapon"
+    "armor_class": "Siege Weapon",
+    "id": "fa82f236-4ab6-49e5-ae6b-248ffe1325a4"
   },
   {
     "name": "Flaming Camel",
-    "id": "107",
     "description": "Demolition camel armed with inflammable hay. Strong vs. buildings and siege units. Weak vs. archers at long range. Self-destructs when used.",
     "expansion": "Definitive Edition",
     "age": "Imperial",
@@ -2962,11 +2961,11 @@
     "blast_radius": 0.5,
     "image": "flaming-camel",
     "type": "Military",
-    "armor_class": "Unique Unit;Camel"
+    "armor_class": "Unique Unit;Camel",
+    "id": "5641d096-29b4-4097-a43f-f5ea30b94f3f"
   },
   {
     "name": "Flemish Militia",
-    "id": "108",
     "description": "Burgundian unique infantry unit. Strong vs. cavalry. Weak vs. archers.<",
     "expansion": "Lords of the West",
     "age": "Imperial",
@@ -2990,11 +2989,11 @@
     "blast_radius": 0,
     "image": "flemish-militia",
     "type": "Military",
-    "armor_class": "Infantry;Unique Unit"
+    "armor_class": "Infantry;Unique Unit",
+    "id": "9397fb1f-8f3f-4d16-8105-629d4cb0bab4"
   },
   {
     "name": "Furious The Monkey Boy",
-    "id": "109",
     "description": "Cheat unit.",
     "expansion": "Age of Kings",
     "age": "N/A",
@@ -3016,11 +3015,11 @@
     "blast_radius": 0,
     "image": "furious-the-monkey-boy",
     "type": "Cheat",
-    "armor_class": "None"
+    "armor_class": "None",
+    "id": "3f14cc56-4084-4eb3-8689-a0370b74dd7b"
   },
   {
     "name": "Galleon",
-    "id": "110",
     "description": "All-purpose warship with ranged attack. Weak vs. Fire Ships.",
     "expansion": "Age of Kings",
     "age": "Imperial",
@@ -3044,11 +3043,11 @@
     "blast_radius": 0,
     "image": "galleon",
     "type": "Navy",
-    "armor_class": "Ship"
+    "armor_class": "Ship",
+    "id": "63478514-9194-496a-8ad7-9c24afc6ff5a"
   },
   {
     "name": "Galley",
-    "id": "111",
     "description": "All-purpose warship with ranged attack. Weak vs. Fire Galleys.",
     "expansion": "Age of Kings",
     "age": "Feudal",
@@ -3072,11 +3071,11 @@
     "blast_radius": 0,
     "image": "galley",
     "type": "Navy",
-    "armor_class": "Ship"
+    "armor_class": "Ship",
+    "id": "e81e5e62-2c0d-49b9-8c2c-b640e9264203"
   },
   {
     "name": "Gbeto",
-    "id": "112",
     "description": "Malian unique infantry unit with ranged melee attack. Fast-moving. Strong vs. infantry. Weak vs. archers and siege weapons.",
     "expansion": "Age of Kings",
     "age": "Castle",
@@ -3099,11 +3098,11 @@
     "blast_radius": 0,
     "image": "gbeto",
     "type": "Military",
-    "armor_class": "Infantry;Unique Unit"
+    "armor_class": "Infantry;Unique Unit",
+    "id": "8db3c06d-b358-45ed-8885-692cf2bef61e"
   },
   {
     "name": "Genitour",
-    "id": "113",
     "description": "Mounted skirmisher. Strong vs. archers. Weak vs. units at close range. Trainable by Berbers and their allies.",
     "expansion": "Definitive Edition",
     "age": "Castle",
@@ -3127,11 +3126,11 @@
     "blast_radius": 0,
     "image": "genitour",
     "type": "Military",
-    "armor_class": "Archer;Cavalry Archer;Cavalry;Unique Unit"
+    "armor_class": "Archer;Cavalry Archer;Cavalry;Unique Unit",
+    "id": "12f9ef79-bf56-4bca-97fd-0f8a4c7c2c0f"
   },
   {
     "name": "Genoese Crossbowman",
-    "id": "114",
     "description": "Italian unique unit. Foot archer with an attack bonus against cavalry.",
     "expansion": "The Forgotten",
     "age": "Castle",
@@ -3155,11 +3154,11 @@
     "blast_radius": 0,
     "image": "genoese-crossbowman",
     "type": "Military",
-    "armor_class": "Archer;Unique Unit"
+    "armor_class": "Archer;Unique Unit",
+    "id": "c1d5f90d-78d7-47d1-a917-dc0aed6edc42"
   },
   {
     "name": "Ghulam",
-    "id": "115",
     "description": "Fast infantry with high pierce armor. Thrusts its spear through multiple targetsm dealing 50% damage to units 1 tile behind the target",
     "expansion": "Dynasties of India",
     "age": "Castle",
@@ -3183,11 +3182,11 @@
     "blast_radius": 1,
     "image": "ghulam",
     "type": "Military",
-    "armor_class": "Infantry;Unique Unit"
+    "armor_class": "Infantry;Unique Unit",
+    "id": "36248d03-6de1-4c10-92f5-78efd900486e"
   },
   {
     "name": "Goat",
-    "id": "116",
     "description": "Gaia unit.",
     "expansion": "Age of Kings",
     "age": "N/A",
@@ -3209,11 +3208,11 @@
     "blast_radius": 0,
     "image": "goat",
     "type": "Gaia",
-    "armor_class": "None"
+    "armor_class": "None",
+    "id": "404917a7-f91b-4223-9336-5eec4033c9db"
   },
   {
     "name": "Goose",
-    "id": "117",
     "description": "Gaia unit.",
     "expansion": "Age of Kings",
     "age": "N/A",
@@ -3235,11 +3234,11 @@
     "blast_radius": 0,
     "image": "goose",
     "type": "Gaia",
-    "armor_class": "None"
+    "armor_class": "None",
+    "id": "1af1df7f-bc76-4e18-9dd1-1f2174b85616"
   },
   {
     "name": "Halberdier",
-    "id": "118",
     "description": "Anti-cavalry infantry unit. Strong vs. mounted units, especially elephants. Weak vs. archers and infantry.",
     "expansion": "The Conquerors",
     "age": "Imperial",
@@ -3263,11 +3262,11 @@
     "blast_radius": 0,
     "image": "halberdier",
     "type": "Military",
-    "armor_class": "Infantry;Spearman"
+    "armor_class": "Infantry;Spearman",
+    "id": "b3945f23-9f21-4d9d-97be-d654b62229e3"
   },
   {
     "name": "Hand Cannoneer",
-    "id": "119",
     "description": "Gunpowder unit with powerful attack, but inaccurate at long range. Strong vs. infantry. Weak vs. Elite Skirmishers and archers.",
     "expansion": "Age of Kings",
     "age": "Imperial",
@@ -3291,11 +3290,11 @@
     "blast_radius": 0,
     "image": "hand-cannoneer",
     "type": "Military",
-    "armor_class": "Archer;Gunpowder Unit"
+    "armor_class": "Archer;Gunpowder Unit",
+    "id": "7fe79865-a989-40e2-b68d-07fad9f6e5cd"
   },
   {
     "name": "Heavy Camel Rider",
-    "id": "120",
     "description": "Fast anti-cavalry unit. Strong vs. cavalry. Weak vs. Pikemen, Monks, and archers. (not classified as cavalry)",
     "expansion": "Age of Kings",
     "age": "Imperial",
@@ -3319,11 +3318,11 @@
     "blast_radius": 0,
     "image": "heavy-camel-rider",
     "type": "Military",
-    "armor_class": "Camel"
+    "armor_class": "Camel",
+    "id": "fa7d5a74-bea3-442b-835c-47ef831a3a34"
   },
   {
     "name": "Heavy Cavalry Archer",
-    "id": "121",
     "description": "Mounted archer. Strong vs. slow units at long range. Weak vs. Elite Skirmishers and units at close range.",
     "expansion": "Age of Kings",
     "age": "Imperial",
@@ -3347,11 +3346,11 @@
     "blast_radius": 0,
     "image": "heavy-cavalry-archer",
     "type": "Military",
-    "armor_class": "Archer;Cavalry Archer;Cavalry"
+    "armor_class": "Archer;Cavalry Archer;Cavalry",
+    "id": "ad27a7a5-2553-4c2c-afa4-5a508ed433f2"
   },
   {
     "name": "Heavy Demolition Ship",
-    "id": "122",
     "description": "Demolition ship armed with explosives. Strong vs. Fire Ships and buildings. Self-destructs when used.",
     "expansion": "Age of Kings",
     "age": "Imperial",
@@ -3376,11 +3375,11 @@
     "blast_radius": 3.5,
     "image": "heavy-demolition-ship",
     "type": "Navy",
-    "armor_class": "Ship"
+    "armor_class": "Ship",
+    "id": "d11bfcd5-0ebc-490e-a083-97a125f19b35"
   },
   {
     "name": "Heavy Pikeman",
-    "id": "123",
     "description": "Anti-cavalry infantry unit. Strong vs. mounted units, especially elephants. Weak vs. archers and infantry.",
     "expansion": "Age of Empires II HD: The Forgotten",
     "age": "N/A",
@@ -3402,11 +3401,11 @@
     "blast_radius": 0,
     "image": "heavy-pikeman",
     "type": "Unbuildable",
-    "armor_class": "Infantry;Spearman"
+    "armor_class": "Infantry;Spearman",
+    "id": "ff290959-7b92-482e-ac37-aad1e17beb4e"
   },
   {
     "name": "Heavy Scorpion",
-    "id": "124",
     "description": "Anti-unit siege weapon. Fires bolts that pierce multiple units. Strong vs. large groups of units. Weak vs. cavalry and siege weapons.",
     "expansion": "Age of Kings",
     "age": "Imperial",
@@ -3430,11 +3429,11 @@
     "blast_radius": 0,
     "image": "heavy-scorpion",
     "type": "Military",
-    "armor_class": "Siege Weapon"
+    "armor_class": "Siege Weapon",
+    "id": "f4b33cab-9756-479f-9be9-a1c44e3e0601"
   },
   {
     "name": "Horse",
-    "id": "125",
     "description": "Can be used as scout",
     "expansion": "Age of Kings",
     "age": "Dark",
@@ -3456,11 +3455,11 @@
     "blast_radius": 0,
     "image": "horse",
     "type": "Gaia",
-    "armor_class": "None"
+    "armor_class": "None",
+    "id": "3e17bcae-4eaf-43cc-a987-7946e6de4e82"
   },
   {
     "name": "Houfnice",
-    "id": "126",
     "description": "Bohemian unique siege unit. Siege weapon with long range. Strong vs. buildings and siege weapons. Weak vs. melee units.",
     "expansion": "Dawn of the Dukes",
     "age": "Imperial",
@@ -3484,11 +3483,11 @@
     "blast_radius": 0.7,
     "image": "houfnice",
     "type": "Military",
-    "armor_class": "Siege Weapon;Gunpowder Unit"
+    "armor_class": "Siege Weapon;Gunpowder Unit",
+    "id": "1050efed-2dfa-4005-80e5-7bd46c6aec76"
   },
   {
     "name": "Huskarl",
-    "id": "127",
     "description": "Gothic unique infantry unit with high pierce armor. Strong vs. archers and buildings. Weak vs. cavalry.",
     "expansion": "Age of Kings",
     "age": "Castle",
@@ -3512,11 +3511,11 @@
     "blast_radius": 0,
     "image": "huskarl",
     "type": "Military",
-    "armor_class": "Infantry;Unique Unit"
+    "armor_class": "Infantry;Unique Unit",
+    "id": "ff4d75d3-3dd9-47c3-8724-865c09ce2bda"
   },
   {
     "name": "Hussar",
-    "id": "128",
     "description": "Fast cavalry for scouting and raiding. Resistant to conversion. Strong vs. Monks. Weak vs. Pikemen and Camel Riders.",
     "expansion": "The Conquerors",
     "age": "Imperial",
@@ -3540,11 +3539,11 @@
     "blast_radius": 0,
     "image": "hussar",
     "type": "Military",
-    "armor_class": "Cavalry"
+    "armor_class": "Cavalry",
+    "id": "9c3ddc2c-19df-4044-85f0-5760738652f2"
   },
   {
     "name": "Hussite Wagon",
-    "id": "129",
     "description": "Bohemian unique siege unit. Units behind it receive 50% less damage from incoming projectiles. Strong vs. archers. Weak vs. siege weapons.",
     "expansion": "Dawn of the Dukes",
     "age": "Castle",
@@ -3568,11 +3567,11 @@
     "blast_radius": 0,
     "image": "hussite-wagon",
     "type": "Military",
-    "armor_class": "Siege Weapon;Gunpowder Unit;Unique Unit;Hussite Wagon"
+    "armor_class": "Siege Weapon;Gunpowder Unit;Unique Unit;Hussite Wagon",
+    "id": "5c31e10e-2500-4ec6-8c52-aa8c82c9d00d"
   },
   {
     "name": "Imperial Camel Rider",
-    "id": "130",
     "description": "Fast anti-cavalry unit. Strong vs. cavalry. Weak vs. Pikemen, Monks, and archers.",
     "expansion": "Age of Empires II HD: The Forgotten",
     "age": "Imperial",
@@ -3595,11 +3594,11 @@
     "blast_radius": 0,
     "image": "imperial-camel-rider",
     "type": "Military",
-    "armor_class": "Camel"
+    "armor_class": "Camel",
+    "id": "8760a359-b8d7-44ae-8184-fb455e0a7f0a"
   },
   {
     "name": "Imperial Skirmisher",
-    "id": "131",
     "description": "Ranged anti-archer unit that cannot attack at close range. Strong vs. archers. Weak vs. units at close range. Trainable by Vietnamese and their allies.",
     "expansion": "Age of Empires II HD: Rise of the Rajas",
     "age": "Imperial",
@@ -3622,11 +3621,11 @@
     "blast_radius": 0,
     "image": "imperial-skirmisher",
     "type": "Military",
-    "armor_class": "Archer"
+    "armor_class": "Archer",
+    "id": "3d5c7548-8b39-4449-8fde-81d05a57e378"
   },
   {
     "name": "Iroquois Warrior",
-    "id": "132",
     "description": "Exceptionally quick infantry. Strong vs. buildings.",
     "expansion": "Definitive Edition",
     "age": "N/A",
@@ -3648,11 +3647,11 @@
     "blast_radius": 0,
     "image": "iroquois-warrior",
     "type": "Unbuildable",
-    "armor_class": "Infantry"
+    "armor_class": "Infantry",
+    "id": "9d22a6df-2332-4225-a5ab-eda8100cf447"
   },
   {
     "name": "Jaguar",
-    "id": "133",
     "description": "Wild jaguar. Same as wolf on yucatan and other americas maps",
     "expansion": "Age of Kings",
     "age": "Dark",
@@ -3674,11 +3673,11 @@
     "blast_radius": 0,
     "image": "jaguar",
     "type": "Gaia",
-    "armor_class": "None"
+    "armor_class": "None",
+    "id": "a42942bd-4c23-4cc2-87ec-3b3cd19d1932"
   },
   {
     "name": "Jaguar Warrior",
-    "id": "134",
     "description": "Aztec unique infantry unit. Strong vs. infantry. Weak vs. cavalry and archers.",
     "expansion": "The Conquerors",
     "age": "Castle",
@@ -3702,11 +3701,11 @@
     "blast_radius": 0,
     "image": "jaguar-warrior",
     "type": "Military",
-    "armor_class": "Infantry;Unique Unit"
+    "armor_class": "Infantry;Unique Unit",
+    "id": "5cf2ccc0-59a1-4145-b921-23785e77b6b3"
   },
   {
     "name": "Janissary",
-    "id": "135",
     "description": "Turkish unique hand cannoneer with longer range and no minimum range. Strong vs. infantry. Weak vs. archers.",
     "expansion": "Age of Kings",
     "age": "Castle",
@@ -3730,11 +3729,11 @@
     "blast_radius": 0,
     "image": "janissary",
     "type": "Military",
-    "armor_class": "Archer;Gunpowder Unit;Unique Unit"
+    "armor_class": "Archer;Gunpowder Unit;Unique Unit",
+    "id": "5ea3d009-dd33-4f56-9df8-4b8c1657e025"
   },
   {
     "name": "Junk",
-    "id": "136",
     "description": "Trade unit used for generating gold at another player's Dock. To trade, click the Junk then right-click another player's Dock. Will return with gold to your Dock.",
     "expansion": "Age of Kings",
     "age": "Dark",
@@ -3756,11 +3755,11 @@
     "blast_radius": 0,
     "image": "junk",
     "type": "Unbuildable",
-    "armor_class": "None"
+    "armor_class": "None",
+    "id": "f3e076d6-ecc4-4a3d-bb02-35d5eb3814f3"
   },
   {
     "name": "Kamayuk",
-    "id": "137",
     "description": "Japanese unique infantry unit with fast attack. Strong vs. unique units and infantry. Weak vs. archers.",
     "expansion": "The Conquerors",
     "age": "Castle",
@@ -3783,11 +3782,11 @@
     "blast_radius": 0,
     "image": "kamayuk",
     "type": "Military",
-    "armor_class": "Infantry;Unique Unit"
+    "armor_class": "Infantry;Unique Unit",
+    "id": "75b0f3cf-6e0a-426e-8c11-d0ef578beb49"
   },
   {
     "name": "Karambit Warrior",
-    "id": "138",
     "description": "Malay unique infantry unit. Cheap and only takes half a population unit. Strong in high numbers. Weak vs. cavalry and archers.",
     "expansion": "The Conquerors",
     "age": "Castle",
@@ -3810,11 +3809,11 @@
     "blast_radius": 0,
     "image": "karambit-warrior",
     "type": "Military",
-    "armor_class": "Infantry;Unique Unit"
+    "armor_class": "Infantry;Unique Unit",
+    "id": "d53a975f-bd3a-4d78-9923-9f5caa052861"
   },
   {
     "name": "Keshik",
-    "id": "139",
     "description": "Tatar unique cavalry unit that generates 0.3625 gold per second when attacking enemy units.",
     "expansion": "Definitive Edition",
     "age": "Castle",
@@ -3837,11 +3836,11 @@
     "blast_radius": 0,
     "image": "keshik",
     "type": "Military",
-    "armor_class": "Cavalry;Unique Unit"
+    "armor_class": "Cavalry;Unique Unit",
+    "id": "223ff73d-65f0-400d-b7b4-3d7bcc780cdb"
   },
   {
     "name": "King",
-    "id": "140",
     "description": "Cannot be produced so the cost and build time just for the sake of interest",
     "expansion": "Age of Kings",
     "age": "Dark",
@@ -3864,11 +3863,11 @@
     "blast_radius": 0,
     "image": "king",
     "type": "Military",
-    "armor_class": "None"
+    "armor_class": "None",
+    "id": "1875add8-f7e5-44d7-bac0-8b8d0d3ad930"
   },
   {
     "name": "Kipchak",
-    "id": "141",
     "description": "Cuman unique cavalry archer with rapid-fire attack. Fires three (four when Elite) arrows at once. First arrow deals full damage, other arrows deal 1 pierce and 0 melee damage. Strong vs. infantry. Weak vs. Skirmishers.",
     "expansion": "Definitive Edition",
     "age": "Castle",
@@ -3891,11 +3890,11 @@
     "blast_radius": 0,
     "image": "kipchak",
     "type": "Military",
-    "armor_class": "Archer;Cavalry Archer;Cavalry;Unique Unit"
+    "armor_class": "Archer;Cavalry Archer;Cavalry;Unique Unit",
+    "id": "a2caf8f7-2e41-48f1-b949-444099c3fc21"
   },
   {
     "name": "Knight",
-    "id": "142",
     "description": "Powerful all-purpose cavalry. Strong vs. infantry and archers. Weak vs. Pikemen, Camel Riders, and Monks.",
     "expansion": "Age of Kings",
     "age": "Castle",
@@ -3918,11 +3917,11 @@
     "blast_radius": 0,
     "image": "knight",
     "type": "Military",
-    "armor_class": "Cavalry"
+    "armor_class": "Cavalry",
+    "id": "c53ac85f-40a4-49e8-b661-7b2eb548cbfe"
   },
   {
     "name": "Komodo Dragon",
-    "id": "143",
     "description": "Gaia unit.",
     "expansion": "Age of Empires III: The Asian Dynasties",
     "age": "N/A",
@@ -3944,11 +3943,11 @@
     "blast_radius": 0,
     "image": "komodo-dragon",
     "type": "Gaia",
-    "armor_class": "None"
+    "armor_class": "None",
+    "id": "d35dad35-6f72-4c5a-a7cf-5c496962ca88"
   },
   {
     "name": "Konnik",
-    "id": "144",
     "description": "Bulgarian unique cavalry unit that fights on as infantry when felled. Strong vs. infantry and archers. Weak vs. Camel Riders and Monks.",
     "expansion": "Definitive Edition",
     "age": "Castle",
@@ -3971,11 +3970,11 @@
     "blast_radius": 0,
     "image": "konnik",
     "type": "Military",
-    "armor_class": "Cavalry;Unique Unit"
+    "armor_class": "Cavalry;Unique Unit",
+    "id": "b74452e1-5268-49e1-9b08-d12547d5c47e"
   },
   {
     "name": "Konnik (Dismounted)",
-    "id": "145",
     "description": "Bulgarian unique cavalry unit that fights on as infantry when felled. Strong vs. infantry and archers. Weak vs. Camel Riders and Monks.",
     "expansion": "Definitive Edition",
     "age": "Castle",
@@ -3999,11 +3998,11 @@
     "blast_radius": 0,
     "image": "konnik-dismounted",
     "type": "Military",
-    "armor_class": "Infantry;Unique Unit"
+    "armor_class": "Infantry;Unique Unit",
+    "id": "1e5def5e-7f57-4c00-80c0-02e103e50f32"
   },
   {
     "name": "Legionary",
-    "id": "146",
     "description": "Roman Unique Infantry Unit, replaces Two-Handed Swordsman/Champion at the Barracks. Has additional bonus damage vs Infantry.",
     "expansion": "Return to Rome",
     "age": "Imperial",
@@ -4027,11 +4026,11 @@
     "blast_radius": 0,
     "image": "legionary",
     "type": "Military",
-    "armor_class": "Infantry"
+    "armor_class": "Infantry",
+    "id": "1e245cd3-9686-4976-a06a-8daf9591ac4b"
   },
   {
     "name": "Leitis",
-    "id": "147",
     "description": "Lithuanian unique cavalry unit with attack that ignores armor. Each captured relic adds +1 damage (max 4). Strong vs. armored units.",
     "expansion": "Definitive Edition",
     "age": "Castle",
@@ -4054,11 +4053,11 @@
     "blast_radius": 0,
     "image": "leitis",
     "type": "Military",
-    "armor_class": "Cavalry;Unique Unit"
+    "armor_class": "Cavalry;Unique Unit",
+    "id": "b8c0b20b-5322-4586-b2ab-df7328df8db4"
   },
   {
     "name": "Light Cavalry",
-    "id": "148",
     "description": "Fast cavalry for scouting and raiding. Resistant to conversion. Strong vs. Monks. Weak vs. Pikemen and Camel Riders.",
     "expansion": "Age of Kings",
     "age": "Castle",
@@ -4082,11 +4081,11 @@
     "blast_radius": 0,
     "image": "light-cavalry",
     "type": "Military",
-    "armor_class": "Cavalry"
+    "armor_class": "Cavalry",
+    "id": "93e9d7fc-a127-4724-9f61-601c15ed9c79"
   },
   {
     "name": "Lion",
-    "id": "149",
     "description": "Gaia unit.",
     "expansion": "Age of Empires II HD: The African Kingdoms",
     "age": "N/A",
@@ -4108,11 +4107,11 @@
     "blast_radius": 0,
     "image": "lion",
     "type": "Gaia",
-    "armor_class": "None"
+    "armor_class": "None",
+    "id": "e0c0a4cf-cc86-4ce9-89f6-e2eaa5cc885a"
   },
   {
     "name": "Llama",
-    "id": "150",
     "description": "Gaia unit.",
     "expansion": "Age of Empires II HD: The Forgotten",
     "age": "N/A",
@@ -4134,11 +4133,11 @@
     "blast_radius": 0,
     "image": "llama",
     "type": "Gaia",
-    "armor_class": "None"
+    "armor_class": "None",
+    "id": "958abc39-f3b7-4f36-8f35-420b460d72bf"
   },
   {
     "name": "Long Swordman",
-    "id": "151",
     "description": "All-purpose infantry unit. Strong vs. buildings and infantry. Weak vs. archers at long range.",
     "expansion": "Age of Kings",
     "age": "Castle",
@@ -4162,11 +4161,11 @@
     "blast_radius": 0,
     "image": "long-swordsman",
     "type": "Military",
-    "armor_class": "Infantry"
+    "armor_class": "Infantry",
+    "id": "f218869f-fe7a-4682-9117-fa8397a9f989"
   },
   {
     "name": "Longboat",
-    "id": "152",
     "description": "Viking unique ship that fires multiple arrows. Strong vs. War Galleys, land units, and buildings.",
     "expansion": "Age of Kings",
     "age": "Castle",
@@ -4190,11 +4189,11 @@
     "blast_radius": 0,
     "image": "longboat",
     "type": "Navy",
-    "armor_class": "Ship;Unique Unit"
+    "armor_class": "Ship;Unique Unit",
+    "id": "06687e19-8ceb-43b4-ac2d-27c9bec43485"
   },
   {
     "name": "Longbowman",
-    "id": "153",
     "description": "British unique archer with very long range. Strong vs. infantry. Weak vs. cavalry and Skirmishers.",
     "expansion": "Age of Kings",
     "age": "Castle",
@@ -4218,11 +4217,11 @@
     "blast_radius": 0,
     "image": "longbowman",
     "type": "Military",
-    "armor_class": "Archer;Unique Unit"
+    "armor_class": "Archer;Unique Unit",
+    "id": "760fb44f-ee44-45b8-8c00-fed0f44f8329"
   },
   {
     "name": "Magyar Huszar",
-    "id": "154",
     "description": "Byzantine unique cavalry unit. Strong vs. infantry. Weak vs. archers.",
     "expansion": "Definitive Edition",
     "age": "Castle",
@@ -4245,11 +4244,11 @@
     "blast_radius": 0,
     "image": "magyar-huszar",
     "type": "Military",
-    "armor_class": "Cavalry;Unique Unit"
+    "armor_class": "Cavalry;Unique Unit",
+    "id": "6984152f-3ef5-4432-af3f-b6a02cbcea63"
   },
   {
     "name": "Mameluke",
-    "id": "155",
     "description": "Saracen unique camel unit with ranged melee attack. Strong vs. cavalry. Weak vs. archers and Pikemen.",
     "expansion": "Age of Kings",
     "age": "Castle",
@@ -4274,11 +4273,11 @@
     "blast_radius": 0,
     "image": "mameluke",
     "type": "Military",
-    "armor_class": "Mameluke;Camel;Unique Unit"
+    "armor_class": "Mameluke;Camel;Unique Unit",
+    "id": "2e8bb583-ab88-4e52-8410-a12187283fad"
   },
   {
     "name": "Man At Arms",
-    "id": "156",
     "description": "All-purpose infantry unit. Strong vs. buildings and infantry. Weak vs. archers at long range.",
     "expansion": "Age of Kings",
     "age": "Feudal",
@@ -4302,11 +4301,11 @@
     "blast_radius": 0,
     "image": "man-at-arms",
     "type": "Military",
-    "armor_class": "Infantry"
+    "armor_class": "Infantry",
+    "id": "521b7688-e14b-4d60-828e-6fb1bda788df"
   },
   {
     "name": "Mangonel",
-    "id": "157",
     "description": "Ranged siege weapon with area of effect attack, but cannot attack enemies at close range. Strong vs. tight groups of units. Can attack ground.",
     "expansion": "Age of Kings",
     "age": "Castle",
@@ -4330,11 +4329,11 @@
     "blast_radius": 1,
     "image": "mangonel",
     "type": "Military",
-    "armor_class": "Siege Weapon"
+    "armor_class": "Siege Weapon",
+    "id": "922ba6dd-cb06-4ffd-9596-3edcda289c45"
   },
   {
     "name": "Mangudai",
-    "id": "158",
     "description": "Mongol unique cavalry archer with fast-firing attack. Strong vs. siege weapons and infantry. Weak vs. Skirmishers, Pikemen, and Camel Riders.",
     "expansion": "Age of Kings",
     "age": "Castle",
@@ -4358,11 +4357,11 @@
     "blast_radius": 0,
     "image": "mangudai",
     "type": "Military",
-    "armor_class": "Archer;Cavalry Archer;Cavalry;Unique Unit"
+    "armor_class": "Archer;Cavalry Archer;Cavalry;Unique Unit",
+    "id": "1fcc218e-dc32-46b6-8f7e-ef49c2b41967"
   },
   {
     "name": "Militia",
-    "id": "159",
     "description": "All-purpose infantry unit. Strong vs. buildings and infantry. Weak vs. archers at long range.",
     "expansion": "Age of Kings",
     "age": "Dark",
@@ -4385,11 +4384,11 @@
     "blast_radius": 0,
     "image": "militia",
     "type": "Military",
-    "armor_class": "Infantry"
+    "armor_class": "Infantry",
+    "id": "4433f2c8-efad-4a3b-bcf4-7571ea0b3f82"
   },
   {
     "name": "Missionary",
-    "id": "160",
     "description": "Spanish unique mounted monk. Converts enemy units and heals friendly units. Faster than Monk but with less sight and range. Strong vs. slow, non-ranged units. Weak vs. Light Cavalry and ranged units. Cannot collect Relics.",
     "expansion": "Age of Kings",
     "age": "Castle",
@@ -4412,11 +4411,11 @@
     "blast_radius": 0,
     "image": "missionary",
     "type": "Military",
-    "armor_class": "Cavalry;Monk;Unique Unit"
+    "armor_class": "Cavalry;Monk;Unique Unit",
+    "id": "a864702f-f0c5-400d-9ce5-5a7c65b35eb9"
   },
   {
     "name": "Monk",
-    "id": "161",
     "description": "Converts enemy units to your civilization. Heals friendly units (except ships and siege weapons). Strong vs. slow and non-ranged units. Weak vs. Light Cavalry and ranged units. Can collect Relics and bring them to Monasteries.",
     "expansion": "Age of Kings",
     "age": "Castle",
@@ -4439,11 +4438,11 @@
     "blast_radius": 0,
     "image": "monk",
     "type": "Military",
-    "armor_class": "Monk"
+    "armor_class": "Monk",
+    "id": "7dba30b5-e838-4dd9-901f-fc3b74186f86"
   },
   {
     "name": "Ninja",
-    "id": "162",
     "description": "Light and quick infantry. Strong vs. heroes.",
     "expansion": "Age of Empires III: The Asian Dynasties",
     "age": "N/A",
@@ -4465,11 +4464,11 @@
     "blast_radius": 0,
     "image": "ninja",
     "type": "Unbuildable",
-    "armor_class": "Infantry"
+    "armor_class": "Infantry",
+    "id": "a9a1248c-81bb-481e-8fa0-87e1622dc831"
   },
   {
     "name": "Norse Warrior",
-    "id": "163",
     "description": "All-purpose infantry unit. Strong vs. buildings and infantry. Weak vs. archers at long range.",
     "expansion": "Age of Kings",
     "age": "N/A",
@@ -4492,11 +4491,11 @@
     "blast_radius": 0,
     "image": "norse-warrior",
     "type": "Military",
-    "armor_class": "Infantry"
+    "armor_class": "Infantry",
+    "id": "43874593-b9b7-4dff-b393-ce8fb384faf0"
   },
   {
     "name": "Obuch",
-    "id": "164",
     "description": "Polish unique infantry unit which can damage the armor of units it is fighting. Strong vs. buildings and infantry. Weak vs. archers at long range.",
     "expansion": "Dawn of the Dukes",
     "age": "Castle",
@@ -4520,11 +4519,11 @@
     "blast_radius": 0,
     "image": "obuch",
     "type": "Military",
-    "armor_class": "Infantry;Unique Unit"
+    "armor_class": "Infantry;Unique Unit",
+    "id": "44a679ae-cf02-40c0-8c54-bc502de89a81"
   },
   {
     "name": "Onager",
-    "id": "165",
     "description": "Ranged siege weapon with area of effect attack, but cannot attack enemies at close range. Strong vs. tight groups of units. Can attack ground and destroy trees.",
     "expansion": "Age of Kings",
     "age": "Imperial",
@@ -4548,11 +4547,11 @@
     "blast_radius": 1.25,
     "image": "onager",
     "type": "Military",
-    "armor_class": "Siege Weapon"
+    "armor_class": "Siege Weapon",
+    "id": "45b75b72-8059-435a-b07b-66fbd94c8c5c"
   },
   {
     "name": "Organ Gun",
-    "id": "166",
     "description": "Portuguese unique siege unit. Fires a volley of bullets. Strong vs. large groups of units. Weak vs. cavalry and Mangonels.",
     "expansion": "Age of Empires II HD: The African Kingdoms",
     "age": "Castle",
@@ -4576,11 +4575,11 @@
     "blast_radius": 0,
     "image": "organ-gun",
     "type": "Military",
-    "armor_class": "Siege Weapon;Gunpowder Unit;Unique Unit"
+    "armor_class": "Siege Weapon;Gunpowder Unit;Unique Unit",
+    "id": "53a688e8-e04b-4164-9767-5a9e8934dc1d"
   },
   {
     "name": "Ostrich",
-    "id": "167",
     "description": "Gaia unit. Provides 140 food.",
     "expansion": "Age of Kings",
     "age": "N/A",
@@ -4602,11 +4601,11 @@
     "blast_radius": 0,
     "image": "ostrich",
     "type": "Gaia",
-    "armor_class": "None"
+    "armor_class": "None",
+    "id": "fa2b027c-5d88-4b84-b9c7-f7c5900ed005"
   },
   {
     "name": "Ox Cart",
-    "id": "168",
     "description": "Civilian unit.",
     "expansion": "Age of Kings",
     "age": "N/A",
@@ -4628,11 +4627,11 @@
     "blast_radius": 0,
     "image": "ox-cart",
     "type": "Civilian",
-    "armor_class": "None"
+    "armor_class": "None",
+    "id": "9af05600-21f2-4de5-b4d9-f17e17e5ae43"
   },
   {
     "name": "Ox Wagon",
-    "id": "169",
     "description": "Civilian unit.",
     "expansion": "Age of Kings",
     "age": "N/A",
@@ -4654,11 +4653,11 @@
     "blast_radius": 0,
     "image": "ox-wagon",
     "type": "Civilian",
-    "armor_class": "None"
+    "armor_class": "None",
+    "id": "a501adfa-6b79-4c74-ac5b-c50450e541c7"
   },
   {
     "name": "Paladin",
-    "id": "170",
     "description": "Powerful all-purpose cavalry. Strong vs. infantry and archers. Weak vs. Halberdiers, Heavy Camel Riders, and Monks.",
     "expansion": "Age of Kings",
     "age": "Imperial",
@@ -4681,11 +4680,11 @@
     "blast_radius": 0,
     "image": "paladin",
     "type": "Military",
-    "armor_class": "Cavalry"
+    "armor_class": "Cavalry",
+    "id": "6ceb60c6-35f4-418c-acda-741da817bace"
   },
   {
     "name": "Penguin",
-    "id": "171",
     "description": "Cheat unit.",
     "expansion": "The Forgotten",
     "age": "Dark",
@@ -4707,11 +4706,11 @@
     "blast_radius": 0,
     "image": "penguin",
     "type": "Cheat",
-    "armor_class": "None"
+    "armor_class": "None",
+    "id": "bee9d38a-6c0e-42e8-9230-d6baece3e74a"
   },
   {
     "name": "Petard",
-    "id": "172",
     "description": "Demolition infantry armed with explosives. Strong vs. buildings. Weak vs. other units. Self-destructs when used.",
     "expansion": "The Conquerors",
     "age": "Castle",
@@ -4735,11 +4734,11 @@
     "blast_radius": 0.5,
     "image": "petard",
     "type": "Military",
-    "armor_class": "None"
+    "armor_class": "None",
+    "id": "a89e545f-3518-4f3f-b307-fa7a9537a3b7"
   },
   {
     "name": "Pikeman",
-    "id": "173",
     "description": "Anti-cavalry infantry unit. Strong vs. mounted units, especially elephants. Weak vs. archers and infantry.",
     "expansion": "Age of Kings",
     "age": "Castle",
@@ -4763,11 +4762,11 @@
     "blast_radius": 0,
     "image": "pikeman",
     "type": "Military",
-    "armor_class": "Infantry;Spearman"
+    "armor_class": "Infantry;Spearman",
+    "id": "8e047758-fd80-453b-92eb-2f88d3e7bc35"
   },
   {
     "name": "Plumed Archer",
-    "id": "174",
     "description": "Mayan unique fast-moving archer. Strong vs. archers and infantry. Weak vs. cavalry.",
     "expansion": "The Conquerors",
     "age": "Castle",
@@ -4791,11 +4790,11 @@
     "blast_radius": 0,
     "image": "plumed-archer",
     "type": "Military",
-    "armor_class": "Archer;Unique Unit"
+    "armor_class": "Archer;Unique Unit",
+    "id": "655a5e39-1abf-4557-8506-0397de323cc6"
   },
   {
     "name": "Photon Man",
-    "id": "175",
     "description": "Cheat unit.",
     "expansion": "The Last Khans",
     "age": "Dark",
@@ -4817,11 +4816,11 @@
     "blast_radius": 0,
     "image": "photon-man",
     "type": "Cheat",
-    "armor_class": "Archer;Unique Unit;Gunpowder Unit"
+    "armor_class": "Archer;Unique Unit;Gunpowder Unit",
+    "id": "72c6a164-ea61-4f02-bb69-f93768ebf202"
   },
   {
     "name": "Priest",
-    "id": "176",
     "description": "Converts enemy units to your civilization. Heals friendly units (except ships and siege weapons). Strong vs. slow and non-ranged units. Weak vs. Light Cavalry and ranged units. Can collect Relics and bring them to Monasteries.",
     "expansion": "Age of Empires II HD: The African Kingdoms",
     "age": "Dark",
@@ -4844,11 +4843,11 @@
     "blast_radius": 0,
     "image": "priest",
     "type": "Unbuildable",
-    "armor_class": "Monk"
+    "armor_class": "Monk",
+    "id": "89939c86-e283-4f43-8e87-7178360897e5"
   },
   {
     "name": "Ratha (Melee)",
-    "id": "177",
     "description": "Bengali unique chariot that can switch between melee and ranged attacks. Strong vs. infantry. Weak vs. Skirmishers and Camel Riders.",
     "expansion": "Dynasties of India",
     "age": "Castle",
@@ -4871,11 +4870,11 @@
     "blast_radius": 0,
     "image": "ratha-melee",
     "type": "Military",
-    "armor_class": "Archer;Cavalry Archer;Cavalry;Unique Unit"
+    "armor_class": "Archer;Cavalry Archer;Cavalry;Unique Unit",
+    "id": "36ce9236-5819-4104-80f6-a62258b58e84"
   },
   {
     "name": "Ratha (Ranged)",
-    "id": "178",
     "description": "Bengali unique chariot that can switch between melee and ranged attacks. Strong vs. infantry. Weak vs. Skirmishers and Camel Riders.",
     "expansion": "Dynasties of India",
     "age": "Castle",
@@ -4898,11 +4897,11 @@
     "blast_radius": 0,
     "image": "ratha-ranged",
     "type": "Military",
-    "armor_class": "Archer;Cavalry Archer;Cavalry;Unique Unit"
+    "armor_class": "Archer;Cavalry Archer;Cavalry;Unique Unit",
+    "id": "2d6caa3c-5f7f-4ee3-8745-ed53f74ab076"
   },
   {
     "name": "Rattan Archer",
-    "id": "179",
     "description": "Vietnamese unique archer with high pierce armor. Strong vs. archers and infantry. Weak vs. cavalry and Skirmishers.",
     "expansion": "Age of Empires II HD: Rise of the Rajas",
     "age": "Castle",
@@ -4926,11 +4925,11 @@
     "blast_radius": 0,
     "image": "rattan-archer",
     "type": "Military",
-    "armor_class": "Archer;Unique Unit"
+    "armor_class": "Archer;Unique Unit",
+    "id": "6ecd5d34-97e7-4db2-a7b4-5ef49637f879"
   },
   {
     "name": "Rhino",
-    "id": "180",
     "description": "Gaia unit. Provides 400 food.",
     "expansion": "Age of Kings",
     "age": "N/A",
@@ -4952,11 +4951,11 @@
     "blast_radius": 0,
     "image": "rhino",
     "type": "Gaia",
-    "armor_class": "None"
+    "armor_class": "None",
+    "id": "2d92911a-2041-4821-b610-0305d5f41a6f"
   },
   {
     "name": "Royal Janissary",
-    "id": "181",
     "description": "Turkish unique hand cannoneer with longer range and no minimum range. Strong vs. infantry. Weak vs. archers.",
     "expansion": "Age of Kings",
     "age": "Imperial",
@@ -4979,11 +4978,11 @@
     "blast_radius": 0,
     "image": "royal-janissary",
     "type": "Unbuildable",
-    "armor_class": "Archer;Gunpowder Unit;Unique Unit"
+    "armor_class": "Archer;Gunpowder Unit;Unique Unit",
+    "id": "257de615-bd9c-4f6a-8b48-2a5577270a57"
   },
   {
     "name": "Saboteur",
-    "id": "182",
     "description": "Cheat unit.",
     "expansion": "Age of Kings",
     "age": "Dark",
@@ -5005,11 +5004,11 @@
     "blast_radius": 2.5,
     "image": "saboteur",
     "type": "Cheat",
-    "armor_class": "Ship (for some reason)"
+    "armor_class": "Ship (for some reason)",
+    "id": "40bac488-c377-4e00-8db8-1bd6b6e9f1a6"
   },
   {
     "name": "Samurai",
-    "id": "183",
     "description": "Japanese unique infantry unit with fast attack. Strong vs. unique units and infantry. Weak vs. archers.",
     "expansion": "Age of Kings",
     "age": "Castle",
@@ -5033,11 +5032,11 @@
     "blast_radius": 0,
     "image": "samurai",
     "type": "Military",
-    "armor_class": "Infantry;Unique Unit"
+    "armor_class": "Infantry;Unique Unit",
+    "id": "8a88904d-51d1-4dd5-9c17-cf155c0f9708"
   },
   {
     "name": "Scorpion",
-    "id": "184",
     "description": "Anti-unit siege weapon. Fires bolts that pierce multiple units. Strong vs. large groups of units. Weak vs. cavalry and siege weapons.",
     "expansion": "Age of Kings",
     "age": "Castle",
@@ -5061,11 +5060,11 @@
     "blast_radius": 0,
     "image": "scorpion",
     "type": "Military",
-    "armor_class": "Siege Weapon"
+    "armor_class": "Siege Weapon",
+    "id": "37b50809-920f-452e-857b-cbcbe986f8d1"
   },
   {
     "name": "Scout Cavalry",
-    "id": "185",
     "description": "Fast cavalry for scouting and raiding. Resistant to conversion. Strong vs. Monks. Weak vs. Pikemen and Camel Riders.",
     "expansion": "Age of Kings",
     "age": "Dark",
@@ -5089,11 +5088,11 @@
     "blast_radius": 0,
     "image": "scout-cavalry",
     "type": "Military",
-    "armor_class": "Cavalry"
+    "armor_class": "Cavalry",
+    "id": "ab6e6903-b7ad-4b19-a95a-393fc0e623f4"
   },
   {
     "name": "Serjeant",
-    "id": "186",
     "description": "Sicilian unique infantry unit which can construct Donjons.",
     "expansion": "Lords of the West",
     "age": "Feudal",
@@ -5117,11 +5116,11 @@
     "blast_radius": 0,
     "image": "serjeant",
     "type": "Military",
-    "armor_class": "Infantry;Unique Unit"
+    "armor_class": "Infantry;Unique Unit",
+    "id": "29f2ebf9-2240-4c47-b36a-3de12d26791f"
   },
   {
     "name": "Sharkatzor",
-    "id": "187",
     "description": "Cheat unit.",
     "expansion": "Rise of the Rajas",
     "age": "Dark",
@@ -5143,11 +5142,11 @@
     "blast_radius": 1,
     "image": "sharkatzor",
     "type": "Cheat",
-    "armor_class": "Siege Weapon"
+    "armor_class": "Siege Weapon",
+    "id": "7c5a9802-0fa2-4b81-8217-239fd2380b69"
   },
   {
     "name": "Sheep",
-    "id": "188",
     "description": "Can be picked up by player and used to scout. Provides 100 food.",
     "expansion": "Age of Kings",
     "age": "Dark",
@@ -5169,11 +5168,11 @@
     "blast_radius": 0,
     "image": "sheep",
     "type": "Gaia",
-    "armor_class": "None"
+    "armor_class": "None",
+    "id": "e0be8db0-2538-4ba0-a918-fc1e901f3f63"
   },
   {
     "name": "Shotel Warrior",
-    "id": "189",
     "description": "Ethiopian unique infantry with high attack and fast training speed. Fast-moving. Strong vs. infantry. Weak vs. archers.",
     "expansion": "Definitive Edition",
     "age": "Castle",
@@ -5196,11 +5195,11 @@
     "blast_radius": 0,
     "image": "shotel-warrior",
     "type": "Military",
-    "armor_class": "Infantry;Unique Unit"
+    "armor_class": "Infantry;Unique Unit",
+    "id": "1828598f-8412-4f83-8d84-305f116c4a19"
   },
   {
     "name": "Shrivamsha Rider",
-    "id": "190",
     "description": "Gurjara unique light cavalry unit which can dodge projectiles. Will not dodge splash damage. Strong vs. archers. Weak vs. Pikemen and Camel Riders.",
     "expansion": "Dynasties of India",
     "age": "Castle",
@@ -5223,11 +5222,11 @@
     "blast_radius": 0,
     "image": "shrivamsha-rider",
     "type": "Military",
-    "armor_class": "Cavalry;Unique Unit"
+    "armor_class": "Cavalry;Unique Unit",
+    "id": "6b8fd3bf-3e6b-47b0-8959-b887702683ef"
   },
   {
     "name": "Siege Elephant",
-    "id": "191",
     "description": "A mounted siege unit with high HP.",
     "expansion": "Dynasties of India",
     "age": "Imperial",
@@ -5251,11 +5250,11 @@
     "blast_radius": 0,
     "image": "siege-elephant",
     "type": "Military",
-    "armor_class": "Cavalry;War elephant;Siege Weapon;Ram"
+    "armor_class": "Cavalry;War elephant;Siege Weapon;Ram",
+    "id": "2c9dc824-2a52-4b52-afba-90d31ce4940c"
   },
   {
     "name": "Siege Onager",
-    "id": "192",
     "description": "Ranged siege weapon with area of effect attack, but cannot attack enemies at close range. Strong vs. tight groups of units. Can attack ground and destroy trees.",
     "expansion": "Age of Kings",
     "age": "Imperial",
@@ -5279,11 +5278,11 @@
     "blast_radius": 1.5,
     "image": "siege-onager",
     "type": "Military",
-    "armor_class": "Siege Weapon"
+    "armor_class": "Siege Weapon",
+    "id": "155037ad-75f8-4b6b-bf92-95689c95872e"
   },
   {
     "name": "Siege Ram",
-    "id": "193",
     "description": "Anti-building siege weapon. Resistant to most ranged attacks. Garrisoned infantry increase speed and attack.",
     "expansion": "Age of Kings",
     "age": "Imperial",
@@ -5308,11 +5307,11 @@
     "blast_radius": 2,
     "image": "siege-ram",
     "type": "Military",
-    "armor_class": "Siege Weapon;Ram"
+    "armor_class": "Siege Weapon;Ram",
+    "id": "90d58a07-c85a-4a2f-bbc4-cc7a72576a52"
   },
   {
     "name": "Siege Tower",
-    "id": "194",
     "description": "Anti-building siege weapon. Resistant to most ranged attacks. Garrisoned infantry increase speed and attack.",
     "expansion": "Age of Kings",
     "age": "Castle",
@@ -5335,11 +5334,11 @@
     "blast_radius": 0,
     "image": "siege-tower",
     "type": "Military",
-    "armor_class": "Siege Weapon;Ram"
+    "armor_class": "Siege Weapon;Ram",
+    "id": "2f3eb1f4-2210-40f1-9695-66b07cdb983e"
   },
   {
     "name": "Skirmisher",
-    "id": "195",
     "description": "Ranged anti-archer unit that cannot attack at close range. Strong vs. archers. Weak vs. units at close range.",
     "expansion": "Age of Kings",
     "age": "Feudal",
@@ -5363,11 +5362,11 @@
     "blast_radius": 0,
     "image": "skirmisher",
     "type": "Military",
-    "armor_class": "Archer"
+    "armor_class": "Archer",
+    "id": "774950ad-057d-437f-bf78-9e26e0082cab"
   },
   {
     "name": "Slinger",
-    "id": "196",
     "description": "Ranged unit. Strong vs. units at long range. Weak vs. Elite Skirmishers, Mangonels, and units at close range.",
     "expansion": "Age of Empires II HD: The Forgotten",
     "age": "Castle",
@@ -5390,11 +5389,11 @@
     "blast_radius": 0,
     "image": "slinger",
     "type": "Military",
-    "armor_class": "Archer;Unique Unit"
+    "armor_class": "Archer;Unique Unit",
+    "id": "61d52884-0ca5-442a-a8c2-553778426535"
   },
   {
     "name": "Spearman",
-    "id": "197",
     "description": "Anti-cavalry infantry unit. Strong vs. mounted units, especially elephants. Weak vs. archers and infantry.",
     "expansion": "Age of Kings",
     "age": "Feudal",
@@ -5418,11 +5417,11 @@
     "blast_radius": 0,
     "image": "spearman",
     "type": "Military",
-    "armor_class": "Infantry;Spearman"
+    "armor_class": "Infantry;Spearman",
+    "id": "3310096f-28c4-416e-9441-ca03d546f515"
   },
   {
     "name": "Steppe Lancer",
-    "id": "198",
     "description": "Light cavalry unit with increased attack range. Strong in groups. Weak vs. Camel Riders and archers.",
     "expansion": "Definitive Edition",
     "age": "Castle",
@@ -5445,11 +5444,11 @@
     "blast_radius": 0,
     "image": "steppe-lancer",
     "type": "Military",
-    "armor_class": "Cavalry"
+    "armor_class": "Cavalry",
+    "id": "56fccdf2-bf91-4dd2-9aec-68ccdf534aa5"
   },
   {
     "name": "Tarkan",
-    "id": "199",
     "description": "Hunnic unique cavalry unit with attack bonus vs. buildings. Strong vs. buildings and archers. Weak vs. Pikemen and Camel Riders.",
     "expansion": "The Conquerors",
     "age": "Castle",
@@ -5473,11 +5472,11 @@
     "blast_radius": 0,
     "image": "tarkan",
     "type": "Military",
-    "armor_class": "Cavalry;Unique Unit"
+    "armor_class": "Cavalry;Unique Unit",
+    "id": "0b20cbaf-bc6d-46e5-ac6a-c657349c1132"
   },
   {
     "name": "Teutonic Knight",
-    "id": "200",
     "description": "Teutonic unique infantry unit. Slow and powerful. Strong vs. melee units. Weak vs. archers and Scorpions.",
     "expansion": "Age of Kings",
     "age": "Castle",
@@ -5501,11 +5500,11 @@
     "blast_radius": 0,
     "image": "teutonic-knight",
     "type": "Military",
-    "armor_class": "Infantry;Unique Unit"
+    "armor_class": "Infantry;Unique Unit",
+    "id": "7cbe0cf1-580d-40ce-965f-85388dd788b6"
   },
   {
     "name": "Thirisadai",
-    "id": "201",
     "description": "Massive warship that fires five arrows at once, and is only available in the Imperial Age",
     "expansion": "Dynasties of India",
     "age": "Imperial",
@@ -5529,11 +5528,11 @@
     "blast_radius": 0,
     "image": "thirisadai",
     "type": "Navy",
-    "armor_class": "Ship;Turtle Ship;Unique Unit"
+    "armor_class": "Ship;Turtle Ship;Unique Unit",
+    "id": "05b87cbc-7c97-478f-95e8-f9741e0ed9c0"
   },
   {
     "name": "Throwing Axeman",
-    "id": "202",
     "description": "Frankish unique infantry unit with ranged melee attack. Strong vs. infantry. Weak vs. archers and siege weapons.",
     "expansion": "Age of Kings",
     "age": "Castle",
@@ -5557,11 +5556,11 @@
     "blast_radius": 0,
     "image": "throwing-axeman",
     "type": "Military",
-    "armor_class": "Infantry;Unique Unit"
+    "armor_class": "Infantry;Unique Unit",
+    "id": "6c8f0f6d-6157-4722-9ed0-f4d4e885853d"
   },
   {
     "name": "Tiger",
-    "id": "203",
     "description": "Hostile Gaia unit. Provides no food.",
     "expansion": "Age of Kings",
     "age": "N/A",
@@ -5583,11 +5582,11 @@
     "blast_radius": 0,
     "image": "tiger",
     "type": "Gaia",
-    "armor_class": "None"
+    "armor_class": "None",
+    "id": "deb123b5-facb-4c20-a653-9f29dd6910eb"
   },
   {
     "name": "Trade Cart",
-    "id": "204",
     "description": "Used to trade with other players by land. Carries goods from your Market to another player's Market and brings back gold. The farther the Market the higher your profit",
     "expansion": "Age of Kings",
     "age": "Feudal",
@@ -5610,11 +5609,11 @@
     "blast_radius": 0,
     "image": "trade-cart",
     "type": "Civilian",
-    "armor_class": "None"
+    "armor_class": "None",
+    "id": "78717063-e5b4-4d94-96dd-85d4fc89442d"
   },
   {
     "name": "Trade Cog",
-    "id": "205",
     "description": "Movement rate 2.00 with caravan",
     "expansion": "Age of Kings",
     "age": "Feudal",
@@ -5637,11 +5636,11 @@
     "blast_radius": 0,
     "image": "trade-cog",
     "type": "Civilian",
-    "armor_class": "None"
+    "armor_class": "None",
+    "id": "65cf9acc-832b-44cc-a297-19d8f424c139"
   },
   {
     "name": "Transport Ship",
-    "id": "206",
     "description": "Used to move units across water. Select the units you want to transport, then right-click on the Transport Ship to board them. Use the Unload button to unload units on the shore.",
     "expansion": "Age of Kings",
     "age": "Feudal",
@@ -5664,11 +5663,11 @@
     "blast_radius": 0,
     "image": "transport-ship",
     "type": "Navy",
-    "armor_class": "Ship"
+    "armor_class": "Ship",
+    "id": "f08407e8-5065-4ff0-be91-4520fbe9a158"
   },
   {
     "name": "Trebuchet",
-    "id": "207",
     "description": "Powerful siege weapon used to destroy buildings and walls from long distance. Cannot fire on close units. Must be packed to move and unpacked to attack. Can cut paths through forests. Unpack time: 0:11",
     "expansion": "Age of Kings",
     "age": "Imperial",
@@ -5692,11 +5691,11 @@
     "blast_radius": 0,
     "image": "trebuchet",
     "type": "Military",
-    "armor_class": "Siege Weapon;Ram"
+    "armor_class": "Siege Weapon;Ram",
+    "id": "60543e3e-9678-42b5-a565-1816597a983d"
   },
   {
     "name": "Trebuchet (packed)",
-    "id": "208",
     "description": "Powerful siege weapon used to destroy buildings and walls from long distance. Cannot fire on close units. Must be packed to move and unpacked to attack. Can cut paths through forests. Unpack time: 0:11",
     "expansion": "Age of Kings",
     "age": "Imperial",
@@ -5720,11 +5719,11 @@
     "blast_radius": 0,
     "image": "trebuchet-packed",
     "type": "Military",
-    "armor_class": "Siege Weapon"
+    "armor_class": "Siege Weapon",
+    "id": "7ccc40aa-4562-40b8-9232-ae01abde0615"
   },
   {
     "name": "Turkey",
-    "id": "209",
     "description": "Alternative to sheep. Provides 100 food.",
     "expansion": "The Conquerors",
     "age": "Dark",
@@ -5746,11 +5745,11 @@
     "blast_radius": 0,
     "image": "turkey",
     "type": "Gaia",
-    "armor_class": "None"
+    "armor_class": "None",
+    "id": "7e5cc1f0-e550-43e3-96bd-d50cbda17e43"
   },
   {
     "name": "Turtle Ship",
-    "id": "210",
     "description": "Korean unique ship. Slow and ironclad. Strong vs. warships and buildings.",
     "expansion": "The Conquerors",
     "age": "Castle",
@@ -5774,11 +5773,11 @@
     "blast_radius": 0.5,
     "image": "turtle-ship",
     "type": "Military",
-    "armor_class": "Ship;Turtle Ship;Gunpowder Unit;Unique Unit"
+    "armor_class": "Ship;Turtle Ship;Gunpowder Unit;Unique Unit",
+    "id": "d8f2ef55-d9f7-4de1-b9de-2fce236ac167"
   },
   {
     "name": "Two Handed Swordsman",
-    "id": "211",
     "description": "All-purpose infantry unit. Strong vs. buildings and infantry. Weak vs. archers at long range.",
     "expansion": "Age of Kings",
     "age": "Imperial",
@@ -5802,11 +5801,11 @@
     "blast_radius": 0,
     "image": "two-handed-swordsman",
     "type": "Military",
-    "armor_class": "Infantry"
+    "armor_class": "Infantry",
+    "id": "35be2bc1-b01f-4fe0-aeb8-ffcb69292bdc"
   },
   {
     "name": "Urumi Swordsman",
-    "id": "212",
     "description": "An infantry unit that charges its attack over a period of time, dealing increased damage on its first attack against an enemy unit, the charged attacks also do trample damage, but not regular attacks.",
     "expansion": "Dynasties of India",
     "age": "Castle",
@@ -5830,11 +5829,11 @@
     "blast_radius": 0,
     "image": "urumi-swordsman",
     "type": "Military",
-    "armor_class": "Infantry;Unique Unit"
+    "armor_class": "Infantry;Unique Unit",
+    "id": "e8fa9842-1039-4c52-a273-ec28417dce99"
   },
   {
     "name": "Villager",
-    "id": "213",
     "description": "Gathers resources. Builds and repairs buildings. Also repairs ships and siege weapons.",
     "expansion": "Age of Kings",
     "age": "Dark",
@@ -5857,11 +5856,11 @@
     "blast_radius": 0,
     "image": "villager",
     "type": "Civilian",
-    "armor_class": "None"
+    "armor_class": "None",
+    "id": "9ee3d4b5-319d-4ee1-aee4-23a3c67c5045"
   },
   {
     "name": "VMDL",
-    "id": "214",
     "description": "Cheat unit.",
     "expansion": "Age of Kings",
     "age": "Dark",
@@ -5883,11 +5882,11 @@
     "blast_radius": 0,
     "image": "vmdl",
     "type": "Cheat",
-    "armor_class": "None"
+    "armor_class": "None",
+    "id": "de5a2237-935f-4c1d-a59c-18dd8cd5d02c"
   },
   {
     "name": "War Elephant",
-    "id": "215",
     "description": "Persian unique unit. Slow and powerful cavalry. Strong vs. buildings and units at close range. Weak vs. Monks.",
     "expansion": "Age of Kings",
     "age": "Castle",
@@ -5911,11 +5910,11 @@
     "blast_radius": 0.5,
     "image": "war-elephant",
     "type": "Military",
-    "armor_class": "Cavalry;War Elephant;Unique Unit"
+    "armor_class": "Cavalry;War Elephant;Unique Unit",
+    "id": "d6eb24e8-7c27-4136-b746-0a6ceba1f9a4"
   },
   {
     "name": "War Galley",
-    "id": "216",
     "description": "All-purpose warship with ranged attack. Weak vs. Fire Ships.",
     "expansion": "Age of Kings",
     "age": "Castle",
@@ -5939,11 +5938,11 @@
     "blast_radius": 0,
     "image": "war-galley",
     "type": "Navy",
-    "armor_class": "Ship"
+    "armor_class": "Ship",
+    "id": "152c01e1-b4b8-47b0-9c44-f6b28dfb9f87"
   },
   {
     "name": "War Wagon",
-    "id": "217",
     "description": "Korean unique cavalry archer unit. Strong vs. infantry and archers. Weak vs. Pikemen, Skirmishers, and Camel Riders.",
     "expansion": "The Conquerors",
     "age": "Castle",
@@ -5967,11 +5966,11 @@
     "blast_radius": 0,
     "image": "war-wagon",
     "type": "Military",
-    "armor_class": "Archer;Cavalry Archer;Cavalry;Unique Unit"
+    "armor_class": "Archer;Cavalry Archer;Cavalry;Unique Unit",
+    "id": "2883909d-b250-423d-b0db-5c1e2e6acec9"
   },
   {
     "name": "Wild Boar",
-    "id": "218",
     "description": "Wild boar. Provides 340 food.",
     "expansion": "Age of Kings",
     "age": "Dark",
@@ -5993,11 +5992,11 @@
     "blast_radius": 0,
     "image": "wild-boar",
     "type": "Gaia",
-    "armor_class": "None"
+    "armor_class": "None",
+    "id": "6f5c8924-59e3-4d40-83b9-e3939ab033c7"
   },
   {
     "name": "Woad Raider",
-    "id": "219",
     "description": "Celtic unique infantry unit. Fast-moving. Strong vs. infantry and siege weapons. Weak vs. archers and cavalry.",
     "expansion": "Age of Kings",
     "age": "Castle",
@@ -6021,11 +6020,11 @@
     "blast_radius": 0,
     "image": "woad-raider",
     "type": "Military",
-    "armor_class": "Infantry;Unique Unit"
+    "armor_class": "Infantry;Unique Unit",
+    "id": "afce8b78-c382-452a-a3fa-9b4bfb01e50d"
   },
   {
     "name": "Wolf",
-    "id": "220",
     "description": "Wild wolf. Gives no food just kills people. Line of sight also depends on difficulty (4-12 LOS)",
     "expansion": "Age of Kings",
     "age": "Dark",
@@ -6047,11 +6046,11 @@
     "blast_radius": 0,
     "image": "wolf",
     "type": "Gaia",
-    "armor_class": "None"
+    "armor_class": "None",
+    "id": "728f954d-687a-4caf-8c53-e4dcf9cd848f"
   },
   {
     "name": "Xolotl Warrior",
-    "id": "221",
     "description": "Mesoamerican cavalry unit. Strong vs. infantry and siege. Weak vs. Pikemen and Camel Riders.",
     "expansion": "Definitive Edition",
     "age": "Castle",
@@ -6074,11 +6073,11 @@
     "blast_radius": 0,
     "image": "xolotl-warrior",
     "type": "Military",
-    "armor_class": "Cavalry"
+    "armor_class": "Cavalry",
+    "id": "a1c0e4af-aadb-4168-b285-6eb22b231e03"
   },
   {
     "name": "Zebra",
-    "id": "222",
     "description": "Gaia unit. Provides 140 food.",
     "expansion": "Age of Kings",
     "age": "N/A",
@@ -6100,6 +6099,7 @@
     "blast_radius": 0,
     "image": "zebra",
     "type": "Gaia",
-    "armor_class": "None"
+    "armor_class": "None",
+    "id": "420ded30-7305-4a46-9dd9-95bdf01f4f59"
   }
 ]

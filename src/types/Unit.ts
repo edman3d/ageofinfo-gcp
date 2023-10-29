@@ -1,6 +1,6 @@
 export type Unit = {
   name: string;
-  id: number;
+  id: string;
   description: string;
   expansion: string;
   age: "N/A" | "Dark" | "Feudal" | "Castle" | "Imperial";

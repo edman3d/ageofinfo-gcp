@@ -1,6 +1,6 @@
+const { v4: uuidv4 } = require("uuid");
 const fs = require("fs");
 const csv = require("csvtojson/v2");
-
 const csvReadPath = "src/data/rawData";
 const jsonWritePath = "src/data";
 
@@ -44,6 +44,7 @@ async function parseAndWriteUnitData() {
     .subscribe((jsonObj: any, index: number) => {
       return new Promise((resolve, reject) => {
         // TODO: here we can force valid data
+        jsonObj.id = uuidv4();
         if (jsonObj.cost.length === 0) {
           jsonObj.cost = undefined;
         }
