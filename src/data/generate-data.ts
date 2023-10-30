@@ -21,21 +21,53 @@ const civsCsvFilePath = `${csvReadPath}/aoe2_de_v3_civs.csv`;
  * but csvtojson doesn't work with spaces so we must rename the files
  */
 async function renameFiles() {
-  fs.rename(unitCsvDefaultName, unitCsvFilePath, function (err: any) {
-    if (err) console.log(err);
-  });
+  try {
+    if (fs.existsSync(unitCsvDefaultName)) {
+      fs.rename(unitCsvDefaultName, unitCsvFilePath, function (err: any) {
+        if (err) console.log(err);
+      });
+    } else {
+      console.log(`[NOTICE] Not renaming ${unitCsvDefaultName} (doesnt exist)`);
+    }
+  } catch (err) {
+    console.error(err);
+  }
 
-  fs.rename(techsCsvDefaultName, techsCsvFilePath, function (err: any) {
-    if (err) console.log(err);
-  });
+  try {
+    if (fs.existsSync(techsCsvDefaultName)) {
+      fs.rename(techsCsvDefaultName, techsCsvFilePath, function (err: any) {
+        if (err) console.log(err);
+      });
+    } else {
+      console.log(`[NOTICE] Not renaming ${techsCsvDefaultName} (doesnt exist)`);
+    }
+  } catch (err) {
+    console.error(err);
+  }
 
-  fs.rename(buildingsCsvDefaultName, buildingsCsvFilePath, function (err: any) {
-    if (err) console.log(err);
-  });
+  try {
+    if (fs.existsSync(buildingsCsvDefaultName)) {
+      fs.rename(buildingsCsvDefaultName, buildingsCsvFilePath, function (err: any) {
+        if (err) console.log(err);
+      });
+    } else {
+      console.log(`[NOTICE] Not renaming ${buildingsCsvDefaultName} (doesnt exist)`);
+    }
+  } catch (err) {
+    console.error(err);
+  }
 
-  fs.rename(civsCsvDefaultName, civsCsvFilePath, function (err: any) {
-    if (err) console.log(err);
-  });
+  try {
+    if (fs.existsSync(civsCsvDefaultName)) {
+      fs.rename(civsCsvDefaultName, civsCsvFilePath, function (err: any) {
+        if (err) console.log(err);
+      });
+    } else {
+      console.log(`[NOTICE] Not renaming ${civsCsvDefaultName} (doesnt exist)`);
+    }
+  } catch (err) {
+    console.error(err);
+  }
 }
 
 async function parseAndWriteUnitData() {
