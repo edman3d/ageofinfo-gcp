@@ -23,7 +23,7 @@
     "image": "alfred-the-alpaca",
     "type": "Cheat",
     "armor_class": "None",
-    "id": "00fe0d5c-0225-46d0-96a9-a79fa07eb097"
+    "id": "33db0422-ccb9-49d1-93af-361838b6be1a"
   },
   {
     "name": "Amazon Archer",
@@ -49,7 +49,7 @@
     "image": "amazon-archer",
     "type": "Unbuildable",
     "armor_class": "Archer",
-    "id": "76a84e3c-6d5f-4a91-8b9c-1cf68fc24ded"
+    "id": "3fdadd15-3360-4d86-9335-9e6e8fb6d560"
   },
   {
     "name": "Amazon Warrior",
@@ -75,7 +75,7 @@
     "image": "amazon-warrior",
     "type": "Unbuildable",
     "armor_class": "Infantry",
-    "id": "8b93adc8-d3b4-455c-a73b-40345cd3db78"
+    "id": "6961b86e-6b6b-4624-94e5-37422d2174e7"
   },
   {
     "name": "Arambai",
@@ -102,7 +102,7 @@
     "image": "arambai",
     "type": "Military",
     "armor_class": "Archer;Cavalry Archer;Cavalry;Unique Unit",
-    "id": "6c99d1df-9f7c-4375-9145-9b64fea5fd28"
+    "id": "507581f1-9451-4ac4-b33c-3530d0d7a67e"
   },
   {
     "name": "Arbalester",
@@ -130,7 +130,7 @@
     "image": "arbalester",
     "type": "Military",
     "armor_class": "Archer",
-    "id": "7a928af1-31c9-484b-a975-83585b452b19"
+    "id": "6eff8a04-a67f-4958-8fe9-d91f01b8f6ea"
   },
   {
     "name": "Archer",
@@ -157,7 +157,7 @@
     "image": "archer",
     "type": "Military",
     "armor_class": "Archer",
-    "id": "53e2100a-afef-45be-a7dd-e852789a47aa"
+    "id": "aff737cf-dd42-4e60-8fa6-d56020bed1c0"
   },
   {
     "name": "Armored Elephant",
@@ -185,7 +185,7 @@
     "image": "armored-elephant",
     "type": "Military",
     "armor_class": "Cavalry;War elephant;Siege Weapon;Ram",
-    "id": "dc3afe7f-7d4d-4a47-8eb8-6d816ba52d3e"
+    "id": "00f7d73c-be61-4ed8-8cb3-34015f740de9"
   },
   {
     "name": "Bactrian Camel",
@@ -211,7 +211,7 @@
     "image": "bactrian-camel",
     "type": "Unbuildable",
     "armor_class": "Cavalry",
-    "id": "bb23bae1-2e22-4be4-a4d0-4442b3c419e1"
+    "id": "484e448d-4c45-4087-b1c6-82b5f20c7178"
   },
   {
     "name": "Ballista Elephant",
@@ -238,7 +238,7 @@
     "image": "ballista-elephant",
     "type": "Military",
     "armor_class": "Cavalry;War Elephant;Siege Weapon;Unique Unit;Hussite Wagon",
-    "id": "264667fe-1265-455d-aa2d-3bbb30df2e7d"
+    "id": "e6d8d0cc-21f5-46e8-a6b7-8037fe47dd7c"
   },
   {
     "name": "Battering Ram",
@@ -267,7 +267,7 @@
     "image": "battering-ram",
     "type": "Military",
     "armor_class": "Siege Weapon;Ram",
-    "id": "44ed7c38-184e-44d7-82fc-ddae50a39c2f"
+    "id": "1a5d2689-13fb-4c1f-871e-99f59e9488f6"
   },
   {
     "name": "Battle Elephant",
@@ -294,7 +294,7 @@
     "image": "battle-elephant",
     "type": "Military",
     "armor_class": "Cavalry;War Elephant",
-    "id": "88c8a7ad-0aca-48f5-9b15-af07b17bca19"
+    "id": "78b36b66-bb80-4efd-8093-5c4e3d34b081"
   },
   {
     "name": "Berserk",
@@ -322,7 +322,7 @@
     "image": "berserk",
     "type": "Military",
     "armor_class": "Infantry;Unique Unit",
-    "id": "089c653f-ab47-445a-b1fc-e8e5a3b83bde"
+    "id": "b28a4d20-94db-4ae2-9545-f5db88756a49"
   },
   {
     "name": "Bombard Cannon",
@@ -350,7 +350,7 @@
     "image": "bombard-cannon",
     "type": "Military",
     "armor_class": "Siege Weapon;Gunpowder Unit",
-    "id": "333fac5d-56ad-4f31-847d-494b6f71602d"
+    "id": "3bd10e62-2319-4518-b049-57aeb2631760"
   },
   {
     "name": "Boyar",
@@ -377,7 +377,7 @@
     "image": "boyar",
     "type": "Military",
     "armor_class": "Cavalry;Unique Unit",
-    "id": "0ab4c423-f594-4027-bd41-6227936549ef"
+    "id": "b83e3827-5771-4a73-980a-dcfd6cee49f1"
   },
   {
     "name": "Camel",
@@ -403,7 +403,7 @@
     "image": "camel",
     "type": "Gaia",
     "armor_class": "None",
-    "id": "f0dfa703-feee-48d2-9300-7ecdd1cd9a13"
+    "id": "738fdcdb-ba2a-4796-aa7a-b99eaedb261e"
   },
   {
     "name": "Camel Archer",
@@ -431,7 +431,7 @@
     "image": "camel-archer",
     "type": "Military",
     "armor_class": "Archer;Cavalry Archer;Camel;Unique Unit",
-    "id": "74b6e203-467e-40ae-8e33-40867b3e1367"
+    "id": "c2fe02de-9dad-4249-90f2-07862f7d4f64"
   },
   {
     "name": "Camel Rider",
@@ -459,7 +459,7 @@
     "image": "camel-rider",
     "type": "Military",
     "armor_class": "Camel",
-    "id": "f7c5d326-1fe5-492e-a01a-8c47caa31850"
+    "id": "340127c0-40fc-4bbe-b61b-fdbe4451e52a"
   },
   {
     "name": "Cannon Galleon",
@@ -476,18 +476,18 @@
     "hit_points": 120,
     "min_range": 3,
     "max_range": 13,
-    "attack": 35,
+    "attack": 50,
     "melee_armor": 0,
     "ranged_armor": 6,
-    "attack_bonus": "[{\"amount\": 200, \"against\": \"Buildings\"}, {\"amount\": 15, \"against\": \"Infantry\"}, {\"amount\": 15, \"against\": \"Archers\"}, {\"amount\": 15, \"against\": \"Cavalry\"}, {\"amount\": 40, \"against\": \"Siege\"}]",
+    "attack_bonus": "[{\"amount\": 200, \"against\": \"Buildings\"}, {\"amount\": 25, \"against\": \"Siege\"}]",
     "special": "",
     "search_radius": 15,
-    "accuracy": 50,
-    "blast_radius": 0,
+    "accuracy": 100,
+    "blast_radius": 0.25,
     "image": "cannon-galleon",
     "type": "Navy",
     "armor_class": "Ship;Gunpowder Unit",
-    "id": "7d00068d-5a55-41ff-b7f5-e0805becad3d"
+    "id": "90454bc2-2531-4c77-b4e8-4f710f2dc623"
   },
   {
     "name": "Canoe",
@@ -513,7 +513,7 @@
     "image": "canoe",
     "type": "Unbuildable",
     "armor_class": "None",
-    "id": "d6ea1a43-a633-4f5e-8f4f-ee6462fa9566"
+    "id": "bf3a7cef-f7a4-4f5e-aa6e-9772ad8ff5c8"
   },
   {
     "name": "Capped Ram",
@@ -542,7 +542,7 @@
     "image": "capped-ram",
     "type": "Military",
     "armor_class": "Siege Weapon;Ram",
-    "id": "ad51da85-8da6-44ac-87f1-ac2d60df0419"
+    "id": "859664f5-f829-4dbc-a6f2-b7fd30e6233b"
   },
   {
     "name": "Caravel",
@@ -569,7 +569,7 @@
     "image": "caravel",
     "type": "Navy",
     "armor_class": "Ship;Unique Unit",
-    "id": "d66b8498-db3d-447c-9e94-62464b3d9a66"
+    "id": "ba536c4d-e5ba-442c-806e-838137a60da2"
   },
   {
     "name": "Cataphract",
@@ -598,7 +598,7 @@
     "image": "cataphract",
     "type": "Military",
     "armor_class": "Cavalry;Unique Unit",
-    "id": "71ab5a06-f942-434f-8e04-c837c5a84934"
+    "id": "b63bc14f-b473-41fc-984e-40936be0a068"
   },
   {
     "name": "Cavalier",
@@ -625,7 +625,7 @@
     "image": "cavalier",
     "type": "Military",
     "armor_class": "Cavalry",
-    "id": "6abffcd5-795b-4f19-9037-0664a6ae5b0b"
+    "id": "e74ec141-25e3-48b3-acc3-8faa3d01161a"
   },
   {
     "name": "Cavalry Archer",
@@ -653,7 +653,7 @@
     "image": "cavalry-archer",
     "type": "Military",
     "armor_class": "Archer;Cavalry Archer;Cavalry",
-    "id": "4c532c41-dba4-4c77-b2e9-4d772aa6c48e"
+    "id": "a5313dc9-2a72-4368-b06d-d193be0aed22"
   },
   {
     "name": "Centurion",
@@ -680,7 +680,7 @@
     "image": "centurion",
     "type": "Military",
     "armor_class": "Cavalry;Unique Unit",
-    "id": "1e2b4051-1b46-4ed8-bf87-a2c6c08075b5"
+    "id": "fc9424e1-4ec1-4ad5-acd7-72b2e26fd010"
   },
   {
     "name": "Chakram Thrower",
@@ -708,7 +708,7 @@
     "image": "chakram-thrower",
     "type": "Military",
     "armor_class": "Infantry;Unique Unit",
-    "id": "7d58a7bc-c4ae-4752-b4c3-9ed61ba32102"
+    "id": "9638633b-7c9b-4797-add0-888d22c6a7f1"
   },
   {
     "name": "Champion",
@@ -736,7 +736,7 @@
     "image": "champion",
     "type": "Military",
     "armor_class": "Infantry",
-    "id": "8b4b76f7-1297-4efa-97e3-7f8b098b2337"
+    "id": "357d9be4-4469-44ce-84d5-378c23517633"
   },
   {
     "name": "Chu Ko Nu",
@@ -764,7 +764,7 @@
     "image": "chukonu",
     "type": "Military",
     "armor_class": "Archer",
-    "id": "94eadc07-0673-4e22-ba76-048e8570fbce"
+    "id": "73bc2f60-0b03-404c-9384-45b8bfff990f"
   },
   {
     "name": "Cobra Car",
@@ -790,7 +790,7 @@
     "image": "cobra-car",
     "type": "Cheat",
     "armor_class": "Siege Weapon",
-    "id": "44f3341c-8bbf-4129-bb3a-47eb83db4e4b"
+    "id": "7dfe8ffd-20b2-40bb-97f1-950c7a5b57de"
   },
   {
     "name": "Condottiero",
@@ -817,7 +817,7 @@
     "image": "condottiero",
     "type": "Military",
     "armor_class": "Infantry;Unique Unit;Condottiero",
-    "id": "e4223472-5d11-42a7-9a24-b7d7598d651f"
+    "id": "5cf49444-d164-4976-acf6-d30adba5fc8a"
   },
   {
     "name": "Conquistador",
@@ -845,7 +845,7 @@
     "image": "conquistador",
     "type": "Military",
     "armor_class": "Archer;Cavalry Archer;Cavalry;Gunpowder Unit;Unique Unit",
-    "id": "a235cfc2-7670-4d67-bbfa-10ce3cfa3fac"
+    "id": "1b3eca61-c63e-433b-8d93-b22d4c8b9d64"
   },
   {
     "name": "Coustillier",
@@ -872,7 +872,7 @@
     "image": "coustillier",
     "type": "Military",
     "armor_class": "Cavalry;Unique Unit",
-    "id": "10795753-2b0d-4113-b1ac-9e2ec8cd6cc4"
+    "id": "41cf7d18-4067-4f1c-bace-5d9b11ec0365"
   },
   {
     "name": "Cow",
@@ -898,7 +898,7 @@
     "image": "cow",
     "type": "Gaia",
     "armor_class": "None",
-    "id": "7e7cfe4e-d4c0-4722-8743-ae7a47763210"
+    "id": "ac923615-0127-4a50-9197-bb08cffe4b3e"
   },
   {
     "name": "Crocodile",
@@ -924,7 +924,7 @@
     "image": "crocodile",
     "type": "Gaia",
     "armor_class": "None",
-    "id": "9659410e-7ebb-42a2-8909-918503270156"
+    "id": "ee6d5964-29dc-4070-ad98-923e69c8dfbb"
   },
   {
     "name": "Crossbowman",
@@ -952,7 +952,7 @@
     "image": "crossbowman",
     "type": "Military",
     "armor_class": "Archer",
-    "id": "3932abef-a36f-4701-97e8-e705817a7d69"
+    "id": "0af1608c-a6ca-46d5-89a5-f12b09a3eac3"
   },
   {
     "name": "Crusader Knight",
@@ -979,7 +979,7 @@
     "image": "crusader-knight",
     "type": "Unbuildable",
     "armor_class": "Cavalry",
-    "id": "00dcfd01-6824-4b6b-bfb6-893000049a68"
+    "id": "d471add8-ac85-4ab7-82e1-0023941066ce"
   },
   {
     "name": "Deer",
@@ -1005,7 +1005,7 @@
     "image": "deer",
     "type": "Gaia",
     "armor_class": "None",
-    "id": "1f8f1b59-f491-4e98-a57a-dcb394919b4f"
+    "id": "9b73d976-102c-47a5-ba0a-994a41ae238f"
   },
   {
     "name": "Demolition Raft",
@@ -1032,7 +1032,7 @@
     "image": "demolition-raft",
     "type": "Navy",
     "armor_class": "Ship",
-    "id": "0e48550b-fbb7-4837-a495-39d9addb055b"
+    "id": "682d9b72-7134-44c8-ac58-059f50e68629"
   },
   {
     "name": "Demolition Ship",
@@ -1061,7 +1061,7 @@
     "image": "demolition-ship",
     "type": "Navy",
     "armor_class": "Ship",
-    "id": "09497217-2b39-42b7-8dd2-83dff6e309ec"
+    "id": "0fd7ff3e-3370-4c39-a211-173ccc28dd32"
   },
   {
     "name": "Donkey",
@@ -1087,7 +1087,7 @@
     "image": "donkey",
     "type": "Gaia",
     "armor_class": "None",
-    "id": "7e196a7e-db41-45a8-a7a7-22479ccee9b4"
+    "id": "d9e2ff03-f71b-4669-bdee-1ccffc40a5f2"
   },
   {
     "name": "Dragon Ship",
@@ -1113,7 +1113,7 @@
     "image": "dragon-ship",
     "type": "Unbuildable",
     "armor_class": "Ship",
-    "id": "56e5a6e3-fc65-4ab6-81f5-8de3e845006c"
+    "id": "8546d928-24db-4269-a31f-5b41577fc9c3"
   },
   {
     "name": "Dromon",
@@ -1141,7 +1141,7 @@
     "image": "dromon",
     "type": "Navy",
     "armor_class": "Ship",
-    "id": "f313aad8-b978-4771-bd07-1c4c8657c569"
+    "id": "910415fe-f731-42c7-abb2-ed663660f880"
   },
   {
     "name": "Eagle Scout",
@@ -1168,7 +1168,7 @@
     "image": "eagle-scout",
     "type": "Military",
     "armor_class": "Infantry;Eagle Warrior",
-    "id": "59b6f544-5f0c-4132-b589-e1ae445bf768"
+    "id": "70b1f419-3703-4166-b166-8c283597d2e8"
   },
   {
     "name": "Eagle Warrior",
@@ -1196,7 +1196,7 @@
     "image": "eagle-warrior",
     "type": "Military",
     "armor_class": "Infantry;Eagle Warrior",
-    "id": "5f5a4141-6cca-445d-9bc5-0fba56dfb9eb"
+    "id": "bc7f6cf6-551c-411c-a002-a6ce1fc839c2"
   },
   {
     "name": "Eastern Swordsman",
@@ -1222,7 +1222,7 @@
     "image": "eastern-swordsman",
     "type": "Unbuildable",
     "armor_class": "Infantry",
-    "id": "519f4b82-35f7-4197-8123-ef6e1e6cf503"
+    "id": "b01878b9-2b82-48b5-9799-4fc9d8e7dba3"
   },
   {
     "name": "Elephant",
@@ -1248,7 +1248,7 @@
     "image": "elephant",
     "type": "Gaia",
     "armor_class": "None",
-    "id": "ceb5cebf-b2c2-4e65-b09a-991febfd1a0f"
+    "id": "f34aaa85-c2b3-4cf4-8bd7-c7497db14f5c"
   },
   {
     "name": "Elephant Archer",
@@ -1275,7 +1275,7 @@
     "image": "elephant-archer",
     "type": "Military",
     "armor_class": "Cavalry Archer;Archer;Cavalry;War Elephant",
-    "id": "464800f7-5afe-40c0-9fee-46a79357053b"
+    "id": "5504fb62-8a16-4052-aa49-6c0a1d4213da"
   },
   {
     "name": "Elite Arambai",
@@ -1302,7 +1302,7 @@
     "image": "arambai",
     "type": "Military",
     "armor_class": "Archer;Cavalry Archer;Cavalry;Unique Unit",
-    "id": "b902f444-b14e-4ebd-933f-5ca441affb68"
+    "id": "090f128e-3abb-4f74-9957-c7e40ab20fe3"
   },
   {
     "name": "Elite Ballista Elephant",
@@ -1329,7 +1329,7 @@
     "image": "ballista-elephant",
     "type": "Military",
     "armor_class": "Cavalry;War Elephant;Siege Weapon;Unique Unit;Hussite Wagon",
-    "id": "10d84c99-1e40-4ef9-af86-55d4aee23b6d"
+    "id": "385c33b2-5b6b-4523-b0b0-2853a6fafc86"
   },
   {
     "name": "Elite Battle Elephant",
@@ -1356,7 +1356,7 @@
     "image": "elite-battle-elephant",
     "type": "Military",
     "armor_class": "Cavalry;War Elephant",
-    "id": "41be9094-ba6f-4411-824b-33f4092914e0"
+    "id": "3f8b37aa-310a-46cf-b51b-ba6771800857"
   },
   {
     "name": "Elite Berserk",
@@ -1384,7 +1384,7 @@
     "image": "berserk",
     "type": "Military",
     "armor_class": "Infantry;Unique Unit",
-    "id": "4873d04b-32c0-4501-b355-84aed7a4dbd6"
+    "id": "724f56f3-a7ba-4e4a-920c-fc92180d4fad"
   },
   {
     "name": "Elite Boyar",
@@ -1411,7 +1411,7 @@
     "image": "boyar",
     "type": "Military",
     "armor_class": "Cavalry;Unique Unit",
-    "id": "9baae993-8381-4c44-b793-68659a4ad613"
+    "id": "225800d8-cf12-4d5b-bc26-556d17676728"
   },
   {
     "name": "Elite Camel Archer",
@@ -1439,7 +1439,7 @@
     "image": "camel-archer",
     "type": "Military",
     "armor_class": "Archer;Cavalry Archer;Camel;Unique Unit",
-    "id": "7ab7f15d-481b-4045-84a9-d2e0c09e49d4"
+    "id": "30fa089f-42c9-41a2-9abc-6e82e90e19a1"
   },
   {
     "name": "Elite Cannon Galleon",
@@ -1456,18 +1456,18 @@
     "hit_points": 150,
     "min_range": 3,
     "max_range": 15,
-    "attack": 45,
+    "attack": 60,
     "melee_armor": 0,
     "ranged_armor": 8,
-    "attack_bonus": "[{\"amount\": 275, \"against\": \"Buildings\"}, {\"amount\": 15, \"against\": \"Infantry\"}, {\"amount\": 15, \"against\": \"Archers\"}, {\"amount\": 15, \"against\": \"Cavalry\"}, {\"amount\": 40, \"against\": \"Siege\"}]",
+    "attack_bonus": "[{\"amount\": 200, \"against\": \"Buildings\"}, {\"amount\": 25, \"against\": \"Siege\"}]",
     "special": "",
     "search_radius": 17,
-    "accuracy": 50,
-    "blast_radius": 0,
+    "accuracy": 100,
+    "blast_radius": 0.3,
     "image": "cannon-galleon",
     "type": "Military",
     "armor_class": "Ship;Gunpowder Unit",
-    "id": "65474fd7-9b45-447e-8ee8-0f84454937ce"
+    "id": "330f8571-df7f-4e17-9002-62f1c5c8b3ab"
   },
   {
     "name": "Elite Caravel",
@@ -1494,7 +1494,7 @@
     "image": "caravel",
     "type": "Navy",
     "armor_class": "Ship;Unique Unit",
-    "id": "f64b6ad1-bc8c-466d-9a48-adce82af0a07"
+    "id": "db97ef5b-9876-4f45-9233-5f16b2b407e4"
   },
   {
     "name": "Elite Cataphract",
@@ -1523,7 +1523,7 @@
     "image": "cataphract",
     "type": "Military",
     "armor_class": "Cavalry;Unique Unit",
-    "id": "f1c245fd-71bf-4544-a9fb-d324264e52cd"
+    "id": "03b60056-1736-4757-89ee-e6f1022e3b9a"
   },
   {
     "name": "Elite Centurion",
@@ -1550,7 +1550,7 @@
     "image": "centurion",
     "type": "Military",
     "armor_class": "Cavalry;Unique Unit",
-    "id": "7ad042ce-5c43-4974-a0e3-bf80006cccdd"
+    "id": "c62c68a4-1512-42c2-bfcb-39eb741a8c52"
   },
   {
     "name": "Elite Chakram Thrower",
@@ -1578,7 +1578,7 @@
     "image": "chakram-thrower",
     "type": "Military",
     "armor_class": "Infantry;Unique Unit",
-    "id": "fe277574-2511-4753-9fed-6fa4288096ba"
+    "id": "9a0c4557-ac7e-481d-a9bd-06458ac021ec"
   },
   {
     "name": "Elite Chu Ko Nu",
@@ -1606,7 +1606,7 @@
     "image": "chukonu",
     "type": "Military",
     "armor_class": "Archer",
-    "id": "584594fa-0d1a-40c9-8c8f-a10ea715654c"
+    "id": "446834d9-3e84-4820-b90d-26613478723a"
   },
   {
     "name": "Elite Conquistador",
@@ -1634,7 +1634,7 @@
     "image": "conquistador",
     "type": "Military",
     "armor_class": "Archer;Cavalry Archer;Cavalry;Gunpowder Unit;Unique Unit",
-    "id": "e0d127ab-08ce-49b4-8df2-dbc30124165d"
+    "id": "755162df-ade5-4d6c-9908-7a499846b855"
   },
   {
     "name": "Elite Coustillier",
@@ -1661,7 +1661,7 @@
     "image": "coustillier",
     "type": "Military",
     "armor_class": "Cavalry;Unique Unit",
-    "id": "920ddfbc-ac67-4dc7-806f-7c69b4967c33"
+    "id": "36f96a5f-23ac-4948-815a-45e1279efb2d"
   },
   {
     "name": "Elite Eagle Warrior",
@@ -1689,7 +1689,7 @@
     "image": "eagle-warrior",
     "type": "Military",
     "armor_class": "Infantry;Eagle Warrior",
-    "id": "b541b6a4-b435-4800-b5b8-b1320e2e2b6b"
+    "id": "9740e302-8e0c-461f-83e7-4ef5b9592721"
   },
   {
     "name": "Elite Elephant Archer",
@@ -1716,7 +1716,7 @@
     "image": "elite-elephant-archer",
     "type": "Military",
     "armor_class": "Cavalry Archer;Archer;Cavalry;War Elephant",
-    "id": "d5b7fda8-b3a6-48a1-8d9d-218e9d2af1d6"
+    "id": "2bd58b4d-577b-44ea-8c9a-17abbadcbc01"
   },
   {
     "name": "Elite Gbeto",
@@ -1743,7 +1743,7 @@
     "image": "gbeto",
     "type": "Military",
     "armor_class": "Infantry;Unique Unit",
-    "id": "cc6c178a-9866-4e2c-a8a7-a29a77d90eb2"
+    "id": "9cfad2c9-a2a8-4d25-bd6b-befc372aaee8"
   },
   {
     "name": "Elite Genitour",
@@ -1771,7 +1771,7 @@
     "image": "genitour",
     "type": "Military",
     "armor_class": "Archer;Cavalry Archer;Cavalry;Unique Unit",
-    "id": "365692a8-4c94-47db-8ecb-0eb956977ab7"
+    "id": "5c18aaa0-3d91-46bf-b169-6a1db004e5f7"
   },
   {
     "name": "Elite Genoese Crossbowman",
@@ -1799,7 +1799,7 @@
     "image": "genoese-crossbowman",
     "type": "Military",
     "armor_class": "Archer;Unique Unit",
-    "id": "6523931a-e75f-4c34-bc25-036eb2d44975"
+    "id": "fb9a7f5f-d157-40c3-b20f-d4ffa31ea9a3"
   },
   {
     "name": "Elite Ghulam",
@@ -1827,7 +1827,7 @@
     "image": "ghulam",
     "type": "Military",
     "armor_class": "Infantry;Unique Unit",
-    "id": "372a6ae5-007b-4576-a94e-8b6571fe4278"
+    "id": "7daf7245-fb1e-4d47-af7f-46cdc4ddcd1f"
   },
   {
     "name": "Elite Huskarl",
@@ -1855,7 +1855,7 @@
     "image": "huskarl",
     "type": "Military",
     "armor_class": "Infantry;Unique Unit",
-    "id": "c038025a-c6bd-4d47-87e7-af9301b2151a"
+    "id": "01e6c4d3-104e-4b4a-b431-124b0c025ec7"
   },
   {
     "name": "Elite Hussite Wagon",
@@ -1883,7 +1883,7 @@
     "image": "hussite-wagon",
     "type": "Military",
     "armor_class": "Siege Weapon;Gunpowder Unit;Unique Unit;Hussite Wagon",
-    "id": "db4b14af-7977-4ce9-a9c9-f4efe7468c0d"
+    "id": "c4fa971b-d4d1-4105-a265-ed72469f8dea"
   },
   {
     "name": "Elite Jaguar Warrior",
@@ -1911,7 +1911,7 @@
     "image": "jaguar-warrior",
     "type": "Military",
     "armor_class": "Infantry;Unique Unit",
-    "id": "1aa90629-85d5-4afe-aede-07910872c846"
+    "id": "956a2543-3204-4cee-927a-897c860941a6"
   },
   {
     "name": "Elite Janissary",
@@ -1939,7 +1939,7 @@
     "image": "janissary",
     "type": "Military",
     "armor_class": "Archer;Gunpowder Unit;Unique Unit",
-    "id": "9a8338e9-9003-43fd-838f-2532d0fc4c98"
+    "id": "5f361372-32bb-4d2b-b9c1-a557f50985ef"
   },
   {
     "name": "Elite Kamayuk",
@@ -1966,7 +1966,7 @@
     "image": "kamayuk",
     "type": "Military",
     "armor_class": "Infantry;Unique Unit",
-    "id": "01a7b64d-3ae8-4b54-a40d-624fbb2977e2"
+    "id": "c2c3b9f5-cca0-4faa-86b2-b80639b4ac08"
   },
   {
     "name": "Elite Karambit Warrior",
@@ -1993,7 +1993,7 @@
     "image": "karambit-warrior",
     "type": "Military",
     "armor_class": "Infantry;Unique Unit",
-    "id": "6f67b26d-5cc5-4ec3-808a-3791cea7f43f"
+    "id": "9b49d18b-6161-4ba7-a3e0-4deeaca706a5"
   },
   {
     "name": "Elite Keshik",
@@ -2020,7 +2020,7 @@
     "image": "keshik",
     "type": "Military",
     "armor_class": "Cavalry;Unique Unit",
-    "id": "ac5df410-a384-4b93-841c-b820ed97375c"
+    "id": "7d4bd6b6-72a5-4440-ba22-31443a5d6eab"
   },
   {
     "name": "Elite Kipchak",
@@ -2047,7 +2047,7 @@
     "image": "kipchak",
     "type": "Military",
     "armor_class": "Archer;Cavalry Archer;Cavalry;Unique Unit",
-    "id": "8645512a-2fe9-4e6b-a8de-ff20c8054bb1"
+    "id": "a7624590-d80c-49f3-9fed-154d67baa8e8"
   },
   {
     "name": "Elite Konnik",
@@ -2074,7 +2074,7 @@
     "image": "konnik",
     "type": "Military",
     "armor_class": "Cavalry;Unique Unit",
-    "id": "e2df17ba-481f-475e-a622-82bad326c40b"
+    "id": "1db0e134-a975-45ca-9fcb-ba5486b2ca49"
   },
   {
     "name": "Elite Konnik (Dismounted)",
@@ -2102,7 +2102,7 @@
     "image": "konnik-dismounted",
     "type": "Military",
     "armor_class": "Infantry;Unique Unit",
-    "id": "ea04603c-9704-4f64-a06d-f02000191dd7"
+    "id": "d3c34444-1c15-49d0-a2b0-8bef033d0c0d"
   },
   {
     "name": "Elite Leitis",
@@ -2129,7 +2129,7 @@
     "image": "leitis",
     "type": "Military",
     "armor_class": "Cavalry;Unique Unit",
-    "id": "8967494f-c7a6-4982-a70a-64ad4a1bc069"
+    "id": "76cdc2e5-7d5b-4e46-88d4-4bf06692ce29"
   },
   {
     "name": "Elite Longboat",
@@ -2157,7 +2157,7 @@
     "image": "longboat",
     "type": "Navy",
     "armor_class": "Ship;Unique Unit",
-    "id": "c225b5ba-a3b7-4fe7-904f-2f35af5cfab0"
+    "id": "fdbf2ab8-2b42-439d-ae52-478c4d382622"
   },
   {
     "name": "Elite Longbowman",
@@ -2185,7 +2185,7 @@
     "image": "longbowman",
     "type": "Military",
     "armor_class": "Archer;Unique Unit",
-    "id": "5b5f72d9-90fb-42fc-9903-3139949c1955"
+    "id": "d36a6558-0403-46ed-92e3-246eef15e865"
   },
   {
     "name": "Elite Magyar Huszar",
@@ -2212,7 +2212,7 @@
     "image": "magyar-huszar",
     "type": "Military",
     "armor_class": "Cavalry;Unique Unit",
-    "id": "72fbb3cd-2ef8-483b-9c25-88f3e287dd34"
+    "id": "dbbdc78a-8612-4e13-a55d-a10c6b3a9865"
   },
   {
     "name": "Elite Mameluke",
@@ -2241,7 +2241,7 @@
     "image": "mameluke",
     "type": "Military",
     "armor_class": "Mameluke;Camel;Unique Unit",
-    "id": "8fff25a0-dbc6-422e-817e-b0c7b3ed32b1"
+    "id": "3923d246-c60a-4eb8-8525-2d1a33b49d87"
   },
   {
     "name": "Elite Mangudai",
@@ -2269,7 +2269,7 @@
     "image": "mangudai",
     "type": "Military",
     "armor_class": "Archer;Cavalry Archer;Cavalry;Unique Unit",
-    "id": "47ab6509-03f9-41a6-8b7d-2289e009809c"
+    "id": "641c36ef-c63f-4d08-9179-86e36ad3d68f"
   },
   {
     "name": "Elite Obuch",
@@ -2297,7 +2297,7 @@
     "image": "obuch",
     "type": "Military",
     "armor_class": "Infantry;Unique Unit",
-    "id": "11b27a00-d67a-4622-bc89-64b50bd9f2d9"
+    "id": "e0fec087-dc08-4087-aebe-561c393be626"
   },
   {
     "name": "Elite Organ Gun",
@@ -2312,20 +2312,20 @@
     "movement_rate": 0.85,
     "line_of_sight": 9,
     "hit_points": 70,
-    "min_range": 0,
+    "min_range": 1,
     "max_range": 7,
     "attack": 9,
     "melee_armor": 2,
     "ranged_armor": 6,
-    "attack_bonus": "[{\"amount\": 1, \"against\": \"Infantry\"}, {\"amount\": 1, \"against\": \"Buildings\"}]",
-    "special": "",
-    "search_radius": -1,
-    "accuracy": 50,
+    "attack_bonus": "[{\"amount\": 1, \"against\": \"Infantry\"}, {\"amount\": 1, \"against\": \"Ram\"}, {\"amount\": 1, \"against\": \"Skirmisher\"}, {\"amount\": 1, \"against\": \"Buildings\"}]",
+    "special": "Fires 6 bullets in a spread pattern that can hit multiple enemies. It is more effective against large groups of units, because the multiple bullets disperse in a small cone, hitting multiple units.",
+    "search_radius": 9,
+    "accuracy": 0,
     "blast_radius": 0,
     "image": "organ-gun",
     "type": "Military",
     "armor_class": "Siege Weapon;Gunpowder Unit;Unique Unit",
-    "id": "8cfb0bfb-9ce2-4214-a8df-dc5dfbec630f"
+    "id": "2d2559d9-bd8d-4627-864f-a5f8000c26fd"
   },
   {
     "name": "Elite Plumed Archer",
@@ -2353,7 +2353,7 @@
     "image": "plumed-archer",
     "type": "Military",
     "armor_class": "Archer;Unique Unit",
-    "id": "36a612b4-2a3e-4d2c-9d7e-3c13c403c925"
+    "id": "dc0e64ee-f39b-4d8c-837a-48cc1efdd9b0"
   },
   {
     "name": "Elite Ratha (Melee)",
@@ -2380,7 +2380,7 @@
     "image": "ratha-melee",
     "type": "Military",
     "armor_class": "Archer;Cavalry Archer;Cavalry;Unique Unit",
-    "id": "1bfe21af-379f-4fb8-bc26-cb4e242d94d1"
+    "id": "03513b97-d529-43c8-8406-4a2c900712ad"
   },
   {
     "name": "Elite Ratha (Ranged)",
@@ -2407,7 +2407,7 @@
     "image": "ratha-ranged",
     "type": "Military",
     "armor_class": "Archer;Cavalry Archer;Cavalry;Unique Unit",
-    "id": "1f054c8a-6cf9-4af3-8346-8e78816ba977"
+    "id": "0c73b138-04bd-401a-ad84-c358ca288255"
   },
   {
     "name": "Elite Rattan Archer",
@@ -2435,7 +2435,7 @@
     "image": "rattan-archer",
     "type": "Military",
     "armor_class": "Archer;Unique Unit",
-    "id": "75823358-2c04-4811-a07c-a5bfcbaef59a"
+    "id": "4ea233e8-0fd0-4ef8-9385-5d0c5c8d59f9"
   },
   {
     "name": "Elite Samurai",
@@ -2463,7 +2463,7 @@
     "image": "samurai",
     "type": "Military",
     "armor_class": "Infantry;Unique Unit",
-    "id": "be49b613-7edb-4cfe-91f4-8251f8fd97cc"
+    "id": "a1926297-375a-4f57-81d1-07a8d6010d41"
   },
   {
     "name": "Elite Serjeant",
@@ -2471,7 +2471,7 @@
     "expansion": "Lords of the West",
     "age": "Imperial",
     "created_in": "Castle;Donjon",
-    "cost": "{\"Food\": 60,\"Gold\": 35}",
+    "cost": "{\"Food\": 50,\"Gold\": 35}",
     "build_time": 12,
     "reload_time": 2,
     "attack_delay": 0,
@@ -2484,14 +2484,14 @@
     "melee_armor": 4,
     "ranged_armor": 4,
     "attack_bonus": "[{\"amount\": 3, \"against\": \"Eagle Warrior\"}, {\"amount\": 3, \"against\": \"Standard Buildings\"}]",
-    "special": "Can build and repair Donjons",
+    "special": "Can build and repair Donjons. Stats improve on each age up. Build/repair 25% slower in Feudal Age.",
     "search_radius": -1,
     "accuracy": 100,
     "blast_radius": 0,
     "image": "serjeant",
     "type": "Military",
     "armor_class": "Infantry;Unique Unit",
-    "id": "063ae58f-2a9d-4075-97d7-7958a8b4fec2"
+    "id": "a68bb25c-476d-4145-af9b-6ae1cb964237"
   },
   {
     "name": "Elite Shotel Warrior",
@@ -2518,7 +2518,7 @@
     "image": "shotel-warrior",
     "type": "Military",
     "armor_class": "Infantry;Unique Unit",
-    "id": "7b78f305-1898-4db8-a3e6-3587d9131558"
+    "id": "a0c1b4e6-86b0-472f-8796-ac45bb99b0eb"
   },
   {
     "name": "Elite Shrivamsha Rider",
@@ -2545,7 +2545,7 @@
     "image": "shrivamsha-rider",
     "type": "Military",
     "armor_class": "Cavalry;Unique Unit",
-    "id": "6051e416-4573-45b3-b924-b07791fcbfc1"
+    "id": "ddee08b3-9368-4589-9e1e-d3bf751bc7d5"
   },
   {
     "name": "Elite Skirmisher",
@@ -2573,7 +2573,7 @@
     "image": "elite-skirmisher",
     "type": "Military",
     "armor_class": "Archer",
-    "id": "15257be0-a2fc-42fa-a982-768c934569d8"
+    "id": "dbfa0c02-cbbe-4934-b4df-843fa6b95960"
   },
   {
     "name": "Elite Steppe Lancer",
@@ -2600,7 +2600,7 @@
     "image": "elite-steppe-lancer",
     "type": "Military",
     "armor_class": "Cavalry",
-    "id": "1aaf6f27-ad12-40d4-a74f-e05bfc2f6f07"
+    "id": "d1c78598-c22b-4eff-b1ca-9898a224b56f"
   },
   {
     "name": "Elite Tarkan",
@@ -2628,7 +2628,7 @@
     "image": "tarkan",
     "type": "Military",
     "armor_class": "Cavalry;Unique Unit",
-    "id": "724191c5-1ea2-4ccf-baa4-a6ed741bfa98"
+    "id": "5ce1620b-5a41-4b60-bf56-b717c5ae9842"
   },
   {
     "name": "Elite Teutonic Knight",
@@ -2656,7 +2656,7 @@
     "image": "teutonic-knight",
     "type": "Military",
     "armor_class": "Infantry;Unique Unit",
-    "id": "ff977639-9f36-449d-8a9b-44f572735dd8"
+    "id": "199d1be8-4bce-4460-a362-60b3cc845d72"
   },
   {
     "name": "Elite Throwing Axeman",
@@ -2684,7 +2684,7 @@
     "image": "throwing-axeman",
     "type": "Military",
     "armor_class": "Infantry;Unique Unit",
-    "id": "4860c979-56cf-42da-8172-030b747e8cf3"
+    "id": "416679d6-0fcb-43f3-a049-b2e70281e40a"
   },
   {
     "name": "Elite Turtle Ship",
@@ -2712,7 +2712,7 @@
     "image": "turtle-ship",
     "type": "Navy",
     "armor_class": "Ship;Turtle Ship;Gunpowder Unit;Unique Unit",
-    "id": "6dbb3a92-02ec-47be-86a7-1747db6267c7"
+    "id": "b7dbbe5c-c737-4f08-b08d-9accf0c8f199"
   },
   {
     "name": "Elite Urumi Swordsman",
@@ -2740,7 +2740,7 @@
     "image": "urumi-swordsman",
     "type": "Military",
     "armor_class": "Infantry;Unique Unit",
-    "id": "a8cd0758-8bac-44a9-b874-cb5948291a19"
+    "id": "7084111a-9697-437f-a342-c6eebe7a938b"
   },
   {
     "name": "Elite War Elephant",
@@ -2768,7 +2768,7 @@
     "image": "war-elephant",
     "type": "Military",
     "armor_class": "Cavalry;War Elephant;Unique Unit",
-    "id": "69d5880c-19c5-4102-8561-e485cb5ad69c"
+    "id": "af602f82-a4e5-483b-a4b3-d7a666c776f8"
   },
   {
     "name": "Elite War Wagon",
@@ -2776,7 +2776,7 @@
     "expansion": "The Conquerors",
     "age": "Imperial",
     "created_in": "Castle",
-    "cost": "{\"Wood\": 120,\"Gold\": 60}",
+    "cost": "{\"Wood\": 200,\"Gold\": 60}",
     "build_time": 25,
     "reload_time": 2.5,
     "attack_delay": 1,
@@ -2796,7 +2796,7 @@
     "image": "war-wagon",
     "type": "Military",
     "armor_class": "Archer;Cavalry Archer;Cavalry;Unique Unit",
-    "id": "dada258a-bdbb-461b-8567-904acff5936f"
+    "id": "aba9afa7-fece-4d49-ac25-1ffc24f6364a"
   },
   {
     "name": "Elite Woad Raider",
@@ -2824,7 +2824,7 @@
     "image": "woad-raider",
     "type": "Military",
     "armor_class": "Infantry;Unique Unit",
-    "id": "fc41e97a-f85c-4188-a44e-0c4776af444a"
+    "id": "c00c45a5-3c4b-449e-960e-a386d94747f6"
   },
   {
     "name": "Fast Fire Ship",
@@ -2853,7 +2853,7 @@
     "image": "fast-fire-ship",
     "type": "Navy",
     "armor_class": "Ship",
-    "id": "524c1aed-f122-4503-9ffb-37d64095bc79"
+    "id": "78a58618-5618-4944-bea9-b366ceffa095"
   },
   {
     "name": "Fire Ship",
@@ -2882,7 +2882,7 @@
     "image": "fire-ship",
     "type": "Navy",
     "armor_class": "Ship",
-    "id": "e7ac3d0a-10ff-452d-abb1-c4ea64f752f9"
+    "id": "62152144-e491-46a8-824a-bfd2b7b1a663"
   },
   {
     "name": "Fishing Ship",
@@ -2909,7 +2909,7 @@
     "image": "fishing-ship",
     "type": "Navy",
     "armor_class": "Fishing Ship",
-    "id": "0f43571c-8020-4e74-9a9d-6c84da423440"
+    "id": "4672b3f4-26d6-4528-a100-505fe65a3aec"
   },
   {
     "name": "Flamethrower",
@@ -2935,7 +2935,7 @@
     "image": "flamethrower",
     "type": "Unbuildable",
     "armor_class": "Siege Weapon",
-    "id": "fa82f236-4ab6-49e5-ae6b-248ffe1325a4"
+    "id": "d41d8b12-7449-4448-b5c7-2e042a5318e8"
   },
   {
     "name": "Flaming Camel",
@@ -2962,7 +2962,7 @@
     "image": "flaming-camel",
     "type": "Military",
     "armor_class": "Unique Unit;Camel",
-    "id": "5641d096-29b4-4097-a43f-f5ea30b94f3f"
+    "id": "0ab1e49f-5576-4619-9593-b034ecc810b6"
   },
   {
     "name": "Flemish Militia",
@@ -2990,7 +2990,7 @@
     "image": "flemish-militia",
     "type": "Military",
     "armor_class": "Infantry;Unique Unit",
-    "id": "9397fb1f-8f3f-4d16-8105-629d4cb0bab4"
+    "id": "cbd438d0-1cae-45ee-83df-846ecc8722ec"
   },
   {
     "name": "Furious The Monkey Boy",
@@ -3016,7 +3016,7 @@
     "image": "furious-the-monkey-boy",
     "type": "Cheat",
     "armor_class": "None",
-    "id": "3f14cc56-4084-4eb3-8689-a0370b74dd7b"
+    "id": "0ffa8732-8498-409c-9219-7023cd707ffd"
   },
   {
     "name": "Galleon",
@@ -3044,7 +3044,7 @@
     "image": "galleon",
     "type": "Navy",
     "armor_class": "Ship",
-    "id": "63478514-9194-496a-8ad7-9c24afc6ff5a"
+    "id": "732715d4-20ac-4681-b1a2-a1a493233b5c"
   },
   {
     "name": "Galley",
@@ -3072,7 +3072,7 @@
     "image": "galley",
     "type": "Navy",
     "armor_class": "Ship",
-    "id": "e81e5e62-2c0d-49b9-8c2c-b640e9264203"
+    "id": "777a6154-8864-47e3-8080-f61de8c5008c"
   },
   {
     "name": "Gbeto",
@@ -3099,7 +3099,7 @@
     "image": "gbeto",
     "type": "Military",
     "armor_class": "Infantry;Unique Unit",
-    "id": "8db3c06d-b358-45ed-8885-692cf2bef61e"
+    "id": "3fc8fcc3-3a20-4e4c-ba4e-160e8da31dba"
   },
   {
     "name": "Genitour",
@@ -3127,7 +3127,7 @@
     "image": "genitour",
     "type": "Military",
     "armor_class": "Archer;Cavalry Archer;Cavalry;Unique Unit",
-    "id": "12f9ef79-bf56-4bca-97fd-0f8a4c7c2c0f"
+    "id": "2192a519-1d97-4996-b6f2-e164f15b6382"
   },
   {
     "name": "Genoese Crossbowman",
@@ -3155,7 +3155,7 @@
     "image": "genoese-crossbowman",
     "type": "Military",
     "armor_class": "Archer;Unique Unit",
-    "id": "c1d5f90d-78d7-47d1-a917-dc0aed6edc42"
+    "id": "90386400-2f3e-4644-9495-4e71065f6fc8"
   },
   {
     "name": "Ghulam",
@@ -3183,7 +3183,7 @@
     "image": "ghulam",
     "type": "Military",
     "armor_class": "Infantry;Unique Unit",
-    "id": "36248d03-6de1-4c10-92f5-78efd900486e"
+    "id": "6f9a9d99-68e5-40b7-82f3-3b16606b6710"
   },
   {
     "name": "Goat",
@@ -3209,7 +3209,7 @@
     "image": "goat",
     "type": "Gaia",
     "armor_class": "None",
-    "id": "404917a7-f91b-4223-9336-5eec4033c9db"
+    "id": "23b642e6-2a45-4882-808f-4da2caf516d9"
   },
   {
     "name": "Goose",
@@ -3235,7 +3235,7 @@
     "image": "goose",
     "type": "Gaia",
     "armor_class": "None",
-    "id": "1af1df7f-bc76-4e18-9dd1-1f2174b85616"
+    "id": "4baa956a-d081-4bc3-b968-ce942a708c68"
   },
   {
     "name": "Halberdier",
@@ -3263,7 +3263,7 @@
     "image": "halberdier",
     "type": "Military",
     "armor_class": "Infantry;Spearman",
-    "id": "b3945f23-9f21-4d9d-97be-d654b62229e3"
+    "id": "94abfd9e-507a-457e-9b3a-85b153f72695"
   },
   {
     "name": "Hand Cannoneer",
@@ -3291,7 +3291,7 @@
     "image": "hand-cannoneer",
     "type": "Military",
     "armor_class": "Archer;Gunpowder Unit",
-    "id": "7fe79865-a989-40e2-b68d-07fad9f6e5cd"
+    "id": "aa9dee24-403f-4a4c-8e96-46f4ae3bbc9b"
   },
   {
     "name": "Heavy Camel Rider",
@@ -3319,7 +3319,7 @@
     "image": "heavy-camel-rider",
     "type": "Military",
     "armor_class": "Camel",
-    "id": "fa7d5a74-bea3-442b-835c-47ef831a3a34"
+    "id": "77cf65ae-feea-4025-9d6b-9b1c8a68565e"
   },
   {
     "name": "Heavy Cavalry Archer",
@@ -3347,7 +3347,7 @@
     "image": "heavy-cavalry-archer",
     "type": "Military",
     "armor_class": "Archer;Cavalry Archer;Cavalry",
-    "id": "ad27a7a5-2553-4c2c-afa4-5a508ed433f2"
+    "id": "e5acc47c-fc9d-4862-a78b-e8ebf9f8ce3b"
   },
   {
     "name": "Heavy Demolition Ship",
@@ -3376,7 +3376,7 @@
     "image": "heavy-demolition-ship",
     "type": "Navy",
     "armor_class": "Ship",
-    "id": "d11bfcd5-0ebc-490e-a083-97a125f19b35"
+    "id": "29a7c42e-037c-4061-b717-b477e913b898"
   },
   {
     "name": "Heavy Pikeman",
@@ -3402,7 +3402,7 @@
     "image": "heavy-pikeman",
     "type": "Unbuildable",
     "armor_class": "Infantry;Spearman",
-    "id": "ff290959-7b92-482e-ac37-aad1e17beb4e"
+    "id": "1b584491-9a4f-45f9-834d-51c5ed2c39a6"
   },
   {
     "name": "Heavy Scorpion",
@@ -3416,7 +3416,7 @@
     "attack_delay": 0.21,
     "movement_rate": 0.65,
     "line_of_sight": 9,
-    "hit_points": 50,
+    "hit_points": 55,
     "min_range": 2,
     "max_range": 7,
     "attack": 16,
@@ -3430,7 +3430,7 @@
     "image": "heavy-scorpion",
     "type": "Military",
     "armor_class": "Siege Weapon",
-    "id": "f4b33cab-9756-479f-9be9-a1c44e3e0601"
+    "id": "bb0fd883-7770-4d18-aeba-6b29abe3e684"
   },
   {
     "name": "Horse",
@@ -3456,7 +3456,7 @@
     "image": "horse",
     "type": "Gaia",
     "armor_class": "None",
-    "id": "3e17bcae-4eaf-43cc-a987-7946e6de4e82"
+    "id": "82b43e82-29da-4ab3-b2e6-26a21a450754"
   },
   {
     "name": "Houfnice",
@@ -3484,7 +3484,7 @@
     "image": "houfnice",
     "type": "Military",
     "armor_class": "Siege Weapon;Gunpowder Unit",
-    "id": "1050efed-2dfa-4005-80e5-7bd46c6aec76"
+    "id": "39bc5592-5ddf-4be1-8253-50c46f495818"
   },
   {
     "name": "Huskarl",
@@ -3512,7 +3512,7 @@
     "image": "huskarl",
     "type": "Military",
     "armor_class": "Infantry;Unique Unit",
-    "id": "ff4d75d3-3dd9-47c3-8724-865c09ce2bda"
+    "id": "db60e6f3-d415-4372-be89-940c5c7171a5"
   },
   {
     "name": "Hussar",
@@ -3540,7 +3540,7 @@
     "image": "hussar",
     "type": "Military",
     "armor_class": "Cavalry",
-    "id": "9c3ddc2c-19df-4044-85f0-5760738652f2"
+    "id": "aa2fc3cf-642a-48c8-bff4-7a8596175108"
   },
   {
     "name": "Hussite Wagon",
@@ -3568,7 +3568,7 @@
     "image": "hussite-wagon",
     "type": "Military",
     "armor_class": "Siege Weapon;Gunpowder Unit;Unique Unit;Hussite Wagon",
-    "id": "5c31e10e-2500-4ec6-8c52-aa8c82c9d00d"
+    "id": "ffa9ce36-c0ad-4964-9f38-018f9d9a4002"
   },
   {
     "name": "Imperial Camel Rider",
@@ -3595,7 +3595,7 @@
     "image": "imperial-camel-rider",
     "type": "Military",
     "armor_class": "Camel",
-    "id": "8760a359-b8d7-44ae-8184-fb455e0a7f0a"
+    "id": "011d954f-1584-4805-9425-b81300bac9a2"
   },
   {
     "name": "Imperial Skirmisher",
@@ -3622,7 +3622,7 @@
     "image": "imperial-skirmisher",
     "type": "Military",
     "armor_class": "Archer",
-    "id": "3d5c7548-8b39-4449-8fde-81d05a57e378"
+    "id": "bdd8caac-2a90-4585-b84c-7bd06b8f1c85"
   },
   {
     "name": "Iroquois Warrior",
@@ -3648,7 +3648,7 @@
     "image": "iroquois-warrior",
     "type": "Unbuildable",
     "armor_class": "Infantry",
-    "id": "9d22a6df-2332-4225-a5ab-eda8100cf447"
+    "id": "b3c3b9f3-e5ed-4a46-a017-515403e0000b"
   },
   {
     "name": "Jaguar",
@@ -3674,7 +3674,7 @@
     "image": "jaguar",
     "type": "Gaia",
     "armor_class": "None",
-    "id": "a42942bd-4c23-4cc2-87ec-3b3cd19d1932"
+    "id": "c5066ab7-aece-483a-9ace-cc0ef5562336"
   },
   {
     "name": "Jaguar Warrior",
@@ -3702,7 +3702,7 @@
     "image": "jaguar-warrior",
     "type": "Military",
     "armor_class": "Infantry;Unique Unit",
-    "id": "5cf2ccc0-59a1-4145-b921-23785e77b6b3"
+    "id": "c40e0d3d-d415-422f-bb84-e70282307d8f"
   },
   {
     "name": "Janissary",
@@ -3730,7 +3730,7 @@
     "image": "janissary",
     "type": "Military",
     "armor_class": "Archer;Gunpowder Unit;Unique Unit",
-    "id": "5ea3d009-dd33-4f56-9df8-4b8c1657e025"
+    "id": "b47dc4c6-d1e8-46e4-b40d-8ad36340d6f4"
   },
   {
     "name": "Junk",
@@ -3756,7 +3756,7 @@
     "image": "junk",
     "type": "Unbuildable",
     "armor_class": "None",
-    "id": "f3e076d6-ecc4-4a3d-bb02-35d5eb3814f3"
+    "id": "8d700859-7759-49c5-8b3d-0f8e0ec0dbc9"
   },
   {
     "name": "Kamayuk",
@@ -3783,7 +3783,7 @@
     "image": "kamayuk",
     "type": "Military",
     "armor_class": "Infantry;Unique Unit",
-    "id": "75b0f3cf-6e0a-426e-8c11-d0ef578beb49"
+    "id": "f9e36025-5e27-4f0d-bed5-1b9f67acb72b"
   },
   {
     "name": "Karambit Warrior",
@@ -3810,7 +3810,7 @@
     "image": "karambit-warrior",
     "type": "Military",
     "armor_class": "Infantry;Unique Unit",
-    "id": "d53a975f-bd3a-4d78-9923-9f5caa052861"
+    "id": "f6a0ee74-f014-4ab7-9d3f-1891db32e4a4"
   },
   {
     "name": "Keshik",
@@ -3837,7 +3837,7 @@
     "image": "keshik",
     "type": "Military",
     "armor_class": "Cavalry;Unique Unit",
-    "id": "223ff73d-65f0-400d-b7b4-3d7bcc780cdb"
+    "id": "1020a938-8fe6-4a6f-813f-064edc92c3a3"
   },
   {
     "name": "King",
@@ -3864,7 +3864,7 @@
     "image": "king",
     "type": "Military",
     "armor_class": "None",
-    "id": "1875add8-f7e5-44d7-bac0-8b8d0d3ad930"
+    "id": "f285b898-0c83-4eda-bb26-beaaa5007a76"
   },
   {
     "name": "Kipchak",
@@ -3891,7 +3891,7 @@
     "image": "kipchak",
     "type": "Military",
     "armor_class": "Archer;Cavalry Archer;Cavalry;Unique Unit",
-    "id": "a2caf8f7-2e41-48f1-b949-444099c3fc21"
+    "id": "b441b3a9-1de6-4f47-bc73-041baae5fcc7"
   },
   {
     "name": "Knight",
@@ -3918,7 +3918,7 @@
     "image": "knight",
     "type": "Military",
     "armor_class": "Cavalry",
-    "id": "c53ac85f-40a4-49e8-b661-7b2eb548cbfe"
+    "id": "4bbdc7e8-787e-4419-85ab-32a3b74d1023"
   },
   {
     "name": "Komodo Dragon",
@@ -3944,7 +3944,7 @@
     "image": "komodo-dragon",
     "type": "Gaia",
     "armor_class": "None",
-    "id": "d35dad35-6f72-4c5a-a7cf-5c496962ca88"
+    "id": "2699a112-abdd-458f-bf1e-ceb50e3cb29d"
   },
   {
     "name": "Konnik",
@@ -3971,7 +3971,7 @@
     "image": "konnik",
     "type": "Military",
     "armor_class": "Cavalry;Unique Unit",
-    "id": "b74452e1-5268-49e1-9b08-d12547d5c47e"
+    "id": "a792cf3c-648f-49c1-aa11-9ea81336f954"
   },
   {
     "name": "Konnik (Dismounted)",
@@ -3999,7 +3999,7 @@
     "image": "konnik-dismounted",
     "type": "Military",
     "armor_class": "Infantry;Unique Unit",
-    "id": "1e5def5e-7f57-4c00-80c0-02e103e50f32"
+    "id": "a287510e-21cf-4dce-8e96-c9d0a4569733"
   },
   {
     "name": "Legionary",
@@ -4027,7 +4027,7 @@
     "image": "legionary",
     "type": "Military",
     "armor_class": "Infantry",
-    "id": "1e245cd3-9686-4976-a06a-8daf9591ac4b"
+    "id": "2ac27359-dcf4-4997-92fc-8c50cd822c0e"
   },
   {
     "name": "Leitis",
@@ -4054,7 +4054,7 @@
     "image": "leitis",
     "type": "Military",
     "armor_class": "Cavalry;Unique Unit",
-    "id": "b8c0b20b-5322-4586-b2ab-df7328df8db4"
+    "id": "0c092d6e-72e2-4b7a-b100-b683d3dcf09a"
   },
   {
     "name": "Light Cavalry",
@@ -4082,7 +4082,7 @@
     "image": "light-cavalry",
     "type": "Military",
     "armor_class": "Cavalry",
-    "id": "93e9d7fc-a127-4724-9f61-601c15ed9c79"
+    "id": "d16ecdc4-b8b1-441e-86b2-90631f90dd2c"
   },
   {
     "name": "Lion",
@@ -4108,7 +4108,7 @@
     "image": "lion",
     "type": "Gaia",
     "armor_class": "None",
-    "id": "e0c0a4cf-cc86-4ce9-89f6-e2eaa5cc885a"
+    "id": "3d3584d8-8e36-4dec-be6c-82db41a81a59"
   },
   {
     "name": "Llama",
@@ -4134,7 +4134,7 @@
     "image": "llama",
     "type": "Gaia",
     "armor_class": "None",
-    "id": "958abc39-f3b7-4f36-8f35-420b460d72bf"
+    "id": "9e10958c-bb64-44d0-b63d-bc1040770b03"
   },
   {
     "name": "Long Swordman",
@@ -4162,7 +4162,7 @@
     "image": "long-swordsman",
     "type": "Military",
     "armor_class": "Infantry",
-    "id": "f218869f-fe7a-4682-9117-fa8397a9f989"
+    "id": "74285890-76ce-485b-9a6e-de50ba430fa3"
   },
   {
     "name": "Longboat",
@@ -4190,7 +4190,7 @@
     "image": "longboat",
     "type": "Navy",
     "armor_class": "Ship;Unique Unit",
-    "id": "06687e19-8ceb-43b4-ac2d-27c9bec43485"
+    "id": "f6a46bbd-3d3e-48ad-a486-22f204e9010d"
   },
   {
     "name": "Longbowman",
@@ -4218,7 +4218,7 @@
     "image": "longbowman",
     "type": "Military",
     "armor_class": "Archer;Unique Unit",
-    "id": "760fb44f-ee44-45b8-8c00-fed0f44f8329"
+    "id": "9f7aea01-ae16-4958-9873-6946e702cce3"
   },
   {
     "name": "Magyar Huszar",
@@ -4245,7 +4245,7 @@
     "image": "magyar-huszar",
     "type": "Military",
     "armor_class": "Cavalry;Unique Unit",
-    "id": "6984152f-3ef5-4432-af3f-b6a02cbcea63"
+    "id": "a6e118a4-4586-4d59-8fc9-a470707db717"
   },
   {
     "name": "Mameluke",
@@ -4274,7 +4274,7 @@
     "image": "mameluke",
     "type": "Military",
     "armor_class": "Mameluke;Camel;Unique Unit",
-    "id": "2e8bb583-ab88-4e52-8410-a12187283fad"
+    "id": "0fa2e15f-d1f3-4863-8208-9c66508c4ec7"
   },
   {
     "name": "Man At Arms",
@@ -4302,7 +4302,7 @@
     "image": "man-at-arms",
     "type": "Military",
     "armor_class": "Infantry",
-    "id": "521b7688-e14b-4d60-828e-6fb1bda788df"
+    "id": "d7471627-5f53-4293-9ca3-0c2cd3c9c65f"
   },
   {
     "name": "Mangonel",
@@ -4330,7 +4330,7 @@
     "image": "mangonel",
     "type": "Military",
     "armor_class": "Siege Weapon",
-    "id": "922ba6dd-cb06-4ffd-9596-3edcda289c45"
+    "id": "10747a6c-16b5-4623-8582-f57b0ee04620"
   },
   {
     "name": "Mangudai",
@@ -4358,7 +4358,7 @@
     "image": "mangudai",
     "type": "Military",
     "armor_class": "Archer;Cavalry Archer;Cavalry;Unique Unit",
-    "id": "1fcc218e-dc32-46b6-8f7e-ef49c2b41967"
+    "id": "d35ceb47-a2bd-4cfc-869e-bd65e93cdd74"
   },
   {
     "name": "Militia",
@@ -4385,7 +4385,7 @@
     "image": "militia",
     "type": "Military",
     "armor_class": "Infantry",
-    "id": "4433f2c8-efad-4a3b-bcf4-7571ea0b3f82"
+    "id": "850d1230-697b-4d19-9a71-8c3e54567f01"
   },
   {
     "name": "Missionary",
@@ -4412,7 +4412,7 @@
     "image": "missionary",
     "type": "Military",
     "armor_class": "Cavalry;Monk;Unique Unit",
-    "id": "a864702f-f0c5-400d-9ce5-5a7c65b35eb9"
+    "id": "f7ff0f04-d138-44a4-969c-1cad328c7a07"
   },
   {
     "name": "Monk",
@@ -4439,7 +4439,7 @@
     "image": "monk",
     "type": "Military",
     "armor_class": "Monk",
-    "id": "7dba30b5-e838-4dd9-901f-fc3b74186f86"
+    "id": "34a1311e-296f-4eb2-86b9-a289bab9ac59"
   },
   {
     "name": "Ninja",
@@ -4465,7 +4465,7 @@
     "image": "ninja",
     "type": "Unbuildable",
     "armor_class": "Infantry",
-    "id": "a9a1248c-81bb-481e-8fa0-87e1622dc831"
+    "id": "8bc29a2c-cf0d-4659-ada3-0c81da2b6dd8"
   },
   {
     "name": "Norse Warrior",
@@ -4492,7 +4492,7 @@
     "image": "norse-warrior",
     "type": "Military",
     "armor_class": "Infantry",
-    "id": "43874593-b9b7-4dff-b393-ce8fb384faf0"
+    "id": "42c4bf83-fa65-4c8c-af13-1a6db175828f"
   },
   {
     "name": "Obuch",
@@ -4520,7 +4520,7 @@
     "image": "obuch",
     "type": "Military",
     "armor_class": "Infantry;Unique Unit",
-    "id": "44a679ae-cf02-40c0-8c54-bc502de89a81"
+    "id": "e40650d8-ae91-4cfc-99cf-6a295bdd3fa7"
   },
   {
     "name": "Onager",
@@ -4548,7 +4548,7 @@
     "image": "onager",
     "type": "Military",
     "armor_class": "Siege Weapon",
-    "id": "45b75b72-8059-435a-b07b-66fbd94c8c5c"
+    "id": "762ea297-5654-475a-a396-c2437f7dc037"
   },
   {
     "name": "Organ Gun",
@@ -4556,10 +4556,10 @@
     "expansion": "Age of Empires II HD: The African Kingdoms",
     "age": "Castle",
     "created_in": "Castle",
-    "cost": "{\"Wood\": 80,\"Gold\": 60}",
+    "cost": "{\"Wood\": 80,\"Gold\": 56}",
     "build_time": 21,
     "reload_time": 3.45,
-    "attack_delay": 0,
+    "attack_delay": 0.6,
     "movement_rate": 0.85,
     "line_of_sight": 9,
     "hit_points": 60,
@@ -4568,15 +4568,15 @@
     "attack": 7,
     "melee_armor": 2,
     "ranged_armor": 4,
-    "attack_bonus": "[{\"amount\": 1, \"against\": \"Infantry\"}, {\"amount\": 1, \"against\": \"Buildings\"}]",
-    "special": "",
+    "attack_bonus": "[{\"amount\": 1, \"against\": \"Infantry\"}, {\"amount\": 1, \"against\": \"Ram\"}, {\"amount\": 1, \"against\": \"Skirmisher\"}]",
+    "special": "Fires 5 bullets in a spread pattern that can hit multiple enemies. It is more effective against large groups of units, because the multiple bullets disperse in a small cone, hitting multiple units.",
     "search_radius": 9,
-    "accuracy": 50,
+    "accuracy": 0,
     "blast_radius": 0,
     "image": "organ-gun",
     "type": "Military",
     "armor_class": "Siege Weapon;Gunpowder Unit;Unique Unit",
-    "id": "53a688e8-e04b-4164-9767-5a9e8934dc1d"
+    "id": "4ba8dc11-f81d-4647-8dc3-c286153f7c10"
   },
   {
     "name": "Ostrich",
@@ -4602,7 +4602,7 @@
     "image": "ostrich",
     "type": "Gaia",
     "armor_class": "None",
-    "id": "fa2b027c-5d88-4b84-b9c7-f7c5900ed005"
+    "id": "0b3dcbcd-a806-4660-a9ae-12837db44964"
   },
   {
     "name": "Ox Cart",
@@ -4628,7 +4628,7 @@
     "image": "ox-cart",
     "type": "Civilian",
     "armor_class": "None",
-    "id": "9af05600-21f2-4de5-b4d9-f17e17e5ae43"
+    "id": "3198111d-32a7-4bf5-8293-5a13d5458ae3"
   },
   {
     "name": "Ox Wagon",
@@ -4654,7 +4654,7 @@
     "image": "ox-wagon",
     "type": "Civilian",
     "armor_class": "None",
-    "id": "a501adfa-6b79-4c74-ac5b-c50450e541c7"
+    "id": "4f4443d7-33fa-4612-8a2f-23817e466e3e"
   },
   {
     "name": "Paladin",
@@ -4681,7 +4681,7 @@
     "image": "paladin",
     "type": "Military",
     "armor_class": "Cavalry",
-    "id": "6ceb60c6-35f4-418c-acda-741da817bace"
+    "id": "53b7fe45-0e01-48fa-a5f3-badcd64f0bfe"
   },
   {
     "name": "Penguin",
@@ -4707,7 +4707,7 @@
     "image": "penguin",
     "type": "Cheat",
     "armor_class": "None",
-    "id": "bee9d38a-6c0e-42e8-9230-d6baece3e74a"
+    "id": "4471553d-6479-485d-846c-a94b8adcd417"
   },
   {
     "name": "Petard",
@@ -4735,7 +4735,7 @@
     "image": "petard",
     "type": "Military",
     "armor_class": "None",
-    "id": "a89e545f-3518-4f3f-b307-fa7a9537a3b7"
+    "id": "ca2edb12-9d87-4e31-95c6-1a34fcec94eb"
   },
   {
     "name": "Pikeman",
@@ -4763,7 +4763,7 @@
     "image": "pikeman",
     "type": "Military",
     "armor_class": "Infantry;Spearman",
-    "id": "8e047758-fd80-453b-92eb-2f88d3e7bc35"
+    "id": "0cb1d3ec-e965-4526-ad50-a844175d7835"
   },
   {
     "name": "Plumed Archer",
@@ -4791,7 +4791,7 @@
     "image": "plumed-archer",
     "type": "Military",
     "armor_class": "Archer;Unique Unit",
-    "id": "655a5e39-1abf-4557-8506-0397de323cc6"
+    "id": "f36ae539-d700-43c5-be57-5e2c867ded4a"
   },
   {
     "name": "Photon Man",
@@ -4817,7 +4817,7 @@
     "image": "photon-man",
     "type": "Cheat",
     "armor_class": "Archer;Unique Unit;Gunpowder Unit",
-    "id": "72c6a164-ea61-4f02-bb69-f93768ebf202"
+    "id": "c7eeb151-ad3b-47e4-a675-06ca7354c4b7"
   },
   {
     "name": "Priest",
@@ -4844,7 +4844,7 @@
     "image": "priest",
     "type": "Unbuildable",
     "armor_class": "Monk",
-    "id": "89939c86-e283-4f43-8e87-7178360897e5"
+    "id": "a092b65e-36ad-43a6-aa0a-362bc3e8bc39"
   },
   {
     "name": "Ratha (Melee)",
@@ -4871,7 +4871,7 @@
     "image": "ratha-melee",
     "type": "Military",
     "armor_class": "Archer;Cavalry Archer;Cavalry;Unique Unit",
-    "id": "36ce9236-5819-4104-80f6-a62258b58e84"
+    "id": "af37ea73-08fc-465c-9519-a9d2bf6c6e65"
   },
   {
     "name": "Ratha (Ranged)",
@@ -4898,7 +4898,7 @@
     "image": "ratha-ranged",
     "type": "Military",
     "armor_class": "Archer;Cavalry Archer;Cavalry;Unique Unit",
-    "id": "2d6caa3c-5f7f-4ee3-8745-ed53f74ab076"
+    "id": "47dce232-8ce8-42bc-b155-e5c674fad228"
   },
   {
     "name": "Rattan Archer",
@@ -4926,7 +4926,7 @@
     "image": "rattan-archer",
     "type": "Military",
     "armor_class": "Archer;Unique Unit",
-    "id": "6ecd5d34-97e7-4db2-a7b4-5ef49637f879"
+    "id": "f876ac67-facb-4362-9926-0a63bed968e3"
   },
   {
     "name": "Rhino",
@@ -4952,7 +4952,7 @@
     "image": "rhino",
     "type": "Gaia",
     "armor_class": "None",
-    "id": "2d92911a-2041-4821-b610-0305d5f41a6f"
+    "id": "ab13e970-a69e-400e-883a-1c79e20e7007"
   },
   {
     "name": "Royal Janissary",
@@ -4979,7 +4979,7 @@
     "image": "royal-janissary",
     "type": "Unbuildable",
     "armor_class": "Archer;Gunpowder Unit;Unique Unit",
-    "id": "257de615-bd9c-4f6a-8b48-2a5577270a57"
+    "id": "6fb59b46-df5d-4277-8372-b2b4b24f5e80"
   },
   {
     "name": "Saboteur",
@@ -5005,7 +5005,7 @@
     "image": "saboteur",
     "type": "Cheat",
     "armor_class": "Ship (for some reason)",
-    "id": "40bac488-c377-4e00-8db8-1bd6b6e9f1a6"
+    "id": "f7786a2a-7a2f-423d-8fe3-dcb4354536c0"
   },
   {
     "name": "Samurai",
@@ -5033,7 +5033,7 @@
     "image": "samurai",
     "type": "Military",
     "armor_class": "Infantry;Unique Unit",
-    "id": "8a88904d-51d1-4dd5-9c17-cf155c0f9708"
+    "id": "67ef9809-382c-4f67-b19a-1edf55ee8cc1"
   },
   {
     "name": "Scorpion",
@@ -5061,7 +5061,7 @@
     "image": "scorpion",
     "type": "Military",
     "armor_class": "Siege Weapon",
-    "id": "37b50809-920f-452e-857b-cbcbe986f8d1"
+    "id": "3d98a412-b05a-4417-ba39-490cc582f852"
   },
   {
     "name": "Scout Cavalry",
@@ -5089,7 +5089,7 @@
     "image": "scout-cavalry",
     "type": "Military",
     "armor_class": "Cavalry",
-    "id": "ab6e6903-b7ad-4b19-a95a-393fc0e623f4"
+    "id": "a7254dbd-f50c-4c52-aa03-8a827de81026"
   },
   {
     "name": "Serjeant",
@@ -5097,7 +5097,7 @@
     "expansion": "Lords of the West",
     "age": "Feudal",
     "created_in": "Castle;Donjon",
-    "cost": "{\"Food\": 60,\"Gold\": 35}",
+    "cost": "{\"Food\": 50,\"Gold\": 35}",
     "build_time": 12,
     "reload_time": 2,
     "attack_delay": 0,
@@ -5110,14 +5110,14 @@
     "melee_armor": 3,
     "ranged_armor": 3,
     "attack_bonus": "[{\"amount\": 2, \"against\": \"Eagle Warrior\"}, {\"amount\": 2, \"against\": \"Standard Buildings\"}]",
-    "special": "Can build and repair Donjons",
+    "special": "Can build and repair Donjons. Stats improve on each age up. Build/repair 25% slower in Feudal Age.",
     "search_radius": -1,
     "accuracy": 100,
     "blast_radius": 0,
     "image": "serjeant",
     "type": "Military",
     "armor_class": "Infantry;Unique Unit",
-    "id": "29f2ebf9-2240-4c47-b36a-3de12d26791f"
+    "id": "dbe13dd8-a791-4f09-8769-c2e60d349799"
   },
   {
     "name": "Sharkatzor",
@@ -5143,7 +5143,7 @@
     "image": "sharkatzor",
     "type": "Cheat",
     "armor_class": "Siege Weapon",
-    "id": "7c5a9802-0fa2-4b81-8217-239fd2380b69"
+    "id": "11ca5fca-1c5a-4127-a40c-6ccfbe8f7870"
   },
   {
     "name": "Sheep",
@@ -5169,7 +5169,7 @@
     "image": "sheep",
     "type": "Gaia",
     "armor_class": "None",
-    "id": "e0be8db0-2538-4ba0-a918-fc1e901f3f63"
+    "id": "229617d2-e8bd-4de2-b7b5-dfdbfe93c874"
   },
   {
     "name": "Shotel Warrior",
@@ -5196,7 +5196,7 @@
     "image": "shotel-warrior",
     "type": "Military",
     "armor_class": "Infantry;Unique Unit",
-    "id": "1828598f-8412-4f83-8d84-305f116c4a19"
+    "id": "67ecf969-4249-4173-bc51-7b5faf3e5dec"
   },
   {
     "name": "Shrivamsha Rider",
@@ -5223,7 +5223,7 @@
     "image": "shrivamsha-rider",
     "type": "Military",
     "armor_class": "Cavalry;Unique Unit",
-    "id": "6b8fd3bf-3e6b-47b0-8959-b887702683ef"
+    "id": "81362c55-550f-4930-a3ad-a832465680dc"
   },
   {
     "name": "Siege Elephant",
@@ -5251,7 +5251,7 @@
     "image": "siege-elephant",
     "type": "Military",
     "armor_class": "Cavalry;War elephant;Siege Weapon;Ram",
-    "id": "2c9dc824-2a52-4b52-afba-90d31ce4940c"
+    "id": "3c5b4cde-441b-4819-ab87-433b657c66f8"
   },
   {
     "name": "Siege Onager",
@@ -5279,7 +5279,7 @@
     "image": "siege-onager",
     "type": "Military",
     "armor_class": "Siege Weapon",
-    "id": "155037ad-75f8-4b6b-bf92-95689c95872e"
+    "id": "ec8030f5-941a-4237-a975-b69d0cb5d27e"
   },
   {
     "name": "Siege Ram",
@@ -5308,7 +5308,7 @@
     "image": "siege-ram",
     "type": "Military",
     "armor_class": "Siege Weapon;Ram",
-    "id": "90d58a07-c85a-4a2f-bbc4-cc7a72576a52"
+    "id": "5fc1b7b8-fff8-42ac-904f-17dafb7c3418"
   },
   {
     "name": "Siege Tower",
@@ -5335,7 +5335,7 @@
     "image": "siege-tower",
     "type": "Military",
     "armor_class": "Siege Weapon;Ram",
-    "id": "2f3eb1f4-2210-40f1-9695-66b07cdb983e"
+    "id": "ba5770c5-9193-4e69-9ae4-b35af9e03ba0"
   },
   {
     "name": "Skirmisher",
@@ -5363,7 +5363,7 @@
     "image": "skirmisher",
     "type": "Military",
     "armor_class": "Archer",
-    "id": "774950ad-057d-437f-bf78-9e26e0082cab"
+    "id": "13e4636e-f36a-41ae-a43f-bd59cdc49238"
   },
   {
     "name": "Slinger",
@@ -5390,7 +5390,7 @@
     "image": "slinger",
     "type": "Military",
     "armor_class": "Archer;Unique Unit",
-    "id": "61d52884-0ca5-442a-a8c2-553778426535"
+    "id": "175f3f9e-0bef-4a0e-8c4a-64a827ce5d05"
   },
   {
     "name": "Spearman",
@@ -5418,7 +5418,7 @@
     "image": "spearman",
     "type": "Military",
     "armor_class": "Infantry;Spearman",
-    "id": "3310096f-28c4-416e-9441-ca03d546f515"
+    "id": "caa6584a-b155-4683-afd5-ba1fe9e19036"
   },
   {
     "name": "Steppe Lancer",
@@ -5445,7 +5445,7 @@
     "image": "steppe-lancer",
     "type": "Military",
     "armor_class": "Cavalry",
-    "id": "56fccdf2-bf91-4dd2-9aec-68ccdf534aa5"
+    "id": "a4601709-195a-4d7c-b7d4-e63b390117d3"
   },
   {
     "name": "Tarkan",
@@ -5473,7 +5473,7 @@
     "image": "tarkan",
     "type": "Military",
     "armor_class": "Cavalry;Unique Unit",
-    "id": "0b20cbaf-bc6d-46e5-ac6a-c657349c1132"
+    "id": "12bad8fa-c4aa-4822-a714-8e1a9a45ac79"
   },
   {
     "name": "Teutonic Knight",
@@ -5501,7 +5501,7 @@
     "image": "teutonic-knight",
     "type": "Military",
     "armor_class": "Infantry;Unique Unit",
-    "id": "7cbe0cf1-580d-40ce-965f-85388dd788b6"
+    "id": "736bfc8a-d96b-453b-94f9-f084eb51193d"
   },
   {
     "name": "Thirisadai",
@@ -5529,7 +5529,7 @@
     "image": "thirisadai",
     "type": "Navy",
     "armor_class": "Ship;Turtle Ship;Unique Unit",
-    "id": "05b87cbc-7c97-478f-95e8-f9741e0ed9c0"
+    "id": "aec5b816-705d-4ca7-b4a6-2bf5457a1e23"
   },
   {
     "name": "Throwing Axeman",
@@ -5557,7 +5557,7 @@
     "image": "throwing-axeman",
     "type": "Military",
     "armor_class": "Infantry;Unique Unit",
-    "id": "6c8f0f6d-6157-4722-9ed0-f4d4e885853d"
+    "id": "cf3be0e1-ec9e-433e-ad49-14ebf579049f"
   },
   {
     "name": "Tiger",
@@ -5583,7 +5583,7 @@
     "image": "tiger",
     "type": "Gaia",
     "armor_class": "None",
-    "id": "deb123b5-facb-4c20-a653-9f29dd6910eb"
+    "id": "8cec8b88-52b7-4fe6-a096-e8f8d8aa975d"
   },
   {
     "name": "Trade Cart",
@@ -5610,7 +5610,7 @@
     "image": "trade-cart",
     "type": "Civilian",
     "armor_class": "None",
-    "id": "78717063-e5b4-4d94-96dd-85d4fc89442d"
+    "id": "7c97faa7-23cd-4075-b353-b0a1496f114c"
   },
   {
     "name": "Trade Cog",
@@ -5637,7 +5637,7 @@
     "image": "trade-cog",
     "type": "Civilian",
     "armor_class": "None",
-    "id": "65cf9acc-832b-44cc-a297-19d8f424c139"
+    "id": "a8ee57d9-fc1a-4bfc-95ff-4717b9a2fff9"
   },
   {
     "name": "Transport Ship",
@@ -5664,7 +5664,7 @@
     "image": "transport-ship",
     "type": "Navy",
     "armor_class": "Ship",
-    "id": "f08407e8-5065-4ff0-be91-4520fbe9a158"
+    "id": "8f899424-90ac-4cd8-926b-266cf37d06c8"
   },
   {
     "name": "Trebuchet",
@@ -5692,7 +5692,7 @@
     "image": "trebuchet",
     "type": "Military",
     "armor_class": "Siege Weapon;Ram",
-    "id": "60543e3e-9678-42b5-a565-1816597a983d"
+    "id": "4615845e-55f2-46ce-8c6b-4239662f97ba"
   },
   {
     "name": "Trebuchet (packed)",
@@ -5720,7 +5720,7 @@
     "image": "trebuchet-packed",
     "type": "Military",
     "armor_class": "Siege Weapon",
-    "id": "7ccc40aa-4562-40b8-9232-ae01abde0615"
+    "id": "9e2de7f2-f316-4489-a8e6-ed666b6c0b2c"
   },
   {
     "name": "Turkey",
@@ -5746,7 +5746,7 @@
     "image": "turkey",
     "type": "Gaia",
     "armor_class": "None",
-    "id": "7e5cc1f0-e550-43e3-96bd-d50cbda17e43"
+    "id": "492d5271-4c99-4a9f-8618-f3c42591e016"
   },
   {
     "name": "Turtle Ship",
@@ -5774,7 +5774,7 @@
     "image": "turtle-ship",
     "type": "Military",
     "armor_class": "Ship;Turtle Ship;Gunpowder Unit;Unique Unit",
-    "id": "d8f2ef55-d9f7-4de1-b9de-2fce236ac167"
+    "id": "16699719-97ea-4e94-9256-1ecdedd13b88"
   },
   {
     "name": "Two Handed Swordsman",
@@ -5802,7 +5802,7 @@
     "image": "two-handed-swordsman",
     "type": "Military",
     "armor_class": "Infantry",
-    "id": "35be2bc1-b01f-4fe0-aeb8-ffcb69292bdc"
+    "id": "0eaea784-2bb2-42d9-be60-57adb5ec6bb0"
   },
   {
     "name": "Urumi Swordsman",
@@ -5830,7 +5830,7 @@
     "image": "urumi-swordsman",
     "type": "Military",
     "armor_class": "Infantry;Unique Unit",
-    "id": "e8fa9842-1039-4c52-a273-ec28417dce99"
+    "id": "abc68252-0041-4a4d-910d-e702ac570f38"
   },
   {
     "name": "Villager",
@@ -5857,7 +5857,7 @@
     "image": "villager",
     "type": "Civilian",
     "armor_class": "None",
-    "id": "9ee3d4b5-319d-4ee1-aee4-23a3c67c5045"
+    "id": "aca5da63-f78a-4e85-a641-974d2ee025c1"
   },
   {
     "name": "VMDL",
@@ -5883,7 +5883,7 @@
     "image": "vmdl",
     "type": "Cheat",
     "armor_class": "None",
-    "id": "de5a2237-935f-4c1d-a59c-18dd8cd5d02c"
+    "id": "0afd3fdc-e783-40e6-9733-9b91f6063d29"
   },
   {
     "name": "War Elephant",
@@ -5911,7 +5911,7 @@
     "image": "war-elephant",
     "type": "Military",
     "armor_class": "Cavalry;War Elephant;Unique Unit",
-    "id": "d6eb24e8-7c27-4136-b746-0a6ceba1f9a4"
+    "id": "aa42eef8-928b-40b7-9b85-db8f53c0a9ff"
   },
   {
     "name": "War Galley",
@@ -5939,7 +5939,7 @@
     "image": "war-galley",
     "type": "Navy",
     "armor_class": "Ship",
-    "id": "152c01e1-b4b8-47b0-9c44-f6b28dfb9f87"
+    "id": "009ad3d9-048e-4400-b58d-3da9b4362b5f"
   },
   {
     "name": "War Wagon",
@@ -5947,7 +5947,7 @@
     "expansion": "The Conquerors",
     "age": "Castle",
     "created_in": "Castle",
-    "cost": "{\"Wood\": 120,\"Gold\": 60}",
+    "cost": "{\"Wood\": 200,\"Gold\": 60}",
     "build_time": 25,
     "reload_time": 2.5,
     "attack_delay": 1,
@@ -5967,7 +5967,7 @@
     "image": "war-wagon",
     "type": "Military",
     "armor_class": "Archer;Cavalry Archer;Cavalry;Unique Unit",
-    "id": "2883909d-b250-423d-b0db-5c1e2e6acec9"
+    "id": "296bdb72-5261-4fc0-98d6-2d11b99d6e4f"
   },
   {
     "name": "Wild Boar",
@@ -5993,7 +5993,7 @@
     "image": "wild-boar",
     "type": "Gaia",
     "armor_class": "None",
-    "id": "6f5c8924-59e3-4d40-83b9-e3939ab033c7"
+    "id": "8c0437e2-9a6c-45b9-bc79-1e26fda89f35"
   },
   {
     "name": "Woad Raider",
@@ -6021,7 +6021,7 @@
     "image": "woad-raider",
     "type": "Military",
     "armor_class": "Infantry;Unique Unit",
-    "id": "afce8b78-c382-452a-a3fa-9b4bfb01e50d"
+    "id": "d7c88ff7-de0b-46d9-99e2-a32caefa1830"
   },
   {
     "name": "Wolf",
@@ -6047,7 +6047,7 @@
     "image": "wolf",
     "type": "Gaia",
     "armor_class": "None",
-    "id": "728f954d-687a-4caf-8c53-e4dcf9cd848f"
+    "id": "bbf2d41d-dab0-4208-bc85-a0572ae0c859"
   },
   {
     "name": "Xolotl Warrior",
@@ -6074,7 +6074,7 @@
     "image": "xolotl-warrior",
     "type": "Military",
     "armor_class": "Cavalry",
-    "id": "a1c0e4af-aadb-4168-b285-6eb22b231e03"
+    "id": "9d96989d-b99f-4d31-9fa9-8b2c50f2c7ba"
   },
   {
     "name": "Zebra",
@@ -6100,6 +6100,6 @@
     "image": "zebra",
     "type": "Gaia",
     "armor_class": "None",
-    "id": "420ded30-7305-4a46-9dd9-95bdf01f4f59"
+    "id": "ea9ffc3d-5424-4d82-b11a-e97f5e26e3a9"
   }
 ]

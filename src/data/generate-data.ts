@@ -86,7 +86,7 @@ async function parseAndWriteTechnologyData() {
     .fromFile(techsCsvFilePath)
     .subscribe((jsonObj: any, index: number) => {
       return new Promise((resolve, reject) => {
-        // jsonObj.myNewKey = "new value";
+        jsonObj.id = uuidv4();
         resolve(jsonObj);
       });
     });
@@ -103,7 +103,7 @@ async function parseAndWriteBuildingData() {
     .fromFile(buildingsCsvFilePath)
     .subscribe((jsonObj: any, index: number) => {
       return new Promise((resolve, reject) => {
-        // jsonObj.myNewKey = "new value";
+        jsonObj.id = uuidv4();
         resolve(jsonObj);
       });
     });
@@ -120,7 +120,7 @@ async function parseAndWriteCivilizationData() {
     .fromFile(civsCsvFilePath)
     .subscribe((jsonObj: any, index: number) => {
       return new Promise((resolve, reject) => {
-        // jsonObj.myNewKey = "new value";
+        jsonObj.id = uuidv4();
         resolve(jsonObj);
       });
     });
