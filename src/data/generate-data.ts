@@ -87,6 +87,13 @@ async function parseAndWriteTechnologyData() {
     .subscribe((jsonObj: any, index: number) => {
       return new Promise((resolve, reject) => {
         jsonObj.id = uuidv4();
+        if (jsonObj.civ.length === 0) {
+          jsonObj.civ = undefined;
+        }
+        if (jsonObj.applies_to.length === 0) {
+          jsonObj.applies_to = undefined;
+        }
+        jsonObj.build_time = Number(jsonObj.build_time);
         resolve(jsonObj);
       });
     });
