@@ -121,6 +121,9 @@ async function parseAndWriteCivilizationData() {
     .subscribe((jsonObj: any, index: number) => {
       return new Promise((resolve, reject) => {
         jsonObj.id = uuidv4();
+        if (jsonObj.unique_buildings.length === 0) {
+          jsonObj.unique_buildings = undefined;
+        }
         resolve(jsonObj);
       });
     });

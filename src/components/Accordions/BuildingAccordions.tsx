@@ -19,7 +19,7 @@ import { getRequiresAgeFileName } from "../../util";
 import CostDisplay from "../Stats/CostDisplay";
 
 type BuildingAccordionsProps = {
-  unique_buildings: string | null;
+  unique_buildings?: string;
   iconSize: number;
 };
 

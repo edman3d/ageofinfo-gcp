@@ -8,8 +8,7 @@
     "team_bonus": "Relics generate +33% gold",
     "civilization_bonus": "Start the game with an Eagle Scout;Villagers carry +3 extra resources;All military units are created 11% faster;Monks gain 5 HP for every researched Monastery technology;50 extra starting gold is received after completing the first Town Center",
     "image": "aztecs",
-    "unique_buildings": "",
-    "id": "208e573b-f181-413f-9670-bc3020baf832"
+    "id": "c9732698-64eb-4f7b-9105-5ed43c081bdc"
   },
   {
     "name": "Bengalis",
@@ -20,8 +19,7 @@
     "team_bonus": "Trade units yield 10% food in addition to gold.",
     "civilization_bonus": "Elephant units receive -25% bonus damage and are more resistant to conversion;Town Centers spawn 2 Villagers when the next Age is reached;Ships regenerate 15 HP per minute;Monks +3/+3P armor;Cavalry units +2 attack vs Skirmishers",
     "image": "bengalis",
-    "unique_buildings": "",
-    "id": "4052cdc3-29b4-4329-bcb4-23b80b2bead5"
+    "id": "2d144f9c-0b07-4c2f-8755-c48181a0a268"
   },
   {
     "name": "Berbers",
@@ -32,8 +30,7 @@
     "team_bonus": "Genitours are available at the Archery Range.",
     "civilization_bonus": "Villagers move +5%/+10% faster in Dark/Feudal Age;Stable units are 15%/20% cheaper in the Castle/Imperial Age.;Ships move +10% faster.",
     "image": "berbers",
-    "unique_buildings": "",
-    "id": "0190a47e-9bef-4a3e-9402-be633363a2a5"
+    "id": "b602977b-7aea-448e-a643-a522046a6485"
   },
   {
     "name": "Bohemians",
@@ -44,8 +41,7 @@
     "team_bonus": "Markets work 80% faster",
     "civilization_bonus": "Blacksmiths and Universities cost -100 wood;Chemistry and Hand Cannoneer available in Castle Age;Spearman-line deals +25% bonus damage;Fervor and Sanctity affect Villagers;Mining Camp technologies are free",
     "image": "bohemians",
-    "unique_buildings": "",
-    "id": "720f2ab1-752b-435d-9048-bbe98e6b3554"
+    "id": "40bad7ee-b8f3-4c51-82db-54635d2b2059"
   },
   {
     "name": "Britons",
@@ -56,8 +52,7 @@
     "team_bonus": "Archery Ranges work 10% faster",
     "civilization_bonus": "Town Centers cost -50% wood upon reaching the Castle Age;Foot archers (excluding Skirmishers) have +1 range in Castle Age and +1 in Imperial Age (for +2 total);Shepherds work 25% faster",
     "image": "britons",
-    "unique_buildings": "",
-    "id": "dcd8ba99-17ed-4859-b5df-c0dff8a5f0ba"
+    "id": "0e347589-725f-4b80-8ddf-063ac13ee5f2"
   },
   {
     "name": "Bulgarians",
@@ -69,7 +64,7 @@
     "civilization_bonus": "Militia line units are upgraded for free;Town Centers cost -50% stone (except for starting TC);Blacksmith and Siege Workshop technologies cost -50% food;Can build Krepost",
     "image": "bulgarians",
     "unique_buildings": "Krepost",
-    "id": "246b27a8-15be-4588-a32c-94b06bd83106"
+    "id": "b79d12f7-ba9c-4392-9d5e-73e707bbea79"
   },
   {
     "name": "Burgundians",
@@ -80,8 +75,7 @@
     "team_bonus": "Relics generate food in addition to gold",
     "civilization_bonus": "Economic upgrades cost -33% food and are available one Age earlier than other civilizations;Stable technologies are 50% cheaper;Gunpowder units gain +25% attack;Cavalier upgrade available in the Castle Age",
     "image": "burgundians",
-    "unique_buildings": "",
-    "id": "59d205e2-6b3a-4487-a5d9-c34f291d6591"
+    "id": "d3e62d28-bc20-4f60-aac9-70ea3afe0a29"
   },
   {
     "name": "Burmese",
@@ -92,8 +86,7 @@
     "team_bonus": "Relics are visible on the map from the game start.",
     "civilization_bonus": "Lumber Camp technologies are free;Battle Elephants have +1/+1 armor;Infantry units have +1/+2/+3 attack in the Feudal/Castle/Imperial Age;Monastery technologies are 50% cheaper",
     "image": "burmese",
-    "unique_buildings": "",
-    "id": "3c7f9ac2-4acb-44e5-97b0-d96df1c3e47e"
+    "id": "6d2c7518-6a62-44ad-b7e8-02d580dd0ec9"
   },
   {
     "name": "Byzantines",
@@ -104,8 +97,7 @@
     "team_bonus": "Monks +100% heal speed",
     "civilization_bonus": "Buildings (except gates) have +10% HP in Dark Age / +20% HP in Feudal Age  / +30% in Castle Age / +40% in Imperial Age;Spearman, Skirmisher and Camel lines cost 25% less;Fire Ships attack 20% faster;Imperial Age costs -33%;Town Watch is free",
     "image": "byzantines",
-    "unique_buildings": "",
-    "id": "0186988e-6679-4eb5-b6e8-813098916712"
+    "id": "9f2bd83b-85e6-478b-87cb-695cf58e90db"
   },
   {
     "name": "Celts",
@@ -116,8 +108,7 @@
     "team_bonus": "Siege Workshops work 20% faster",
     "civilization_bonus": "Infantry moves 15% faster starting from Feudal Age;Lumberjacks work 15% faster;Siege weapons fire 20% faster;Sheep cannot be stolen if within one Celt unit's line of sight",
     "image": "celts",
-    "unique_buildings": "",
-    "id": "6996b60e-51ff-406e-a862-28607d58f1f9"
+    "id": "fb9cf7aa-5a80-4436-8ad8-64c65647c272"
   },
   {
     "name": "Chinese",
@@ -128,8 +119,7 @@
     "team_bonus": "Farms provide +10% food",
     "civilization_bonus": "Get 3 extra villagers when first TC is built. but -50 wood and -200 food;Technologies cost 5%/10%/15% in Feudal/Castle/Imperial Age.;Town Centers support 10 population instead of 5 & have +5 line of sight;Demolition Ships have +50% HP",
     "image": "chinese",
-    "unique_buildings": "",
-    "id": "7f8211a3-5871-460c-8726-1a97807597d8"
+    "id": "30a59d88-fa94-4b3d-b67e-1dccea0cfc27"
   },
   {
     "name": "Cumans",
@@ -140,8 +130,7 @@
     "team_bonus": "Palisade Walls have +33% hit points.",
     "civilization_bonus": "A second Town Center can be built in the Feudal Age;Archery Ranges and Stables cost -75 wood;Siege Workshop and Battering Ram available in Feudal Age; Capped Ram upgrade available in Castle Age;Mounted units move 5%/10%/15% faster in Feudal/Castle/Imperial Age",
     "image": "cumans",
-    "unique_buildings": "",
-    "id": "a55e1674-ff36-4d74-95f9-82b900bc1761"
+    "id": "9054546f-3241-4c67-99fa-931ec11d6591"
   },
   {
     "name": "Dravidians",
@@ -152,8 +141,7 @@
     "team_bonus": "Docks provide +5 population space.",
     "civilization_bonus": "Receive 200 wood when advancing to the next Age;Fishermen and Fishing Ships carry +15;Barracks technologies cost -50%;Skirmishers and Elephant Archers attack 25% faster;Siege units cost -33% wood",
     "image": "dravidians",
-    "unique_buildings": "",
-    "id": "7c3e876f-09ab-4cfd-a4b6-a9c7a393aeae"
+    "id": "9ba98580-2cb4-434b-84e0-f769031cfbfa"
   },
   {
     "name": "Ethiopians",
@@ -164,8 +152,7 @@
     "team_bonus": "Outposts +3 line of sight and stone cost removed",
     "civilization_bonus": "The Archer line fires 18% faster;Receive +100 food and +100 gold whenever a new Age is reached;The Pikeman upgrade is free",
     "image": "ethiopians",
-    "unique_buildings": "",
-    "id": "798c8910-cc23-430d-b721-3c64d94eda72"
+    "id": "bbad7692-244b-45c4-a04a-8c3b83047bcd"
   },
   {
     "name": "Franks",
@@ -176,8 +163,7 @@
     "team_bonus": "Knights have +2 line of sight",
     "civilization_bonus": "Farm upgrades are free;Castles are 25% cheaper;Mounted units have +20% HP (starting in the Feudal Age);Foragers work 15% faster",
     "image": "franks",
-    "unique_buildings": "",
-    "id": "e310083c-f054-4093-b45e-4d8339607e9a"
+    "id": "275c28c9-da85-40ba-8152-020da21e7e3c"
   },
   {
     "name": "Goths",
@@ -188,8 +174,7 @@
     "team_bonus": "Barracks operate 20% faster;Hunt lasts 20% longer",
     "civilization_bonus": "Infantry are 20%/25%/30%/35% cheaper in the Dark/Feudal/Castle/Imperial Age;Infantry have +1/+2/+3 attack bonus against standard buildings in the Feudal/Castle/Imperial Age;Villagers have +5 attack against aggressive huntables (Wild Boar, Javelina, Elephant, Rhinoceros) and carry +15 food from hunting;Loom is researched instantly;+10 population cap in the Imperial Age",
     "image": "goths",
-    "unique_buildings": "",
-    "id": "7ba9657e-15e8-4e92-893a-45e9c4671ce6"
+    "id": "d3df0012-8415-46f3-8708-5755d190d9b9"
   },
   {
     "name": "Gurjaras",
@@ -200,8 +185,7 @@
     "team_bonus": "Camel and elephant units are created 25% faster.",
     "civilization_bonus": "Starts with 2 Forage Bushes;Can garrison Mills with livestock to produce food;Mounted units deal increased bonus damage (+20% in Feudal / +30% in Castle / and +40% in Imperial);Can garrison Docks with Fishing Ships",
     "image": "gurjaras",
-    "unique_buildings": "",
-    "id": "a86f4058-2525-446c-99b0-6647ffced2f8"
+    "id": "2ff4b54e-9a18-4eeb-9e46-2e51b545c9b9"
   },
   {
     "name": "Hindustanis",
@@ -213,7 +197,7 @@
     "civilization_bonus": "Villagers are 5%/10%/15%/20% cheaper in the Dark/Feudal/Castle/Imperial Age;Camel Riders attack 20% faster;Gunpowder units units have +1/+1 armor;Can build Caravanserai in Imperial Age",
     "image": "hindustanis",
     "unique_buildings": "Caravanserai",
-    "id": "16d537b6-cbb8-4be6-befe-0339a97cd52b"
+    "id": "6466d90f-0f16-4456-9081-0c5676a97adf"
   },
   {
     "name": "Huns",
@@ -224,8 +208,7 @@
     "team_bonus": "Stables work 20% faster",
     "civilization_bonus": "Start the game with -100 wood, but with the population cap at the maximum;Cavalry Archers are 10%/20% cheaper in the Castle/Imperial Age;Trebuchets have +30% accuracy against units",
     "image": "huns",
-    "unique_buildings": "",
-    "id": "f808aafd-5dfe-4ade-ae0a-0dace4a02369"
+    "id": "cbda67eb-0345-4b47-8041-c8bd234d6d65"
   },
   {
     "name": "Incas",
@@ -236,8 +219,7 @@
     "team_bonus": "Start with a free Llama",
     "civilization_bonus": "Start the game with an Eagle Scout;Villagers benefit from Blacksmith infantry upgrades.;Houses support 10 population.;Buildings cost -15% stone (except starting Town Center).;Military units cost -15/20/25/30% food in Dark/Feudal/Castle/Imperial",
     "image": "incas",
-    "unique_buildings": "",
-    "id": "8fc7d0f3-a42d-4ab7-8874-978a5ce0427c"
+    "id": "199d6905-21f2-4a4b-90b6-76c4161c9b15"
   },
   {
     "name": "Italians",
@@ -248,8 +230,7 @@
     "team_bonus": "Condottieri are available at the Barracks.",
     "civilization_bonus": "Advancing to the next Age is 15% cheaper;Dock and University technologies are 33% cheaper;Fishing Ships are 15% cheaper;Gunpowder units are 20% cheaper",
     "image": "italians",
-    "unique_buildings": "",
-    "id": "3a3087fb-60ef-4426-8b50-808be2376f66"
+    "id": "3116c018-ba17-4132-bd52-84fdb75a066c"
   },
   {
     "name": "Japanese",
@@ -260,8 +241,7 @@
     "team_bonus": "Galleys have +50% line of sight",
     "civilization_bonus": "Fishing Ships have 2x HP and +2 pierce armor;Fishing Ships work +5% faster in Dark Age/ +10% in Feudal Age/ +15% in Castle Age/ +20% in Imperial Age;Lumber Camps / Mining Camps / Mills are 50% cheaper;Infantry attack 25% faster (starting in Feudal Age)",
     "image": "japanese",
-    "unique_buildings": "",
-    "id": "c7294a55-391b-4472-b8ff-347a4b49b1cc"
+    "id": "55b2a07c-cff9-4a0c-b2b0-e65e8ee59866"
   },
   {
     "name": "Khmer",
@@ -272,8 +252,7 @@
     "team_bonus": "Scorpions have +1 range.",
     "civilization_bonus": "No buildings are required to advance to the next age or to unlock other buildings;Battle Elephants move 10% faster;Farmers don't carry food but rather add it directly to the stockpile without any drop-off, but work 5% slower;Villagers can garrison in Houses",
     "image": "khmer",
-    "unique_buildings": "",
-    "id": "c07cf2d0-3301-4e42-a9ba-cd9fa0614e84"
+    "id": "71ccf77b-f0b2-4ab0-bd5d-d5218fdc422f"
   },
   {
     "name": "Koreans",
@@ -284,8 +263,7 @@
     "team_bonus": "Mangonel line minimum range reduced to 1",
     "civilization_bonus": "Villagers have +3 Line of Sight;Stone Miners work 20% faster;Tower upgrades are free (Bombard Tower requires Chemistry);Archer Armor upgrades are free;Archers and Infantry cost -50% wood, Warships cost -20% wood",
     "image": "koreans",
-    "unique_buildings": "",
-    "id": "d5443de1-bc0f-4c04-96b4-b1b3d4505e5d"
+    "id": "02fcfd7f-c91c-470e-a11e-86ec837f4466"
   },
   {
     "name": "Lithuanians",
@@ -296,8 +274,7 @@
     "team_bonus": "Monastery works 20% faster.",
     "civilization_bonus": "Each Town Center built provides 100 food.;Spearman line and Skirmishers move 10% faster.;Cavalry (except the Scout Cavalry line) get +1 attack for each Relic garrisoned in the Monastery, up to +4.",
     "image": "lithuanians",
-    "unique_buildings": "",
-    "id": "531518fe-7607-44d8-82fa-dce8e91d2149"
+    "id": "5bcca210-891c-471b-825d-3a70a4e3a061"
   },
   {
     "name": "Magyars",
@@ -308,8 +285,7 @@
     "team_bonus": "Cavalry Archers trained 25% faster",
     "civilization_bonus": "Forging, Iron Casting, and Blast Furnace are free.;Scout Cavalry line is 15% cheaper.;Villagers kill wild animals in one strike.",
     "image": "magyars",
-    "unique_buildings": "",
-    "id": "f0f038a9-e148-4a22-941e-211feedb2994"
+    "id": "b5ea390f-64ea-49b0-a5a8-4d923050d435"
   },
   {
     "name": "Malay",
@@ -321,7 +297,7 @@
     "civilization_bonus": "Advancing in Age is +66% faster;Fish Traps are 33% cheaper;Fish Traps provide 3 times more food;Battle Elephants are 30% cheaper in the Castle Age, 40% cheaper in the Imperial Age;Receive infantry armor upgrades for free",
     "image": "malay",
     "unique_buildings": "Harbor",
-    "id": "1ca81a54-bd05-401b-af31-cf06e1eb6bd7"
+    "id": "99e809b0-bd36-4cf8-a6ed-f801f5d0fa42"
   },
   {
     "name": "Malians",
@@ -332,8 +308,7 @@
     "team_bonus": "Universities research +80% faster.",
     "civilization_bonus": "Buildings cost -15% wood (except Farms & starting Town Center);Barracks units have +1/+2/+3 pierce armor in the Feudal/Castle/Imperial Age; Villagers drop off 10% more gold",
     "image": "malians",
-    "unique_buildings": "",
-    "id": "e292fa1d-cad9-4c8f-ab70-fe1bb6e9519a"
+    "id": "53a00eb0-31d4-4728-972b-6fe0fd4de43d"
   },
   {
     "name": "Mayans",
@@ -344,8 +319,7 @@
     "team_bonus": "Walls are 50% cheaper",
     "civilization_bonus": "Start the game with an Eagle Scout;Start the game with +1 Villager, but with -50 food;Resources last 15% longer;Foot archers (except Skirmishers) are 10%/20%/30% cheaper in the Feudal/Castle/Imperial Age",
     "image": "mayans",
-    "unique_buildings": "",
-    "id": "82ca99f2-46e6-41c4-b8b8-5ebba11fccce"
+    "id": "f5856de7-a9ee-462b-8495-94ab95544811"
   },
   {
     "name": "Mongols",
@@ -356,8 +330,7 @@
     "team_bonus": "Scout line has +2 Line of sight",
     "civilization_bonus": "Cavalry Archers reload 20% faster;Light Cavalry and Hussars have +30% HP;Hunters work 40% faster",
     "image": "mongols",
-    "unique_buildings": "",
-    "id": "be1efc9a-a04a-42c1-ae88-bc00395d4829"
+    "id": "f405de59-2812-4396-982d-4d185cfe463b"
   },
   {
     "name": "Persians",
@@ -368,8 +341,7 @@
     "team_bonus": "Knights have +2 attack versus Archers",
     "civilization_bonus": "50 extra starting food and wood are received after completing the first Town Center;Town Centers and Docks have double HP and work 10%/15%/20% faster in the Feudal/Castle/Imperial Age",
     "image": "persians",
-    "unique_buildings": "",
-    "id": "ad55e7a1-350c-4053-8771-60e159b840dd"
+    "id": "2f5a07cf-aac8-4b5e-bdd9-99dc1e3a2f97"
   },
   {
     "name": "Poles",
@@ -381,7 +353,7 @@
     "civilization_bonus": "Villagers recover 10/15/20 HP per minute in the Feudal/Castle/Imperial Age;The Folwark replaces the Mill;Stone miners generate 0.33 gold for each stone mined",
     "image": "poles",
     "unique_buildings": "Folwark",
-    "id": "a8adec77-4426-47a8-b4e1-ec077018f601"
+    "id": "b635e039-7f19-4711-b75b-8df5acaa40b9"
   },
   {
     "name": "Portuguese",
@@ -393,7 +365,7 @@
     "civilization_bonus": "All units cost –20% gold;All ships have +10% HP;Foragers generate a trickle of wood (33%);The Feitoria becomes available for building in the Imperial Age",
     "image": "portuguese",
     "unique_buildings": "Feitoria",
-    "id": "0a45945b-dda1-4e58-a0fc-0e86f5d0b6ba"
+    "id": "d6ae63fe-b903-4524-a4d1-60320a39e0ee"
   },
   {
     "name": "Romans",
@@ -404,8 +376,7 @@
     "team_bonus": "Scorpion-line minimum range reduced",
     "civilization_bonus": "Villagers gather, build, and repair 5% faster;Galley-line and Dromons +1/+1 armor;Infantry receives double effect from Blacksmith armor upgrades;Scorpions cost -60% gold and benefit from Ballistics research",
     "image": "romans",
-    "unique_buildings": "",
-    "id": "60c4b427-dc63-412e-909b-33b84f005227"
+    "id": "eaa07a21-faf2-487e-8d96-97fc39dd71e1"
   },
   {
     "name": "Saracens",
@@ -416,8 +387,7 @@
     "team_bonus": "Foot archers have +3 attack bonus against buildings",
     "civilization_bonus": "The commodity trading fee is 5%;Markets cost 75 wood;Transport Ships have double HP and +5 carry capacity;Galleys attack 25% faster;Camel units +10 HP",
     "image": "saracens",
-    "unique_buildings": "",
-    "id": "776a283e-3ec8-4883-82e6-e0872f55e287"
+    "id": "c5e1b6ba-84be-44ea-b592-451f6b98d7ca"
   },
   {
     "name": "Sicilians",
@@ -429,7 +399,7 @@
     "civilization_bonus": "100 extra starting stone is received after completing the first Town Center;Castles build 50% and Town Centers build 100% faster;Land military units (except siege units) receive -33% bonus damage;Farm upgrades provide +125% additional food to Farms before they need to be reseeded;Can build Donjons, which replace the regular Watch Tower line",
     "image": "sicilians",
     "unique_buildings": "Donjon",
-    "id": "338d9724-34c0-4bba-bc36-75d9e6ee9566"
+    "id": "9e769bee-cb46-4339-997e-4f84ed689a74"
   },
   {
     "name": "Slavs",
@@ -440,8 +410,7 @@
     "team_bonus": "Military buildings (excluding Castles and Docks) provide +5 population.",
     "civilization_bonus": "Farmers work 10% faster;Supplies & Gambesons techs are free;Siege Workshop units are 15% cheaper;Monks move +20% faster",
     "image": "slavs",
-    "unique_buildings": "",
-    "id": "f0d0a35b-0bff-4b7b-80d3-1be28d2f1e11"
+    "id": "d895884b-fba6-4c77-b070-9d68b248c9c1"
   },
   {
     "name": "Spanish",
@@ -452,8 +421,7 @@
     "team_bonus": "Trade units generate +25% Gold",
     "civilization_bonus": "Builders work 30% faster (20% for Wonders, doesn't apply to starting Town Center);Blacksmith upgrades don't cost gold;Cannon Galleon projectiles have Ballistics-like accuracy and move faster;Gunpowder units fire 18% faster;Gain 20 gold for each technology researched",
     "image": "spanish",
-    "unique_buildings": "",
-    "id": "f4732421-9be6-4943-9f24-adcc8d673e43"
+    "id": "5b02c368-3a6c-4b50-94c9-aae73731122a"
   },
   {
     "name": "Tatars",
@@ -464,8 +432,7 @@
     "team_bonus": "Cavalry Archers +2 Line of Sight.",
     "civilization_bonus": "Herdables contain +50% food;Units do +50% damage when attacking from higher elevations (instead of +25%);Parthian Tactics and Thumb Ring are free;Two Sheep spawn near newly-constructed Town Centers starting in the Castle Age",
     "image": "tatars",
-    "unique_buildings": "",
-    "id": "8f8d6f97-0172-44c0-8814-635afc6ec8ee"
+    "id": "f7add32e-acd2-4bd0-b672-b7fd9bc44abd"
   },
   {
     "name": "Teutons",
@@ -476,8 +443,7 @@
     "team_bonus": "Units resist conversion (half as effective as Faith, but stacks with the effect of this technology)",
     "civilization_bonus": "Monks have double healing range;Towers garrison twice as many units;Murder Holes and Herbal Medicine are free;Farms are 40% cheaper;Town Centers can garrison +10 units;Barracks and Stable units receive +1/+2 melee armor in the Castle/Imperial Age",
     "image": "teutons",
-    "unique_buildings": "",
-    "id": "92e0fa6d-4936-4fad-a06e-288301f670be"
+    "id": "5ad6f2f2-72e7-49a0-bcac-9715ace872e5"
   },
   {
     "name": "Turks",
@@ -488,8 +454,7 @@
     "team_bonus": "Gunpowder units are created 20% faster",
     "civilization_bonus": "Gunpowder units have +25% HP;Gunpowder technologies are 50% cheaper; Chemistry is free;Gold Miners work 20% faster;Light Cavalry and Hussar upgrades are free;Scout Cavalry line gain +1 pierce armor",
     "image": "turks",
-    "unique_buildings": "",
-    "id": "2f306e7c-7d3a-43d9-9a99-34f8bb79cb58"
+    "id": "6a52da03-2947-4418-8993-888ef20ff6b1"
   },
   {
     "name": "Vietnamese",
@@ -500,8 +465,7 @@
     "team_bonus": "Imperial Skirmishers are available at the Archery Range.",
     "civilization_bonus": "Reveal enemy positions at game start.;Archery Range units have +20% HP.;Conscription is free.;Economic upgrades no longer cost wood & research 100% faster",
     "image": "vietnamese",
-    "unique_buildings": "",
-    "id": "e54c490e-198e-4ba8-9a6c-52a68c012765"
+    "id": "abebed8d-8dbb-47b1-98d9-825df1c08f69"
   },
   {
     "name": "Vikings",
@@ -512,7 +476,6 @@
     "team_bonus": "Docks are 15% cheaper",
     "civilization_bonus": "Wheelbarrow, Hand Cart upgrades free;Warships cost -15%/-15%/-20% in the Feudal/Castle/Imperial Age (excludes Transports);Infantry have +20% HP starting from the Feudal Age",
     "image": "vikings",
-    "unique_buildings": "",
-    "id": "80711562-5445-462f-8dad-76e77edb2042"
+    "id": "85ac922e-1039-4dd1-98bb-9998f4cfe758"
   }
 ]
