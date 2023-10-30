@@ -111,6 +111,31 @@ async function parseAndWriteBuildingData() {
     .subscribe((jsonObj: any, index: number) => {
       return new Promise((resolve, reject) => {
         jsonObj.id = uuidv4();
+
+        if (jsonObj.attack.length > 0) {
+          jsonObj.attack = Number(jsonObj.attack);
+        } else {
+          jsonObj.attack = undefined;
+        }
+
+        if (jsonObj.reload_time.length > 0) {
+          jsonObj.reload_time = Number(jsonObj.reload_time);
+        } else {
+          jsonObj.reload_time = undefined;
+        }
+
+        if (jsonObj.special.length === 0) {
+          jsonObj.special = undefined;
+        }
+
+        jsonObj.build_time = Number(jsonObj.build_time);
+        jsonObj.line_of_sight = Number(jsonObj.line_of_sight);
+        jsonObj.hit_points = Number(jsonObj.hit_points);
+        jsonObj.min_range = Number(jsonObj.min_range);
+        jsonObj.max_range = Number(jsonObj.max_range);
+        jsonObj.melee_armor = Number(jsonObj.melee_armor);
+        jsonObj.ranged_armor = Number(jsonObj.ranged_armor);
+
         resolve(jsonObj);
       });
     });
