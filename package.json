@@ -27,7 +27,7 @@
     "build": "react-scripts build",
     "test": "jest --coverage",
     "eject": "react-scripts eject",
-    "testdev": "npm test -- src/__tests/dataValidation.test.ts --watch",
+    "testdev": "npm test -- src/__tests/validateBuildingData.test.ts --watch",
     "gen": "npx tsx src/data/generate-data.ts"
   },
   "eslintConfig": {

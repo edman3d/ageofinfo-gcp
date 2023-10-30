@@ -1,5 +1,5 @@
 export type Civilization = {
-  id: number;
+  id: string;
   name: string;
   expansion: string;
   army_type: string;
@@ -8,5 +8,5 @@ export type Civilization = {
   team_bonus: string;
   civilization_bonus: string;
   image: string;
-  unique_buildings: string;
+  unique_buildings?: string;
 };

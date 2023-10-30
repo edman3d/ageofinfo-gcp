@@ -21,21 +21,53 @@ const civsCsvFilePath = `${csvReadPath}/aoe2_de_v3_civs.csv`;
  * but csvtojson doesn't work with spaces so we must rename the files
  */
 async function renameFiles() {
-  fs.rename(unitCsvDefaultName, unitCsvFilePath, function (err: any) {
-    if (err) console.log(err);
-  });
+  try {
+    if (fs.existsSync(unitCsvDefaultName)) {
+      fs.rename(unitCsvDefaultName, unitCsvFilePath, function (err: any) {
+        if (err) console.log(err);
+      });
+    } else {
+      console.log(`[NOTICE] Not renaming ${unitCsvDefaultName} (doesnt exist)`);
+    }
+  } catch (err) {
+    console.error(err);
+  }
 
-  fs.rename(techsCsvDefaultName, techsCsvFilePath, function (err: any) {
-    if (err) console.log(err);
-  });
+  try {
+    if (fs.existsSync(techsCsvDefaultName)) {
+      fs.rename(techsCsvDefaultName, techsCsvFilePath, function (err: any) {
+        if (err) console.log(err);
+      });
+    } else {
+      console.log(`[NOTICE] Not renaming ${techsCsvDefaultName} (doesnt exist)`);
+    }
+  } catch (err) {
+    console.error(err);
+  }
 
-  fs.rename(buildingsCsvDefaultName, buildingsCsvFilePath, function (err: any) {
-    if (err) console.log(err);
-  });
+  try {
+    if (fs.existsSync(buildingsCsvDefaultName)) {
+      fs.rename(buildingsCsvDefaultName, buildingsCsvFilePath, function (err: any) {
+        if (err) console.log(err);
+      });
+    } else {
+      console.log(`[NOTICE] Not renaming ${buildingsCsvDefaultName} (doesnt exist)`);
+    }
+  } catch (err) {
+    console.error(err);
+  }
 
-  fs.rename(civsCsvDefaultName, civsCsvFilePath, function (err: any) {
-    if (err) console.log(err);
-  });
+  try {
+    if (fs.existsSync(civsCsvDefaultName)) {
+      fs.rename(civsCsvDefaultName, civsCsvFilePath, function (err: any) {
+        if (err) console.log(err);
+      });
+    } else {
+      console.log(`[NOTICE] Not renaming ${civsCsvDefaultName} (doesnt exist)`);
+    }
+  } catch (err) {
+    console.error(err);
+  }
 }
 
 async function parseAndWriteUnitData() {
@@ -86,7 +118,14 @@ async function parseAndWriteTechnologyData() {
     .fromFile(techsCsvFilePath)
     .subscribe((jsonObj: any, index: number) => {
       return new Promise((resolve, reject) => {
-        // jsonObj.myNewKey = "new value";
+        jsonObj.id = uuidv4();
+        if (jsonObj.civ.length === 0) {
+          jsonObj.civ = undefined;
+        }
+        if (jsonObj.applies_to.length === 0) {
+          jsonObj.applies_to = undefined;
+        }
+        jsonObj.build_time = Number(jsonObj.build_time);
         resolve(jsonObj);
       });
     });
@@ -103,7 +142,32 @@ async function parseAndWriteBuildingData() {
     .fromFile(buildingsCsvFilePath)
     .subscribe((jsonObj: any, index: number) => {
       return new Promise((resolve, reject) => {
-        // jsonObj.myNewKey = "new value";
+        jsonObj.id = uuidv4();
+
+        if (jsonObj.attack.length > 0) {
+          jsonObj.attack = Number(jsonObj.attack);
+        } else {
+          jsonObj.attack = undefined;
+        }
+
+        if (jsonObj.reload_time.length > 0) {
+          jsonObj.reload_time = Number(jsonObj.reload_time);
+        } else {
+          jsonObj.reload_time = undefined;
+        }
+
+        if (jsonObj.special.length === 0) {
+          jsonObj.special = undefined;
+        }
+
+        jsonObj.build_time = Number(jsonObj.build_time);
+        jsonObj.line_of_sight = Number(jsonObj.line_of_sight);
+        jsonObj.hit_points = Number(jsonObj.hit_points);
+        jsonObj.min_range = Number(jsonObj.min_range);
+        jsonObj.max_range = Number(jsonObj.max_range);
+        jsonObj.melee_armor = Number(jsonObj.melee_armor);
+        jsonObj.ranged_armor = Number(jsonObj.ranged_armor);
+
         resolve(jsonObj);
       });
     });
@@ -120,7 +184,10 @@ async function parseAndWriteCivilizationData() {
     .fromFile(civsCsvFilePath)
     .subscribe((jsonObj: any, index: number) => {
       return new Promise((resolve, reject) => {
-        // jsonObj.myNewKey = "new value";
+        jsonObj.id = uuidv4();
+        if (jsonObj.unique_buildings.length === 0) {
+          jsonObj.unique_buildings = undefined;
+        }
         resolve(jsonObj);
       });
     });
