@@ -21,6 +21,7 @@ Farm,Age of Kings,Dark,"{""Wood"": 60}",15,480,0,0,0,0,0,,,Standard = 175 Food;H
 Feitoria,The African Kingdoms,Imperial,"{""Gold"": 350,""Stone"": 300}",120,5200,6,3,10,0,0,,,"Generates 1.6 food, 1.0 wood, 0.7 gold, and 0.3 stone per second without the need of Villagers, but takes up 20 population.",feitoria
 Fish Trap,Age of Kings,Dark,"{""Wood"": 100}",53,50,1,0,0,0,0,,,Gives 715 Food,fish-trap
 Folwark,Dawn of the Dukes,Dark,"{""Wood"": 125}",40,1000,6,0,7,0,0,,,Instantly collects 8% of the food provided by seeded or reseeded Farms in a radius of 4 tiles around the Folwark,folwark
+Fortified Church,The Mountain Royals,Castle,"{""Wood"": 200}",40,2400,10,5,11,1,6,,5,Villagers in the aura influence work 10% faster (Georgians only),fortified-church
 Harbor,Rise of the Rajas,Castle,"{""Wood"": 150}",35,2000,10,3,10,0,7,3,3,Upgraded version of a Dock that fires arrows,harbor
 Krepost,The Last Khans,Castle,"{""Stone"": 350}",150,2600,7,8,11,0,7,,9,"A lesser version of a Castle which can train Konniks, garrison units for protection, and supports 20 population but cannot research technologies.",krepost
 Stone Wall,Age of Kings,Castle,"{""Stone"": 5}",8,3000,2,12,12,0,0,,,,stone-wall
@@ -48,6 +49,8 @@ Mining Camp,Age of Kings,Castle,"{""Wood"": 100}",35,1000,5,2,9,0,0,,,,mining-ca
 Mining Camp,Age of Kings,Imperial,"{""Wood"": 100}",35,1000,5,3,10,0,0,,,,mining-camp
 Monastery,Age of Kings,Castle,"{""Wood"": 175}",40,2100,5,2,9,0,0,,,Garrison: 10 created units,monastery
 Monastery,Age of Kings,Imperial,"{""Wood"": 175}",40,2100,5,3,10,0,0,,,Garrison: 10 created units,monastery
+Mule Cart,The Mountain Royals,Dark,"{""Food"": 20, ""Wood"": 100}",25,300,4,1,2,0,0,,,"Can garrison in buildings
+Automatically moves to the nearest resource when the current site is depleted.",mule-cart
 Outpost,Age of Kings,Dark,"{""Wood"": 25, ""Stone"": 10}",15,500,6,0,0,0,0,,,+2 Line of sight per age,outpost
 Palisade Gate,Age of Kings,Dark,"{""Wood"": 2}",,,,,,0,0,,,,palisade-gate
 Palisade Wall,Age of Kings,Dark,"{""Wood"": 2}",5,250,2,2,5,0,0,,,,palisade-wall
