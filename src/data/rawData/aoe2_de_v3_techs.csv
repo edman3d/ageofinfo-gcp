@@ -10,6 +10,7 @@ Artillery,Age of Kings,Imperial,Castle,"{""Food"": 600, ""Gold"": 650}",40,Turks
 Atheism,The Conquerors,Imperial,Castle,"{""Food"": 500, ""Wood"": 300}",60,Huns,+100 years Wonder/Relic victory time and -50% Spies/Treason cost,unique-tech-imperial,Huns,Unique
 Atlatl,The Forgotten,Castle,Castle,"{""Food"": 400, ""Gold"": 350}",40,Skirmishers,Skirmishers +1 attack and range,unique-tech-castle,Aztecs,Unique
 Atonement,Age of Kings,Castle,Monastery,"{""Gold"": 325}",40,Monks,Monks can convert enemy monks,atonement,,Other
+Aznauri Cavalry,The Mountain Royals,Imperial,Castle,"{""Food"": 550, ""Gold"": 400}",45,Mounted Units,Mounted units take 15% less population space,unique-tech-imperial,Georgians,Unique
 Bagains,The Last Khans,Imperial,Castle,"{""Food"": 900, ""Gold"": 450}",40,Militia line,Militia line units +5 armor,unique-tech-imperial,Bulgarians,Unique
 Ballistas,Return to Rome,Castle,Castle,"{""Food"": 400, ""Gold"": 300}",45,Scorpions;Galley-line,Scorpions fire 33% faster & grants +2 attack to the Galley-line,unique-tech-castle,Romans,Unique
 Ballistics,Age of Kings,Castle,University,"{""Wood"": 300, ""Gold"": 175}",60,Arrow/Bolt-firing units;Buildings;Bombard Towers,"Archers, Cavalry Archers, Galleys, Castles, and Towers fire more accurately at moving targets",ballistics,,Other
@@ -18,6 +19,7 @@ Bearded Axe,Age of Kings,Imperial,Castle,"{""Food"": 400, ""Gold"": 400}",60,Fra
 Blast Furnace,Age of Kings,Imperial,Blacksmith,"{""Food"": 275, ""Gold"": 225}",100,Infantry;Cavalry,Infantry/cavalry attack +2,blast-furnace,,Other
 Block Printing,Age of Kings,Imperial,Monastery,"{""Gold"": 200}",55,Monks,Monk conversion range +3,block-printing,,Other
 Bloodlines,Age of Kings,Feudal,Stable,"{""Food"": 150, ""Gold"": 100}",50,Cavalry;Cavalry Archer;Conquistador,Mounted units +20 HP,bloodlines,,Other
+Bimaristan,The Mountain Royals,Castle,Castle,"{""Wood"": 300, ""Gold"": 200}",50,Monks,Monks passively heal all friendly units in a 5 tile radius by 75 HP/minute,unique-tech-castle,Saracens,Unique
 Bodkin Arrow,Age of Kings,Castle,Blacksmith,"{""Food"":200,""Gold"":100}",35,Arrow shooting units and structures,"Archers, Cavalry Archers, Galleys, Castles, and Towers +1 range and attack. Town Centers +1 attack and Line of Sight.",bodkin-arrow,,Other
 Bogsveigar,Definitive Edition,Imperial,Castle,"{""Food"":650,""Gold"":500}",40,Archer-line;Longboats,Archers and Longboats +1 attack,unique-tech-imperial,Vikings,Unique
 Bombard Tower,Age of Kings,Imperial,University,"{""Food"": 800, ""Wood"": 400}",60,,Allow creation of Bombard Tower,bombard-tower,,Other
@@ -37,6 +39,8 @@ Chatras,Rise of the Rajas,Castle,Castle,"{""Food"": 250, ""Gold"": 250}",40,Batt
 Chemistry,Age of Kings,Imperial,University,"{""Food"": 300, ""Gold"": 200}",100,Archer;Skirmisher;Cavalry Archer;Galley;Longboat;Scorpion;Tower,Missile units (including siege) +1 attack. Prerequisite for non-unique gunpowder units,chemistry,,Other
 Chieftains,The Forgotten,Castle,Castle,"{""Food"": 600, ""Gold"": 450}",40,Infantry,"Infantry +5 attack vs cavalry, +4 vs camels. Provides infantry with gold generation while attacking villagers, trade units, and monks (5 gold per villager, 20 gold per Monk/Trade unit)",unique-tech-castle,Vikings,Unique
 Chivalry,The Forgotten,Castle,Castle,"{""Wood"": 400, ""Gold"": 400}",40,Stables,Stables work 40% faster,unique-tech-castle,Franks,Unique
+Cilician Fleet,The Mountain Royals,Castle,Castle,"{""Wood"": 350, ""Gold"": 300}",45,Demolition Ships;Galley-line,Demolition Ships +33% blast radius & Galley-line and Dromons +1 range,unique-tech-castle,Armenians,Unique
+Citadels,The Mountain Royals,Imperial,Castle,"{""Wood"": 600, ""Gold"": 300}",50,Castles,"Castles +4 pierce attack, +3 attack vs rams, +3 attack vs infantry, receive -25% bonus damage",unique-tech-imperial,Persians,Unique
 Coinage,Age of Kings,Feudal,Market,"{""Food"": 150, ""Gold"": 50}",50,,Tribute inefficiency - 0.2 (20% tribute fee from 30%),coinage,,Other
 Comitatenses,Return to Rome,Imperial,Castle,"{""Food"": 700, ""Gold"": 800}",60,Militia-line;Knight-line;Centurions,"Militia-line, Knight-line, and Centurions train 50% faster and receive a 5 damage charge attack",unique-tech-imperial,Romans,Unique
 Conscription,Age of Kings,Imperial,Castle,"{""Food"": 150, ""Gold"": 150}",60,Barracks;Archer Range;Stable;Castle,"Working rate of Barracks, Archery Ranges, Stables, and Castles +33%",conscription,,Other
@@ -83,6 +87,7 @@ Fabric Shields,The Forgotten,Imperial,Castle,"{""Food"": 600, ""Gold"": 600}",40
 Faith,Age of Kings,Imperial,Monastery,"{""Food"": 750, ""Gold"": 1000}",60,All units,Units are harder for enemy Monks to convert,faith,,Other
 Farimba,The African Kingdoms,Imperial,Castle,"{""Food"": 650, ""Gold"": 400}",40,Stable units,Stable units +5 attack,unique-tech-imperial,Malians,Unique
 Fast Fire Ship,Age of Kings,Imperial,Dock,"{""Wood"": 280, ""Gold"": 250}",50,Fire Ship,Upgrade to Fast Fire Ship,fast-fire-ship,,Unit
+Fereters,The Mountain Royals,Imperial,Castle,"{""Food"": 550, ""Gold"": 400}",45,Infantry (not Spearman-line);Warrior Priests,Infantry units (except the Spearman line) +30 hit points & Warrior Priests +100% heal speed,unique-tech-imperial,Armenians,Unique
 Fervor,Age of Kings,Castle,Monastery,"{""Gold"": 140}",50,Monks,Monks have +15% speed,fervor,,Other
 Feudal Age,Age of Kings,Dark,Town Center,"{""Food"": 500}",130,,Advance to the Feudal Age,feudal-age,,Age
 First Crusade,Lords of the West,Castle,Castle,"{""Food"": 400, ""Gold"": 300}",60,Town Centers,Each Town Center (max. 5) spawns 5 Serjeants; units become more resistant to conversion,unique-tech-castle,Sicilians,Unique
@@ -188,6 +193,7 @@ Stirrups,Definitive Edition,Castle,Castle,"{""Food"": 400, ""Gold"": 200}",40,Sc
 Stone Mining,Age of Kings,Feudal,Mining Camp,"{""Food"": 100, ""Wood"": 75}",30,Stone Miners,Villagers mine stone 15% faster,stone-mining,,Other
 Stone Shaft Mining,Age of Kings,Castle,Mining Camp,"{""Food"": 175, ""Wood"": 75}",75,Stone Miners,Villagers mine stone 15% faster,stone-shaft-mining,,Other
 Stronghold,The Forgotten,Castle,Castle,"{""Food"": 250, ""Gold"": 200}",30,Castle;Towers,Castles and towers fire 33% faster & heals allied infantry near castles by 30 HP per minute,unique-tech-castle,Celts,Unique
+Svan Towers,The Mountain Royals,Castle,Castle,"{""Wood"": 300, ""Gold"": 200}",45,Defensive Buildings,Defensive buildings +2 attack & Towers fire arrows that pierce multiple units,unique-tech-castle,Georgians,Unique
 Sultans,The Forgotten,Castle,Castle,"{""Food"": 400, ""Wood"": 400}",40,Gold Miners;Relics;Trading,All gold gathering is 10% faster,unique-tech-castle,Indians,Unique
 Supplies,Definitive Edition,Feudal,Barracks,"{""Food"": 75, ""Gold"": 75}",20,Militia line,Militia line cost -15 food,supplies,,Other
 Supremacy,The Conquerors,Imperial,Castle,"{""Food"": 400, ""Gold"": 250}",60,Spanish;Villager,"Villagers +6 attack, +40 hit points and +2/+2 armor",unique-tech-imperial,Spanish,Unique
