@@ -1,3 +1,3 @@
 export * from "./AutoCompleteSelect";
-export * from "./Copyright";
+export * from "./Footer";
 export * from "./Title";

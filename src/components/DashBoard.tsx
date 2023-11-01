@@ -24,7 +24,7 @@ import { CivComparePage, CivDataPage, TechDataPage, BuildingDataPage, UnitDataPa
 import { SettingsContext } from "../contexts";
 import { DARK_TAN_COLOR } from "../constants";
 import { AppBar, Drawer, DrawerToolsSection, DrawerDataTablesSection, DrawerLinksSection } from "./Layout";
-import { Copyright } from "./Micro";
+import { Footer } from "./Micro";
 import { BuildingDataIndex, CivDataIndex, DataIndex, TechDataIndex, UnitDataIndex } from "./DataGrids";
 
 function DashboardContent() {
@@ -143,7 +143,7 @@ function DashboardContent() {
               </Route>
             </Route>
           </Routes>
-          <Copyright sx={{ pt: 4 }} />
+          <Footer sx={{ pt: 4 }} />
         </Container>
       </Box>
     </Box>
