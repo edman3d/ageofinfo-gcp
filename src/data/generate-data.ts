@@ -4,17 +4,19 @@ const csv = require("csvtojson/v2");
 const csvReadPath = "src/data/rawData";
 const jsonWritePath = "src/data";
 
-const unitCsvDefaultName = `${csvReadPath}/aoe2_de_data_v3 - units.csv`;
-const unitCsvFilePath = `${csvReadPath}/aoe2_de_v3_units.csv`;
+const csvVersion = "4"; // sometimes I update the version when making large changes to the CSV
 
-const techsCsvDefaultName = `${csvReadPath}/aoe2_de_data_v3 - techs.csv`;
-const techsCsvFilePath = `${csvReadPath}/aoe2_de_v3_techs.csv`;
+const unitCsvDefaultName = `${csvReadPath}/aoe2_de_data_v${csvVersion} - units.csv`;
+const unitCsvFilePath = `${csvReadPath}/aoe2_de_v${csvVersion}_units.csv`;
 
-const buildingsCsvDefaultName = `${csvReadPath}/aoe2_de_data_v3 - buildings.csv`;
-const buildingsCsvFilePath = `${csvReadPath}/aoe2_de_v3_buildings.csv`;
+const techsCsvDefaultName = `${csvReadPath}/aoe2_de_data_v${csvVersion} - techs.csv`;
+const techsCsvFilePath = `${csvReadPath}/aoe2_de_v${csvVersion}_techs.csv`;
 
-const civsCsvDefaultName = `${csvReadPath}/aoe2_de_data_v3 - civs.csv`;
-const civsCsvFilePath = `${csvReadPath}/aoe2_de_v3_civs.csv`;
+const buildingsCsvDefaultName = `${csvReadPath}/aoe2_de_data_v${csvVersion} - buildings.csv`;
+const buildingsCsvFilePath = `${csvReadPath}/aoe2_de_v${csvVersion}_buildings.csv`;
+
+const civsCsvDefaultName = `${csvReadPath}/aoe2_de_data_v${csvVersion} - civs.csv`;
+const civsCsvFilePath = `${csvReadPath}/aoe2_de_v${csvVersion}_civs.csv`;
 
 /**
  * Google Sheets downloads the files as such: "aoe2_de_data_v3 - units.csv"
