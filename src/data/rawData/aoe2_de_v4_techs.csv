@@ -1,6 +1,6 @@
 name,age,develops_in,cost,build_time,applies_to,description,image,civ,type,expansion
 Anarchy,Castle,Castle,"{""Food"": 450, ""Gold"": 250}",60,Goths,Allow the creation of Huskarls in barracks,unique-tech-castle,Goths,Unique,Age of Kings
-Andean Sling,Castle,Castle,"{""Food"": 200, ""Gold"": 300}",40,Skirmishers;Slingers,Skirmisher and Slinger minimum range removed;Slingers +1 attack,unique-tech-castle,Incas,Unique,The Forgotten
+Andean Sling,Castle,Castle,"{""Food"": 200, ""Gold"": 300}",40,Skirmishers;Slingers,Skirmisher and Slinger minimum range removed & Slingers +1 attack,unique-tech-castle,Incas,Unique,The Forgotten
 Arbalester,Imperial,Archery Range,"{""Food"":450, ""Gold"": 400}",50,Crossbowman,Upgrade to Arbalest,arbalester,,Unit,Age of Kings
 Architecture,Imperial,University,"{""Food"": 300, ""Wood"": 200}",70,Buildings;Tower,"Buildings +10% HP, +1/+1 armor, and +3 building armor",unique-tech-imperial,,Other,Age of Kings
 Arquebus,Imperial,Castle,"{""Food"": 700, ""Gold"": 400}",40,Gunpowder Units;Bombard Towers,Gunpowder units fire more accurately at moving targets. Increases projectile speed of Bombard Cannons and Bombard Towers by +0.2,unique-tech-imperial,Portuguese,Unique,The African Kingdoms
@@ -153,7 +153,8 @@ Light Cavalry,Castle,Stable,"{""Food"": 150, ""Gold"": 50}",45,Scout,Upgrade to 
 Logistica,Imperial,Castle,"{""Food"": 1000, ""Gold"": 600}",50,Byzantines;Cataphract,Cataphract +0.5 blast radius - trample damage (5 damage) and +6 attack against infantry,unique-tech-imperial,Byzantines,Unique,Age of Kings
 Long Swordman,Castle,Barracks,"{""Food"": 200, ""Gold"": 65}",40,Man At Arms,Upgrade to Long Swordman,long-swordman,,Unit,Age of Kings
 Loom,Dark,Town Center,"{""Gold"": 50}",25,Villager,"Villager HP +15, armor +1/+2",loom,,Other,Age of Kings
-Maghrabi Camels,Imperial,Castle,"{""Food"": 700, ""Gold"": 300}",40,Camels,Camel troops regenerate,unique-tech-imperial,Berbers,Unique,The African Kingdoms
+Maghrabi Camels,Imperial,Castle,"{""Food"": 700, ""Gold"": 300}",40,Camels,"Camels regenerate 15 HP per minute
+",unique-tech-imperial,Berbers,Unique,The African Kingdoms
 Mahayana,Imperial,Castle,"{""Wood"": 800, ""Gold"": 650}",-1,Villagers,Villagers and Monks take -10% population space,unique-tech-imperial,Bengalis,Unique,Dynasties of India
 Man At Arms,Feudal,Barracks,"{""Food"": 40, ""Gold"": 40}",40,Militia,Upgrade to Man at Arms,man-at-arms,,Unit,Age of Kings
 Manipur Cavalry,Castle,Castle,"{""Food"": 300, ""Gold"": 300}",40,Cavalry;Arambai,Cavalry deals +4 bonus attack vs. archers,unique-tech-imperial,Burmese,Unique,Rise of the Rajas
