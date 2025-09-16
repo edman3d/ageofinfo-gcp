@@ -14,6 +14,7 @@ import {
   IconButton,
   Toolbar,
   Typography,
+  Button,
 } from "@mui/material";
 import {
   ChevronLeft as ChevronLeftIcon,
@@ -34,6 +35,33 @@ function DashboardContent() {
 
   const toggleDrawer = () => {
     setDrawerOpen(!drawerOpen);
+  };
+
+  const btnClick = async () => {
+    try {
+      // const response = await fetch('https://jsonplaceholder.typicode.com/posts');
+      // const response = await fetch('https://test-inline-function-502450027509.us-east1.run.app/');
+      const response = await fetch("https://test-inline-function-502450027509.us-east1.run.app", {
+        body: "{\"key1\": \"value1\", \"key2\": \"value2\"}",
+        headers: {
+          Accept: "application/json",
+          "Content-Type": "application/json",
+        },
+        // mode: 'no-cors',
+        method: "POST"
+      })
+      if (!response.ok) {
+        throw new Error(`HTTP error! status: ${response.status}`);
+      }
+      const result = await response.json();
+      console.log(result);
+      // setData(result);
+    } catch (err: any) {
+      console.error("Fetch error: ", err);
+      // setError(err.message);
+    } finally {
+      // setLoading(false);
+    }
   };
 
   return (
@@ -118,6 +146,7 @@ function DashboardContent() {
         }}
       >
         <Toolbar />
+        <Button onClick={btnClick}> dwd</Button>
         <Container maxWidth={false} sx={{ mt: 2, mb: 2, backgroundColor: DARK_TAN_COLOR }}>
           <Routes>
             <Route path="/" element={<CivComparePage />} />
